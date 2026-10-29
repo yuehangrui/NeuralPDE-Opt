@@ -1,0 +1,86 @@
+{
+  "mesh": 128,
+  "dofs": 16129,
+  "optimizer_success": true,
+  "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "iterations": 10,
+  "counts": {
+    "state": 38,
+    "adjoint": 38
+  },
+  "reference": {
+    "mesh_n": 128,
+    "dofs": 16129,
+    "quadrature_order": 4,
+    "objective": 0.12507864746518635,
+    "algebraic_residual": 6.933621731426103e-14,
+    "reduced_gradient_l2": 1.7438957092194148e-15,
+    "relative_l2_y": 8.531814835290635e-05,
+    "relative_l2_u": 0.012062205008231984,
+    "relative_l2_p": 0.012062205008231986
+  },
+  "history": [
+    {
+      "objective": 0.12515553086155282,
+      "gradient_l2": 0.00039226470922127293,
+      "euclidean_derivative_norm": 3.045087351892251e-06
+    },
+    {
+      "objective": 0.1251048836584063,
+      "gradient_l2": 0.00022914452383704828,
+      "euclidean_derivative_norm": 1.7787613544911552e-06
+    },
+    {
+      "objective": 0.12507873971323422,
+      "gradient_l2": 2.5645310583252194e-05,
+      "euclidean_derivative_norm": 2.003334320863019e-07
+    },
+    {
+      "objective": 0.1250786477861229,
+      "gradient_l2": 8.03068703861994e-07,
+      "euclidean_derivative_norm": 6.2279292444914074e-09
+    },
+    {
+      "objective": 0.12507864746678862,
+      "gradient_l2": 5.66273696130521e-08,
+      "euclidean_derivative_norm": 3.6287036437233673e-10
+    },
+    {
+      "objective": 0.12507864746539682,
+      "gradient_l2": 2.0518939811869847e-08,
+      "euclidean_derivative_norm": 1.1758472690983606e-10
+    },
+    {
+      "objective": 0.12507864746519515,
+      "gradient_l2": 4.2045999632534775e-09,
+      "euclidean_derivative_norm": 2.3228013741984845e-11
+    },
+    {
+      "objective": 0.12507864746518751,
+      "gradient_l2": 1.5800406949264495e-09,
+      "euclidean_derivative_norm": 1.0970556782996135e-11
+    },
+    {
+      "objective": 0.12507864746518652,
+      "gradient_l2": 5.079931958274432e-10,
+      "euclidean_derivative_norm": 3.4520973597087577e-12
+    },
+    {
+      "objective": 0.1250786474651864,
+      "gradient_l2": 1.7859406096755512e-10,
+      "euclidean_derivative_norm": 9.416395089350785e-13
+    },
+    {
+      "objective": 0.1250786474651864,
+      "gradient_l2": 7.02718086011119e-11,
+      "euclidean_derivative_norm": 3.584630072549007e-13
+    },
+    {
+      "objective": 0.1250786474651864,
+      "gradient_l2": 7.02718086011119e-11,
+      "euclidean_derivative_norm": 3.584630072549007e-13
+    }
+  ],
+  "control_error_to_discrete_kkt": 1.7833361314337887e-07,
+  "objective_gap_to_discrete_kkt": 5.551115123125783e-17
+}

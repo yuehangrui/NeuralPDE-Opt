@@ -1,0 +1,1335 @@
+{
+  "rank": 16,
+  "seed": 1,
+  "epochs": 1600,
+  "optimizer_steps": 12800,
+  "sample_visits": 204800,
+  "best_epoch": 145,
+  "parameter_count": 72208,
+  "elapsed_seconds": 27.320818746462464,
+  "best": {
+    "train": {
+      "count": 128,
+      "mean": {
+        "absolute_l2": 0.0071713264045816264,
+        "relative_l2": 0.009571193206531797,
+        "absolute_h1_seminorm": 0.11437753154219663,
+        "relative_h1_seminorm": 0.027757127999238455,
+        "boundary_max": 0.0
+      },
+      "max": {
+        "absolute_l2": 0.011702384006071894,
+        "relative_l2": 0.015748967300817564,
+        "absolute_h1_seminorm": 0.18533121513864462,
+        "relative_h1_seminorm": 0.04552242420489964,
+        "boundary_max": 0.0
+      },
+      "per_sample": [
+        {
+          "sample_id": "reaction-v1:train:0000",
+          "absolute_l2": 0.006727834243812662,
+          "relative_l2": 0.008975467720005901,
+          "absolute_h1_seminorm": 0.11106407171557024,
+          "relative_h1_seminorm": 0.026935268234798602,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0001",
+          "absolute_l2": 0.005980385814545008,
+          "relative_l2": 0.008090765191322418,
+          "absolute_h1_seminorm": 0.09897542509724382,
+          "relative_h1_seminorm": 0.02445311697769202,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0002",
+          "absolute_l2": 0.008520247197867769,
+          "relative_l2": 0.011374579565342047,
+          "absolute_h1_seminorm": 0.14333598430237818,
+          "relative_h1_seminorm": 0.03596448429844385,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0003",
+          "absolute_l2": 0.007060136632622978,
+          "relative_l2": 0.00957310506806145,
+          "absolute_h1_seminorm": 0.11328391018350835,
+          "relative_h1_seminorm": 0.02813341892509265,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0004",
+          "absolute_l2": 0.006769602792951696,
+          "relative_l2": 0.009138959830868267,
+          "absolute_h1_seminorm": 0.11121769641818442,
+          "relative_h1_seminorm": 0.027217213218169986,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0005",
+          "absolute_l2": 0.006507987410005171,
+          "relative_l2": 0.00902530573958178,
+          "absolute_h1_seminorm": 0.10932746538041128,
+          "relative_h1_seminorm": 0.027136773226769443,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0006",
+          "absolute_l2": 0.007151890590732335,
+          "relative_l2": 0.009220780265538069,
+          "absolute_h1_seminorm": 0.11700407742119528,
+          "relative_h1_seminorm": 0.02841568749955737,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0007",
+          "absolute_l2": 0.006948380309234729,
+          "relative_l2": 0.010147672360697184,
+          "absolute_h1_seminorm": 0.12407867162617545,
+          "relative_h1_seminorm": 0.031366738816566465,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0008",
+          "absolute_l2": 0.007920861310673877,
+          "relative_l2": 0.010651742070230471,
+          "absolute_h1_seminorm": 0.13241240682572933,
+          "relative_h1_seminorm": 0.033280847790813355,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0009",
+          "absolute_l2": 0.005244854615984661,
+          "relative_l2": 0.007486052481455653,
+          "absolute_h1_seminorm": 0.09439432377461987,
+          "relative_h1_seminorm": 0.023872856613314442,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0010",
+          "absolute_l2": 0.008613982801309716,
+          "relative_l2": 0.011542187502551633,
+          "absolute_h1_seminorm": 0.13856810549426615,
+          "relative_h1_seminorm": 0.034114175123294614,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0011",
+          "absolute_l2": 0.007649564957949785,
+          "relative_l2": 0.010388585344407137,
+          "absolute_h1_seminorm": 0.1311306968151129,
+          "relative_h1_seminorm": 0.03166166873060993,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0012",
+          "absolute_l2": 0.009147666896583294,
+          "relative_l2": 0.012981288679354148,
+          "absolute_h1_seminorm": 0.14618300668518722,
+          "relative_h1_seminorm": 0.03688383487012591,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0013",
+          "absolute_l2": 0.0070663493053480676,
+          "relative_l2": 0.008377045844304093,
+          "absolute_h1_seminorm": 0.09766240619338623,
+          "relative_h1_seminorm": 0.021955812967687227,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0014",
+          "absolute_l2": 0.011702384006071894,
+          "relative_l2": 0.015748967300817564,
+          "absolute_h1_seminorm": 0.18533121513864462,
+          "relative_h1_seminorm": 0.04552242420489964,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0015",
+          "absolute_l2": 0.006188997797555257,
+          "relative_l2": 0.007454454130058141,
+          "absolute_h1_seminorm": 0.09472514414569351,
+          "relative_h1_seminorm": 0.02073288877638624,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0016",
+          "absolute_l2": 0.007453461691504214,
+          "relative_l2": 0.008897539371944,
+          "absolute_h1_seminorm": 0.12165735440592473,
+          "relative_h1_seminorm": 0.027395650239476734,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0017",
+          "absolute_l2": 0.008078825373347113,
+          "relative_l2": 0.010660232389877112,
+          "absolute_h1_seminorm": 0.1366973431403616,
+          "relative_h1_seminorm": 0.03241312783861154,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0018",
+          "absolute_l2": 0.0055686265965087575,
+          "relative_l2": 0.00806524830633948,
+          "absolute_h1_seminorm": 0.0935951619318771,
+          "relative_h1_seminorm": 0.023558862979238454,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0019",
+          "absolute_l2": 0.008175785868530199,
+          "relative_l2": 0.010341379762080279,
+          "absolute_h1_seminorm": 0.11620424620067157,
+          "relative_h1_seminorm": 0.0270789077855462,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0020",
+          "absolute_l2": 0.00644432362902484,
+          "relative_l2": 0.008674271739415812,
+          "absolute_h1_seminorm": 0.10973581607763065,
+          "relative_h1_seminorm": 0.026255181556403516,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0021",
+          "absolute_l2": 0.0047445304294772015,
+          "relative_l2": 0.006637955889002111,
+          "absolute_h1_seminorm": 0.08463132928220539,
+          "relative_h1_seminorm": 0.021389984109104983,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0022",
+          "absolute_l2": 0.006901435822780955,
+          "relative_l2": 0.009534878276660776,
+          "absolute_h1_seminorm": 0.11526010213162421,
+          "relative_h1_seminorm": 0.028589169017746982,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0023",
+          "absolute_l2": 0.009580310513633315,
+          "relative_l2": 0.013270834416623486,
+          "absolute_h1_seminorm": 0.1627100965343273,
+          "relative_h1_seminorm": 0.04185903555846317,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0024",
+          "absolute_l2": 0.005780432889026057,
+          "relative_l2": 0.008373203634088725,
+          "absolute_h1_seminorm": 0.09659938283227927,
+          "relative_h1_seminorm": 0.02465361402675003,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0025",
+          "absolute_l2": 0.007161772063799412,
+          "relative_l2": 0.009260870163432853,
+          "absolute_h1_seminorm": 0.11225897713572533,
+          "relative_h1_seminorm": 0.02724199517018054,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0026",
+          "absolute_l2": 0.007790138391059677,
+          "relative_l2": 0.010649855418999163,
+          "absolute_h1_seminorm": 0.1268328630738253,
+          "relative_h1_seminorm": 0.03137328110487772,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0027",
+          "absolute_l2": 0.006235055690102621,
+          "relative_l2": 0.008039579004217479,
+          "absolute_h1_seminorm": 0.10815281273459405,
+          "relative_h1_seminorm": 0.026838938808815972,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0028",
+          "absolute_l2": 0.006599880601301008,
+          "relative_l2": 0.008756288315625782,
+          "absolute_h1_seminorm": 0.10650907181036448,
+          "relative_h1_seminorm": 0.025292754820968773,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0029",
+          "absolute_l2": 0.007379376602960905,
+          "relative_l2": 0.010548774650518716,
+          "absolute_h1_seminorm": 0.12157519862944582,
+          "relative_h1_seminorm": 0.030468930488585896,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0030",
+          "absolute_l2": 0.007681017854435243,
+          "relative_l2": 0.010559013700137804,
+          "absolute_h1_seminorm": 0.11875562573403445,
+          "relative_h1_seminorm": 0.030307039727706354,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0031",
+          "absolute_l2": 0.008273659637719574,
+          "relative_l2": 0.011242102909480084,
+          "absolute_h1_seminorm": 0.12815318761167074,
+          "relative_h1_seminorm": 0.03081278451852922,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0032",
+          "absolute_l2": 0.008750328002807192,
+          "relative_l2": 0.011538379542447085,
+          "absolute_h1_seminorm": 0.13471172106002197,
+          "relative_h1_seminorm": 0.03255125971361801,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0033",
+          "absolute_l2": 0.007241851670604039,
+          "relative_l2": 0.009230106976830138,
+          "absolute_h1_seminorm": 0.09435301756691784,
+          "relative_h1_seminorm": 0.021772933716321694,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0034",
+          "absolute_l2": 0.00537339333109706,
+          "relative_l2": 0.007163677137532663,
+          "absolute_h1_seminorm": 0.08985383546322284,
+          "relative_h1_seminorm": 0.02242883725179687,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0035",
+          "absolute_l2": 0.006816247496020846,
+          "relative_l2": 0.009119826363107722,
+          "absolute_h1_seminorm": 0.09533460013124807,
+          "relative_h1_seminorm": 0.02315643833354396,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0036",
+          "absolute_l2": 0.007552775160308942,
+          "relative_l2": 0.00978129452186018,
+          "absolute_h1_seminorm": 0.11411996530091832,
+          "relative_h1_seminorm": 0.027273237301971825,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0037",
+          "absolute_l2": 0.008068648638230565,
+          "relative_l2": 0.011441139081907092,
+          "absolute_h1_seminorm": 0.1277419799124903,
+          "relative_h1_seminorm": 0.031303300987213865,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0038",
+          "absolute_l2": 0.008504884495123584,
+          "relative_l2": 0.010684452705333457,
+          "absolute_h1_seminorm": 0.12736852231437934,
+          "relative_h1_seminorm": 0.03072880421550892,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0039",
+          "absolute_l2": 0.005714632311386165,
+          "relative_l2": 0.0076703873948029385,
+          "absolute_h1_seminorm": 0.09392555149247372,
+          "relative_h1_seminorm": 0.022195355240137927,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0040",
+          "absolute_l2": 0.0075411493703845135,
+          "relative_l2": 0.009966083823034629,
+          "absolute_h1_seminorm": 0.10905349981971381,
+          "relative_h1_seminorm": 0.025647651405098164,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0041",
+          "absolute_l2": 0.0059510383792665674,
+          "relative_l2": 0.008229647355486615,
+          "absolute_h1_seminorm": 0.0981658038375943,
+          "relative_h1_seminorm": 0.024155829453205345,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0042",
+          "absolute_l2": 0.008296859088196435,
+          "relative_l2": 0.010515608833642373,
+          "absolute_h1_seminorm": 0.11857165821158341,
+          "relative_h1_seminorm": 0.02682154533846712,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0043",
+          "absolute_l2": 0.008279402398913983,
+          "relative_l2": 0.011086424503045289,
+          "absolute_h1_seminorm": 0.12915486770033602,
+          "relative_h1_seminorm": 0.030969910269340054,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0044",
+          "absolute_l2": 0.011038467160779835,
+          "relative_l2": 0.014605742674953888,
+          "absolute_h1_seminorm": 0.16541212109509904,
+          "relative_h1_seminorm": 0.04062615699731763,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0045",
+          "absolute_l2": 0.0076703208621763785,
+          "relative_l2": 0.01027179315979417,
+          "absolute_h1_seminorm": 0.11687258792233092,
+          "relative_h1_seminorm": 0.028720731644905077,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0046",
+          "absolute_l2": 0.006406616053841277,
+          "relative_l2": 0.007706125165845264,
+          "absolute_h1_seminorm": 0.09821765537467411,
+          "relative_h1_seminorm": 0.021854808263368906,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0047",
+          "absolute_l2": 0.00626008817075218,
+          "relative_l2": 0.008489862980686803,
+          "absolute_h1_seminorm": 0.09875951931042244,
+          "relative_h1_seminorm": 0.023698396760079843,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0048",
+          "absolute_l2": 0.0070012620832327855,
+          "relative_l2": 0.009388967019881643,
+          "absolute_h1_seminorm": 0.10946080357388174,
+          "relative_h1_seminorm": 0.026581419378183944,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0049",
+          "absolute_l2": 0.005958404466358177,
+          "relative_l2": 0.007912277098055809,
+          "absolute_h1_seminorm": 0.09167241640467896,
+          "relative_h1_seminorm": 0.02284935424856102,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0050",
+          "absolute_l2": 0.007903234500378147,
+          "relative_l2": 0.010330795091619938,
+          "absolute_h1_seminorm": 0.11914672040023014,
+          "relative_h1_seminorm": 0.02795584979677775,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0051",
+          "absolute_l2": 0.006715149935408073,
+          "relative_l2": 0.008448207025471275,
+          "absolute_h1_seminorm": 0.10032622115296719,
+          "relative_h1_seminorm": 0.02312516048064858,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0052",
+          "absolute_l2": 0.005755471772126406,
+          "relative_l2": 0.007623561039879502,
+          "absolute_h1_seminorm": 0.08803791960462719,
+          "relative_h1_seminorm": 0.02160353684519887,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0053",
+          "absolute_l2": 0.0060255457889031305,
+          "relative_l2": 0.008088217991405688,
+          "absolute_h1_seminorm": 0.10609055108947396,
+          "relative_h1_seminorm": 0.026664697815678384,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0054",
+          "absolute_l2": 0.006209689670121779,
+          "relative_l2": 0.007859841632276423,
+          "absolute_h1_seminorm": 0.10858634719828375,
+          "relative_h1_seminorm": 0.026524599024636063,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0055",
+          "absolute_l2": 0.006013541679072574,
+          "relative_l2": 0.0076796953501831475,
+          "absolute_h1_seminorm": 0.08274251127658522,
+          "relative_h1_seminorm": 0.01952816529408493,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0056",
+          "absolute_l2": 0.007569290366898437,
+          "relative_l2": 0.010445342405206857,
+          "absolute_h1_seminorm": 0.12075669230251737,
+          "relative_h1_seminorm": 0.029107605708701745,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0057",
+          "absolute_l2": 0.005909340341160778,
+          "relative_l2": 0.008297549951527447,
+          "absolute_h1_seminorm": 0.09640624627374869,
+          "relative_h1_seminorm": 0.024027598249166067,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0058",
+          "absolute_l2": 0.005871510743557056,
+          "relative_l2": 0.008131078458145485,
+          "absolute_h1_seminorm": 0.09646295323938185,
+          "relative_h1_seminorm": 0.02397101778983114,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0059",
+          "absolute_l2": 0.0082506088571282,
+          "relative_l2": 0.010601185288394184,
+          "absolute_h1_seminorm": 0.13233279801508285,
+          "relative_h1_seminorm": 0.0322755388230399,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0060",
+          "absolute_l2": 0.005268638746802924,
+          "relative_l2": 0.006551114160706286,
+          "absolute_h1_seminorm": 0.08554711363406166,
+          "relative_h1_seminorm": 0.020664657799142713,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0061",
+          "absolute_l2": 0.007484752874222703,
+          "relative_l2": 0.010128629350365102,
+          "absolute_h1_seminorm": 0.11582228221366686,
+          "relative_h1_seminorm": 0.02744339567645051,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0062",
+          "absolute_l2": 0.00703240004673308,
+          "relative_l2": 0.009052521366093382,
+          "absolute_h1_seminorm": 0.11872869898436432,
+          "relative_h1_seminorm": 0.02833508238799663,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0063",
+          "absolute_l2": 0.005633390666354771,
+          "relative_l2": 0.007271835166884696,
+          "absolute_h1_seminorm": 0.09192312151440159,
+          "relative_h1_seminorm": 0.021582087952143437,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0064",
+          "absolute_l2": 0.007578708222714764,
+          "relative_l2": 0.009777397423909357,
+          "absolute_h1_seminorm": 0.11618292164489141,
+          "relative_h1_seminorm": 0.02705238373037494,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0065",
+          "absolute_l2": 0.007726736620854582,
+          "relative_l2": 0.010247447190573956,
+          "absolute_h1_seminorm": 0.12156657889855879,
+          "relative_h1_seminorm": 0.030123721556215413,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0066",
+          "absolute_l2": 0.007060228347354628,
+          "relative_l2": 0.00987782176934848,
+          "absolute_h1_seminorm": 0.1179875806613413,
+          "relative_h1_seminorm": 0.029004106432598185,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0067",
+          "absolute_l2": 0.0061090624415172014,
+          "relative_l2": 0.008665368956024226,
+          "absolute_h1_seminorm": 0.09937130457097594,
+          "relative_h1_seminorm": 0.024597788489119518,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0068",
+          "absolute_l2": 0.007540479488510894,
+          "relative_l2": 0.010487265307162904,
+          "absolute_h1_seminorm": 0.12505592846047667,
+          "relative_h1_seminorm": 0.030597524887071476,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0069",
+          "absolute_l2": 0.005988131002749951,
+          "relative_l2": 0.007471448401192697,
+          "absolute_h1_seminorm": 0.09810849013713316,
+          "relative_h1_seminorm": 0.023514124201202285,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0070",
+          "absolute_l2": 0.007150622329256636,
+          "relative_l2": 0.009289798500355129,
+          "absolute_h1_seminorm": 0.10850741941369876,
+          "relative_h1_seminorm": 0.025850124223886016,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0071",
+          "absolute_l2": 0.005890539517806571,
+          "relative_l2": 0.007313012491315799,
+          "absolute_h1_seminorm": 0.08233403062570341,
+          "relative_h1_seminorm": 0.019310394334844806,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0072",
+          "absolute_l2": 0.00886127201128608,
+          "relative_l2": 0.011401841800194028,
+          "absolute_h1_seminorm": 0.12078877364649539,
+          "relative_h1_seminorm": 0.02844872339969734,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0073",
+          "absolute_l2": 0.005775889313989905,
+          "relative_l2": 0.008278821572228803,
+          "absolute_h1_seminorm": 0.0990065803886474,
+          "relative_h1_seminorm": 0.02465274015780979,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0074",
+          "absolute_l2": 0.006587344076545823,
+          "relative_l2": 0.009096763707422299,
+          "absolute_h1_seminorm": 0.10423960578988045,
+          "relative_h1_seminorm": 0.025335497263073815,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0075",
+          "absolute_l2": 0.008722541601924297,
+          "relative_l2": 0.012828374887240606,
+          "absolute_h1_seminorm": 0.1542786127745011,
+          "relative_h1_seminorm": 0.0385883567583171,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0076",
+          "absolute_l2": 0.006586735023850998,
+          "relative_l2": 0.008509237737927298,
+          "absolute_h1_seminorm": 0.09589525997447584,
+          "relative_h1_seminorm": 0.022248839537699756,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0077",
+          "absolute_l2": 0.005838606433021644,
+          "relative_l2": 0.0076001478803278,
+          "absolute_h1_seminorm": 0.08626097664175864,
+          "relative_h1_seminorm": 0.020870931578767345,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0078",
+          "absolute_l2": 0.006601651877818642,
+          "relative_l2": 0.009669372134558523,
+          "absolute_h1_seminorm": 0.11140019392013097,
+          "relative_h1_seminorm": 0.028428873614047997,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0079",
+          "absolute_l2": 0.005994342130271526,
+          "relative_l2": 0.008043125169128286,
+          "absolute_h1_seminorm": 0.09646992221612691,
+          "relative_h1_seminorm": 0.023842192016309553,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0080",
+          "absolute_l2": 0.00540430545384619,
+          "relative_l2": 0.00776725087921775,
+          "absolute_h1_seminorm": 0.08525232692160524,
+          "relative_h1_seminorm": 0.021321327356295883,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0081",
+          "absolute_l2": 0.005320442674073658,
+          "relative_l2": 0.0078311675287719,
+          "absolute_h1_seminorm": 0.095882363369462,
+          "relative_h1_seminorm": 0.02450954702928121,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0082",
+          "absolute_l2": 0.005795172251246971,
+          "relative_l2": 0.007053845437749924,
+          "absolute_h1_seminorm": 0.08625530168812533,
+          "relative_h1_seminorm": 0.01962206257618341,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0083",
+          "absolute_l2": 0.008374667018029825,
+          "relative_l2": 0.011895602358940719,
+          "absolute_h1_seminorm": 0.13341003418017408,
+          "relative_h1_seminorm": 0.03409216309651984,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0084",
+          "absolute_l2": 0.0070190194327435125,
+          "relative_l2": 0.00985472480733687,
+          "absolute_h1_seminorm": 0.11780152330415178,
+          "relative_h1_seminorm": 0.029090380933974702,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0085",
+          "absolute_l2": 0.006564793016096206,
+          "relative_l2": 0.008617519325585053,
+          "absolute_h1_seminorm": 0.10079713626041452,
+          "relative_h1_seminorm": 0.023597151357757716,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0086",
+          "absolute_l2": 0.008703033846849737,
+          "relative_l2": 0.011536959910468488,
+          "absolute_h1_seminorm": 0.1337564299410537,
+          "relative_h1_seminorm": 0.03268632479664803,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0087",
+          "absolute_l2": 0.007731361090961172,
+          "relative_l2": 0.010765852573433505,
+          "absolute_h1_seminorm": 0.13521620597844747,
+          "relative_h1_seminorm": 0.033477072817341684,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0088",
+          "absolute_l2": 0.006032016226459779,
+          "relative_l2": 0.007755978192762119,
+          "absolute_h1_seminorm": 0.09573693223771039,
+          "relative_h1_seminorm": 0.022371023000528824,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0089",
+          "absolute_l2": 0.009686898289660649,
+          "relative_l2": 0.013270565684147646,
+          "absolute_h1_seminorm": 0.15558301096243943,
+          "relative_h1_seminorm": 0.03790126648165843,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0090",
+          "absolute_l2": 0.007025596307924691,
+          "relative_l2": 0.008883922890427954,
+          "absolute_h1_seminorm": 0.10698804410229665,
+          "relative_h1_seminorm": 0.02506020922305384,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0091",
+          "absolute_l2": 0.00599905018408694,
+          "relative_l2": 0.00778128063951442,
+          "absolute_h1_seminorm": 0.10054358712432154,
+          "relative_h1_seminorm": 0.02464894594335148,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0092",
+          "absolute_l2": 0.006241631566410203,
+          "relative_l2": 0.00825333680678112,
+          "absolute_h1_seminorm": 0.09517743576340382,
+          "relative_h1_seminorm": 0.022277172174610196,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0093",
+          "absolute_l2": 0.009869924208599449,
+          "relative_l2": 0.013284158612390065,
+          "absolute_h1_seminorm": 0.16506713564442654,
+          "relative_h1_seminorm": 0.041538211437854564,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0094",
+          "absolute_l2": 0.007013409232324799,
+          "relative_l2": 0.009666330669562802,
+          "absolute_h1_seminorm": 0.10822918524391031,
+          "relative_h1_seminorm": 0.026645694661204398,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0095",
+          "absolute_l2": 0.004376037375261552,
+          "relative_l2": 0.005890527126470618,
+          "absolute_h1_seminorm": 0.07393835184288884,
+          "relative_h1_seminorm": 0.018018325526849698,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0096",
+          "absolute_l2": 0.008570355864385837,
+          "relative_l2": 0.0118726445701949,
+          "absolute_h1_seminorm": 0.1388306145878097,
+          "relative_h1_seminorm": 0.03473385856292128,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0097",
+          "absolute_l2": 0.006059636184154809,
+          "relative_l2": 0.008043522139324697,
+          "absolute_h1_seminorm": 0.09885444783906629,
+          "relative_h1_seminorm": 0.023347060530166674,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0098",
+          "absolute_l2": 0.007819431985032068,
+          "relative_l2": 0.01078356435538687,
+          "absolute_h1_seminorm": 0.131328395137732,
+          "relative_h1_seminorm": 0.03131394104040013,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0099",
+          "absolute_l2": 0.009814135412457178,
+          "relative_l2": 0.012750971749710885,
+          "absolute_h1_seminorm": 0.1391545430163715,
+          "relative_h1_seminorm": 0.03345509779211246,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0100",
+          "absolute_l2": 0.007857810838192598,
+          "relative_l2": 0.01067101224723067,
+          "absolute_h1_seminorm": 0.12950133254020596,
+          "relative_h1_seminorm": 0.03177752715942732,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0101",
+          "absolute_l2": 0.007956702018030948,
+          "relative_l2": 0.01110495833102775,
+          "absolute_h1_seminorm": 0.12474159556254483,
+          "relative_h1_seminorm": 0.030629880635942373,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0102",
+          "absolute_l2": 0.006141105645888419,
+          "relative_l2": 0.007808958325108563,
+          "absolute_h1_seminorm": 0.09364689099878853,
+          "relative_h1_seminorm": 0.022321347362033474,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0103",
+          "absolute_l2": 0.011315608530754294,
+          "relative_l2": 0.014977500197790808,
+          "absolute_h1_seminorm": 0.18258584652136145,
+          "relative_h1_seminorm": 0.0433521834538616,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0104",
+          "absolute_l2": 0.008928798738353163,
+          "relative_l2": 0.012160294648337608,
+          "absolute_h1_seminorm": 0.14356987215398703,
+          "relative_h1_seminorm": 0.03560858677912468,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0105",
+          "absolute_l2": 0.006814465897720179,
+          "relative_l2": 0.008533521339665671,
+          "absolute_h1_seminorm": 0.10063157065063402,
+          "relative_h1_seminorm": 0.024191911207570655,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0106",
+          "absolute_l2": 0.007381229425143465,
+          "relative_l2": 0.010113838536940875,
+          "absolute_h1_seminorm": 0.1290793581730149,
+          "relative_h1_seminorm": 0.03185741873292655,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0107",
+          "absolute_l2": 0.007923695544750125,
+          "relative_l2": 0.009998540627816015,
+          "absolute_h1_seminorm": 0.12576811123914636,
+          "relative_h1_seminorm": 0.02963019519150468,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0108",
+          "absolute_l2": 0.007280946731773061,
+          "relative_l2": 0.01009413446196832,
+          "absolute_h1_seminorm": 0.11235445313367746,
+          "relative_h1_seminorm": 0.02799256212486307,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0109",
+          "absolute_l2": 0.0059127553303447026,
+          "relative_l2": 0.008034996944014512,
+          "absolute_h1_seminorm": 0.09738323783896526,
+          "relative_h1_seminorm": 0.02452308558488814,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0110",
+          "absolute_l2": 0.008154142353923637,
+          "relative_l2": 0.011708982021293786,
+          "absolute_h1_seminorm": 0.13154942042455767,
+          "relative_h1_seminorm": 0.033342942916546006,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0111",
+          "absolute_l2": 0.007878526233946113,
+          "relative_l2": 0.0100650013636838,
+          "absolute_h1_seminorm": 0.12433664472621504,
+          "relative_h1_seminorm": 0.028868679023054674,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0112",
+          "absolute_l2": 0.0066219115284811576,
+          "relative_l2": 0.008927990380700874,
+          "absolute_h1_seminorm": 0.09563036977564668,
+          "relative_h1_seminorm": 0.02312229478713808,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0113",
+          "absolute_l2": 0.006371545658099494,
+          "relative_l2": 0.009022327271462644,
+          "absolute_h1_seminorm": 0.10698138621413436,
+          "relative_h1_seminorm": 0.026962052167506825,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0114",
+          "absolute_l2": 0.007539473728710926,
+          "relative_l2": 0.010423257354664907,
+          "absolute_h1_seminorm": 0.12224696563683822,
+          "relative_h1_seminorm": 0.031089484242801804,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0115",
+          "absolute_l2": 0.00582078247052571,
+          "relative_l2": 0.008211679565285582,
+          "absolute_h1_seminorm": 0.08809888497571892,
+          "relative_h1_seminorm": 0.02194473063040548,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0116",
+          "absolute_l2": 0.008967676456508998,
+          "relative_l2": 0.011383341604090061,
+          "absolute_h1_seminorm": 0.1541904892463676,
+          "relative_h1_seminorm": 0.03558274201866048,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0117",
+          "absolute_l2": 0.007150883397526031,
+          "relative_l2": 0.009181188076706837,
+          "absolute_h1_seminorm": 0.11620308559956748,
+          "relative_h1_seminorm": 0.02717900775057372,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0118",
+          "absolute_l2": 0.009500007690257866,
+          "relative_l2": 0.012164749709756386,
+          "absolute_h1_seminorm": 0.14648211609434636,
+          "relative_h1_seminorm": 0.034474758380840735,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0119",
+          "absolute_l2": 0.00656297313644952,
+          "relative_l2": 0.008361360201501031,
+          "absolute_h1_seminorm": 0.10975343526459656,
+          "relative_h1_seminorm": 0.026689144754407583,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0120",
+          "absolute_l2": 0.008414964409626146,
+          "relative_l2": 0.011280021388199644,
+          "absolute_h1_seminorm": 0.136490970029175,
+          "relative_h1_seminorm": 0.03442440334434609,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0121",
+          "absolute_l2": 0.007303338283727911,
+          "relative_l2": 0.009749636003175152,
+          "absolute_h1_seminorm": 0.12302436912401223,
+          "relative_h1_seminorm": 0.02906003332763526,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0122",
+          "absolute_l2": 0.006699389241561454,
+          "relative_l2": 0.008054633610078766,
+          "absolute_h1_seminorm": 0.10946772472897175,
+          "relative_h1_seminorm": 0.024782629075374846,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0123",
+          "absolute_l2": 0.006859548594742149,
+          "relative_l2": 0.009067739355205521,
+          "absolute_h1_seminorm": 0.10444704170814792,
+          "relative_h1_seminorm": 0.025190372396465998,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0124",
+          "absolute_l2": 0.00674390099651823,
+          "relative_l2": 0.008295308523404977,
+          "absolute_h1_seminorm": 0.10694560329067533,
+          "relative_h1_seminorm": 0.024144884489492556,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0125",
+          "absolute_l2": 0.006792437266426299,
+          "relative_l2": 0.00899594555199726,
+          "absolute_h1_seminorm": 0.11950073106033501,
+          "relative_h1_seminorm": 0.029543914893795164,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0126",
+          "absolute_l2": 0.00724960127495999,
+          "relative_l2": 0.009314469527392703,
+          "absolute_h1_seminorm": 0.09862757244638991,
+          "relative_h1_seminorm": 0.02331141724197391,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:train:0127",
+          "absolute_l2": 0.005233054836617646,
+          "relative_l2": 0.006290014421034217,
+          "absolute_h1_seminorm": 0.08814429345728934,
+          "relative_h1_seminorm": 0.01981960352224628,
+          "boundary_max": 0.0
+        }
+      ],
+      "coefficient_mean_relative_l2": 0.00681869332987652,
+      "projection_mean_relative_l2": 0.00655296307237781
+    },
+    "val": {
+      "count": 32,
+      "mean": {
+        "absolute_l2": 0.019222994965383947,
+        "relative_l2": 0.025924040022337592,
+        "absolute_h1_seminorm": 0.22524386100907098,
+        "relative_h1_seminorm": 0.05435086304632422,
+        "boundary_max": 0.0
+      },
+      "max": {
+        "absolute_l2": 0.04115153671450563,
+        "relative_l2": 0.05638589564391011,
+        "absolute_h1_seminorm": 0.40074764106635113,
+        "relative_h1_seminorm": 0.09688213761646283,
+        "boundary_max": 0.0
+      },
+      "per_sample": [
+        {
+          "sample_id": "reaction-v1:val:0000",
+          "absolute_l2": 0.019376789127031658,
+          "relative_l2": 0.028250787367165922,
+          "absolute_h1_seminorm": 0.24786899389289185,
+          "relative_h1_seminorm": 0.06335758945246844,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0001",
+          "absolute_l2": 0.01643626155013255,
+          "relative_l2": 0.022462812443966973,
+          "absolute_h1_seminorm": 0.22057845746378796,
+          "relative_h1_seminorm": 0.052229215384570385,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0002",
+          "absolute_l2": 0.01539933061220428,
+          "relative_l2": 0.022554665108823743,
+          "absolute_h1_seminorm": 0.2233440348779365,
+          "relative_h1_seminorm": 0.055963200926391156,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0003",
+          "absolute_l2": 0.019276811942207314,
+          "relative_l2": 0.02717663716837145,
+          "absolute_h1_seminorm": 0.23078520087850624,
+          "relative_h1_seminorm": 0.05836311027764169,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0004",
+          "absolute_l2": 0.02206526135533474,
+          "relative_l2": 0.027772434014108834,
+          "absolute_h1_seminorm": 0.26946023683703557,
+          "relative_h1_seminorm": 0.062192005493818536,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0005",
+          "absolute_l2": 0.017102966825063223,
+          "relative_l2": 0.023139788614979707,
+          "absolute_h1_seminorm": 0.24632300864238163,
+          "relative_h1_seminorm": 0.05865557662375018,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0006",
+          "absolute_l2": 0.013248488118365386,
+          "relative_l2": 0.017011109106533404,
+          "absolute_h1_seminorm": 0.19086789923701866,
+          "relative_h1_seminorm": 0.04521790562721793,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0007",
+          "absolute_l2": 0.022257125502778006,
+          "relative_l2": 0.032669038300966236,
+          "absolute_h1_seminorm": 0.25307149670432644,
+          "relative_h1_seminorm": 0.06360791821631054,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0008",
+          "absolute_l2": 0.011939362135551341,
+          "relative_l2": 0.015948481255529126,
+          "absolute_h1_seminorm": 0.17081687883295593,
+          "relative_h1_seminorm": 0.04136212544159673,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0009",
+          "absolute_l2": 0.012178656036835163,
+          "relative_l2": 0.01724307438016293,
+          "absolute_h1_seminorm": 0.14724253364452458,
+          "relative_h1_seminorm": 0.036287289870569214,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0010",
+          "absolute_l2": 0.01454666497905914,
+          "relative_l2": 0.018595291891709054,
+          "absolute_h1_seminorm": 0.16271075142176275,
+          "relative_h1_seminorm": 0.037522972041908506,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0011",
+          "absolute_l2": 0.012211159599947764,
+          "relative_l2": 0.015673638097444216,
+          "absolute_h1_seminorm": 0.16449744771245392,
+          "relative_h1_seminorm": 0.0402681879850246,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0012",
+          "absolute_l2": 0.020844665191252942,
+          "relative_l2": 0.027368354843859553,
+          "absolute_h1_seminorm": 0.2885197387318722,
+          "relative_h1_seminorm": 0.06637391545801886,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0013",
+          "absolute_l2": 0.015984591727037506,
+          "relative_l2": 0.022241282537206263,
+          "absolute_h1_seminorm": 0.2072109675146182,
+          "relative_h1_seminorm": 0.050769000743945726,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0014",
+          "absolute_l2": 0.0268364076071065,
+          "relative_l2": 0.03453794622077814,
+          "absolute_h1_seminorm": 0.23802350583236973,
+          "relative_h1_seminorm": 0.054203030687824956,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0015",
+          "absolute_l2": 0.04115153671450563,
+          "relative_l2": 0.05638589564391011,
+          "absolute_h1_seminorm": 0.40074764106635113,
+          "relative_h1_seminorm": 0.09688213761646283,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0016",
+          "absolute_l2": 0.026153485173182552,
+          "relative_l2": 0.03179616833366211,
+          "absolute_h1_seminorm": 0.2178395955214874,
+          "relative_h1_seminorm": 0.05014842113182107,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0017",
+          "absolute_l2": 0.01825461861782955,
+          "relative_l2": 0.0244192818218175,
+          "absolute_h1_seminorm": 0.20608045949877773,
+          "relative_h1_seminorm": 0.04979852201071541,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0018",
+          "absolute_l2": 0.01902426707444241,
+          "relative_l2": 0.026342811261241404,
+          "absolute_h1_seminorm": 0.1796057282537241,
+          "relative_h1_seminorm": 0.04459639414401532,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0019",
+          "absolute_l2": 0.017878193488810357,
+          "relative_l2": 0.021700740309396557,
+          "absolute_h1_seminorm": 0.21591507026830076,
+          "relative_h1_seminorm": 0.0510094304023048,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0020",
+          "absolute_l2": 0.015474452899548586,
+          "relative_l2": 0.02017605766510331,
+          "absolute_h1_seminorm": 0.17010002931192816,
+          "relative_h1_seminorm": 0.03940118264937641,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0021",
+          "absolute_l2": 0.01662821851923407,
+          "relative_l2": 0.023416765325551005,
+          "absolute_h1_seminorm": 0.17907484224594192,
+          "relative_h1_seminorm": 0.044661522128846616,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0022",
+          "absolute_l2": 0.021826362244927813,
+          "relative_l2": 0.027545317073383358,
+          "absolute_h1_seminorm": 0.2750601934449965,
+          "relative_h1_seminorm": 0.06544204930411372,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0023",
+          "absolute_l2": 0.023392366678342626,
+          "relative_l2": 0.032982512800714237,
+          "absolute_h1_seminorm": 0.2508594960603601,
+          "relative_h1_seminorm": 0.06387870979421334,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0024",
+          "absolute_l2": 0.017390392383302415,
+          "relative_l2": 0.023368589701753383,
+          "absolute_h1_seminorm": 0.21305359215059713,
+          "relative_h1_seminorm": 0.05080955691273149,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0025",
+          "absolute_l2": 0.029859729646901423,
+          "relative_l2": 0.04556468308988489,
+          "absolute_h1_seminorm": 0.28022758381491847,
+          "relative_h1_seminorm": 0.07127462015280268,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0026",
+          "absolute_l2": 0.020251163426142554,
+          "relative_l2": 0.027186040168866055,
+          "absolute_h1_seminorm": 0.21495444286551849,
+          "relative_h1_seminorm": 0.05273976172719559,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0027",
+          "absolute_l2": 0.019880921902671853,
+          "relative_l2": 0.024680186068782112,
+          "absolute_h1_seminorm": 0.25239418777330774,
+          "relative_h1_seminorm": 0.058299772084282504,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0028",
+          "absolute_l2": 0.01818279129026645,
+          "relative_l2": 0.023106518997806295,
+          "absolute_h1_seminorm": 0.23664836206849377,
+          "relative_h1_seminorm": 0.05485219382308675,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0029",
+          "absolute_l2": 0.018797219145489423,
+          "relative_l2": 0.02567752920906044,
+          "absolute_h1_seminorm": 0.2352814657518468,
+          "relative_h1_seminorm": 0.0578017498698286,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0030",
+          "absolute_l2": 0.016675166219904704,
+          "relative_l2": 0.022414658426629736,
+          "absolute_h1_seminorm": 0.2302042369399322,
+          "relative_h1_seminorm": 0.054253630392828246,
+          "boundary_max": 0.0
+        },
+        {
+          "sample_id": "reaction-v1:val:0031",
+          "absolute_l2": 0.014610411156876281,
+          "relative_l2": 0.020160183465634914,
+          "absolute_h1_seminorm": 0.18843547302934646,
+          "relative_h1_seminorm": 0.047004919106692404,
+          "boundary_max": 0.0
+        }
+      ],
+      "coefficient_mean_relative_l2": 0.024211314620900693,
+      "projection_mean_relative_l2": 0.008811506698868654
+    }
+  },
+  "test_evaluations": 0
+}

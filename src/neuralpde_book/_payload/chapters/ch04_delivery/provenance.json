@@ -1,0 +1,17 @@
+{
+  "version": "ch04-unified-delivery-v1",
+  "date": "2026-10-25",
+  "implementation": "new orchestration, modal adaptation, full-budget hybrid experiments and independent assessment over frozen Chapter 4 sources",
+  "frozen_dependencies": [
+    "ch04",
+    "ch04_adaptation",
+    "ch04_operator_learning",
+    "ch04_operator_adaptation",
+    "ch04_completion"
+  ],
+  "provenance_chain": "See each dependency provenance.json and PORT_MANIFEST.json; no new author-code replication is claimed.",
+  "selection_freeze": "results/ch04/unified_delivery_v1/SELECTION_FROZEN.json",
+  "scope": "16 methods, 3 seeds, 72 explicitly separated checkpoint variants; fixed 17-mode linear quadratic elliptic control",
+  "test_policy": "Fresh 64-case holdout generated after all model selections; now viewed, never use it for further tuning of this release.",
+  "representation_limits": "Bilevel, Deep Uzawa, FEM-NN use fixed sine features and trainable heads; operator train-only output-head correction reported separately."
+}

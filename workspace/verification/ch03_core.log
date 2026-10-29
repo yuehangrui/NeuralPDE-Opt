@@ -1,0 +1,365 @@
+test_conflicting_or_silently_ignored_settings_are_rejected (test_ch03_adapted_training.AdaptedTrainingTests.test_conflicting_or_silently_ignored_settings_are_rejected) ... ok
+test_dimensionless_losses_and_gradients_are_unit_invariant (test_ch03_adapted_training.AdaptedTrainingTests.test_dimensionless_losses_and_gradients_are_unit_invariant) ... ok
+test_experiment_driver_defaults_to_train_val_only (test_ch03_adapted_training.AdaptedTrainingTests.test_experiment_driver_defaults_to_train_val_only) ... ok
+test_minibatch_epochs_resume_selection_and_test_isolation_all_models (test_ch03_adapted_training.AdaptedTrainingTests.test_minibatch_epochs_resume_selection_and_test_isolation_all_models) ... fno step=2 train_L2=1.202666 val_L2=1.202651 best_step=2
+fno step=3 train_L2=1.198345 val_L2=1.198388 best_step=3
+fno step=2 train_L2=1.202666 val_L2=1.202651 best_step=2
+fno step=3 train_L2=1.198345 val_L2=1.198388 best_step=3
+deeponet step=2 train_L2=1.001115 val_L2=1.001154 best_step=2
+deeponet step=3 train_L2=1.000592 val_L2=1.000649 best_step=3
+deeponet step=2 train_L2=1.001115 val_L2=1.001154 best_step=2
+deeponet step=3 train_L2=1.000592 val_L2=1.000649 best_step=3
+gno step=2 train_L2=0.986054 val_L2=0.988761 best_step=2
+gno step=3 train_L2=0.984748 val_L2=0.987432 best_step=3
+gno step=2 train_L2=0.986054 val_L2=0.988761 best_step=2
+gno step=3 train_L2=0.984748 val_L2=0.987432 best_step=3
+transformer step=2 train_L2=1.921145 val_L2=1.960315 best_step=2
+transformer step=3 train_L2=1.905769 val_L2=1.946349 best_step=3
+transformer step=2 train_L2=1.921145 val_L2=1.960315 best_step=2
+transformer step=3 train_L2=1.905769 val_L2=1.946349 best_step=3
+ok
+test_plateau_uses_configured_parameters (test_ch03_adapted_training.AdaptedTrainingTests.test_plateau_uses_configured_parameters) ... ok
+test_subset_diagnostic_selects_train_without_test (test_ch03_adapted_training.AdaptedTrainingTests.test_subset_diagnostic_selects_train_without_test) ... fno step=2 train_L2=1.198711 val_L2=1.230840 best_step=2
+fno step=3 train_L2=1.196535 val_L2=1.228448 best_step=3
+ok
+test_trunk_oracle_recovers_exact_representable_fields (test_ch03_adapted_training.AdaptedTrainingTests.test_trunk_oracle_recovers_exact_representable_fields) ... ok
+test_uneven_microbatches_preserve_clipped_adam_update (test_ch03_adapted_training.AdaptedTrainingTests.test_uneven_microbatches_preserve_clipped_adam_update) ... fno step=1 train_L2=1.209138 val_L2=1.209054 best_step=1
+fno step=1 train_L2=1.209138 val_L2=1.209054 best_step=1
+ok
+test_defaults_keep_checkpoint_keys_and_predictions (test_ch03_coordinate_features.CoordinateFeatureTests.test_defaults_keep_checkpoint_keys_and_predictions) ... ok
+test_fourier_queries_chunking_boundaries_and_gradients (test_ch03_coordinate_features.CoordinateFeatureTests.test_fourier_queries_chunking_boundaries_and_gradients) ... ok
+test_full_data_scope_does_not_expand_legacy_limit (test_ch03_coordinate_features.CoordinateFeatureTests.test_full_data_scope_does_not_expand_legacy_limit) ... ok
+test_append_stability_split_separation_and_arbitrary_rank (test_ch03_data.Chapter3DataTests.test_append_stability_split_separation_and_arbitrary_rank) ... ok
+test_nested_inputs_and_axes (test_ch03_data.Chapter3DataTests.test_nested_inputs_and_axes) ... ok
+test_p1_reconstruction_linear_precision (test_ch03_data.Chapter3DataTests.test_p1_reconstruction_linear_precision) ... ok
+test_source_linearity_and_coefficient_scaling (test_ch03_data.Chapter3DataTests.test_source_linearity_and_coefficient_scaling) ... ok
+test_variable_coefficient_manufactured_convergence (test_ch03_data.Chapter3DataTests.test_variable_coefficient_manufactured_convergence) ... ok
+test_boundary_factor_enforces_edges_for_all_query_layouts (test_ch03_deeponet.Chapter3DeepONetTests.test_boundary_factor_enforces_edges_for_all_query_layouts) ... ok
+test_chunked_predictions_and_all_gradients_match (test_ch03_deeponet.Chapter3DeepONetTests.test_chunked_predictions_and_all_gradients_match) ... ok
+test_cuda_two_actual_optimization_steps_full_65_grid (test_ch03_deeponet.Chapter3DeepONetTests.test_cuda_two_actual_optimization_steps_full_65_grid) ... ok
+test_explicit_encoding_is_reusable_and_never_cached_on_module (test_ch03_deeponet.Chapter3DeepONetTests.test_explicit_encoding_is_reusable_and_never_cached_on_module) ... ok
+test_finite_values_supported_dtypes_and_explicit_query_cast (test_ch03_deeponet.Chapter3DeepONetTests.test_finite_values_supported_dtypes_and_explicit_query_cast) ... ok
+test_fixed_sensors_ignore_unobserved_values (test_ch03_deeponet.Chapter3DeepONetTests.test_fixed_sensors_ignore_unobserved_values) ... ok
+test_float64_field_and_query_gradients (test_ch03_deeponet.Chapter3DeepONetTests.test_float64_field_and_query_gradients) ... ok
+test_invalid_fields_and_fixed_input_resolution (test_ch03_deeponet.Chapter3DeepONetTests.test_invalid_fields_and_fixed_input_resolution) ... ok
+test_invalid_queries_and_hyperparameters (test_ch03_deeponet.Chapter3DeepONetTests.test_invalid_queries_and_hyperparameters) ... ok
+test_joint_nonlinear_branch_has_coefficient_source_interaction (test_ch03_deeponet.Chapter3DeepONetTests.test_joint_nonlinear_branch_has_coefficient_source_interaction) ... ok
+test_representation_metadata_and_legacy_state_keys (test_ch03_deeponet.Chapter3DeepONetTests.test_representation_metadata_and_legacy_state_keys) ... ok
+test_sensor_layout_includes_endpoint_and_records_order (test_ch03_deeponet.Chapter3DeepONetTests.test_sensor_layout_includes_endpoint_and_records_order) ... ok
+test_shared_batched_queries_and_full_grid_are_consistent (test_ch03_deeponet.Chapter3DeepONetTests.test_shared_batched_queries_and_full_grid_are_consistent) ... ok
+test_configuration_is_immutable_on_resume (test_ch03_experimental_data.ExperimentalDataTests.test_configuration_is_immutable_on_resume) ... ch03-e20261021-train-000000: full_audit=True passed=True seconds=0.014
+ok
+test_failed_gate_stops_before_unselected_samples (test_ch03_experimental_data.ExperimentalDataTests.test_failed_gate_stops_before_unselected_samples) ... ch03-e20261021-train-000000: full_audit=True passed=False seconds=0.014
+ok
+test_gate_is_required_and_partial_generation_resumes_from_records (test_ch03_experimental_data.ExperimentalDataTests.test_gate_is_required_and_partial_generation_resumes_from_records) ... ch03-e20261021-train-000000: full_audit=True passed=True seconds=0.014
+ch03-e20261021-val-000000: full_audit=True passed=True seconds=0.014
+ch03-e20261021-test-000000: full_audit=True passed=True seconds=0.014
+ch03-e20261021-train-000001: full_audit=False passed=True seconds=0.003
+ok
+test_gate_reloads_labels_and_rejects_a_valid_checksum_with_bad_weak_residual (test_ch03_experimental_data.ExperimentalDataTests.test_gate_reloads_labels_and_rejects_a_valid_checksum_with_bad_weak_residual) ... ch03-e20261021-train-000000: full_audit=True passed=True seconds=0.014
+ch03-e20261021-val-000000: full_audit=True passed=True seconds=0.014
+ch03-e20261021-test-000000: full_audit=True passed=True seconds=0.014
+ok
+test_production_requires_real_audit_budget_and_approved_grid (test_ch03_experimental_data.ExperimentalDataTests.test_production_requires_real_audit_budget_and_approved_grid) ... ok
+test_raw_field_schema_and_flat_manifest_match_existing_consumers (test_ch03_experimental_data.ExperimentalDataTests.test_raw_field_schema_and_flat_manifest_match_existing_consumers) ... ch03-e20261021-train-000000: full_audit=True passed=True seconds=0.014
+ch03-e20261021-val-000000: full_audit=True passed=True seconds=0.014
+ch03-e20261021-test-000000: full_audit=True passed=True seconds=0.014
+ch03-e20261021-train-000001: full_audit=False passed=True seconds=0.003
+ok
+test_strict_audit_detects_corruption_and_untracked_file (test_ch03_experimental_data.ExperimentalDataTests.test_strict_audit_detects_corruption_and_untracked_file) ... ch03-e20261021-train-000000: full_audit=True passed=True seconds=0.014
+ch03-e20261021-val-000000: full_audit=True passed=True seconds=0.014
+ch03-e20261021-test-000000: full_audit=True passed=True seconds=0.013
+ch03-e20261021-train-000001: full_audit=False passed=True seconds=0.003
+ok
+test_clipping_preserves_negative_frequency_parameter_identity (test_ch03_fno.FourierOperatorTests.test_clipping_preserves_negative_frequency_parameter_identity) ... ok
+test_closed_grid_axes (test_ch03_fno.FourierOperatorTests.test_closed_grid_axes) ... ok
+test_full_model_backpropagates_to_both_inputs_and_spectral_blocks (test_ch03_fno.FourierOperatorTests.test_full_model_backpropagates_to_both_inputs_and_spectral_blocks) ... ok
+test_one_model_runs_on_odd_even_and_finer_grids (test_ch03_fno.FourierOperatorTests.test_one_model_runs_on_odd_even_and_finer_grids) ... ok
+test_optional_boundary_and_validation (test_ch03_fno.FourierOperatorTests.test_optional_boundary_and_validation) ... ok
+test_real_parameter_pairs_follow_double_precision (test_ch03_fno.FourierOperatorTests.test_real_parameter_pairs_follow_double_precision) ... ok
+test_representation_contract_and_nonfinite_rejection (test_ch03_fno.FourierOperatorTests.test_representation_contract_and_nonfinite_rejection) ... ok
+test_signed_frequency_blocks_and_high_mode_rejection (test_ch03_fno.FourierOperatorTests.test_signed_frequency_blocks_and_high_mode_rejection) ... ok
+test_spectral_identity_when_all_frequencies_retained (test_ch03_fno.FourierOperatorTests.test_spectral_identity_when_all_frequencies_retained) ... ok
+test_full_checkpoint_inference_batch_and_legacy_guard (test_ch03_full_training.FullTrainingTests.test_full_checkpoint_inference_batch_and_legacy_guard) ... fno step=1 train_L2=1.209140 val_L2=1.209053 best_step=1
+ok
+test_full_epoch_resume_and_deferred_selection_all_architectures (test_ch03_full_training.FullTrainingTests.test_full_epoch_resume_and_deferred_selection_all_architectures) ... fno step=1 train_L2=1.209140 val_L2=1.209053 best_step=1
+fno step=2 train_L2=1.206936 val_L2=1.206876 best_step=2
+fno step=3 train_L2=1.204728 val_L2=1.204697 best_step=3
+fno step=4 train_L2=1.202516 val_L2=1.202515 best_step=4
+fno step=1 train_L2=1.209140 val_L2=1.209053 best_step=1
+fno step=2 train_L2=1.206936 val_L2=1.206876 best_step=2
+fno step=3 train_L2=1.204728 val_L2=1.204697 best_step=3
+fno step=4 train_L2=1.202516 val_L2=1.202515 best_step=4
+deeponet step=1 train_L2=1.003992 val_L2=1.003947 best_step=1
+deeponet step=2 train_L2=1.002847 val_L2=1.002778 best_step=2
+deeponet step=3 train_L2=1.002196 val_L2=1.002112 best_step=3
+deeponet step=4 train_L2=1.002008 val_L2=1.001920 best_step=4
+deeponet step=1 train_L2=1.003992 val_L2=1.003947 best_step=1
+deeponet step=2 train_L2=1.002847 val_L2=1.002778 best_step=2
+deeponet step=3 train_L2=1.002196 val_L2=1.002112 best_step=3
+deeponet step=4 train_L2=1.002008 val_L2=1.001920 best_step=4
+gno step=1 train_L2=0.992659 val_L2=0.995502 best_step=1
+gno step=2 train_L2=0.990348 val_L2=0.993130 best_step=2
+gno step=3 train_L2=0.988998 val_L2=0.991745 best_step=3
+gno step=4 train_L2=0.988603 val_L2=0.991340 best_step=4
+gno step=1 train_L2=0.992659 val_L2=0.995502 best_step=1
+gno step=2 train_L2=0.990348 val_L2=0.993130 best_step=2
+gno step=3 train_L2=0.988998 val_L2=0.991745 best_step=3
+gno step=4 train_L2=0.988603 val_L2=0.991340 best_step=4
+transformer step=1 train_L2=1.984800 val_L2=2.020961 best_step=1
+transformer step=2 train_L2=1.955874 val_L2=1.996195 best_step=2
+transformer step=3 train_L2=1.937684 val_L2=1.980798 best_step=3
+transformer step=4 train_L2=1.932139 val_L2=1.976155 best_step=4
+transformer step=1 train_L2=1.984800 val_L2=2.020961 best_step=1
+transformer step=2 train_L2=1.955874 val_L2=1.996195 best_step=2
+transformer step=3 train_L2=1.937684 val_L2=1.980798 best_step=3
+transformer step=4 train_L2=1.932139 val_L2=1.976155 best_step=4
+ok
+test_microbatch_accumulation_matches_full_batch_update (test_ch03_full_training.FullTrainingTests.test_microbatch_accumulation_matches_full_batch_update) ... fno step=1 train_L2=1.209140 val_L2=1.209053 best_step=1
+fno step=1 train_L2=1.209140 val_L2=1.209053 best_step=1
+ok
+test_constant_integral_is_consistent_under_grid_refinement (test_ch03_gno.GraphOperatorTests.test_constant_integral_is_consistent_under_grid_refinement) ... ok
+test_cuda_deterministic_forward_backward_and_device_cache_reset (test_ch03_gno.GraphOperatorTests.test_cuda_deterministic_forward_backward_and_device_cache_reset) ... ok
+test_default_radius_supports_public_65_grid_without_dense_graph (test_ch03_gno.GraphOperatorTests.test_default_radius_supports_public_65_grid_without_dense_graph) ... ok
+test_field_validation_and_grid_only_contract (test_ch03_gno.GraphOperatorTests.test_field_validation_and_grid_only_contract) ... ok
+test_input_and_parameter_gradients (test_ch03_gno.GraphOperatorTests.test_input_and_parameter_gradients) ... ok
+test_integral_uses_source_quadrature_without_degree_normalization (test_ch03_gno.GraphOperatorTests.test_integral_uses_source_quadrature_without_degree_normalization) ... ok
+test_node_permutation_equivariance (test_ch03_gno.GraphOperatorTests.test_node_permutation_equivariance) ... ok
+test_nonuniform_trapezoid_and_p1_linear_precision (test_ch03_gno.GraphOperatorTests.test_nonuniform_trapezoid_and_p1_linear_precision) ... ok
+test_optional_boundary_and_invalid_inputs (test_ch03_gno.GraphOperatorTests.test_optional_boundary_and_invalid_inputs) ... ok
+test_p1_uses_sw_ne_triangles_rather_than_bilinear_shape_functions (test_ch03_gno.GraphOperatorTests.test_p1_uses_sw_ne_triangles_rather_than_bilinear_shape_functions) ... ok
+test_radius_edges_and_edge_budget (test_ch03_gno.GraphOperatorTests.test_radius_edges_and_edge_budget) ... ok
+test_regular_grid_matches_explicit_points_and_has_zero_boundary (test_ch03_gno.GraphOperatorTests.test_regular_grid_matches_explicit_points_and_has_zero_boundary) ... ok
+test_stride_preserves_short_final_cell_and_full_output_boundary (test_ch03_gno.GraphOperatorTests.test_stride_preserves_short_final_cell_and_full_output_boundary) ... ok
+test_topology_cache_matches_coordinates_radius_dtype_and_is_not_serialized (test_ch03_gno.GraphOperatorTests.test_topology_cache_matches_coordinates_radius_dtype_and_is_not_serialized) ... ok
+fno step=0 train_L2=1.210625 val_L2=1.210625 best_step=0
+fno step=1 train_L2=1.208410 val_L2=1.208410 best_step=1
+deeponet step=0 train_L2=1.002598 val_L2=1.002598 best_step=0
+deeponet step=1 train_L2=1.001338 val_L2=1.001338 best_step=1
+gno step=0 train_L2=0.992267 val_L2=0.992267 best_step=0
+gno step=1 train_L2=0.990397 val_L2=0.990397 best_step=1
+transformer step=0 train_L2=2.000434 val_L2=2.000434 best_step=0
+transformer step=1 train_L2=1.967125 val_L2=1.967125 best_step=1
+test_all_four_resolution_diagnostic_and_provenance (test_ch03_operator_inference.OperatorInferenceTests.test_all_four_resolution_diagnostic_and_provenance) ... ok
+test_cuda_reload_matches_training_after_default_tf32_reset (test_ch03_operator_inference.OperatorInferenceTests.test_cuda_reload_matches_training_after_default_tf32_reset) ... fno step=0 train_L2=1.210625 val_L2=1.210625 best_step=0
+fno step=1 train_L2=1.208410 val_L2=1.208410 best_step=1
+ok
+test_four_models_predict_raw_fields_without_labels (test_ch03_operator_inference.OperatorInferenceTests.test_four_models_predict_raw_fields_without_labels) ... ok
+test_invalid_inputs_and_coordinate_layouts (test_ch03_operator_inference.OperatorInferenceTests.test_invalid_inputs_and_coordinate_layouts) ... ok
+test_query_chunking_and_shared_per_sample_layouts (test_ch03_operator_inference.OperatorInferenceTests.test_query_chunking_and_shared_per_sample_layouts) ... ok
+test_cuda_resume_matches_continuous_all_models_exactly (test_ch03_operator_training.OperatorTrainingTests.test_cuda_resume_matches_continuous_all_models_exactly) ... fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=2 train_L2=1.207023 val_L2=1.206948 best_step=2
+fno step=3 train_L2=1.204869 val_L2=1.204824 best_step=3
+fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=2 train_L2=1.207023 val_L2=1.206948 best_step=2
+fno step=3 train_L2=1.204869 val_L2=1.204824 best_step=3
+deeponet step=0 train_L2=1.005385 val_L2=1.005367 best_step=0
+deeponet step=2 train_L2=1.002825 val_L2=1.002801 best_step=2
+deeponet step=3 train_L2=1.001726 val_L2=1.001732 best_step=3
+deeponet step=0 train_L2=1.005385 val_L2=1.005367 best_step=0
+deeponet step=2 train_L2=1.002825 val_L2=1.002801 best_step=2
+deeponet step=3 train_L2=1.001726 val_L2=1.001732 best_step=3
+gno step=0 train_L2=0.995377 val_L2=0.998292 best_step=0
+gno step=2 train_L2=0.990095 val_L2=0.992857 best_step=2
+gno step=3 train_L2=0.987514 val_L2=0.990223 best_step=3
+gno step=0 train_L2=0.995377 val_L2=0.998292 best_step=0
+gno step=2 train_L2=0.990095 val_L2=0.992857 best_step=2
+gno step=3 train_L2=0.987514 val_L2=0.990223 best_step=3
+transformer step=0 train_L2=2.015875 val_L2=2.047929 best_step=0
+transformer step=2 train_L2=1.959361 val_L2=1.999355 best_step=2
+transformer step=3 train_L2=1.929164 val_L2=1.972309 best_step=3
+transformer step=0 train_L2=2.015875 val_L2=2.047929 best_step=0
+transformer step=2 train_L2=1.959361 val_L2=1.999355 best_step=2
+transformer step=3 train_L2=1.929164 val_L2=1.972309 best_step=3
+ok
+test_deferred_suite_freezes_without_test_then_finalizes_once (test_ch03_operator_training.OperatorTrainingTests.test_deferred_suite_freezes_without_test_then_finalizes_once) ... fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.209171 val_L2=1.209072 best_step=1
+fno step=2 train_L2=1.207023 val_L2=1.206948 best_step=2
+deeponet step=0 train_L2=1.005385 val_L2=1.005367 best_step=0
+deeponet step=1 train_L2=1.004015 val_L2=1.003980 best_step=1
+deeponet step=2 train_L2=1.002825 val_L2=1.002801 best_step=2
+gno step=0 train_L2=0.995377 val_L2=0.998292 best_step=0
+gno step=1 train_L2=0.992702 val_L2=0.995525 best_step=1
+gno step=2 train_L2=0.990095 val_L2=0.992857 best_step=2
+transformer step=0 train_L2=2.015875 val_L2=2.047929 best_step=0
+transformer step=1 train_L2=1.988525 val_L2=2.025115 best_step=1
+transformer step=2 train_L2=1.959361 val_L2=1.999355 best_step=2
+ok
+test_exact_p1_metrics_and_train_statistics (test_ch03_operator_training.OperatorTrainingTests.test_exact_p1_metrics_and_train_statistics) ... ok
+test_failed_export_resumes_without_repeating_committed_test (test_ch03_operator_training.OperatorTrainingTests.test_failed_export_resumes_without_repeating_committed_test) ... fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.209171 val_L2=1.209072 best_step=1
+fno step=2 train_L2=1.207023 val_L2=1.206948 best_step=2
+ok
+test_finalization_export_failure_reuses_committed_test (test_ch03_operator_training.OperatorTrainingTests.test_finalization_export_failure_reuses_committed_test) ... fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.209171 val_L2=1.209072 best_step=1
+fno step=2 train_L2=1.207023 val_L2=1.206948 best_step=2
+ok
+test_four_models_train_reload_and_safe_completed_skip (test_ch03_operator_training.OperatorTrainingTests.test_four_models_train_reload_and_safe_completed_skip) ... fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.209171 val_L2=1.209072 best_step=1
+fno step=2 train_L2=1.207023 val_L2=1.206948 best_step=2
+deeponet step=0 train_L2=1.005385 val_L2=1.005367 best_step=0
+deeponet step=1 train_L2=1.004015 val_L2=1.003980 best_step=1
+deeponet step=2 train_L2=1.002825 val_L2=1.002801 best_step=2
+gno step=0 train_L2=0.995377 val_L2=0.998292 best_step=0
+gno step=1 train_L2=0.992702 val_L2=0.995525 best_step=1
+gno step=2 train_L2=0.990095 val_L2=0.992857 best_step=2
+transformer step=0 train_L2=2.015875 val_L2=2.047929 best_step=0
+transformer step=1 train_L2=1.988525 val_L2=2.025115 best_step=1
+transformer step=2 train_L2=1.959361 val_L2=1.999355 best_step=2
+ok
+test_integer_configuration_rejects_fractional_and_boolean_fields (test_ch03_operator_training.OperatorTrainingTests.test_integer_configuration_rejects_fractional_and_boolean_fields) ... ok
+test_integrity_resume_mismatch_and_exclusive_lock (test_ch03_operator_training.OperatorTrainingTests.test_integrity_resume_mismatch_and_exclusive_lock) ... fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.209171 val_L2=1.209072 best_step=1
+ok
+test_objective_and_both_schedulers_resume_exactly (test_ch03_operator_training.OperatorTrainingTests.test_objective_and_both_schedulers_resume_exactly) ... fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.210269 val_L2=1.210160 best_step=1
+fno step=2 train_L2=1.208106 val_L2=1.208017 best_step=2
+fno step=3 train_L2=1.207003 val_L2=1.206928 best_step=3
+fno step=4 train_L2=1.206981 val_L2=1.206906 best_step=4
+fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.210269 val_L2=1.210160 best_step=1
+fno step=2 train_L2=1.208106 val_L2=1.208017 best_step=2
+fno step=3 train_L2=1.207003 val_L2=1.206928 best_step=3
+fno step=4 train_L2=1.206981 val_L2=1.206906 best_step=4
+fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.209197 val_L2=1.209091 best_step=1
+fno step=2 train_L2=1.208115 val_L2=1.208020 best_step=2
+fno step=3 train_L2=1.207570 val_L2=1.207481 best_step=3
+fno step=4 train_L2=1.207301 val_L2=1.207215 best_step=4
+fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.209197 val_L2=1.209091 best_step=1
+fno step=2 train_L2=1.208115 val_L2=1.208020 best_step=2
+fno step=3 train_L2=1.207570 val_L2=1.207481 best_step=3
+fno step=4 train_L2=1.207301 val_L2=1.207215 best_step=4
+ok
+test_old_best_checkpoint_and_subset_overfit_mode (test_ch03_operator_training.OperatorTrainingTests.test_old_best_checkpoint_and_subset_overfit_mode) ... fno step=0 train_L2=1.189854 val_L2=1.244392 best_step=0
+fno step=1 train_L2=1.187816 val_L2=1.240972 best_step=1
+fno step=2 train_L2=1.185775 val_L2=1.237513 best_step=2
+ok
+test_relative_objective_and_explicit_experiment_limits (test_ch03_operator_training.OperatorTrainingTests.test_relative_objective_and_explicit_experiment_limits) ... ok
+test_resume_matches_continuous_all_models_exactly (test_ch03_operator_training.OperatorTrainingTests.test_resume_matches_continuous_all_models_exactly) ... fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=3 train_L2=1.204869 val_L2=1.204824 best_step=3
+fno step=4 train_L2=1.202710 val_L2=1.202690 best_step=4
+fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=3 train_L2=1.204869 val_L2=1.204824 best_step=3
+fno step=4 train_L2=1.202710 val_L2=1.202690 best_step=4
+deeponet step=0 train_L2=1.005385 val_L2=1.005367 best_step=0
+deeponet step=3 train_L2=1.001726 val_L2=1.001732 best_step=3
+deeponet step=4 train_L2=1.000599 val_L2=1.000616 best_step=4
+deeponet step=0 train_L2=1.005385 val_L2=1.005367 best_step=0
+deeponet step=3 train_L2=1.001726 val_L2=1.001732 best_step=3
+deeponet step=4 train_L2=1.000599 val_L2=1.000616 best_step=4
+gno step=0 train_L2=0.995377 val_L2=0.998292 best_step=0
+gno step=3 train_L2=0.987514 val_L2=0.990223 best_step=3
+gno step=4 train_L2=0.984900 val_L2=0.987547 best_step=4
+gno step=0 train_L2=0.995377 val_L2=0.998292 best_step=0
+gno step=3 train_L2=0.987514 val_L2=0.990223 best_step=3
+gno step=4 train_L2=0.984900 val_L2=0.987547 best_step=4
+transformer step=0 train_L2=2.015875 val_L2=2.047929 best_step=0
+transformer step=3 train_L2=1.929164 val_L2=1.972309 best_step=3
+transformer step=4 train_L2=1.893624 val_L2=1.942667 best_step=4
+transformer step=0 train_L2=2.015875 val_L2=2.047929 best_step=0
+transformer step=3 train_L2=1.929164 val_L2=1.972309 best_step=3
+transformer step=4 train_L2=1.893624 val_L2=1.942667 best_step=4
+ok
+test_resume_rejects_corrupted_checkpoint_content (test_ch03_operator_training.OperatorTrainingTests.test_resume_rejects_corrupted_checkpoint_content) ... fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.209171 val_L2=1.209072 best_step=1
+ok
+test_config_validation (test_ch03_reaction.ReactionTests.test_config_validation) ... ok
+test_constant_reaction_is_mass_not_stiffness (test_ch03_reaction.ReactionTests.test_constant_reaction_is_mass_not_stiffness) ... ok
+test_invalid_coefficients_rejected (test_ch03_reaction.ReactionTests.test_invalid_coefficients_rejected) ... ok
+test_manufactured_convergence (test_ch03_reaction.ReactionTests.test_manufactured_convergence) ... ok
+test_normalization_train_only_and_constant_channel (test_ch03_reaction.ReactionTests.test_normalization_train_only_and_constant_channel) ... ok
+test_old_schema_and_test_loader_rejected (test_ch03_reaction.ReactionTests.test_old_schema_and_test_loader_rejected) ... ok
+test_reaction_increase_reduces_solution (test_ch03_reaction.ReactionTests.test_reaction_increase_reduces_solution) ... ok
+test_residual_boundary_and_source_linearity (test_ch03_reaction.ReactionTests.test_residual_boundary_and_source_linearity) ... ok
+test_streams_disjoint_append_stable_and_bounds (test_ch03_reaction.ReactionTests.test_streams_disjoint_append_stable_and_bounds) ... ok
+test_variable_matrix_spd (test_ch03_reaction.ReactionTests.test_variable_matrix_spd) ... ok
+test_plateau_and_cosine_resume_learning_rate (test_ch03_reaction_training.ReactionTrainingTests.test_plateau_and_cosine_resume_learning_rate) ... ok
+test_protocol_rejects_test_old_schema_and_formal_subsets (test_ch03_reaction_training.ReactionTrainingTests.test_protocol_rejects_test_old_schema_and_formal_subsets) ... ok
+test_public_array_guard_blocks_test_and_reference (test_ch03_reaction_training.ReactionTrainingTests.test_public_array_guard_blocks_test_and_reference) ... ok
+test_uneven_gradient_accumulation_matches_full_batch (test_ch03_reaction_training.ReactionTrainingTests.test_uneven_gradient_accumulation_matches_full_batch) ... ok
+test_certificate_is_checked_without_loading_any_array (test_ch03_review_fixes.ReviewFixTests.test_certificate_is_checked_without_loading_any_array) ... ok
+test_changed_audit_config_and_downgraded_marker_are_rejected (test_ch03_review_fixes.ReviewFixTests.test_changed_audit_config_and_downgraded_marker_are_rejected) ... ok
+test_diagnosis_rejects_empty_and_incomplete_experiments (test_ch03_review_fixes.ReviewFixTests.test_diagnosis_rejects_empty_and_incomplete_experiments) ... fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.209171 val_L2=1.209072 best_step=1
+fno step=2 train_L2=1.207023 val_L2=1.206948 best_step=2
+fno step=3 train_L2=1.204869 val_L2=1.204824 best_step=3
+fno step=4 train_L2=1.202710 val_L2=1.202690 best_step=4
+ok
+test_diagnosis_rejects_stale_and_freshly_certified_wrong_dataset (test_ch03_review_fixes.ReviewFixTests.test_diagnosis_rejects_stale_and_freshly_certified_wrong_dataset) ... fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.209171 val_L2=1.209072 best_step=1
+fno step=2 train_L2=1.207023 val_L2=1.206948 best_step=2
+fno step=3 train_L2=1.204869 val_L2=1.204824 best_step=3
+fno step=4 train_L2=1.202710 val_L2=1.202690 best_step=4
+fno step=0 train_L2=1.211342 val_L2=1.211229 best_step=0
+fno step=1 train_L2=1.209171 val_L2=1.209072 best_step=1
+fno step=2 train_L2=1.207023 val_L2=1.206948 best_step=2
+fno step=3 train_L2=1.204869 val_L2=1.204824 best_step=3
+fno step=4 train_L2=1.202710 val_L2=1.202690 best_step=4
+ok
+test_diagnosis_supports_seed_directory_subset_and_never_loads_test (test_ch03_review_fixes.ReviewFixTests.test_diagnosis_supports_seed_directory_subset_and_never_loads_test) ... fno step=0 train_L2=1.189854 val_L2=1.244392 best_step=0
+fno step=1 train_L2=1.187816 val_L2=1.240972 best_step=1
+fno step=2 train_L2=1.185775 val_L2=1.237513 best_step=2
+fno step=3 train_L2=1.183729 val_L2=1.234027 best_step=3
+fno step=4 train_L2=1.181676 val_L2=1.230515 best_step=4
+ok
+test_explicit_legacy_pilot_metadata_remains_supported (test_ch03_review_fixes.ReviewFixTests.test_explicit_legacy_pilot_metadata_remains_supported) ... ok
+test_legacy_subset_selects_and_schedules_training_mse (test_ch03_review_fixes.ReviewFixTests.test_legacy_subset_selects_and_schedules_training_mse) ... fno step=1 train_L2=1.187816 val_L2=0.815787 best_step=1
+fno step=2 train_L2=1.185775 val_L2=0.817491 best_step=2
+fno step=3 train_L2=1.183729 val_L2=0.819202 best_step=3
+fno step=4 train_L2=1.181677 val_L2=0.820919 best_step=4
+fno step=1 train_L2=1.187816 val_L2=0.815787 best_step=1
+fno step=2 train_L2=1.185775 val_L2=0.817491 best_step=2
+fno step=3 train_L2=1.183729 val_L2=0.819202 best_step=3
+fno step=4 train_L2=1.181677 val_L2=0.820919 best_step=4
+ok
+test_stale_complete_cannot_authorize_manifest_updated_labels (test_ch03_review_fixes.ReviewFixTests.test_stale_complete_cannot_authorize_manifest_updated_labels) ... ok
+test_chunking_preserves_input_query_and_parameter_gradients (test_ch03_transformer.Chapter3TransformerTests.test_chunking_preserves_input_query_and_parameter_gradients) ... ok
+test_cuda_two_actual_optimization_steps_full_65_grid (test_ch03_transformer.Chapter3TransformerTests.test_cuda_two_actual_optimization_steps_full_65_grid) ... ok
+test_default_grid_uses_sparse_source_and_bounded_query_blocks (test_ch03_transformer.Chapter3TransformerTests.test_default_grid_uses_sparse_source_and_bounded_query_blocks) ... ok
+test_duplicate_token_split_weight_and_source_order_invariance (test_ch03_transformer.Chapter3TransformerTests.test_duplicate_token_split_weight_and_source_order_invariance) ... ok
+test_exact_boundary_and_optional_unconstrained_output (test_ch03_transformer.Chapter3TransformerTests.test_exact_boundary_and_optional_unconstrained_output) ... ok
+test_explicit_encoding_projects_each_source_once_and_is_not_cached (test_ch03_transformer.Chapter3TransformerTests.test_explicit_encoding_projects_each_source_once_and_is_not_cached) ... ok
+test_field_query_and_parameter_gradients_float32_and_float64 (test_ch03_transformer.Chapter3TransformerTests.test_field_query_and_parameter_gradients_float32_and_float64) ... ok
+test_finite_fields_supported_dtypes_and_query_cast (test_ch03_transformer.Chapter3TransformerTests.test_finite_fields_supported_dtypes_and_query_cast) ... ok
+test_full_shared_batched_chunked_and_reordered_queries (test_ch03_transformer.Chapter3TransformerTests.test_full_shared_batched_chunked_and_reordered_queries) ... ok
+test_input_and_configuration_validation (test_ch03_transformer.Chapter3TransformerTests.test_input_and_configuration_validation) ... ok
+test_invalid_quadrature_weights_and_attention_shapes (test_ch03_transformer.Chapter3TransformerTests.test_invalid_quadrature_weights_and_attention_shapes) ... ok
+test_multihead_per_batch_weights_match_individual_calls (test_ch03_transformer.Chapter3TransformerTests.test_multihead_per_batch_weights_match_individual_calls) ... ok
+test_nonuniform_attention_weights_are_normalized_spatial_weights (test_ch03_transformer.Chapter3TransformerTests.test_nonuniform_attention_weights_are_normalized_spatial_weights) ... ok
+test_representation_metadata_and_unchanged_checkpoint_structure (test_ch03_transformer.Chapter3TransformerTests.test_representation_metadata_and_unchanged_checkpoint_structure) ... ok
+test_sensor_layout_and_tensor_trapezoid_weights (test_ch03_transformer.Chapter3TransformerTests.test_sensor_layout_and_tensor_trapezoid_weights) ... ok
+test_unobserved_field_values_do_not_change_prediction (test_ch03_transformer.Chapter3TransformerTests.test_unobserved_field_values_do_not_change_prediction) ... ok
+test_adapter_forward_backward_boundary_batch_reload_0 (test_ch03_upstream.UpstreamPortTests.test_adapter_forward_backward_boundary_batch_reload_0) ... ok
+test_adapter_forward_backward_boundary_batch_reload_1 (test_ch03_upstream.UpstreamPortTests.test_adapter_forward_backward_boundary_batch_reload_1) ... ok
+test_adapter_forward_backward_boundary_batch_reload_2 (test_ch03_upstream.UpstreamPortTests.test_adapter_forward_backward_boundary_batch_reload_2) ... ok
+test_adapter_forward_backward_boundary_batch_reload_3 (test_ch03_upstream.UpstreamPortTests.test_adapter_forward_backward_boundary_batch_reload_3) ... ok
+test_attention_eval_is_deterministic_and_honors_probability_0 (test_ch03_upstream.UpstreamPortTests.test_attention_eval_is_deterministic_and_honors_probability_0) ... ok
+test_attention_eval_is_deterministic_and_honors_probability_1 (test_ch03_upstream.UpstreamPortTests.test_attention_eval_is_deterministic_and_honors_probability_1) ... ok
+test_author_class_bodies_preserved_0 (test_ch03_upstream.UpstreamPortTests.test_author_class_bodies_preserved_0) ... ok
+test_data_guard_rejects_test_and_unknown_paths_0 (test_ch03_upstream.UpstreamPortTests.test_data_guard_rejects_test_and_unknown_paths_0) ... ok
+test_deepxde_adapter_matches_author_dot_and_gradients_0 (test_ch03_upstream.UpstreamPortTests.test_deepxde_adapter_matches_author_dot_and_gradients_0) ... ok
+test_deepxde_adapter_matches_author_dot_and_gradients_1 (test_ch03_upstream.UpstreamPortTests.test_deepxde_adapter_matches_author_dot_and_gradients_1) ... ok
+test_galerkin_attention_matches_original_when_dropout_disabled_0 (test_ch03_upstream.UpstreamPortTests.test_galerkin_attention_matches_original_when_dropout_disabled_0) ... ok
+test_reject_malformed_inputs_0 (test_ch03_upstream.UpstreamPortTests.test_reject_malformed_inputs_0) ... ok
+test_reject_malformed_inputs_1 (test_ch03_upstream.UpstreamPortTests.test_reject_malformed_inputs_1) ... ok
+test_reject_malformed_inputs_2 (test_ch03_upstream.UpstreamPortTests.test_reject_malformed_inputs_2) ... ok
+test_reject_malformed_inputs_3 (test_ch03_upstream.UpstreamPortTests.test_reject_malformed_inputs_3) ... ok
+test_reject_malformed_inputs_4 (test_ch03_upstream.UpstreamPortTests.test_reject_malformed_inputs_4) ... ok
+test_reject_malformed_inputs_5 (test_ch03_upstream.UpstreamPortTests.test_reject_malformed_inputs_5) ... ok
+test_reject_malformed_inputs_6 (test_ch03_upstream.UpstreamPortTests.test_reject_malformed_inputs_6) ... ok
+test_reject_malformed_inputs_7 (test_ch03_upstream.UpstreamPortTests.test_reject_malformed_inputs_7) ... ok
+test_spectral_layer_preserves_double_precision_0 (test_ch03_upstream.UpstreamPortTests.test_spectral_layer_preserves_double_precision_0) ... ok
+test_all_objectives_differentiate (test_numerics.NumericalTests.test_all_objectives_differentiate) ... ok
+test_exact_residual_and_autograd (test_numerics.NumericalTests.test_exact_residual_and_autograd) ... ok
+test_fem_rates (test_numerics.NumericalTests.test_fem_rates) ... ok
+test_gram_basis_scaling_invariance (test_numerics.NumericalTests.test_gram_basis_scaling_invariance) ... ok
+test_hard_boundary_and_energy_identity (test_numerics.NumericalTests.test_hard_boundary_and_energy_identity) ... ok
+test_quadrature_and_basis (test_numerics.NumericalTests.test_quadrature_and_basis) ... ok
+test_optimizer_resume_and_completed_skip (test_resume.ResumeTests.test_optimizer_resume_and_completed_skip) ... ok
+
+----------------------------------------------------------------------
+Ran 145 tests in 22.227s
+
+OK

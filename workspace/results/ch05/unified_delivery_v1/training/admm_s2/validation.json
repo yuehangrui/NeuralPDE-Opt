@@ -1,0 +1,36 @@
+{
+  "state_rms": 0.0004745947679221122,
+  "adjoint_rms": 7.01905480331986e-06,
+  "admm_primal_rms": 8.378387462798521e-06,
+  "admm_dual_rms": 3.721132965732014e-09,
+  "raw_control_violation": 2.006025720890925e-05,
+  "reported_control": "ADMM z (feasible); PDE residual above uses actual inner u",
+  "recovered_objective": 0.0004683731202182158,
+  "recovered_projected_residual": 0.0002516598854247122,
+  "recovered_bound_violation": 0.0,
+  "recovered_state_residual": 3.5107704684362674e-15,
+  "recovered_adjoint_residual": 7.132875348618338e-16,
+  "relative_y": 0.00027646837029723806,
+  "relative_u": 1.0007099817721631e-05,
+  "relative_p": 1.081883564313112e-05,
+  "active_sets": {
+    "0.0001": {
+      "lower_fraction": 0.20395421436004163,
+      "upper_fraction": 0.3922996878251821,
+      "mismatch_fraction": 0.0
+    },
+    "0.001": {
+      "lower_fraction": 0.20395421436004163,
+      "upper_fraction": 0.3922996878251821,
+      "mismatch_fraction": 0.0
+    },
+    "0.01": {
+      "lower_fraction": 0.21227887617065558,
+      "upper_fraction": 0.3922996878251821,
+      "mismatch_fraction": 0.0
+    }
+  },
+  "selection_score": 0.0008435436418592572,
+  "boundary_y_max": 0.0,
+  "grid_intervals": 32
+}

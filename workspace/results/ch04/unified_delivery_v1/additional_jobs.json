@@ -1,0 +1,285 @@
+{
+  "jobs": [
+    {
+      "name": "mimo_s0",
+      "arguments": [
+        "chapters.ch04_delivery.operators",
+        "--method",
+        "mimo",
+        "--seed",
+        "0",
+        "--device",
+        "cpu",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/mimo_s0"
+      ]
+    },
+    {
+      "name": "rb_state_s0",
+      "arguments": [
+        "chapters.ch04_delivery.operators",
+        "--method",
+        "rb_state",
+        "--seed",
+        "0",
+        "--device",
+        "cpu",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/rb_state_s0"
+      ]
+    },
+    {
+      "name": "rb_dino_s0",
+      "arguments": [
+        "chapters.ch04_delivery.operators",
+        "--method",
+        "rb_dino",
+        "--seed",
+        "0",
+        "--device",
+        "cpu",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/rb_dino_s0"
+      ]
+    },
+    {
+      "name": "bilevel_s0",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "bilevel",
+        "--seed",
+        "0",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/bilevel_s0"
+      ]
+    },
+    {
+      "name": "deep_uzawa_s0",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "deep_uzawa",
+        "--seed",
+        "0",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/deep_uzawa_s0"
+      ]
+    },
+    {
+      "name": "ismo_s0",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "ismo",
+        "--seed",
+        "0",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/ismo_s0"
+      ]
+    },
+    {
+      "name": "fem_nn_s0",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "fem_nn",
+        "--seed",
+        "0",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/fem_nn_s0"
+      ]
+    },
+    {
+      "name": "mimo_s1",
+      "arguments": [
+        "chapters.ch04_delivery.operators",
+        "--method",
+        "mimo",
+        "--seed",
+        "1",
+        "--device",
+        "cpu",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/mimo_s1"
+      ]
+    },
+    {
+      "name": "rb_state_s1",
+      "arguments": [
+        "chapters.ch04_delivery.operators",
+        "--method",
+        "rb_state",
+        "--seed",
+        "1",
+        "--device",
+        "cpu",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/rb_state_s1"
+      ]
+    },
+    {
+      "name": "rb_dino_s1",
+      "arguments": [
+        "chapters.ch04_delivery.operators",
+        "--method",
+        "rb_dino",
+        "--seed",
+        "1",
+        "--device",
+        "cpu",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/rb_dino_s1"
+      ]
+    },
+    {
+      "name": "bilevel_s1",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "bilevel",
+        "--seed",
+        "1",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/bilevel_s1"
+      ]
+    },
+    {
+      "name": "deep_uzawa_s1",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "deep_uzawa",
+        "--seed",
+        "1",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/deep_uzawa_s1"
+      ]
+    },
+    {
+      "name": "ismo_s1",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "ismo",
+        "--seed",
+        "1",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/ismo_s1"
+      ]
+    },
+    {
+      "name": "fem_nn_s1",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "fem_nn",
+        "--seed",
+        "1",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/fem_nn_s1"
+      ]
+    },
+    {
+      "name": "mimo_s2",
+      "arguments": [
+        "chapters.ch04_delivery.operators",
+        "--method",
+        "mimo",
+        "--seed",
+        "2",
+        "--device",
+        "cpu",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/mimo_s2"
+      ]
+    },
+    {
+      "name": "rb_state_s2",
+      "arguments": [
+        "chapters.ch04_delivery.operators",
+        "--method",
+        "rb_state",
+        "--seed",
+        "2",
+        "--device",
+        "cpu",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/rb_state_s2"
+      ]
+    },
+    {
+      "name": "rb_dino_s2",
+      "arguments": [
+        "chapters.ch04_delivery.operators",
+        "--method",
+        "rb_dino",
+        "--seed",
+        "2",
+        "--device",
+        "cpu",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/rb_dino_s2"
+      ]
+    },
+    {
+      "name": "bilevel_s2",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "bilevel",
+        "--seed",
+        "2",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/bilevel_s2"
+      ]
+    },
+    {
+      "name": "deep_uzawa_s2",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "deep_uzawa",
+        "--seed",
+        "2",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/deep_uzawa_s2"
+      ]
+    },
+    {
+      "name": "ismo_s2",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "ismo",
+        "--seed",
+        "2",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/ismo_s2"
+      ]
+    },
+    {
+      "name": "fem_nn_s2",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "fem_nn",
+        "--seed",
+        "2",
+        "--output",
+        "results/ch04/unified_delivery_v1/training/fem_nn_s2"
+      ]
+    },
+    {
+      "name": "classical",
+      "arguments": [
+        "chapters.ch04_delivery.hybrids",
+        "--method",
+        "classical",
+        "--output",
+        "results/ch04/unified_delivery_v1/classical"
+      ]
+    }
+  ],
+  "concurrency": 2
+}

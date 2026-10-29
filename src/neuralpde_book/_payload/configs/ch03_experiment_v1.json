@@ -1,0 +1,69 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "training": {
+    "purpose": "chapter3_supervised_experiment_v1",
+    "seed": 0,
+    "dtype": "float32",
+    "steps": 1000,
+    "batch_size": 8,
+    "eval_every": 100,
+    "checkpoint_every": 100,
+    "learning_rate": 0.001,
+    "cpu_threads": 2,
+    "objective": "relative_l2_squared",
+    "scheduler": {
+      "name": "warmup_cosine",
+      "warmup_steps": 50,
+      "min_lr": 1e-05
+    },
+    "defer_test": true,
+    "models": [
+      {
+        "name": "fno",
+        "kwargs": {
+          "modes": 8,
+          "width": 16,
+          "layers": 4,
+          "hard_boundary": true
+        }
+      },
+      {
+        "name": "deeponet",
+        "kwargs": {
+          "grid_size": 65,
+          "sensor_stride": 1,
+          "latent_dim": 64,
+          "branch_width": 40,
+          "trunk_width": 128,
+          "depth": 2,
+          "hard_boundary": true
+        }
+      },
+      {
+        "name": "gno",
+        "kwargs": {
+          "width": 96,
+          "layers": 3,
+          "radius": 1.5,
+          "node_stride": 4,
+          "hard_boundary": true
+        }
+      },
+      {
+        "name": "transformer",
+        "kwargs": {
+          "grid_size": 65,
+          "sensor_stride": 4,
+          "width": 64,
+          "heads": 4,
+          "layers": 2,
+          "hard_boundary": true
+        }
+      }
+    ]
+  }
+}

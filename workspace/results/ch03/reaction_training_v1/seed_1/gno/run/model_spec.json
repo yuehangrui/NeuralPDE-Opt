@@ -1,0 +1,19 @@
+{
+  "name": "gno",
+  "family": "GNO",
+  "kwargs": {
+    "width": 96,
+    "layers": 3,
+    "radius": 1.5,
+    "node_stride": 4,
+    "hard_boundary": true
+  },
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.0005,
+    "weight_decay": 1e-05,
+    "scheduler": "cosine",
+    "min_lr": 1e-06,
+    "grad_clip": 1.0
+  }
+}

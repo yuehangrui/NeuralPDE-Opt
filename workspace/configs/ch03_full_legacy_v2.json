@@ -1,0 +1,99 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "training": {
+    "purpose": "chapter3_supervised_experiment_v1",
+    "seed": 0,
+    "dtype": "float32",
+    "steps": 1600,
+    "legacy_full_epochs": 1600,
+    "batch_size": 128,
+    "eval_every": 50,
+    "checkpoint_every": 50,
+    "learning_rate": 0.001,
+    "cpu_threads": 2,
+    "objective": "absolute_l2_squared",
+    "scheduler": {
+      "name": "constant"
+    },
+    "defer_test": true,
+    "models": [
+      {
+        "name": "fno",
+        "kwargs": {
+          "modes": 12,
+          "width": 32,
+          "layers": 4,
+          "hard_boundary": true
+        },
+        "legacy_training": {
+          "optimizer": "Adam",
+          "learning_rate": 0.001,
+          "batch_size": 128,
+          "scheduler": "plateau",
+          "weight_decay": 0.0
+        }
+      },
+      {
+        "name": "deeponet",
+        "kwargs": {
+          "grid_size": 65,
+          "sensor_stride": 1,
+          "latent_dim": 56,
+          "branch_width": 300,
+          "trunk_width": 300,
+          "depth": 3,
+          "hard_boundary": true
+        },
+        "legacy_training": {
+          "optimizer": "AdamW",
+          "learning_rate": 0.0005,
+          "batch_size": 1024,
+          "scheduler": "cosine",
+          "weight_decay": 1e-05,
+          "grad_clip": 1.0
+        }
+      },
+      {
+        "name": "gno",
+        "kwargs": {
+          "width": 96,
+          "layers": 3,
+          "radius": 1.5,
+          "node_stride": 4,
+          "hard_boundary": true
+        },
+        "legacy_training": {
+          "optimizer": "AdamW",
+          "learning_rate": 0.0005,
+          "batch_size": 1024,
+          "scheduler": "cosine",
+          "weight_decay": 1e-05,
+          "grad_clip": 1.0
+        }
+      },
+      {
+        "name": "transformer",
+        "kwargs": {
+          "grid_size": 65,
+          "sensor_stride": 4,
+          "width": 64,
+          "heads": 4,
+          "layers": 2,
+          "hard_boundary": true
+        },
+        "legacy_training": {
+          "optimizer": "AdamW",
+          "learning_rate": 0.0005,
+          "batch_size": 1024,
+          "scheduler": "cosine",
+          "weight_decay": 1e-05,
+          "grad_clip": 1.0
+        }
+      }
+    ]
+  }
+}

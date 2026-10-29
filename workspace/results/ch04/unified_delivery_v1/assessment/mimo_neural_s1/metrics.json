@@ -1,0 +1,184 @@
+{
+  "key": "mimo_neural_s1",
+  "method": "mimo",
+  "seed": 1,
+  "variant": "neural",
+  "kind": "modal_operator",
+  "directory": "results/ch04/unified_delivery_v1/training/mimo_s1",
+  "checkpoint": "results/ch04/unified_delivery_v1/training/mimo_s1/best.pt",
+  "sha256": "8c64fbe24903c0b83d3812976001b97d6a9714a69ecafb2b98fbeaf06cc9e5a3",
+  "track": "problem_family",
+  "test_role": "fresh held-out problems",
+  "heldout": {
+    "inference_seconds": 0.004118788056075573,
+    "direct_control": {
+      "control_relative_l2": {
+        "mean": 0.02468978849982248,
+        "std": 0.008054752916960447,
+        "max": 0.05202904603986385
+      },
+      "recovered_state_relative_l2": {
+        "mean": 0.002761360447208089,
+        "std": 0.0015903426650514896,
+        "max": 0.008201343498173206
+      },
+      "true_objective": {
+        "mean": 0.17312647765790778,
+        "std": 0.04394868487063148,
+        "max": 0.290140998728866
+      },
+      "reference_objective": {
+        "mean": 0.17312331332891506,
+        "std": 0.04394814399895576,
+        "max": 0.29013366529503387
+      },
+      "objective_gap": {
+        "mean": 3.16432899271496e-06,
+        "std": 2.6692423311830414e-06,
+        "max": 1.6314058103983342e-05
+      },
+      "objective_gap_relative": {
+        "mean": 1.9009151135466955e-05,
+        "std": 1.5302562758345803e-05,
+        "max": 7.623534069498307e-05
+      },
+      "true_gradient_l2": {
+        "mean": 0.00010532629848496143,
+        "std": 5.177340728530826e-05,
+        "max": 0.0003068890074661044
+      },
+      "true_gradient_relative": {
+        "mean": 0.02840247192514644,
+        "std": 0.016910647541885447,
+        "max": 0.09195517994753247
+      },
+      "raw_state_relative_l2": {
+        "mean": 0.0059120856936477045,
+        "std": 0.0034771196389639853,
+        "max": 0.015264450240412841
+      },
+      "state_residual_relative": {
+        "mean": 0.01585954716820733,
+        "std": 0.005492242447028099,
+        "max": 0.029772383179679094
+      },
+      "raw_objective": {
+        "mean": 0.17318934391619112,
+        "std": 0.043938830151471216,
+        "max": 0.2902849695629658
+      },
+      "adjoint_residual_relative": {
+        "mean": 0.009250720138117625,
+        "std": 0.00217498122420084,
+        "max": 0.01735994231684783
+      },
+      "optimality_residual_l2": {
+        "mean": 0.0,
+        "std": 0.0,
+        "max": 0.0
+      }
+    },
+    "matched_control_8": {
+      "control_relative_l2": {
+        "mean": 0.023475048496021333,
+        "std": 0.0051193722757235036,
+        "max": 0.03010117331602465
+      },
+      "recovered_state_relative_l2": {
+        "mean": 0.0033182556202500393,
+        "std": 0.0016651223910494335,
+        "max": 0.007185458531458958
+      },
+      "true_objective": {
+        "mean": 0.19053815635225674,
+        "std": 0.05387880193342202,
+        "max": 0.290140998728866
+      },
+      "reference_objective": {
+        "mean": 0.19053443751740923,
+        "std": 0.053877877131036825,
+        "max": 0.29013366529503387
+      },
+      "objective_gap": {
+        "mean": 3.7188348475138133e-06,
+        "std": 2.208373748972798e-06,
+        "max": 7.333433832135139e-06
+      },
+      "objective_gap_relative": {
+        "mean": 2.0316726889371092e-05,
+        "std": 1.2672871626173574e-05,
+        "max": 4.8862303699529935e-05
+      },
+      "true_gradient_l2": {
+        "mean": 0.0001210694148080193,
+        "std": 5.057003924052482e-05,
+        "max": 0.00020549256614760806
+      },
+      "true_gradient_relative": {
+        "mean": 0.023551794003401204,
+        "std": 0.00895363832455477,
+        "max": 0.0351468992329528
+      },
+      "raw_state_relative_l2": {
+        "mean": 0.008310326465882034,
+        "std": 0.005043856812918092,
+        "max": 0.015264450240412841
+      },
+      "state_residual_relative": {
+        "mean": 0.01620499312925516,
+        "std": 0.0075442528769353945,
+        "max": 0.029772383179679094
+      },
+      "raw_objective": {
+        "mean": 0.19059605867973256,
+        "std": 0.05391119580383585,
+        "max": 0.2902849695629658
+      },
+      "adjoint_residual_relative": {
+        "mean": 0.010373488897286925,
+        "std": 0.0030070131242700237,
+        "max": 0.01735994231684783
+      },
+      "optimality_residual_l2": {
+        "mean": 0.0,
+        "std": 0.0,
+        "max": 0.0
+      }
+    }
+  },
+  "fixed_instance": {
+    "quadrature_order": 96,
+    "control_relative_l2": 0.02311523387681242,
+    "raw_state_relative_l2": 0.0012520902225340897,
+    "raw_objective": 0.12507834384567518,
+    "state_residual_relative": 0.002091454520007329,
+    "adjoint_residual_relative": 0.0016392857525378878,
+    "boundary_y_max": 1.2242527757604832e-16,
+    "boundary_p_max": 7.822784592050183e-19,
+    "fem": [
+      {
+        "mesh": 128,
+        "control_relative_l2": 0.023115233876812417,
+        "recovered_objective": 0.12507870968635254,
+        "reference_objective_h": 0.12507864746518635,
+        "objective_gap_h": 6.222116619158946e-08,
+        "reduced_gradient_l2": 1.2317294115174924e-05,
+        "reduced_gradient_relative": 0.03140046459858018,
+        "recovered_state_relative_l2": 0.0002982930046485582
+      },
+      {
+        "mesh": 256,
+        "control_relative_l2": 0.023115233876812427,
+        "recovered_objective": 0.12507845870698298,
+        "reference_objective_h": 0.1250784059599958,
+        "objective_gap_h": 5.27469871669517e-08,
+        "reduced_gradient_l2": 1.166198127465426e-05,
+        "reduced_gradient_relative": 0.029517857460009192,
+        "recovered_state_relative_l2": 0.0002873115560380049
+      }
+    ],
+    "metadata": {},
+    "fem_gap_note": "Sine/continuous-network controls and P1 reference controls are different discrete spaces; signed gaps retained."
+  },
+  "assessment_seconds": 1.4878864642232656
+}

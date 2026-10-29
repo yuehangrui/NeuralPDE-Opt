@@ -1,0 +1,58 @@
+{
+  "schema": "ch04-instance-v1",
+  "status": "completed",
+  "config": {
+    "method": "kkt",
+    "alpha": 0.001,
+    "control_frequency": 8,
+    "seed": 2,
+    "width": 64,
+    "depth": 6,
+    "dtype": "float64",
+    "device": "cuda",
+    "train_points": 10000,
+    "validation_points": 2048,
+    "validation_mesh": 64,
+    "quadrature_order": 4,
+    "adam_steps": 10000,
+    "lbfgs_steps": 1000,
+    "learning_rate": 0.001,
+    "evaluate_every": 250,
+    "penalty": 1.0,
+    "mu_init": 0.01,
+    "mu_growth": 1.0,
+    "mu_max": 1.0,
+    "outer_steps": 15,
+    "inner_steps": 2000,
+    "feasibility_tol": 0.0001,
+    "optimality_tol": 0.0001,
+    "smoke": false
+  },
+  "source_hashes": {
+    "__init__.py": "d4797c93d95f4656bcb04afa09ac04ff1f8dfefcf94548aaebbdc3ad1cf1e83b",
+    "cli.py": "26923f663918b819d4bebdf8142e4859142f33e4e0a8e3bfaaa31a0ad4a4b922",
+    "evaluation.py": "b2b4a4a266c8950b08ad43ee6cb8b9d7096b97182e5c2193f7763c9a403bf830",
+    "fem.py": "98aeae21f98746effa80b9f374bf5d4fb3e875f27e30b3aced7da91925f5f1c9",
+    "models.py": "c886ac5080d28b88aa84b6c0595a144c040e02944476a9338afcc37b9ed4c959",
+    "problem.py": "c5f9efd708a042bc4e5c13a6c702c7ceedcd5a05f0e43780d0fd7154ce0a4332",
+    "test_ch04.py": "041d6e40eff391f0fc384f8ea95235578e8c0e34860eff47730960be26de4d6d",
+    "training.py": "f6bd0b998cbec3dbb25e8e9d2a4347d3396bece7893d29f394e3cceac2992490"
+  },
+  "sample_hashes": {
+    "train": "0f0e2f94c74252f9caaa7ec7d55bda97970686521b63af6005bf8b82cd7a9c71",
+    "validation": "be585aff07a2ed881996fe997ec2c511907fd2b5a5a86ebadf70e0f0b8d8f1d0"
+  },
+  "state_scale": 9.72316545071212,
+  "gradient_scale": 0.00038155561012224017,
+  "selection": "sqrt((independent PDE RMS/state_scale)^2+(FEM recovered gradient/gradient_scale)^2)",
+  "versions": {
+    "torch": "2.5.1+cu121",
+    "numpy": "2.0.1",
+    "scipy": "1.15.1"
+  },
+  "run_kind": "training",
+  "completed_updates": 11000,
+  "best_progress": "lbfgs:1000",
+  "optimization_converged": false,
+  "seconds": 1293.9686081288382
+}

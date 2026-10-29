@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuralpde-book"
+version = "1.0.0"
+description = "Standalone companion experiments for NeuralPDE-Opt, Chapters 2-5"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "scipy>=1.10,<2", "torch>=2.0,<3", "matplotlib>=3.7,<4"]
+
+[project.scripts]
+neuralpde-book = "neuralpde_book.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["neuralpde_book"]
+
+[tool.setuptools.package-data]
+neuralpde_book = ["_payload/**/*", "_payload/*"]

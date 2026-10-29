@@ -1,0 +1,19 @@
+{
+  "schema": "ch03-upstream-trainval-v1",
+  "seed": 0,
+  "epochs": 200,
+  "train_count": 8,
+  "batch_size": 8,
+  "microbatch": 4,
+  "selection_split": "train",
+  "objective": "relative_l2_squared",
+  "lr": 0.0005,
+  "schedule": "constant",
+  "model": {
+    "name": "deepxde",
+    "kwargs": {
+      "coordinate_modes": 4
+    }
+  },
+  "variant": "deepxde_fourier4"
+}

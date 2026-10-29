@@ -1,0 +1,478 @@
+{
+  "status": "passed",
+  "methods": 16,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "training_experiments": 48,
+  "checkpoint_variants": 72,
+  "family_variants": 45,
+  "fresh_holdout_cases": 64,
+  "checks": [
+    {
+      "key": "direct_neural_s0",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "direct_head_selected_s0",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "direct_neural_s1",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "direct_head_selected_s1",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "direct_neural_s2",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "direct_head_selected_s2",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "kkt_neural_s0",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "kkt_neural_s1",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "kkt_neural_s2",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "alm_neural_s0",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "alm_head_selected_s0",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "alm_neural_s1",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "alm_head_selected_s1",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "alm_neural_s2",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "alm_head_selected_s2",
+      "checkpoint_identity": true
+    },
+    {
+      "key": "fno_state_neural_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fno_state_head_polished_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fno_state_neural_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fno_state_head_polished_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fno_state_neural_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fno_state_head_polished_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fno_kkt_neural_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fno_kkt_head_polished_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fno_kkt_neural_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fno_kkt_head_polished_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fno_kkt_neural_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fno_kkt_head_polished_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "deeponet_state_neural_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "deeponet_state_head_polished_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "deeponet_state_neural_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "deeponet_state_head_polished_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "deeponet_state_neural_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "deeponet_state_head_polished_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "deeponet_kkt_neural_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "deeponet_kkt_head_polished_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "deeponet_kkt_neural_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "deeponet_kkt_head_polished_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "deeponet_kkt_neural_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "deeponet_kkt_head_polished_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fedonet_state_neural_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fedonet_state_head_polished_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fedonet_state_neural_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fedonet_state_head_polished_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fedonet_state_neural_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fedonet_state_head_polished_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fedonet_kkt_neural_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fedonet_kkt_head_polished_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fedonet_kkt_neural_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fedonet_kkt_head_polished_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fedonet_kkt_neural_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "fedonet_kkt_head_polished_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "mimo_neural_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "mimo_neural_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "mimo_neural_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "rb_state_neural_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "rb_state_neural_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "rb_state_neural_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "rb_dino_neural_s0",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "rb_dino_neural_s1",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "rb_dino_neural_s2",
+      "checkpoint_identity": true,
+      "heldout_predictions_reloaded": true,
+      "physical_metrics_recomputed": true,
+      "normalization_train_only": true
+    },
+    {
+      "key": "bilevel_declared_trial_s0",
+      "checkpoint_identity": true,
+      "hybrid_protocol_checked": true
+    },
+    {
+      "key": "bilevel_declared_trial_s1",
+      "checkpoint_identity": true,
+      "hybrid_protocol_checked": true
+    },
+    {
+      "key": "bilevel_declared_trial_s2",
+      "checkpoint_identity": true,
+      "hybrid_protocol_checked": true
+    },
+    {
+      "key": "deep_uzawa_declared_trial_s0",
+      "checkpoint_identity": true,
+      "hybrid_protocol_checked": true
+    },
+    {
+      "key": "deep_uzawa_declared_trial_s1",
+      "checkpoint_identity": true,
+      "hybrid_protocol_checked": true
+    },
+    {
+      "key": "deep_uzawa_declared_trial_s2",
+      "checkpoint_identity": true,
+      "hybrid_protocol_checked": true
+    },
+    {
+      "key": "ismo_declared_trial_s0",
+      "checkpoint_identity": true,
+      "hybrid_protocol_checked": true
+    },
+    {
+      "key": "ismo_declared_trial_s1",
+      "checkpoint_identity": true,
+      "hybrid_protocol_checked": true
+    },
+    {
+      "key": "ismo_declared_trial_s2",
+      "checkpoint_identity": true,
+      "hybrid_protocol_checked": true
+    },
+    {
+      "key": "fem_nn_declared_trial_s0",
+      "checkpoint_identity": true,
+      "hybrid_protocol_checked": true
+    },
+    {
+      "key": "fem_nn_declared_trial_s1",
+      "checkpoint_identity": true,
+      "hybrid_protocol_checked": true
+    },
+    {
+      "key": "fem_nn_declared_trial_s2",
+      "checkpoint_identity": true,
+      "hybrid_protocol_checked": true
+    }
+  ],
+  "old_source_protection": [
+    {
+      "module": "ch04",
+      "verified_files": 14
+    },
+    {
+      "module": "ch04_adaptation",
+      "verified_files": 19
+    },
+    {
+      "module": "ch04_operator_learning",
+      "verified_files": 21
+    },
+    {
+      "module": "ch04_operator_adaptation",
+      "verified_files": 16
+    },
+    {
+      "module": "ch04_completion",
+      "verified_files": 13
+    },
+    {
+      "module": "ch05",
+      "verified_files": 22
+    }
+  ],
+  "selections_unchanged": true,
+  "independent_metric_recomputation": true
+}

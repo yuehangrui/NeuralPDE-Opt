@@ -1,0 +1,86 @@
+test_alm_multiplier_uses_old_penalty_and_detaches (chapters.ch04.test_ch04.ControlChecks.test_alm_multiplier_uses_old_penalty_and_detaches) ... ok
+test_changed_source_identity_rejected (chapters.ch04.test_ch04.ControlChecks.test_changed_source_identity_rejected) ... ok
+test_checkpoint_selection_and_output_protection (chapters.ch04.test_ch04.ControlChecks.test_checkpoint_selection_and_output_protection) ... {"progress": "initial", "score": 4.515269698285445, "pde": 0.6404101400317868, "gradient": 4.469623619590267}
+{"progress": "adam:1", "score": 4.548499551096551, "pde": 0.6375694491614696, "gradient": 4.5035933834907285}
+{"progress": "adam:2", "score": 4.581783949612446, "pde": 0.6347363480952928, "gradient": 4.537604426273061}
+{"progress": "lbfgs:1", "score": 4.860708163014163, "pde": 0.3991867816847045, "gradient": 4.844288777449248}
+ok
+test_direct_control_is_not_boundary_constrained (chapters.ch04.test_ch04.ControlChecks.test_direct_control_is_not_boundary_constrained) ... ok
+test_direct_loss_weights (chapters.ch04.test_ch04.ControlChecks.test_direct_loss_weights) ... ok
+test_discrete_adjoint_directional_derivative (chapters.ch04.test_ch04.ControlChecks.test_discrete_adjoint_directional_derivative) ... ok
+test_feasibility_alone_cannot_stop (chapters.ch04.test_ch04.ControlChecks.test_feasibility_alone_cannot_stop) ... ok
+test_feasible_nonoptimal_control (chapters.ch04.test_ch04.ControlChecks.test_feasible_nonoptimal_control) ... ok
+test_fem_kkt_and_recovered_stationarity (chapters.ch04.test_ch04.ControlChecks.test_fem_kkt_and_recovered_stationarity) ... ok
+test_fem_mass_and_stiffness (chapters.ch04.test_ch04.ControlChecks.test_fem_mass_and_stiffness) ... ok
+test_hard_state_and_adjoint_boundaries (chapters.ch04.test_ch04.ControlChecks.test_hard_state_and_adjoint_boundaries) ... ok
+test_invalid_configs (chapters.ch04.test_ch04.ControlChecks.test_invalid_configs) ... ok
+test_invalid_problem (chapters.ch04.test_ch04.ControlChecks.test_invalid_problem) ... ok
+test_kkt_exact_loss (chapters.ch04.test_ch04.ControlChecks.test_kkt_exact_loss) ... ok
+test_manufactured_kkt (chapters.ch04.test_ch04.ControlChecks.test_manufactured_kkt) ... ok
+test_nonfinite_control_rejected (chapters.ch04.test_ch04.ControlChecks.test_nonfinite_control_rejected) ... ok
+test_refinement_reduces_error (chapters.ch04.test_ch04.ControlChecks.test_refinement_reduces_error) ... ok
+test_sampling_is_independent_and_reproducible (chapters.ch04.test_ch04.ControlChecks.test_sampling_is_independent_and_reproducible) ... ok
+test_underresolved_mesh_rejected (chapters.ch04.test_ch04.ControlChecks.test_underresolved_mesh_rejected) ... ok
+test_config_validation (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_config_validation) ... ok
+test_data_roles_and_labels (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_data_roles_and_labels) ... ok
+test_dino_chain_rule (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_dino_chain_rule) ... ok
+test_enrichment_derivatives (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_enrichment_derivatives) ... ok
+test_exact_linear_head_solve (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_exact_linear_head_solve) ... ok
+test_fail_closed_nonlinear_solve (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_fail_closed_nonlinear_solve) ... ok
+test_mimo_boundary_and_scaling (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_mimo_boundary_and_scaling) ... ok
+test_mimo_residual_backprop (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_mimo_residual_backprop) ... ok
+test_multiplier_sign (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_multiplier_sign) ... ok
+test_overlap_and_bad_labels_rejected (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_overlap_and_bad_labels_rejected) ... ok
+test_quadrature_mass (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_quadrature_mass) ... ok
+test_samplewise_nonlinear_jvp (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_samplewise_nonlinear_jvp) ... ok
+test_transpose_adjoint_gradient (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_transpose_adjoint_gradient) ... ok
+test_weighted_loss_gradient (chapters.ch04_adaptation.test_adaptation.AdaptationTests.test_weighted_loss_gradient) ... ok
+test_control_family_projection (chapters.ch04_operator_learning.test_operators.OperatorTests.test_control_family_projection) ... ok
+test_control_network_frozen_surrogate (chapters.ch04_operator_learning.test_operators.OperatorTests.test_control_network_frozen_surrogate) ... ok
+test_data_archive_and_tampering (chapters.ch04_operator_learning.test_operators.OperatorTests.test_data_archive_and_tampering) ... ok
+test_fft_shapes_and_dtypes (chapters.ch04_operator_learning.test_operators.OperatorTests.test_fft_shapes_and_dtypes) ... ok
+test_homogeneous_and_fixed_grid (chapters.ch04_operator_learning.test_operators.OperatorTests.test_homogeneous_and_fixed_grid) ... ok
+test_kkt_and_gradient (chapters.ch04_operator_learning.test_operators.OperatorTests.test_kkt_and_gradient) ... ok
+test_operator_input_derivatives (chapters.ch04_operator_learning.test_operators.OperatorTests.test_operator_input_derivatives) ... ok
+test_reference_adjoint (chapters.ch04_operator_learning.test_operators.OperatorTests.test_reference_adjoint) ... ok
+test_six_interfaces_and_backward (chapters.ch04_operator_learning.test_operators.OperatorTests.test_six_interfaces_and_backward) ... ok
+test_spectral_eigenmode (chapters.ch04_operator_learning.test_operators.OperatorTests.test_spectral_eigenmode) ... ok
+test_config_rejects_invalid (chapters.ch04_operator_adaptation.test_adaptation.AdaptationTests.test_config_rejects_invalid) ... ok
+test_mass_projection (chapters.ch04_operator_adaptation.test_adaptation.AdaptationTests.test_mass_projection) ... ok
+test_physics_zero_on_labels (chapters.ch04_operator_adaptation.test_adaptation.AdaptationTests.test_physics_zero_on_labels) ... ok
+test_reference_derivative_label (chapters.ch04_operator_adaptation.test_adaptation.AdaptationTests.test_reference_derivative_label) ... ok
+test_six_interfaces_and_tangent_backward (chapters.ch04_operator_adaptation.test_adaptation.AdaptationTests.test_six_interfaces_and_tangent_backward) ... ok
+test_state_split_invariance (chapters.ch04_operator_adaptation.test_adaptation.AdaptationTests.test_state_split_invariance) ... ok
+test_tangent_finite_difference (chapters.ch04_operator_adaptation.test_adaptation.AdaptationTests.test_tangent_finite_difference) ... ok
+test_train_only_head_and_derivative (chapters.ch04_operator_adaptation.test_adaptation.AdaptationTests.test_train_only_head_and_derivative) ... ok
+test_unsupported_mode_rejected (chapters.ch04_operator_adaptation.test_adaptation.AdaptationTests.test_unsupported_mode_rejected) ... ok
+test_01_quadrature_and_projection (chapters.ch04_completion.test_completion.Tests.test_01_quadrature_and_projection) ... ok
+test_02_exact_adjoint_derivative (chapters.ch04_completion.test_completion.Tests.test_02_exact_adjoint_derivative) ... ok
+test_03_spectral_baseline (chapters.ch04_completion.test_completion.Tests.test_03_spectral_baseline) ... ok
+test_04_fem_baseline_discrete_kkt (chapters.ch04_completion.test_completion.Tests.test_04_fem_baseline_discrete_kkt) ... ok
+test_05_bilevel_hypergradient (chapters.ch04_completion.test_completion.Tests.test_05_bilevel_hypergradient) ... ok
+test_06_modified_objective_agrees_on_feasible_set (chapters.ch04_completion.test_completion.Tests.test_06_modified_objective_agrees_on_feasible_set) ... ok
+test_07_uzawa_saddle_sign_and_stationarity (chapters.ch04_completion.test_completion.Tests.test_07_uzawa_saddle_sign_and_stationarity) ... ok
+test_08_uzawa_step_range (chapters.ch04_completion.test_completion.Tests.test_08_uzawa_step_range) ... ok
+test_09_uzawa_training (chapters.ch04_completion.test_completion.Tests.test_09_uzawa_training) ... ok
+test_10_sparse_solver_transpose (chapters.ch04_completion.test_completion.Tests.test_10_sparse_solver_transpose) ... ok
+test_11_fem_nn_parameter_gradient (chapters.ch04_completion.test_completion.Tests.test_11_fem_nn_parameter_gradient) ... ok
+test_12_ismo_enriches_and_retrains (chapters.ch04_completion.test_completion.Tests.test_12_ismo_enriches_and_retrains) ... ok
+test_13_checkpoint_identity_and_nonfinite (chapters.ch04_completion.test_completion.Tests.test_13_checkpoint_identity_and_nonfinite) ... ok
+test_14_validation_mesh_must_be_independent (chapters.ch04_completion.test_completion.Tests.test_14_validation_mesh_must_be_independent) ... ok
+test_01_true_kkt_metrics (chapters.ch04_delivery.test_delivery.Tests.test_01_true_kkt_metrics) ... ok
+test_02_objective_gradient_consistency (chapters.ch04_delivery.test_delivery.Tests.test_02_objective_gradient_consistency) ... ok
+test_03_modal_mimo_jvp_matches_difference (chapters.ch04_delivery.test_delivery.Tests.test_03_modal_mimo_jvp_matches_difference) ... ok
+test_04_grid_coefficient_interface (chapters.ch04_delivery.test_delivery.Tests.test_04_grid_coefficient_interface) ... ok
+test_05_online_exact_model (chapters.ch04_delivery.test_delivery.Tests.test_05_online_exact_model) ... ok
+test_06_no_holdout_before_all_training (chapters.ch04_delivery.test_delivery.Tests.test_06_no_holdout_before_all_training) ... ok
+test_07_freeze_mutation_rejected (chapters.ch04_delivery.test_delivery.Tests.test_07_freeze_mutation_rejected) ... ok
+test_08_portable_hybrid_identity (chapters.ch04_delivery.test_delivery.Tests.test_08_portable_hybrid_identity) ... ok
+test_09_actual_initialization_study (chapters.ch04_delivery.test_delivery.Tests.test_09_actual_initialization_study) ... ok
+test_10_fixed_field_metrics (chapters.ch04_delivery.test_delivery.Tests.test_10_fixed_field_metrics) ... ok
+test_11_metrics_reject_nonfinite (chapters.ch04_delivery.test_delivery.Tests.test_11_metrics_reject_nonfinite) ... ok
+
+----------------------------------------------------------------------
+Ran 77 tests in 4.112s
+
+OK

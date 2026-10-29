@@ -1,0 +1,25 @@
+{
+  "version": "ch05-unified-delivery-v1",
+  "date": "2026-10-25",
+  "implementation": "New complete delivery orchestration and diagnostics over frozen ch05-nonsmooth-v0.1; no new author-code replication claimed.",
+  "inherited_provenance": "chapters/ch05/provenance.json",
+  "book_sha256": "85191f64ad9f904afa4aed86ce2dcd4bdfc272b2aec21d2c649261c7ef5670e2",
+  "book_sections": [
+    "5.2.1",
+    "5.2.2"
+  ],
+  "frozen_selection": "results/ch05/unified_delivery_v1/SELECTION_FROZEN.json",
+  "methods": 7,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "test_policy": "128 fresh cases after freeze; now viewed.",
+  "adaptations": [
+    "common Gauss training and independent validation geometry",
+    "reconstructible cosine inputs",
+    "independent constrained-state QP reference",
+    "source/selection freeze and all-model independent audit"
+  ]
+}

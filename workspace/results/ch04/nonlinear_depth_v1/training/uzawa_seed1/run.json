@@ -1,0 +1,24 @@
+{
+  "config": {
+    "method": "uzawa",
+    "seed": 1,
+    "width": 32,
+    "depth": 2,
+    "device": "cpu",
+    "mesh": 64,
+    "validation_mesh": 96,
+    "rho": 0.0002,
+    "lr": 0.003,
+    "warmup_steps": 500,
+    "outer_steps": 80,
+    "inner_steps": 160
+  },
+  "seconds": 86.4982355022803,
+  "optimizer_closures": 15055,
+  "selected_index": 79,
+  "validation_score": 0.022430399998567236,
+  "parameter_count": 1697,
+  "inner_exact": false,
+  "control_block": "exact quadratic minimizer",
+  "test_evaluations": 0
+}

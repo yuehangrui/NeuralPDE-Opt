@@ -1,0 +1,12 @@
+{
+  "parent": "results/ch04/unified_delivery_v1/training/alm_s0/base",
+  "parent_checkpoint_sha256": "0cd7b7ecfebaa764e430202c04ba864f915b971fa19b5664bb10d12c83831c7f",
+  "method": "alm",
+  "blocks": 4,
+  "lbfgs_per_block": 600,
+  "adam_steps": 0,
+  "multiplier_updates": 4,
+  "selection": "same validation_score as parent",
+  "source_sha256": "0f261a04f8aa36f4b32b2e6fcc1e01471e894053a5055e5a1961eb36929f290b",
+  "test_evaluations": 0
+}

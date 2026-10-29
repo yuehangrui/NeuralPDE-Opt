@@ -1,0 +1,66 @@
+{
+  "key": "fem_nn_declared_trial_s2",
+  "method": "fem_nn",
+  "seed": 2,
+  "variant": "declared_trial",
+  "kind": "hybrid",
+  "directory": "results/ch04/unified_delivery_v1/training/fem_nn_s2",
+  "checkpoint": "results/ch04/unified_delivery_v1/training/fem_nn_s2/best.pt",
+  "sha256": "e6e30f66b94dd392775d18dca62ac4f54d8a6865841b73a9909aab74b6832dc6",
+  "track": "fixed_instance",
+  "test_role": "independent spatial/mesh assessment of fixed instance",
+  "fixed_instance": {
+    "quadrature_order": 96,
+    "control_relative_l2": 0.009614041697144688,
+    "raw_state_evaluation": "not a neural state output; true PDE recovery below",
+    "boundary_y_max": null,
+    "boundary_p_max": null,
+    "fem": [
+      {
+        "mesh": 128,
+        "control_relative_l2": 0.00961404169714469,
+        "recovered_objective": 0.1250786547281987,
+        "reference_objective_h": 0.12507864746518635,
+        "objective_gap_h": 7.263012358205145e-09,
+        "reduced_gradient_l2": 5.7538988757523486e-06,
+        "reduced_gradient_relative": 0.014668408196024153,
+        "recovered_state_relative_l2": 0.00020246039047618132,
+        "independent_source_observation_relative_l2": 0.000153134947302417
+      },
+      {
+        "mesh": 256,
+        "control_relative_l2": 0.009614041697144695,
+        "recovered_objective": 0.12507841091874433,
+        "reference_objective_h": 0.1250784059599958,
+        "objective_gap_h": 4.958748522909673e-09,
+        "reduced_gradient_l2": 3.6812875402634598e-06,
+        "reduced_gradient_relative": 0.009317775283945154,
+        "recovered_state_relative_l2": 7.709091784696e-05,
+        "independent_source_observation_relative_l2": 0.00019141519539674662
+      }
+    ],
+    "metadata": {
+      "learned_source_coefficients": [
+        19.743169024605756,
+        1.7665625776597322e-13,
+        -1.497980461474088e-05,
+        -2.4271555168269666e-12,
+        1.6289350846953935e-13,
+        -0.00285661046969953,
+        -3.093905116904483e-12,
+        -0.001142901635570933,
+        -1.4979804018392422e-05,
+        -2.0891751439234664e-12,
+        -4.937590714959598e-05,
+        3.3160957141168953e-12,
+        -2.8790129655281765e-12,
+        -0.0011429016375656186,
+        -5.802797288107756e-13,
+        -0.0004571615766407058,
+        0.8013538367052356
+      ]
+    },
+    "fem_gap_note": "Sine/continuous-network controls and P1 reference controls are different discrete spaces; signed gaps retained."
+  },
+  "assessment_seconds": 4.034765660762787
+}

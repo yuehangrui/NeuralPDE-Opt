@@ -1,0 +1,19 @@
+{
+  "version": "ch04-unified-delivery-v1",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "population": "fixed 17-mode linear family; fixed-instance methods evaluated separately",
+  "training_data": "data/ch04/operator_learning_v1, common seed0 train256/validation64",
+  "test_policy": "Generate fresh holdout only after all selections and configs are frozen; no test tuning.",
+  "deterministic_algorithms": "mesh refinement instead of artificial seed repetitions",
+  "stages": [
+    "supplement_frozen_training",
+    "adapted_and_hybrid_training",
+    "freeze_all",
+    "independent_assessment",
+    "audit_and_archive"
+  ]
+}

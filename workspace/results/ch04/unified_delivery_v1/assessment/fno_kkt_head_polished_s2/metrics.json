@@ -1,0 +1,184 @@
+{
+  "key": "fno_kkt_head_polished_s2",
+  "method": "fno_kkt",
+  "seed": 2,
+  "variant": "head_polished",
+  "kind": "grid_operator",
+  "directory": "results/ch04/unified_delivery_v1/training/fno_kkt_s2",
+  "checkpoint": "results/ch04/unified_delivery_v1/training/fno_kkt_s2/best.pt",
+  "sha256": "2d44cf19b4737e4d9cb90fde4d5efc59f421996e9626e12322db3cb60e8a47d2",
+  "track": "problem_family",
+  "test_role": "fresh held-out problems",
+  "heldout": {
+    "inference_seconds": 0.009103318676352501,
+    "direct_control": {
+      "control_relative_l2": {
+        "mean": 5.1354913140518546e-15,
+        "std": 1.8866284869058015e-15,
+        "max": 1.0987218945081932e-14
+      },
+      "recovered_state_relative_l2": {
+        "mean": 8.490345200573597e-16,
+        "std": 5.893167491472243e-16,
+        "max": 2.868939059163686e-15
+      },
+      "true_objective": {
+        "mean": 0.17312331332891506,
+        "std": 0.04394814399895576,
+        "max": 0.29013366529503387
+      },
+      "reference_objective": {
+        "mean": 0.17312331332891506,
+        "std": 0.04394814399895576,
+        "max": 0.29013366529503387
+      },
+      "objective_gap": {
+        "mean": -1.0842021724855044e-18,
+        "std": 1.8078563253273996e-17,
+        "max": 5.551115123125783e-17
+      },
+      "objective_gap_relative": {
+        "mean": -5.989911309068586e-18,
+        "std": 1.079663750089697e-16,
+        "max": 3.095787870221611e-16
+      },
+      "true_gradient_l2": {
+        "mean": 3.037610336201151e-17,
+        "std": 1.904557525098922e-17,
+        "max": 9.167457735959433e-17
+      },
+      "true_gradient_relative": {
+        "mean": 8.132722185748243e-15,
+        "std": 5.461089701789397e-15,
+        "max": 2.7705624956800356e-14
+      },
+      "raw_state_relative_l2": {
+        "mean": 2.141811376560665e-15,
+        "std": 1.0007716552390576e-15,
+        "max": 4.798088211539906e-15
+      },
+      "state_residual_relative": {
+        "mean": 3.58633895518147e-15,
+        "std": 1.1984752135756572e-15,
+        "max": 6.118903371691278e-15
+      },
+      "raw_objective": {
+        "mean": 0.17312331332891506,
+        "std": 0.04394814399895576,
+        "max": 0.2901336652950338
+      },
+      "adjoint_residual_relative": {
+        "mean": 2.610331907843477e-15,
+        "std": 7.695672681678679e-16,
+        "max": 5.201310518018867e-15
+      },
+      "optimality_residual_l2": {
+        "mean": 0.0,
+        "std": 0.0,
+        "max": 0.0
+      }
+    },
+    "matched_control_8": {
+      "control_relative_l2": {
+        "mean": 3.997529568005068e-15,
+        "std": 1.1213479304845966e-15,
+        "max": 5.845095662857281e-15
+      },
+      "recovered_state_relative_l2": {
+        "mean": 6.285982209641331e-16,
+        "std": 4.1282914254819783e-16,
+        "max": 1.3839657325187365e-15
+      },
+      "true_objective": {
+        "mean": 0.19053443751740923,
+        "std": 0.053877877131036825,
+        "max": 0.29013366529503387
+      },
+      "reference_objective": {
+        "mean": 0.19053443751740923,
+        "std": 0.053877877131036825,
+        "max": 0.29013366529503387
+      },
+      "objective_gap": {
+        "mean": 0.0,
+        "std": 1.5515838457795457e-17,
+        "max": 2.7755575615628914e-17
+      },
+      "objective_gap_relative": {
+        "mean": -1.9792966864340424e-18,
+        "std": 8.477743204654069e-17,
+        "max": 1.1897220934567918e-16
+      },
+      "true_gradient_l2": {
+        "mean": 2.301275592275292e-17,
+        "std": 1.3795522450623946e-17,
+        "max": 5.3190936938260746e-17
+      },
+      "true_gradient_relative": {
+        "mean": 4.694188864769464e-15,
+        "std": 3.1206368507532868e-15,
+        "max": 1.0448460976625562e-14
+      },
+      "raw_state_relative_l2": {
+        "mean": 1.8767624334867302e-15,
+        "std": 9.238681046208142e-16,
+        "max": 2.934276218263302e-15
+      },
+      "state_residual_relative": {
+        "mean": 3.2542550815984924e-15,
+        "std": 1.130914352174146e-15,
+        "max": 4.54747077262137e-15
+      },
+      "raw_objective": {
+        "mean": 0.19053443751740923,
+        "std": 0.05387787713103681,
+        "max": 0.2901336652950338
+      },
+      "adjoint_residual_relative": {
+        "mean": 2.3770687930531023e-15,
+        "std": 6.761376577588649e-16,
+        "max": 3.1488488079049784e-15
+      },
+      "optimality_residual_l2": {
+        "mean": 0.0,
+        "std": 0.0,
+        "max": 0.0
+      }
+    }
+  },
+  "fixed_instance": {
+    "quadrature_order": 96,
+    "control_relative_l2": 4.591924388994216e-14,
+    "raw_state_relative_l2": 1.5753459150105723e-15,
+    "raw_objective": 0.1250783232288715,
+    "state_residual_relative": 3.1012713162264765e-15,
+    "adjoint_residual_relative": 2.1938499969804857e-15,
+    "boundary_y_max": 1.2246467991473525e-16,
+    "boundary_p_max": 7.755166452088207e-19,
+    "fem": [
+      {
+        "mesh": 128,
+        "control_relative_l2": 4.5919893284488324e-14,
+        "recovered_objective": 0.12507866031381806,
+        "reference_objective_h": 0.12507864746518635,
+        "objective_gap_h": 1.2848631714135195e-08,
+        "reduced_gradient_l2": 6.000159759403478e-06,
+        "reduced_gradient_relative": 0.015296200801022978,
+        "recovered_state_relative_l2": 0.00016904419625960273
+      },
+      {
+        "mesh": 256,
+        "control_relative_l2": 4.5919896076079255e-14,
+        "recovered_objective": 0.12507840676967377,
+        "reference_objective_h": 0.1250784059599958,
+        "objective_gap_h": 8.096779635646811e-10,
+        "reduced_gradient_l2": 1.5045725098496849e-06,
+        "reduced_gradient_relative": 0.003808251431556851,
+        "recovered_state_relative_l2": 4.226405331664366e-05
+      }
+    ],
+    "metadata": {},
+    "fem_gap_note": "Sine/continuous-network controls and P1 reference controls are different discrete spaces; signed gaps retained."
+  },
+  "assessment_seconds": 1.5486234854906797
+}

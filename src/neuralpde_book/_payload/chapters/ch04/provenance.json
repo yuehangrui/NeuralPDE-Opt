@@ -1,0 +1,57 @@
+{
+  "version": "ch04-instance-v0.1",
+  "date": "2026-10-23",
+  "kind": "adapted migration, not bitwise reproduction",
+  "sources": [
+    {
+      "source": "references/legacy_source/ocpde_dl/pinn/elliptic_uc.py",
+      "sha256": "5911c84db6a807dc4af64a5db0fe10e90514d89bd7e394f5ea790f735f5ee7da"
+    },
+    {
+      "source": "references/legacy_source/ocpde_dl/pinn/func_net.py",
+      "sha256": "dc7e58d7fa988f38b4df8e44ac439f11b6cdcd152621013bfc115cde68974ac4"
+    },
+    {
+      "source": "references/legacy_source/ocpde_dl/pinn/elliptic_uc_pinn.py",
+      "sha256": "16474962c3847b7928e5e2447c23a74466fae5a17a98f9e1e3ea1158cfc81a85"
+    },
+    {
+      "source": "references/legacy_source/ocpde_dl/pinn/elliptic_uc_direct_pinn.py",
+      "sha256": "4af5d5d927b02a624fcdd5abd588e44b58cf58f100155da9b2b0c0731bb7f1d2"
+    },
+    {
+      "source": "references/legacy_source/ocpde_dl/pinn/alm_pinn.py",
+      "sha256": "97bd9b9d20e2ac511b600d6dbe669a5389db8e3e49342b7412bbe745c66002bc"
+    },
+    {
+      "source": "references/legacy_source/ocpde_dl/pinn/alm_elliptic_uc.py",
+      "sha256": "9213ebce532685c32afd56ac5c1494c416cfefa3c602ce999f4e2e414ca79161"
+    },
+    {
+      "source": "references/legacy_source/ocpde_dl/pinn/train.py",
+      "sha256": "51477dc4a60cab7419075683979ce634c16b801c47435935e399aa3a146014c9"
+    },
+    {
+      "source": "src/neuralpde_opt/mesh.py",
+      "sha256": "7df565176f6ad862b19b1817f72176da7aa60373da8b200f7e5f4b983f97b741",
+      "use": "P1 square triangulation and positive Duffy quadrature construction"
+    }
+  ],
+  "scope": [
+    "elliptic manufactured OCP",
+    "direct PINN",
+    "KKT PINN",
+    "equality ALM",
+    "independent P1 reference and diagnostics"
+  ],
+  "changes": [
+    "explicit physical adjoint interface p=alpha*q",
+    "fixed independent train/validation samples",
+    "float64 default",
+    "explicit loss sums",
+    "common validation selection",
+    "PDE recovery and discrete reduced gradient",
+    "ALM feasibility plus optimality stopping",
+    "new output directories; source-aware checkpoint loading"
+  ]
+}

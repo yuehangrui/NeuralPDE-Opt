@@ -1,0 +1,46 @@
+{
+  "key": "alm_head_selected_s2",
+  "method": "alm",
+  "seed": 2,
+  "variant": "head_selected",
+  "kind": "adapted_pinn",
+  "directory": "results/ch04/unified_delivery_v1/training/alm_s2/head",
+  "checkpoint": "results/ch04/unified_delivery_v1/training/alm_s2/head/best.pt",
+  "sha256": "fd50e7c879721ccbf65844cec6e665105628cd3727089c40850ef6388ed663fe",
+  "track": "fixed_instance",
+  "test_role": "independent spatial/mesh assessment of fixed instance",
+  "fixed_instance": {
+    "quadrature_order": 96,
+    "control_relative_l2": 0.006756370321646076,
+    "raw_state_relative_l2": 6.098630806114183e-06,
+    "raw_objective": 0.12507829839032392,
+    "state_residual_relative": 0.00020820666563582904,
+    "boundary_y_max": 3.9876390368717744e-19,
+    "boundary_p_max": null,
+    "fem": [
+      {
+        "mesh": 128,
+        "control_relative_l2": 0.006756370321645436,
+        "recovered_objective": 0.12507866373738122,
+        "reference_objective_h": 0.12507864746518635,
+        "objective_gap_h": 1.627219486932674e-08,
+        "reduced_gradient_l2": 6.515132443309746e-06,
+        "reduced_gradient_relative": 0.01660902010849674,
+        "recovered_state_relative_l2": 0.00016708958148158384
+      },
+      {
+        "mesh": 256,
+        "control_relative_l2": 0.006756370321645895,
+        "recovered_objective": 0.12507841030766517,
+        "reference_objective_h": 0.1250784059599958,
+        "objective_gap_h": 4.3476693634136865e-09,
+        "reduced_gradient_l2": 3.0401923560240137e-06,
+        "reduced_gradient_relative": 0.007695087352880942,
+        "recovered_state_relative_l2": 4.034436142002311e-05
+      }
+    ],
+    "metadata": {},
+    "fem_gap_note": "Sine/continuous-network controls and P1 reference controls are different discrete spaces; signed gaps retained."
+  },
+  "assessment_seconds": 2.748580134473741
+}

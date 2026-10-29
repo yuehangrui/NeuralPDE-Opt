@@ -1,0 +1,239 @@
+{
+  "passed": true,
+  "neural_runs": 18,
+  "fem_runs": 8,
+  "checks": [
+    {
+      "name": "poisson1d_pinn_seed0",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson1d_pinn_seed1",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson1d_pinn_seed2",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson1d_ritz_seed0",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson1d_ritz_seed1",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson1d_ritz_seed2",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson1d_vpinn_seed0",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson1d_vpinn_seed1",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson1d_vpinn_seed2",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson2d_pinn_seed0",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson2d_pinn_seed1",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson2d_pinn_seed2",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson2d_ritz_seed0",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson2d_ritz_seed1",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson2d_ritz_seed2",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson2d_vpinn_seed0",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson2d_vpinn_seed1",
+      "reload_passed": true,
+      "final_iterate": true
+    },
+    {
+      "name": "poisson2d_vpinn_seed2",
+      "reload_passed": true,
+      "final_iterate": true
+    }
+  ],
+  "fem": [
+    {
+      "dim": 1,
+      "grids": 4,
+      "orders": {
+        "l2_abs": 1.9999430961363427,
+        "h1_semi_abs": 0.9999565466971864
+      }
+    },
+    {
+      "dim": 2,
+      "grids": 4,
+      "orders": {
+        "l2_abs": 1.9983631008153695,
+        "h1_semi_abs": 0.999311941962208
+      }
+    }
+  ],
+  "files": {
+    "aggregate.json": "c7e631e38159bdddb8f8fd8bfd0e5dfeec7a521f4f941e6e6f10c203ac9c6ceb",
+    "environment.json": "db8beaa21e474497877a49d995efda9b54561ece6e81a41228c0f3c3369af482",
+    "fem/poisson1d_n128.json": "47ebcb69bec4fc5733afce0c8c4da40e06fbca7049cf1b47b4cdd9cd65a1f6e6",
+    "fem/poisson1d_n128.npz": "f6228b5bb9dc47a7548f2f49c7efad7dbf3b49fe4fbf3507b3d48d333fbc4265",
+    "fem/poisson1d_n16.json": "181d5d12fff5a8d960c2475b778ec70b4b70cff70cec3357a335d6a06a07508d",
+    "fem/poisson1d_n16.npz": "389143fccca8314233d1d4b9cd5bafb57322006de381386eb9127d0a4a162fce",
+    "fem/poisson1d_n32.json": "5a7e8dff5969a20560f25bddbedba313701f17f18cbcef39a47bf8387774de75",
+    "fem/poisson1d_n32.npz": "684b92b3c186fb603a84325639fc07795430e6f8a6a51ebc8658a41a01fd6368",
+    "fem/poisson1d_n64.json": "f7ec7adbf93b1f469a2e54817c2d2b0297fab8ee9a93d0286a031c2ccacfb429",
+    "fem/poisson1d_n64.npz": "1dc9c09c0d4d10edc603cd5c525164241d8b17fcd1d40443791c23c1971ce583",
+    "fem/poisson2d_n16.json": "26726872680e6435c21bf61c66204713c13ae51fc59f12c55f9eea1c3749a488",
+    "fem/poisson2d_n16.npz": "1730f069bc6d303cf2f519f160268c960c1ca27771737772fd55f1a74243e140",
+    "fem/poisson2d_n32.json": "587e240dfc78c95848ee859c7b1e35df5e7c4df0e0d35cdc85af0b93247185fc",
+    "fem/poisson2d_n32.npz": "397842e09e7726fec99fbeadcbf3660b5b176242b0f231be5b997c6e7027ccf9",
+    "fem/poisson2d_n64.json": "d903397ee13d520b38bfa907d8a7c72ea77014e4eda394f06d821007c3df57a5",
+    "fem/poisson2d_n64.npz": "d24e3debc56635fa03e31ee6d566d3986557557bbb30d3a06ea8ba493da584cd",
+    "fem/poisson2d_n8.json": "d0666653fff5ff2f69fcdb4b36db2bd83ca415caa386c20d28fa63d9d92ad1b8",
+    "fem/poisson2d_n8.npz": "0bef9e2900ab3f1dc269b3b109932c42719b64fd64a7ec8370f31fb61897dfef",
+    "fem_metrics.csv": "f6eaa877ed49e53eebc475b69f66e8e4cc589baa28ab9c179bc8228d01944b04",
+    "figures/fem_convergence.pdf": "5064d1433dbe8f8731696d1b58ae9b4aa822783d9b7692ac07344e58f0ea29d2",
+    "figures/fem_convergence.png": "f17b6df5554f1145ef5b68eeecaccdb7f6c43e7425f2b9e59f98d564334a6f8d",
+    "figures/poisson1d_solutions.pdf": "4dbe642877d0ea7ced1f576b22a612d6e48d80e7422eba68ddab06b4e55423aa",
+    "figures/poisson1d_solutions.png": "96ece057844ac96f5431e0d84c581d8b8aa2a83ef9dba76ba021223d5af42015",
+    "figures/poisson1d_training.pdf": "18b7f080bbbaf16751b1b6fa43377c4b446c9d07d181769d21b1fc9fd00cb926",
+    "figures/poisson1d_training.png": "95ebe0fcc3760a3fd45351962452175695539292008821df0e972d723cf81de1",
+    "figures/poisson2d_solutions.pdf": "32871104ecd5d1ada8b67f31deb6d15c4661394d944767621c54ebfe3ec3d882",
+    "figures/poisson2d_solutions.png": "d7344eec1dbb6795da8eb9167048a90ed40db8339cb0250860181faaaef967f2",
+    "figures/poisson2d_training.pdf": "9a96e9497e5970e3aad13aada59930a0583f970279515a0f102012f2794363c1",
+    "figures/poisson2d_training.png": "a3d57931b277f878b429c4d65476abcaac890a5bd55a0152c19a1f91aeb1130b",
+    "metrics.csv": "c2f1a7e0f85cc1d6c6d55ddc97762ca0a51c0026228c8f748d5c5811fce57e45",
+    "poisson1d_pinn_seed0/checkpoint.pt": "158c654431db557e1c80cc379bec262baa4ca8db095d7daa60c6b7e2cf06b558",
+    "poisson1d_pinn_seed0/config.json": "19fbfe02c335cdea9c4f721beebf2e9361c0d7053931a35b49e07bbb66fd0f1e",
+    "poisson1d_pinn_seed0/history.json": "66a0ab07123169cb46b96028e1fb7671e0dd1658c27a20f017113c7b35dd7cbe",
+    "poisson1d_pinn_seed0/metrics.json": "94c8a080000e98dfed17664555561cc40e949afd0f80bdbb2d401dc02fda0ad2",
+    "poisson1d_pinn_seed0/model.pt": "12cbb64df71715e34576a419738a37d81e48aeb6b1247e498000d0ca0e3e0ae0",
+    "poisson1d_pinn_seed1/checkpoint.pt": "585471b69d8f132230ae3e71c7497f6d86030c8940a4a4d1374822bf3db97f9b",
+    "poisson1d_pinn_seed1/config.json": "9162423101681629ccc9e688428896b8d735d2ad92b4bbc8ca89cc55ea416b5a",
+    "poisson1d_pinn_seed1/history.json": "c5d65f89842264512b59d23d57fae5a29d06c58707ec5c0cee7b61d0dea1529c",
+    "poisson1d_pinn_seed1/metrics.json": "b5edeb18504481f48cb56f60177d1bffde68a3fbb5752cd36e560201e5c5891a",
+    "poisson1d_pinn_seed1/model.pt": "692cef001e1f99d19b7e6b48db08704f51198b4ac1b4f9ecb3feef8eba91d15c",
+    "poisson1d_pinn_seed2/checkpoint.pt": "94dd1da163ee03d2e1ad48ab1445f64933f75dcdeba7fa68c33a7a3d7cfffd24",
+    "poisson1d_pinn_seed2/config.json": "d73e6355a8b94c3284b2e623d58b6b01c7de8fe5cafaa31b1f0884ab618daad2",
+    "poisson1d_pinn_seed2/history.json": "c3014c1c4766d47e86c09a3055c41ea65315f60e9b4c9ddff76d7789fb26338d",
+    "poisson1d_pinn_seed2/metrics.json": "56e8a48783835c08cdcddac6102cbc0afc61b5f703bd5966e10ed667f6457e3c",
+    "poisson1d_pinn_seed2/model.pt": "932fb3e9ac9f419ddb25bd5bc859f605b9ec01578cbe9c6bd07b16846378b4da",
+    "poisson1d_ritz_seed0/checkpoint.pt": "5bdf8b7d897c88f177de81efeb3f5cf90ca90a640fbf03d4aa65e44709293012",
+    "poisson1d_ritz_seed0/config.json": "bc32ddd3a027848958757e66fd0a74a22f299a92c0ebc0678f1a628223251c8e",
+    "poisson1d_ritz_seed0/history.json": "fa6129d39f72ea046413897b8bc80207babf3b28c1b5f8110764325abf528524",
+    "poisson1d_ritz_seed0/metrics.json": "e4bbe7c811d6ad9c90d0bb1ea5699f97a8d14f7450de1a0eabc24cacc451e0a9",
+    "poisson1d_ritz_seed0/model.pt": "05250d474a65f55ab412c3dd4c08adddcc6998ae087955db9062bca1c76d7c49",
+    "poisson1d_ritz_seed1/checkpoint.pt": "5c016111caf27c273beb4a8b254385f725f4c5879813d4f895b3ae31b30f220f",
+    "poisson1d_ritz_seed1/config.json": "621034b7fe495cedf68ad951779c56dc157cc9a6e5bfe5e1cc2fe2205dc114a8",
+    "poisson1d_ritz_seed1/history.json": "102e1a13c2b27f3e4dbb605571605052b051fb910ba413baca56cdb40a05fd9d",
+    "poisson1d_ritz_seed1/metrics.json": "d26d6c6a59b72454ef95d1ca826f00e5ffd2632cc609cb9afadee4bb016187f0",
+    "poisson1d_ritz_seed1/model.pt": "89192b48fa1a78789305c2352e01af41a48aaaf922069d35f292a308e9606f3d",
+    "poisson1d_ritz_seed2/checkpoint.pt": "e30d715f32f11e73f92a45cbdf4b254f0d8cc9a3782ff708e70783c09921d099",
+    "poisson1d_ritz_seed2/config.json": "adbdf7e665e27074292ae3477153e7e0f2c8ea5624bd92964159b0849c72b679",
+    "poisson1d_ritz_seed2/history.json": "723c1e0334afdc2c0cd6266dede4d4e6b775112be2501b7166730b9a6c71e259",
+    "poisson1d_ritz_seed2/metrics.json": "221c75adf8ab94c75013b11cc55cfb2110b4c7540ab203ad0e1a766d03a9b344",
+    "poisson1d_ritz_seed2/model.pt": "6e17f0441596c93b249e323883acbaea61fc7bc680f311afc04b3af953706ddd",
+    "poisson1d_vpinn_seed0/checkpoint.pt": "177f84a9af463ec707d317ce1c8a0f45351771adc834074934329eb7b9773ca1",
+    "poisson1d_vpinn_seed0/config.json": "9d5aeb201989598b0b7094eedff95514aa72408bc1230370ea41ab58db04d2ff",
+    "poisson1d_vpinn_seed0/history.json": "36688211c23f677d3021804ecaccf757d73ef7802c5585ba387d46855e080051",
+    "poisson1d_vpinn_seed0/metrics.json": "2e36b498b30915ca8809b1f475a872fcae4525101f17599939383cde59d56a8b",
+    "poisson1d_vpinn_seed0/model.pt": "e413d5ff5fd3912a7bc303a45484b4408ab2a1ba1bf360cd486b221f63ed82c6",
+    "poisson1d_vpinn_seed1/checkpoint.pt": "354be04943383278874e0d42ce4de3712d0891fb2f0b6bd6aa41f598dfdfc7bc",
+    "poisson1d_vpinn_seed1/config.json": "1d0db6ee62b83210be108b8a4158bb5cb39c8208ba33cab39e20db7d94b41205",
+    "poisson1d_vpinn_seed1/history.json": "c49e3dfbd982d469098f90b05e86b89e02fe6cabaf7f50345df8039a6d02dea6",
+    "poisson1d_vpinn_seed1/metrics.json": "9a93c5a3c040533d8e9b779032aafe854d5110b72cf0c8f778834fa6750370c6",
+    "poisson1d_vpinn_seed1/model.pt": "f2de6ba61d1d6d6865b8889788d03c0a53ac3bc822c00f527c1a5300abcee323",
+    "poisson1d_vpinn_seed2/checkpoint.pt": "cb8af397a74bcd3f6e3048a4636381ce7295d1b6a8643552ef98040ee8c7615f",
+    "poisson1d_vpinn_seed2/config.json": "1610a0753028426e64f31f0ad93bb2f09e5fe2828f4660702f36fbc5663c16e2",
+    "poisson1d_vpinn_seed2/history.json": "a942a186333d14f0d74e9ea40a38192f29787e8bf500395c58473cfa6e652250",
+    "poisson1d_vpinn_seed2/metrics.json": "363f2392accd9abdf394a6b3490189ead4ff541b8fa17fdfe5fe4a3b67e988b4",
+    "poisson1d_vpinn_seed2/model.pt": "72a1d913d3b661c9b2aa27a097956c7c14375ed90e4ea01b9c34e8c52eebc70a",
+    "poisson2d_pinn_seed0/checkpoint.pt": "64fc4f58b02c90b70438148ea85578bc243c59b8ebf603f753bcffbcfbb317bc",
+    "poisson2d_pinn_seed0/config.json": "6cb68f921575ca44d1980c95e4338e16a8eae7a1067eb5c463227ed31881d9d7",
+    "poisson2d_pinn_seed0/history.json": "5ca149e68bb3ea5c58797546dd4c58ef2ce59f3e6868a1300725471562f282fa",
+    "poisson2d_pinn_seed0/metrics.json": "ef0ab8e328b82947ca5a5bb160e126b0b79889b41564543c5995b6c6061fd3cc",
+    "poisson2d_pinn_seed0/model.pt": "d697318cd91c7750209b815cdab4ee9e28e9e6573400f96f3a260c3d51c24793",
+    "poisson2d_pinn_seed1/checkpoint.pt": "00b00051c03ea2cd45564508174b4e6ae2d1156550aaa339e32b5c5daad95bef",
+    "poisson2d_pinn_seed1/config.json": "629ef987cf35f447d9a37cbcce57d0424bf6ed4e3a9d947317a0292b51049a6a",
+    "poisson2d_pinn_seed1/history.json": "a6b396a029c6862a195807e8ebe84ced9758329ebfff0668b85fde7ea71782a2",
+    "poisson2d_pinn_seed1/metrics.json": "80d34db24ac1a0b14c34999d71ee7bdcc4bebda7e3c7eea5fc37de94a90d0e3a",
+    "poisson2d_pinn_seed1/model.pt": "ada08d0c2620cbf20a2ee3e77663e518b92535d8fa3d26ed420dedefadeccea9",
+    "poisson2d_pinn_seed2/checkpoint.pt": "7617b961cbb727a7a66f6ea7f17192ac3fa433a0e93a3430b7d93d9fa884e4d9",
+    "poisson2d_pinn_seed2/config.json": "782b9b0c6a88c321dc3fa03276612ef09587ed9d45cc0314a4cbae348a409280",
+    "poisson2d_pinn_seed2/history.json": "1a06bf2732499ac3908e7f408a7b7fb8b291be71bcbab7c683e93939701a59dd",
+    "poisson2d_pinn_seed2/metrics.json": "831007582fcf826b76c4ad3a25e91bea81c1995366f0ba1ba936bbb4e4e49056",
+    "poisson2d_pinn_seed2/model.pt": "68d0a0a3d08fd9661c96c00c3f3b4a553f9a7dbb7e71d30f8c1bf7f200d8b561",
+    "poisson2d_ritz_seed0/checkpoint.pt": "f2236b5f4a7f07a298672b98056969110a64d78aaf110e1452d50dd9c9cf3ed3",
+    "poisson2d_ritz_seed0/config.json": "2e73d8f3efb15b1ab0a628225e756aad0df1989fe371c49dcd3fc14740362051",
+    "poisson2d_ritz_seed0/history.json": "a693415b8ad331768e651ea9c7737ddc64ca0d67d421bf0d4ee9186e24dbeeca",
+    "poisson2d_ritz_seed0/metrics.json": "856e52f90075b0873712827b41650526c31f34ff22558b2a0aafd07bda98d0c6",
+    "poisson2d_ritz_seed0/model.pt": "7d3395ba7394de90181f38b16659a3451bd3ecfcb111a906ada7f624ca69554b",
+    "poisson2d_ritz_seed1/checkpoint.pt": "685b2f4fc8198cb78c0ccbf281f562835cd3486b1b02d002accf1e05498401a5",
+    "poisson2d_ritz_seed1/config.json": "f372494819af3f8a48a901c6bc834a58b214e9878766f29d12f7b66672c9c503",
+    "poisson2d_ritz_seed1/history.json": "d1fd548240ea6781bf4b74537cd2def7d5c75d090e218bd576ee70bf30067aab",
+    "poisson2d_ritz_seed1/metrics.json": "f3e829de56f201b8a2c88b01aacd31f7de658d66c5b995917bfeba436e041602",
+    "poisson2d_ritz_seed1/model.pt": "532271159a9e721df42266c8af5a1a713bc8f39c00ee655dc2f2c2f0e974967f",
+    "poisson2d_ritz_seed2/checkpoint.pt": "feb92dbe060e78f290fe0e24038dc61859ba69e66b67c9f20bf4b981d8426544",
+    "poisson2d_ritz_seed2/config.json": "07d2ce7cddaac60372577573ca3857fea5db222755da319aa6939a8461bce20f",
+    "poisson2d_ritz_seed2/history.json": "2eadd96a13cfa9d13084f117b8869b19351df0fd533ab421ccbae2060d525d9d",
+    "poisson2d_ritz_seed2/metrics.json": "4958e6b92e241c19c978486ecf604970629452dcc5210d88c69f4f532bc033c4",
+    "poisson2d_ritz_seed2/model.pt": "fe4a7bde324f3a015b9b723521676a06a717982290eb26174e49f0fb37791734",
+    "poisson2d_vpinn_seed0/checkpoint.pt": "0cac2425ec95cdf4d9e4a2dec3b19d40d65345233f94bff7571cc0382840dff4",
+    "poisson2d_vpinn_seed0/config.json": "b9a2161c47bbf3a2e284e054cd3187f1ed8884f9b47c2c576a203fb699977f87",
+    "poisson2d_vpinn_seed0/history.json": "ddc86a76d086ded24a79b74b109d5b103cd43758748b3d235072802f153c78a7",
+    "poisson2d_vpinn_seed0/metrics.json": "e94371f66ed14fa4d66a72b8e66727488eeb107c05b6e62f63c3e948fb0a07b8",
+    "poisson2d_vpinn_seed0/model.pt": "2f994368b3897ce22da2b0890b1aae65deda5c220dd31a2bcc86fb8fc1ee507b",
+    "poisson2d_vpinn_seed1/checkpoint.pt": "a4ca24689f26ad8a7b48d9fdc992fdba4ab025a21d129ac8c97f8d7b34e927d1",
+    "poisson2d_vpinn_seed1/config.json": "af40b1f801c945c100ca2b69491dba42f1a1dcf19d3872b9b028ba5507c068d8",
+    "poisson2d_vpinn_seed1/history.json": "72ce84c08bd4234ad15e65559adcb711735c6b5a8da71c81427a284626a08257",
+    "poisson2d_vpinn_seed1/metrics.json": "c8a3d6865dd13ee9e00cb82fe4ebb396e324865aae28c8e748694f80e2a19360",
+    "poisson2d_vpinn_seed1/model.pt": "bbd6afad871464d96bd3b0c99f205805372ee090d97a1797f09e026ae0f205ce",
+    "poisson2d_vpinn_seed2/checkpoint.pt": "979ce6dfec444db1a5b1d047e3d7bea37586a10b7a71a7bf14f55312e66437aa",
+    "poisson2d_vpinn_seed2/config.json": "f377fa6c5053eee96f41823cef6204c3d03a83a5ac9e5de7c8d2e100549c658e",
+    "poisson2d_vpinn_seed2/history.json": "4a178801d0d885e51f82c1034dece706c47a818d6353c65670ac019afc655e40",
+    "poisson2d_vpinn_seed2/metrics.json": "119982820382dfe09142405afb3b2c7c50c3e8c56082f17382f9d836dd0910be",
+    "poisson2d_vpinn_seed2/model.pt": "e1a048f7f4083d2247111201278d07b37b5485f81b6af269c09af40f343fdb86",
+    "suite_config.json": "e872ad6986f221332df3fb256a1f25d1678a5a8fb17ff5dcfda13459ea6d03d0",
+    "summary.md": "993c61d46f1108d452b99a1a8c52842cb5e3e9c93af5b318c086a6c48c52fa65"
+  }
+}

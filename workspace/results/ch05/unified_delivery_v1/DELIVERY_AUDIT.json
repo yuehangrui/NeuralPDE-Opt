@@ -1,0 +1,196 @@
+{
+  "status": "passed",
+  "methods": 7,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "training_configurations": 21,
+  "checkpoint_variants": 21,
+  "family_variants": 12,
+  "heldout_count": 128,
+  "checks": [
+    {
+      "key": "admm_s0",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "admm_s1",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "admm_s2",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "osnn_s0",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "osnn_s1",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "osnn_s2",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "cnp_s0",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "cnp_s1",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "cnp_s2",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "mimo_s0",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "mimo_s1",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "mimo_s2",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "pdol_s0",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "pdol_s1",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "pdol_s2",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "iuzawa_f_s0",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "iuzawa_f_s1",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "iuzawa_f_s2",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "iuzawa_s_s0",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "iuzawa_s_s1",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    },
+    {
+      "key": "iuzawa_s_s2",
+      "checkpoint_reloaded": true,
+      "predictions_reproduced": true,
+      "physical_metrics_recomputed": true
+    }
+  ],
+  "reference_checks": [
+    {
+      "grid": 16,
+      "box_optimality": true,
+      "state_constraint_kkt": true
+    },
+    {
+      "grid": 32,
+      "box_optimality": true,
+      "state_constraint_kkt": true
+    },
+    {
+      "grid": 64,
+      "box_optimality": true,
+      "state_constraint_kkt": true
+    },
+    {
+      "grid": 128,
+      "box_optimality": true,
+      "state_constraint_kkt": true
+    }
+  ],
+  "old_source_protection": [
+    {
+      "module": "ch04",
+      "files": 14
+    },
+    {
+      "module": "ch04_adaptation",
+      "files": 19
+    },
+    {
+      "module": "ch04_operator_learning",
+      "files": 21
+    },
+    {
+      "module": "ch04_operator_adaptation",
+      "files": 16
+    },
+    {
+      "module": "ch04_completion",
+      "files": 13
+    },
+    {
+      "module": "ch04_delivery",
+      "files": 15
+    },
+    {
+      "module": "ch05",
+      "files": 22
+    }
+  ],
+  "selections_unchanged": true,
+  "train_only_normalization": true,
+  "source_frozen_before_test": true
+}

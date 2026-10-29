@@ -1,0 +1,201 @@
+[
+  {
+    "path": "chapters/ch04_adaptation/audit.py",
+    "old": "PORT_MANIFEST.json",
+    "new": "RUNTIME_MANIFEST.json"
+  },
+  {
+    "path": "chapters/ch04_delivery/audit.py",
+    "old": "PORT_MANIFEST.json",
+    "new": "RUNTIME_MANIFEST.json"
+  },
+  {
+    "path": "chapters/ch04_operator_adaptation/cli.py",
+    "old": "PORT_MANIFEST.json",
+    "new": "RUNTIME_MANIFEST.json"
+  },
+  {
+    "path": "chapters/ch04_operator_adaptation/validation.py",
+    "old": "PORT_MANIFEST.json",
+    "new": "RUNTIME_MANIFEST.json"
+  },
+  {
+    "path": "chapters/ch04_operator_learning/audit.py",
+    "old": "PORT_MANIFEST.json",
+    "new": "RUNTIME_MANIFEST.json"
+  },
+  {
+    "path": "chapters/ch05_delivery/protocol.py",
+    "old": "PORT_MANIFEST.json",
+    "new": "RUNTIME_MANIFEST.json"
+  },
+  {
+    "path": "chapters/ch03/heldout.py",
+    "old": "seed=2026102301",
+    "new": "seed=2026102803"
+  },
+  {
+    "path": "chapters/ch03/heldout.py",
+    "old": "split_code=1201",
+    "new": "split_code=2813"
+  },
+  {
+    "path": "chapters/ch04_delivery/protocol.py",
+    "old": "[20261025, 444, 20261026, 3]",
+    "new": "[20261028, 444, 20261029, 1]"
+  },
+  {
+    "path": "chapters/ch05_delivery/protocol.py",
+    "old": "[20261025, 5051, 20261026]",
+    "new": "[20261028, 5051, 20261029]"
+  },
+  {
+    "path": "chapters/ch04_depth/assessment.py",
+    "old": "20261107",
+    "new": "20261207"
+  },
+  {
+    "path": "chapters/ch03/registry.py",
+    "old": "path=\"results/ch03/\" + relative,",
+    "new": "path=\"results/ch03/\" + relative + \"/run\","
+  },
+  {
+    "path": "chapters/ch03/training.py",
+    "old": "base = (ROOT / \"results/ch03/reproductions\").resolve()",
+    "new": "base = (ROOT / row[\"path\"]).resolve().parent"
+  },
+  {
+    "path": "chapters/ch03/training.py",
+    "old": "output.is_relative_to(base) and output != base,",
+    "new": "output == base,"
+  },
+  {
+    "path": "chapters/ch03/training.py",
+    "old": "Use a new child of results/ch03/reproductions",
+    "new": "Use the declared independent workspace run directory"
+  },
+  {
+    "path": "chapters/ch03/training.py",
+    "old": "prepared / f'varmion/seed_{row[\"seed\"]}/best.pt'",
+    "new": "prepared / f'varmion/seed_{row[\"seed\"]}/run/best.pt'"
+  },
+  {
+    "path": "src/neuralpde_ch02/paths.py",
+    "old": "frozen_chapter = Path(__file__).resolve().parents[3] / \"ch02\"",
+    "new": "frozen_chapter = Path(__file__).resolve().parents[2] / \"chapters/ch02\""
+  },
+  {
+    "path": "chapters/ch03/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "bcefc03ee715825d7b2b674f87c19ce9de273e4e8c030a15beb207ca7a6895f7",
+    "sha256": "bf194b72f9f197fc13777f418abc33af15075ed3c164ea67fea2d973b40e3f19"
+  },
+  {
+    "path": "chapters/ch04/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "e62f1a7bcfb6bd4c0877a01d5c93aabb31d8b8d525d2201815c96373582411e8",
+    "sha256": "fd095f96b06b64d97bfaf3ba51a265cc8f353a60b9a3bfe256a147b9b1eac7f6"
+  },
+  {
+    "path": "chapters/ch04_adaptation/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "e73d29783c75420ba1ecf5b5106f192e4724eb90d191a91b7e78065c35c74bac",
+    "sha256": "70604772fbf608b7f1beac17d9bf718e6add0796cc05e2f32b03b22b40074f2b"
+  },
+  {
+    "path": "chapters/ch04_completion/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "8a795dbe554a82a79b296a5bfc907847cf4a89951b1a451c6a73b717046f83e0",
+    "sha256": "6e75ca3d9a2f9d88f011535150c75a3f66e747dc2b58f6b6ddbd1f766d2b077c"
+  },
+  {
+    "path": "chapters/ch04_delivery/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "bc3360e8ad4c51b8ca70371081f3bb8c2b5052a75d3e649abc908eb555521b81",
+    "sha256": "6d282c44a8c958d335fbf8fa44f1ab690b1acbdecf3be84124ece064dcef3d71"
+  },
+  {
+    "path": "chapters/ch04_depth/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "29e4e2924ccd09274180e47770a5b55491a0eeb1036a6d44b8cb9c7efc66ff64",
+    "sha256": "0d43243b91524b894b7e709b4ed2649781077cba064e85913049846fae8043a3"
+  },
+  {
+    "path": "chapters/ch04_operator_adaptation/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "935503f83656fabf5814833d70e50db190599625a78234a5b9d710a22b1a39a6",
+    "sha256": "fc250edacd9f6b72479f6d1958d58893177a54d3b71afb658e553babe5dd9cf1"
+  },
+  {
+    "path": "chapters/ch04_operator_learning/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "cf27ffdeb608095f65ff8a2c82abe6b479887f0d3fb06f9fffb0c31ebd4a055e",
+    "sha256": "aec91f9621ba84452c43a4c7f124bca5845c5fdc86170dc3573ee645d0a46e5c"
+  },
+  {
+    "path": "chapters/ch05/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "c391b3c4b45e0ff596c12e43e97dd167a627edb935ab2cd1c19c23530df5b807",
+    "sha256": "a4d6af7acf417c4a82ce5abe96f6842901e28bdaf6e75c67e21e828f6802f61c"
+  },
+  {
+    "path": "chapters/ch05_delivery/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "c753d25d6a8d5d998c44103a389a1ba732bab0f6fe2562344ecfa97e3aa4a69f",
+    "sha256": "1f71e9652f426f263e74c1fe0bfb5affcc54895bc41dd021995e6f23943446ff"
+  },
+  {
+    "path": "experiments/ch03_hints_v1/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "235e1e6851612c5d2e19143a67adf0d87871e8136b4c9c168c5165445217b062",
+    "sha256": "0a293efd6ca8f029b68cabdd5d73be65c55e83052b9d89ed1ac55a272f1dc194"
+  },
+  {
+    "path": "experiments/ch03_physics_v1/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "47f2147334e7e9044d5feb38417170a3bbed9956262400e270753ee9b89c3c87",
+    "sha256": "e5efa9eb98953236bd9c3534c6c9b30f50db0b08c0493b78e2f12a47fb977bc2"
+  },
+  {
+    "path": "experiments/ch03_pod_v1/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "3fe872f715ffe4e7217acc4074f99a1071e10f8a4e4f6ae6fefe34914ebef573",
+    "sha256": "150a7b3082711dcdd2d371481a2b33e14ca62ce3793e798841f440fa69929ee1"
+  },
+  {
+    "path": "experiments/ch03_varmion_v1/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "8b7af69d39d68e6d55829472f85ef45192726213c47d758e8a614515b6fbb48d",
+    "sha256": "6e98586a9342cb5138ca83e5588fba71d363e610a1272754a0d74a76b0189a1e"
+  },
+  {
+    "path": "experiments/ch03_varmion_v2/README.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "1558de6eaf98ea53bfb9134f32ba1a91aa5fe2e7da1e31fc7d72f7f1cdaaa25a",
+    "sha256": "d4625f8d3f1d133b5f122a7b1d938fd9d169f009ea6db11247363a18b4f3785d"
+  },
+  {
+    "path": "docs/CH03_READING_ZH.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "2ffecae118212cc99c1a82a1ce25e4e1647bb8cd234464858b161f6aeda8e92f",
+    "sha256": "1097d7adeab9263b5830524a5e91c38f0a033a6b2462de49d546b58338a7cafa"
+  },
+  {
+    "path": "docs/CH04_READING_ZH.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "1bc7265f2e5eca9c3ed12902c797f40428218fb6f524cc9f126ef79a3638fcd5",
+    "sha256": "55a4f1a28f2c74ce1bde801003a04e3f69bb4765136269a97fb04bbc53fe2010"
+  },
+  {
+    "path": "docs/CH05_READING_ZH.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": "ba10462289194d1633df8c67af24a676144e1762e4eb97688d0f8e5874e6acac",
+    "sha256": "4aaabcbc4d40010cec17298b510aec36e89d750d755ec845e9d3489d0abb4c37"
+  },
+  {
+    "path": "docs/CH02_READING_ZH.md",
+    "kind": "independent_workspace_documentation",
+    "previous_sha256": null,
+    "sha256": "922da879cc973aec904463f02892cc6fdf3c89cb762011dca52330ab2d92491f"
+  }
+]

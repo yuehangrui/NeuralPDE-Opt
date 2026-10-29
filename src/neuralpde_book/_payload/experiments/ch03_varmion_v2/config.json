@@ -1,0 +1,25 @@
+{
+  "schema_version": "ch03-varmion-v2",
+  "epochs": 800,
+  "batch_size": 32,
+  "operator_batch_size": 32,
+  "learning_rate": 0.001,
+  "min_lr": 0.000001,
+  "weight_decay": 0.00001,
+  "grad_clip": 1.0,
+  "checkpoint_every": 50,
+  "operator_weight": 1.0,
+  "basis_rank": 64,
+  "augmented_train_coefficient_groups": 128,
+  "screen_seed": 0,
+  "confirmation_seeds": [1, 2],
+  "variants": {
+    "dense_data": {"kind": "dense", "operator_groups": 0},
+    "dense_joint": {"kind": "dense", "operator_groups": 32},
+    "spd_data": {"kind": "spd", "operator_groups": 0},
+    "spd_joint": {"kind": "spd", "operator_groups": 32},
+    "spd_joint_aug128": {"kind": "spd", "operator_groups": 128}
+  },
+  "confirmation_rule": "earliest_min_val_full_relative_p1_l2_checkpoint; choose lowest seed0 val among modified variants, then confirm it and dense_data at seeds1/2",
+  "test_evaluations": 0
+}

@@ -1,0 +1,184 @@
+{
+  "key": "fedonet_kkt_head_polished_s1",
+  "method": "fedonet_kkt",
+  "seed": 1,
+  "variant": "head_polished",
+  "kind": "grid_operator",
+  "directory": "results/ch04/unified_delivery_v1/training/fedonet_kkt_s1",
+  "checkpoint": "results/ch04/unified_delivery_v1/training/fedonet_kkt_s1/best.pt",
+  "sha256": "127957b1af67046cf118b0e9989edcad55ec21d3e98e8878530c91274eb67aaa",
+  "track": "problem_family",
+  "test_role": "fresh held-out problems",
+  "heldout": {
+    "inference_seconds": 0.005802351050078869,
+    "direct_control": {
+      "control_relative_l2": {
+        "mean": 3.9206495892609316e-15,
+        "std": 2.3475567515981056e-15,
+        "max": 1.1361061466916245e-14
+      },
+      "recovered_state_relative_l2": {
+        "mean": 7.946955073054952e-16,
+        "std": 6.047379238706247e-16,
+        "max": 2.672539219380766e-15
+      },
+      "true_objective": {
+        "mean": 0.17312331332891506,
+        "std": 0.04394814399895576,
+        "max": 0.29013366529503387
+      },
+      "reference_objective": {
+        "mean": 0.17312331332891506,
+        "std": 0.04394814399895576,
+        "max": 0.29013366529503387
+      },
+      "objective_gap": {
+        "mean": -2.168404344971009e-19,
+        "std": 1.3767233168890024e-17,
+        "max": 2.7755575615628914e-17
+      },
+      "objective_gap_relative": {
+        "mean": -1.367157042654997e-18,
+        "std": 8.292993795910726e-17,
+        "max": 1.8264243183059118e-16
+      },
+      "true_gradient_l2": {
+        "mean": 2.8417472496997583e-17,
+        "std": 2.136600932748495e-17,
+        "max": 9.629337967036141e-17
+      },
+      "true_gradient_relative": {
+        "mean": 7.553954473473182e-15,
+        "std": 6.402325443069693e-15,
+        "max": 2.853989427181276e-14
+      },
+      "raw_state_relative_l2": {
+        "mean": 9.60165508464183e-16,
+        "std": 7.658721981312399e-16,
+        "max": 3.662749098862705e-15
+      },
+      "state_residual_relative": {
+        "mean": 1.6348014188119583e-15,
+        "std": 6.764734574525422e-16,
+        "max": 3.230450726775866e-15
+      },
+      "raw_objective": {
+        "mean": 0.17312331332891506,
+        "std": 0.04394814399895575,
+        "max": 0.2901336652950338
+      },
+      "adjoint_residual_relative": {
+        "mean": 1.3761302668299554e-15,
+        "std": 5.310091868424169e-16,
+        "max": 3.3608441625326396e-15
+      },
+      "optimality_residual_l2": {
+        "mean": 0.0,
+        "std": 0.0,
+        "max": 0.0
+      }
+    },
+    "matched_control_8": {
+      "control_relative_l2": {
+        "mean": 3.907210430811264e-15,
+        "std": 1.8126095991399588e-15,
+        "max": 6.2387889779675755e-15
+      },
+      "recovered_state_relative_l2": {
+        "mean": 9.336841103627138e-16,
+        "std": 6.547609961700512e-16,
+        "max": 2.11469074868286e-15
+      },
+      "true_objective": {
+        "mean": 0.19053443751740923,
+        "std": 0.053877877131036825,
+        "max": 0.29013366529503387
+      },
+      "reference_objective": {
+        "mean": 0.19053443751740923,
+        "std": 0.053877877131036825,
+        "max": 0.29013366529503387
+      },
+      "objective_gap": {
+        "mean": 3.469446951953614e-18,
+        "std": 1.1506853769672337e-17,
+        "max": 2.7755575615628914e-17
+      },
+      "objective_gap_relative": {
+        "mean": 1.430985946216132e-17,
+        "std": 6.973998607459976e-17,
+        "max": 1.1897220934567918e-16
+      },
+      "true_gradient_l2": {
+        "mean": 3.1924486029997574e-17,
+        "std": 2.2313856765171476e-17,
+        "max": 6.660102909190813e-17
+      },
+      "true_gradient_relative": {
+        "mean": 6.1285418150815805e-15,
+        "std": 3.700495981034181e-15,
+        "max": 1.1063614853694212e-14
+      },
+      "raw_state_relative_l2": {
+        "mean": 1.4502350752479108e-15,
+        "std": 8.74112939537927e-16,
+        "max": 3.387435829008424e-15
+      },
+      "state_residual_relative": {
+        "mean": 1.4799745863846675e-15,
+        "std": 7.580794645983271e-16,
+        "max": 2.9505941325367315e-15
+      },
+      "raw_objective": {
+        "mean": 0.19053443751740923,
+        "std": 0.05387787713103681,
+        "max": 0.2901336652950338
+      },
+      "adjoint_residual_relative": {
+        "mean": 1.5790863776565779e-15,
+        "std": 5.153885115265326e-16,
+        "max": 2.6208960008907356e-15
+      },
+      "optimality_residual_l2": {
+        "mean": 0.0,
+        "std": 0.0,
+        "max": 0.0
+      }
+    }
+  },
+  "fixed_instance": {
+    "quadrature_order": 96,
+    "control_relative_l2": 2.6801661167049385e-14,
+    "raw_state_relative_l2": 3.979553673598483e-16,
+    "raw_objective": 0.1250783232288715,
+    "state_residual_relative": 1.2054919039209606e-15,
+    "adjoint_residual_relative": 9.541502480358204e-16,
+    "boundary_y_max": 1.2246467991473535e-16,
+    "boundary_p_max": 7.755166452088173e-19,
+    "fem": [
+      {
+        "mesh": 128,
+        "control_relative_l2": 2.679833131942257e-14,
+        "recovered_objective": 0.12507866031381806,
+        "reference_objective_h": 0.12507864746518635,
+        "objective_gap_h": 1.2848631714135195e-08,
+        "reduced_gradient_l2": 6.000159759415727e-06,
+        "reduced_gradient_relative": 0.015296200801054205,
+        "recovered_state_relative_l2": 0.00016904419626008403
+      },
+      {
+        "mesh": 256,
+        "control_relative_l2": 2.6798440992136455e-14,
+        "recovered_objective": 0.12507840676967377,
+        "reference_objective_h": 0.1250784059599958,
+        "objective_gap_h": 8.096779635646811e-10,
+        "reduced_gradient_l2": 1.5045725098624937e-06,
+        "reduced_gradient_relative": 0.0038082514315892716,
+        "recovered_state_relative_l2": 4.226405331714095e-05
+      }
+    ],
+    "metadata": {},
+    "fem_gap_note": "Sine/continuous-network controls and P1 reference controls are different discrete spaces; signed gaps retained."
+  },
+  "assessment_seconds": 1.504864489659667
+}

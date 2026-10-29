@@ -1,0 +1,100 @@
+{
+  "schema_version": "ch03-reaction-training-v1",
+  "purpose": "formal_trainval",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 1600,
+  "batch_size": 16,
+  "microbatch_size": 4,
+  "eval_batch_size": 4,
+  "checkpoint_every": 10,
+  "train_eval_every": 25,
+  "cpu_threads": 2,
+  "objective": "relative_p1_l2_squared",
+  "selection": "earliest_min_val_p1_relative_l2",
+  "test_evaluations": 0,
+  "models": [
+    {
+      "name": "fno",
+      "family": "FNO",
+      "kwargs": {
+        "modes": 12,
+        "width": 32,
+        "layers": 4,
+        "hard_boundary": true
+      },
+      "training": {
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "scheduler": "plateau",
+        "patience": 30,
+        "factor": 0.5,
+        "min_lr": 1e-06,
+        "grad_clip": 1.0
+      }
+    },
+    {
+      "name": "deepxde_fourier4",
+      "family": "DeepONet",
+      "kwargs": {
+        "grid_size": 65,
+        "sensor_stride": 4,
+        "latent_dim": 56,
+        "width": 300,
+        "depth": 3,
+        "coordinate_modes": 4
+      },
+      "training": {
+        "optimizer": "AdamW",
+        "learning_rate": 0.0005,
+        "weight_decay": 1e-05,
+        "scheduler": "cosine",
+        "min_lr": 1e-06,
+        "grad_clip": 1.0
+      }
+    },
+    {
+      "name": "gno",
+      "family": "GNO",
+      "kwargs": {
+        "width": 96,
+        "layers": 3,
+        "radius": 1.5,
+        "node_stride": 4,
+        "hard_boundary": true
+      },
+      "training": {
+        "optimizer": "AdamW",
+        "learning_rate": 0.0005,
+        "weight_decay": 1e-05,
+        "scheduler": "cosine",
+        "min_lr": 1e-06,
+        "grad_clip": 1.0
+      }
+    },
+    {
+      "name": "galerkin",
+      "family": "Transformer",
+      "kwargs": {
+        "grid_size": 65,
+        "width": 128,
+        "layers": 6,
+        "heads": 4,
+        "modes": 12,
+        "dropout": 0.05
+      },
+      "training": {
+        "optimizer": "AdamW",
+        "learning_rate": 0.0005,
+        "weight_decay": 1e-05,
+        "scheduler": "cosine",
+        "min_lr": 1e-06,
+        "grad_clip": 1.0
+      }
+    }
+  ]
+}

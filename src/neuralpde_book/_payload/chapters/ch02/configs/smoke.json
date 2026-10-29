@@ -1,0 +1,11 @@
+{
+  "name": "smoke", "seeds": [0], "methods": ["pinn", "ritz", "vpinn"],
+  "dtype": "float64", "adam_steps": 150, "lbfgs_steps": 50,
+  "lbfgs_block": 25, "log_every": 75, "learning_rate": 0.001,
+  "quadrature_order": 3, "validation_order": 5,
+  "problems": {
+    "1": {"width": 32, "depth": 3, "train_n": 16, "validation_n": 32, "weak_validation_n": 32},
+    "2": {"width": 64, "depth": 4, "train_n": 6, "validation_n": 12, "weak_validation_n": 12}
+  },
+  "fem_levels": {"1": [8, 16, 32, 64], "2": [4, 8, 16, 32]}
+}

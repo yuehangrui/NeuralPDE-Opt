@@ -1,0 +1,11 @@
+{
+  "name": "full", "seeds": [0, 1, 2], "methods": ["pinn", "ritz", "vpinn"],
+  "dtype": "float64", "adam_steps": 5000, "lbfgs_steps": 1000,
+  "lbfgs_block": 50, "log_every": 500, "learning_rate": 0.001,
+  "quadrature_order": 4, "validation_order": 6,
+  "problems": {
+    "1": {"width": 32, "depth": 3, "train_n": 32, "validation_n": 96, "weak_validation_n": 64},
+    "2": {"width": 64, "depth": 4, "train_n": 12, "validation_n": 24, "weak_validation_n": 24}
+  },
+  "fem_levels": {"1": [16, 32, 64, 128], "2": [8, 16, 32, 64]}
+}

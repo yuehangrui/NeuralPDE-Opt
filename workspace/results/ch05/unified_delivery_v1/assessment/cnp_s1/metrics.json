@@ -1,0 +1,55 @@
+{
+  "key": "cnp_s1",
+  "method": "cnp",
+  "seed": 1,
+  "checkpoint_sha256": "0f5bbc13626d9a57a1d0ab5073e2e9d3fc8511d59325d7930dcf8a5d755eea27",
+  "validation_selection_score": 0.07396261408897847,
+  "fixed": {
+    "quadrature": {
+      "objective": 0.0739626141898963,
+      "state_violation": 0.0,
+      "pde_control_elimination": "u=-Laplace(y) by definition; recovered-state discrepancy checked independently"
+    },
+    "boundary_y_max": 2.7755575615628914e-17,
+    "grid32": {
+      "raw_objective": 0.0739624437374398,
+      "reference_objective": 0.07390478380413007,
+      "raw_objective_gap": 5.765993330973662e-05,
+      "recovered_objective": 0.0739276533590779,
+      "control_relative_l2": 0.012950713290298418,
+      "raw_state_relative_l2": 0.00216960769513444,
+      "recovered_state_relative_l2": 0.0009085471668049518,
+      "state_recovery_gap": 0.00018903352672628603,
+      "state_violation": 0.0,
+      "recovered_state_violation": 0.0,
+      "state_space_projected_residual": 0.038449751955470644
+    },
+    "grid64": {
+      "raw_objective": 0.07396252479983471,
+      "reference_objective": 0.0739470870909786,
+      "raw_objective_gap": 1.5437708856119725e-05,
+      "recovered_objective": 0.07395382090312622,
+      "control_relative_l2": 0.012471826852893872,
+      "raw_state_relative_l2": 0.0005583208752943384,
+      "recovered_state_relative_l2": 0.0002780926044715025,
+      "state_recovery_gap": 4.712640562154828e-05,
+      "state_violation": 0.0,
+      "recovered_state_violation": 0.0,
+      "state_space_projected_residual": 0.06681173782106144
+    },
+    "grid128": {
+      "raw_objective": 0.07396258574730348,
+      "reference_objective": 0.07395772266225026,
+      "raw_objective_gap": 4.863085053222194e-06,
+      "recovered_objective": 0.07396041017158218,
+      "control_relative_l2": 0.012200700209268644,
+      "raw_state_relative_l2": 0.00023436360332615116,
+      "recovered_state_relative_l2": 0.00018774689526840447,
+      "state_recovery_gap": 1.1772130753066023e-05,
+      "state_violation": 0.0,
+      "recovered_state_violation": 0.0,
+      "state_space_projected_residual": 0.12641742767731998
+    },
+    "grid_semantics": "FD state/adjoint recovery; operator controls use edge-extended bilinear prolongation to fine grids, not resolution transfer."
+  }
+}

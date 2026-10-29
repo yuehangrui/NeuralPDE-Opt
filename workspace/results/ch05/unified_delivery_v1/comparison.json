@@ -1,0 +1,857 @@
+{
+  "rows": [
+    {
+      "method": "osnn",
+      "label": "OSNN",
+      "training_seconds": {
+        "mean": 976.4797402222952,
+        "std": 13.003942375382806,
+        "max": 991.0930106639862,
+        "values": [
+          972.1633830070496,
+          991.0930106639862,
+          966.1828269958496
+        ]
+      },
+      "parameter_accounting": {
+        "nominal_real_parameters": 42114,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": {
+        "mean": 6.844662861432091e-07,
+        "std": 3.1092626045189e-07,
+        "max": 1.0429922922402058e-06,
+        "values": [
+          1.0429922922402058e-06,
+          5.216187225557416e-07,
+          4.887878436336801e-07
+        ]
+      },
+      "parameters_real": [
+        42114,
+        42114,
+        42114
+      ],
+      "counters": [
+        {
+          "adam_updates": 10000,
+          "lbfgs_iterations": 62,
+          "lbfgs_function_evaluations": 125,
+          "epochs": 0,
+          "outer_steps": 0
+        },
+        {
+          "adam_updates": 10000,
+          "lbfgs_iterations": 201,
+          "lbfgs_function_evaluations": 233,
+          "epochs": 0,
+          "outer_steps": 0
+        },
+        {
+          "adam_updates": 10000,
+          "lbfgs_iterations": 101,
+          "lbfgs_function_evaluations": 111,
+          "epochs": 0,
+          "outer_steps": 0
+        }
+      ],
+      "checkpoint_bytes": [
+        346146,
+        346146,
+        346146
+      ],
+      "fixed_grid128_control": {
+        "mean": 4.945459903603674e-05,
+        "std": 3.528302283808006e-05,
+        "max": 8.54328189755339e-05,
+        "values": [
+          8.54328189755339e-05,
+          4.802047224602457e-05,
+          1.4910505886551741e-05
+        ]
+      },
+      "fixed_grid128_projected_residual": {
+        "mean": 5.389422039403461e-05,
+        "std": 4.284907024756705e-05,
+        "max": 0.00010295652823640586,
+        "values": [
+          0.00010295652823640586,
+          3.4904752404605874e-05,
+          2.3821380541092074e-05
+        ]
+      },
+      "gauss_control": {
+        "mean": 4.914643401558787e-05,
+        "std": 3.5202917621647246e-05,
+        "max": 8.499823391270575e-05,
+        "values": [
+          8.499823391270575e-05,
+          4.781064383698663e-05,
+          1.4630424297071235e-05
+        ]
+      }
+    },
+    {
+      "method": "admm",
+      "label": "ADMM-PINN",
+      "training_seconds": {
+        "mean": 6610.54181933403,
+        "std": 44.55650908443885,
+        "max": 6660.658406734467,
+        "values": [
+          6595.559648513794,
+          6575.40740275383,
+          6660.658406734467
+        ]
+      },
+      "parameter_accounting": {
+        "nominal_real_parameters": 42114,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": {
+        "mean": 2.0482919540740435e-07,
+        "std": 5.985533671694995e-08,
+        "max": 2.7375162236318314e-07,
+        "values": [
+          1.748329153437394e-07,
+          1.659030485152905e-07,
+          2.7375162236318314e-07
+        ]
+      },
+      "parameters_real": [
+        42114,
+        42114,
+        42114
+      ],
+      "counters": [
+        {
+          "adam_updates": 60000,
+          "lbfgs_iterations": 4713,
+          "lbfgs_function_evaluations": 5912,
+          "epochs": 0,
+          "outer_steps": 30
+        },
+        {
+          "adam_updates": 60000,
+          "lbfgs_iterations": 4669,
+          "lbfgs_function_evaluations": 5752,
+          "epochs": 0,
+          "outer_steps": 30
+        },
+        {
+          "adam_updates": 60000,
+          "lbfgs_iterations": 5010,
+          "lbfgs_function_evaluations": 6225,
+          "epochs": 0,
+          "outer_steps": 30
+        }
+      ],
+      "checkpoint_bytes": [
+        5491750,
+        5491750,
+        5148658
+      ],
+      "fixed_grid128_control": {
+        "mean": 9.428135164864542e-06,
+        "std": 4.97739516359341e-07,
+        "max": 9.786079799739705e-06,
+        "values": [
+          9.638587236646097e-06,
+          8.859738458207828e-06,
+          9.786079799739705e-06
+        ]
+      },
+      "fixed_grid128_projected_residual": {
+        "mean": 2.2834743957092425e-05,
+        "std": 1.4280882679286912e-06,
+        "max": 2.4350771790507747e-05,
+        "values": [
+          2.151487524844284e-05,
+          2.2638584832326693e-05,
+          2.4350771790507747e-05
+        ]
+      },
+      "gauss_control": {
+        "mean": 9.36984688063215e-06,
+        "std": 4.933396928004274e-07,
+        "max": 9.722374788248033e-06,
+        "values": [
+          9.581109839768837e-06,
+          8.806056013879577e-06,
+          9.722374788248033e-06
+        ]
+      }
+    },
+    {
+      "method": "cnp",
+      "label": "CNP",
+      "training_seconds": {
+        "mean": 558.8781792322794,
+        "std": 16.095641629915352,
+        "max": 569.1275813579559,
+        "values": [
+          567.1803913116455,
+          569.1275813579559,
+          540.3265650272369
+        ]
+      },
+      "parameter_accounting": {
+        "nominal_real_parameters": 21057,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": {
+        "mean": 0.0739624761247772,
+        "std": 1.760460064304568e-07,
+        "max": 0.0739626170151091,
+        "values": [
+          0.07396227877558388,
+          0.0739626170151091,
+          0.07396253258363862
+        ]
+      },
+      "parameters_real": [
+        21057,
+        21057,
+        21057
+      ],
+      "counters": [
+        {
+          "adam_updates": 10000,
+          "lbfgs_iterations": 186,
+          "lbfgs_function_evaluations": 230,
+          "epochs": 0,
+          "outer_steps": 0
+        },
+        {
+          "adam_updates": 10000,
+          "lbfgs_iterations": 293,
+          "lbfgs_function_evaluations": 335,
+          "epochs": 0,
+          "outer_steps": 0
+        },
+        {
+          "adam_updates": 10000,
+          "lbfgs_iterations": 92,
+          "lbfgs_function_evaluations": 125,
+          "epochs": 0,
+          "outer_steps": 0
+        }
+      ],
+      "checkpoint_bytes": [
+        174710,
+        174710,
+        174710
+      ],
+      "fixed_grid128_control": {
+        "mean": 0.011472992585618355,
+        "std": 0.0009284591869653386,
+        "max": 0.012200700209268644,
+        "values": [
+          0.010427326722916084,
+          0.012200700209268644,
+          0.011790950824670339
+        ]
+      },
+      "gauss_objective": {
+        "mean": 0.07396247194655975,
+        "std": 1.7623278445795876e-07,
+        "max": 0.0739626141898963,
+        "values": [
+          0.07396227479664376,
+          0.0739626141898963,
+          0.0739625268531392
+        ]
+      },
+      "quadrature_difference_from_validation": {
+        "mean": 1.5151489785036887e-10,
+        "std": 1.1830327923602547e-10,
+        "max": 2.867025505892684e-10,
+        "values": [
+          6.692431331334348e-11,
+          1.0091782964849472e-10,
+          2.867025505892684e-10
+        ]
+      },
+      "state_violation": {
+        "mean": 0.0,
+        "std": 0.0,
+        "max": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "recovered_violation": {
+        "mean": 0.0,
+        "std": 0.0,
+        "max": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "reference_objective": 0.07395772266225026
+    },
+    {
+      "method": "mimo",
+      "label": "Projected KKT-FNO",
+      "training_seconds": {
+        "mean": 230.0992644627889,
+        "std": 0.7925741989617353,
+        "max": 230.91886520385742,
+        "values": [
+          230.04211807250977,
+          229.3368101119995,
+          230.91886520385742
+        ]
+      },
+      "parameter_accounting": {
+        "nominal_real_parameters": 59690,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": {
+        "mean": 0.039618430426344275,
+        "std": 0.006587154606179704,
+        "max": 0.047207819763571024,
+        "values": [
+          0.03626132337376475,
+          0.047207819763571024,
+          0.03538614814169705
+        ]
+      },
+      "parameters_real": [
+        59690,
+        59690,
+        59690
+      ],
+      "counters": [
+        {
+          "adam_updates": 4800,
+          "lbfgs_iterations": 0,
+          "lbfgs_function_evaluations": 0,
+          "epochs": 300,
+          "outer_steps": 0
+        },
+        {
+          "adam_updates": 4800,
+          "lbfgs_iterations": 0,
+          "lbfgs_function_evaluations": 0,
+          "epochs": 300,
+          "outer_steps": 0
+        },
+        {
+          "adam_updates": 4800,
+          "lbfgs_iterations": 0,
+          "lbfgs_function_evaluations": 0,
+          "epochs": 300,
+          "outer_steps": 0
+        }
+      ],
+      "checkpoint_bytes": [
+        245558,
+        245558,
+        245558
+      ],
+      "fixed_grid128_control": {
+        "mean": 0.018584818924344177,
+        "std": 0.0029111904037653546,
+        "max": 0.020882369643326633,
+        "values": [
+          0.01956112593672771,
+          0.020882369643326633,
+          0.01531096119297818
+        ]
+      },
+      "fixed_grid128_projected_residual": {
+        "mean": 0.015652285154152786,
+        "std": 0.003023885894791755,
+        "max": 0.017437309043876935,
+        "values": [
+          0.017358648579437596,
+          0.017437309043876935,
+          0.012160897839143833
+        ]
+      },
+      "test_control": {
+        "mean": 0.04664146155454487,
+        "std": 0.006726432240473484,
+        "max": 0.05374818925922094,
+        "values": [
+          0.040374114156867376,
+          0.05374818925922094,
+          0.045802081247546284
+        ]
+      },
+      "test_objective_gap": {
+        "mean": 0.000895982001564887,
+        "std": 0.000171759737062646,
+        "max": 0.0010919016755089068,
+        "values": [
+          0.000771319762133903,
+          0.0010919016755089068,
+          0.0008247245670518512
+        ]
+      },
+      "test_projected_residual": {
+        "mean": 0.038411941374080216,
+        "std": 0.006024035794695604,
+        "max": 0.04493113141074137,
+        "values": [
+          0.03305136367966748,
+          0.04493113141074137,
+          0.03725332903183179
+        ]
+      },
+      "test_active_mismatch": {
+        "mean": 0.04060711498439126,
+        "std": 0.007322867912116689,
+        "max": 0.04876105619146723,
+        "values": [
+          0.034591246097814776,
+          0.04876105619146723,
+          0.038469042663891784
+        ]
+      },
+      "test_control_sample_max": 0.24423749683511864,
+      "fine128_control": {
+        "mean": 0.0588455821968249,
+        "std": 0.005665490259728425,
+        "max": 0.0646555516714657,
+        "values": [
+          0.053336567714880934,
+          0.0646555516714657,
+          0.05854462720412808
+        ]
+      }
+    },
+    {
+      "method": "pdol",
+      "label": "PDOL",
+      "training_seconds": {
+        "mean": 522.5779974460602,
+        "std": 11.144967179505276,
+        "max": 534.5956385135651,
+        "values": [
+          512.5826344490051,
+          520.5557193756104,
+          534.5956385135651
+        ]
+      },
+      "parameter_accounting": {
+        "nominal_real_parameters": 119234,
+        "structurally_inactive_real_parameters": 2,
+        "known_inactive_names": [
+          "state.projection.bias",
+          "adjoint.projection.bias"
+        ],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": {
+        "mean": 0.00044307132884569,
+        "std": 4.1675788049156824e-05,
+        "max": 0.0004874043988820631,
+        "values": [
+          0.0004874043988820631,
+          0.0004371160703158239,
+          0.000404693517339183
+        ]
+      },
+      "parameters_real": [
+        119234,
+        119234,
+        119234
+      ],
+      "counters": [
+        {
+          "adam_updates": 4800,
+          "lbfgs_iterations": 0,
+          "lbfgs_function_evaluations": 0,
+          "epochs": 300,
+          "outer_steps": 0
+        },
+        {
+          "adam_updates": 4800,
+          "lbfgs_iterations": 0,
+          "lbfgs_function_evaluations": 0,
+          "epochs": 300,
+          "outer_steps": 0
+        },
+        {
+          "adam_updates": 4800,
+          "lbfgs_iterations": 0,
+          "lbfgs_function_evaluations": 0,
+          "epochs": 300,
+          "outer_steps": 0
+        }
+      ],
+      "checkpoint_bytes": [
+        487638,
+        487638,
+        487638
+      ],
+      "fixed_grid128_control": {
+        "mean": 0.012741744851645635,
+        "std": 0.001504076027259854,
+        "max": 0.014467292045194426,
+        "values": [
+          0.01204958736754734,
+          0.01170835514219514,
+          0.014467292045194426
+        ]
+      },
+      "fixed_grid128_projected_residual": {
+        "mean": 0.011071632815450344,
+        "std": 0.0021969784181346294,
+        "max": 0.013552274652078304,
+        "values": [
+          0.010291231703763172,
+          0.00937139209050956,
+          0.013552274652078304
+        ]
+      },
+      "test_control": {
+        "mean": 0.016084686768480596,
+        "std": 0.002789709402453766,
+        "max": 0.018169851951893547,
+        "values": [
+          0.017168496231064853,
+          0.012915712122483384,
+          0.018169851951893547
+        ]
+      },
+      "test_objective_gap": {
+        "mean": 0.00011903454512658641,
+        "std": 5.505085863500882e-05,
+        "max": 0.0001557650077248499,
+        "values": [
+          0.00014559983657580356,
+          5.573879107910573e-05,
+          0.0001557650077248499
+        ]
+      },
+      "test_projected_residual": {
+        "mean": 0.013343604244572087,
+        "std": 0.0033103618835231253,
+        "max": 0.015727167003258984,
+        "values": [
+          0.014739769393160282,
+          0.009563876337296993,
+          0.015727167003258984
+        ]
+      },
+      "test_active_mismatch": {
+        "mean": 0.012885340790842872,
+        "std": 0.0023686034170467274,
+        "max": 0.015039672216441207,
+        "values": [
+          0.013267429760665974,
+          0.010348920395421436,
+          0.015039672216441207
+        ]
+      },
+      "test_control_sample_max": 0.06637564462787465,
+      "fine128_control": {
+        "mean": 0.04521141902404443,
+        "std": 0.0021302212484165094,
+        "max": 0.047016183529087804,
+        "values": [
+          0.047016183529087804,
+          0.04286163863064828,
+          0.04575643491239719
+        ]
+      }
+    },
+    {
+      "method": "iuzawa_f",
+      "label": "iUzawa-Net-F",
+      "training_seconds": {
+        "mean": 2396.6027517318726,
+        "std": 14.038223410994245,
+        "max": 2412.7396380901337,
+        "values": [
+          2412.7396380901337,
+          2389.865620136261,
+          2387.202996969223
+        ]
+      },
+      "parameter_accounting": {
+        "nominal_real_parameters": 479046,
+        "structurally_inactive_real_parameters": 20230,
+        "known_inactive_names": [
+          "unrolled.uzawa_layers.0.S_oper.projection.bias",
+          "unrolled.uzawa_layers.1.S_oper.projection.bias",
+          "unrolled.uzawa_layers.2.S_oper.projection.bias",
+          "unrolled.uzawa_layers.3.S_oper.projection.bias",
+          "unrolled.uzawa_layers.4.S_oper.projection.bias",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.pre_lifting_mat",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.lifting",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.fourier_layer_sap.phi",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.fourier_layer_sap.local_mat",
+          "unrolled.uzawa_layers.5.S_oper.projection.bias"
+        ],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": {
+        "mean": 0.00032540407088769524,
+        "std": 3.646249499404989e-05,
+        "max": 0.00036526793519442435,
+        "values": [
+          0.00036526793519442435,
+          0.00029373894722084515,
+          0.00031720533024781616
+        ]
+      },
+      "parameters_real": [
+        479046,
+        479046,
+        479046
+      ],
+      "counters": [
+        {
+          "adam_updates": 4800,
+          "lbfgs_iterations": 0,
+          "lbfgs_function_evaluations": 0,
+          "epochs": 300,
+          "outer_steps": 0
+        },
+        {
+          "adam_updates": 4800,
+          "lbfgs_iterations": 0,
+          "lbfgs_function_evaluations": 0,
+          "epochs": 300,
+          "outer_steps": 0
+        },
+        {
+          "adam_updates": 4800,
+          "lbfgs_iterations": 0,
+          "lbfgs_function_evaluations": 0,
+          "epochs": 300,
+          "outer_steps": 0
+        }
+      ],
+      "checkpoint_bytes": [
+        1945982,
+        1945982,
+        1945982
+      ],
+      "fixed_grid128_control": {
+        "mean": 0.013000637016147489,
+        "std": 0.001319883556362032,
+        "max": 0.014508009034366958,
+        "values": [
+          0.012441796590440637,
+          0.014508009034366958,
+          0.012052105423634872
+        ]
+      },
+      "fixed_grid128_projected_residual": {
+        "mean": 0.009975455290395707,
+        "std": 0.0010549731897384073,
+        "max": 0.011143728302961727,
+        "values": [
+          0.009690186743501557,
+          0.011143728302961727,
+          0.009092450824723831
+        ]
+      },
+      "test_control": {
+        "mean": 0.01807095231416731,
+        "std": 0.0013365517490835145,
+        "max": 0.019161439724016037,
+        "values": [
+          0.018471487909449535,
+          0.01657992930903636,
+          0.019161439724016037
+        ]
+      },
+      "test_objective_gap": {
+        "mean": 0.00015110815522159489,
+        "std": 2.8751104434166714e-05,
+        "max": 0.00018192283314703918,
+        "values": [
+          0.00014639977529457872,
+          0.00012500185722316682,
+          0.00018192283314703918
+        ]
+      },
+      "test_projected_residual": {
+        "mean": 0.013702594870513196,
+        "std": 0.001115693938940935,
+        "max": 0.014720995880971834,
+        "values": [
+          0.013876707984211648,
+          0.012510080746356114,
+          0.014720995880971834
+        ]
+      },
+      "test_active_mismatch": {
+        "mean": 0.02128587842525147,
+        "std": 0.0022646361524576077,
+        "max": 0.02298224505723205,
+        "values": [
+          0.02298224505723205,
+          0.022161160249739853,
+          0.01871422996878252
+        ]
+      },
+      "test_control_sample_max": 0.18101071780516467,
+      "fine128_control": {
+        "mean": 0.04577882111640937,
+        "std": 0.0015555278055180888,
+        "max": 0.04700846993068991,
+        "values": [
+          0.04403013622451193,
+          0.046297857194026265,
+          0.04700846993068991
+        ]
+      }
+    },
+    {
+      "method": "iuzawa_s",
+      "label": "iUzawa-Net-S",
+      "training_seconds": {
+        "mean": 1978.8947798411052,
+        "std": 123.50122219432423,
+        "max": 2121.4667320251465,
+        "values": [
+          2121.4667320251465,
+          1910.343894481659,
+          1904.87371301651
+        ]
+      },
+      "parameter_accounting": {
+        "nominal_real_parameters": 79841,
+        "structurally_inactive_real_parameters": 1,
+        "known_inactive_names": [
+          "unrolled.uzawa_layer.S_oper.projection.bias"
+        ],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": {
+        "mean": 0.0018541039074383054,
+        "std": 0.0004789427628207098,
+        "max": 0.0023534351348644122,
+        "values": [
+          0.0018103203328792006,
+          0.0023534351348644122,
+          0.0013985562545713037
+        ]
+      },
+      "parameters_real": [
+        79841,
+        79841,
+        79841
+      ],
+      "counters": [
+        {
+          "adam_updates": 4800,
+          "lbfgs_iterations": 0,
+          "lbfgs_function_evaluations": 0,
+          "epochs": 300,
+          "outer_steps": 0
+        },
+        {
+          "adam_updates": 4800,
+          "lbfgs_iterations": 0,
+          "lbfgs_function_evaluations": 0,
+          "epochs": 300,
+          "outer_steps": 0
+        },
+        {
+          "adam_updates": 4800,
+          "lbfgs_iterations": 0,
+          "lbfgs_function_evaluations": 0,
+          "epochs": 300,
+          "outer_steps": 0
+        }
+      ],
+      "checkpoint_bytes": [
+        327454,
+        327454,
+        327454
+      ],
+      "fixed_grid128_control": {
+        "mean": 0.0367323897923368,
+        "std": 0.007618765082403717,
+        "max": 0.04392493538339094,
+        "values": [
+          0.03752314871783818,
+          0.04392493538339094,
+          0.02874908527578128
+        ]
+      },
+      "fixed_grid128_projected_residual": {
+        "mean": 0.03168711130614597,
+        "std": 0.007121708910490174,
+        "max": 0.038667002054050804,
+        "values": [
+          0.031962744462278855,
+          0.038667002054050804,
+          0.024431587402108233
+        ]
+      },
+      "test_control": {
+        "mean": 0.03765910003307125,
+        "std": 0.005021080783456828,
+        "max": 0.042770845156852116,
+        "values": [
+          0.03747257307200108,
+          0.042770845156852116,
+          0.032733881870360554
+        ]
+      },
+      "test_objective_gap": {
+        "mean": 0.0006333728824289975,
+        "std": 0.00019032586838733305,
+        "max": 0.0008361271778403679,
+        "values": [
+          0.0006054256873759697,
+          0.0008361271778403679,
+          0.000458565782070655
+        ]
+      },
+      "test_projected_residual": {
+        "mean": 0.02925225110953326,
+        "std": 0.004506423193898978,
+        "max": 0.0337763210225641,
+        "values": [
+          0.029216747888479395,
+          0.0337763210225641,
+          0.024763684417556272
+        ]
+      },
+      "test_active_mismatch": {
+        "mean": 0.0410596600763094,
+        "std": 0.00825165735921769,
+        "max": 0.049281347554630595,
+        "values": [
+          0.041119276795005204,
+          0.049281347554630595,
+          0.032778355879292405
+        ]
+      },
+      "test_control_sample_max": 0.20843129485391876,
+      "fine128_control": {
+        "mean": 0.05577022310286792,
+        "std": 0.0023896932026219384,
+        "max": 0.057329545717893976,
+        "values": [
+          0.057329545717893976,
+          0.056962114061808594,
+          0.05301900952890119
+        ]
+      }
+    }
+  ],
+  "dispersion": "sample standard deviation across three seed-level means; within-test metrics also saved per sample"
+}

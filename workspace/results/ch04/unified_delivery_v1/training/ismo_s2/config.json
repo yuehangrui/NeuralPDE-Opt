@@ -1,0 +1,31 @@
+{
+  "method": "ismo",
+  "seed": 2,
+  "dtype": "float64",
+  "device": "cpu",
+  "source_identity": {
+    "chapters/ch04_delivery/hybrids.py": "9f1bd5e192d4854f9a6827f122c8b9eeca2c20c44f7e7cf6d960fe1a6a8c113a",
+    "chapters/ch04_completion/verify.py": "b4c6078741c9772eb06dfda2c4b712330e9a0b4937a4f875863f3244c727091d",
+    "chapters/ch04_completion/common.py": "c89510a9cedbd66171459964f77f4ca54c998f06e31f37e3ed57ea02a0378a7a",
+    "chapters/ch04_completion/deep_uzawa.py": "a3a5e64a78fd69d733ba80333bbe458dbfcee3015d79a14b938d344af0fc5d75",
+    "chapters/ch04_completion/test_completion.py": "4bdb614a54eceb620e9f1094f1a0f09efc887ccdde5c86730c28742efe224ab7",
+    "chapters/ch04_completion/bilevel.py": "fa5dde6514f5599ef80451b147e2dfde24434985ce43e0d7adab0dc73c81cd46",
+    "chapters/ch04_completion/fem_nn.py": "6effe0c00a2905e2917525455e6d4bf66ed1169eefd81bb9c81341613850e084",
+    "chapters/ch04_completion/__init__.py": "c8cecbe7703e4d9e76cc1c472f9c37043d9c41795a5b6b7fc4a05f9a10e250a6",
+    "chapters/ch04_completion/classical.py": "dadecacdd020e9935d1368b640c496950ce76797a26e3e7704c8826e3f8b6c6a",
+    "chapters/ch04_completion/run.py": "f25b74ebd258ec6cd30a03ccc92d1f7da6f6349e14d6b186fff55c1996c2bded",
+    "chapters/ch04_completion/ismo.py": "8cb56529de0aa9564cad14833938d8103111b315915e3aca6a6bc7e7ff14502f",
+    "chapters/ch04/problem.py": "c5f9efd708a042bc4e5c13a6c702c7ceedcd5a05f0e43780d0fd7154ce0a4332",
+    "chapters/ch04/fem.py": "98aeae21f98746effa80b9f374bf5d4fb3e875f27e30b3aced7da91925f5f1c9"
+  },
+  "test_evaluations": 0,
+  "bilevel_outer_max": 300,
+  "uzawa_outer_max": 200,
+  "uzawa_rho": 0.0002,
+  "ismo_rounds": 12,
+  "ismo_epochs_per_round": 1600,
+  "fem_training_mesh": 64,
+  "fem_validation_mesh": 128,
+  "representation": "fixed sine-feature primal/source heads; trainable nonlinear ISMO surrogate",
+  "stopping": "true PDE gradient/feasibility or explicit budget; status reported separately"
+}

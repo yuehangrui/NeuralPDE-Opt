@@ -1,0 +1,58 @@
+{
+  "purpose": "Import-safe upstream architecture ports, not paper numerical reproduction",
+  "repositories": [
+    {
+      "repo": "lululxvi/deepxde",
+      "sha": "99b6620386d18cefb1549dddb7b7fe468cfad607",
+      "license": {
+        "key": "lgpl-2.1",
+        "name": "GNU Lesser General Public License v2.1",
+        "spdx_id": "LGPL-2.1",
+        "url": "https://api.github.com/licenses/lgpl-2.1",
+        "node_id": "MDc6TGljZW5zZTEx"
+      },
+      "branch": "master",
+      "files": {
+        "LICENSE": "20c17d8b8c48a600800dfd14f95d5cb9ff47066a9641ddeab48dc54aec96e331",
+        "pin.json": "ca3ea06c9ff78ace404ebce4952512eb7082506e331dfbe770285cae68439420",
+        "deepxde/nn/pytorch/nn.py": "042694bfb3a16e97b1749e8a3bdf839e4cc6045a8035cf3ae16054bd0dac8fb9",
+        "deepxde/nn/pytorch/fnn.py": "874e7693087cc0cb1695ba1e38b1b278652c59247623e96dac951344f381726e",
+        "deepxde/nn/pytorch/deeponet.py": "1a745a5756b4be3becb0ec5955f57f63070fca698ab496481fb678b8a21a796d",
+        "deepxde/nn/deeponet_strategy.py": "f2f4ef0f03b310cdcfe836cb008e360a4f87a3aac4e7219c63d014c5352b183e",
+        "deepxde/nn/activations.py": "499335542d09f3d11bb9697621fa6a46396d4af6dacfa385fa02e5d5456138bd",
+        "deepxde/nn/initializers.py": "4ec2e2157c38273f6bb12976363271ed863d07d67eaea3f21e47414c8bf40897"
+      }
+    },
+    {
+      "repo": "scaomath/galerkin-transformer",
+      "sha": "f9e7d6abc24e958b1165f48b22625c5bab688043",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "branch": "main",
+      "files": {
+        "LICENSE": "ea2b0fd96039d7a7ada2ec4d160926362bf5bad5f6e5a5a2bfe197038adfc834",
+        "pin.json": "91529f2f099ea1f1a6ddf49eb9f913a801842669327d9c48babb93d81af26194",
+        "config.yml": "8b7069056260c6f69caa981ac7b5ec14b3e85ce1be728db5887c997b1c3c12f4",
+        "libs/layers.py": "3c8176f3a72b1f2d2fd999fc8d0c123d2487e37cc5dad6f4701c21df7242d670",
+        "libs/model.py": "f480498b028b128dcfc296405474390bddf13ac18e106bc240dbd70a156dceef"
+      }
+    }
+  ],
+  "patches": [
+    "DeepXDE: extract unchanged NN, FNN, strategies, DeepONetCartesianProd class bodies; PyTorch-only activation/initializer/dtype registry shim; LGPL retained.",
+    "Galerkin: extract selected unchanged model classes; replace utility wildcard and plotting imports with local layer module.",
+    "Galerkin layers: replace all three unconditional F.dropout(attention) calls with supplied Dropout module (configured p and train/eval).",
+    "Galerkin SpectralConv2d: frequency output buffer uses input dtype instead of implicit float32."
+  ],
+  "ported_files": {
+    "deepxde_core.py": "e0fb109ce9e54af9ac27c30843a01b94159989d13159847fa37cc2217dfd295f",
+    "galerkin_layers.py": "5ae4061c639217b7c622147b819baa9fad6b201a2ee12bf7d6ba4f237b242d19",
+    "galerkin_model.py": "6ba90bba2f5d8a655d86fd4a82d0d9dffec762cd4640da065e89546add5ac77c",
+    "__init__.py": "7753eda06cf73e72b73e6d278a891d5b37a87d8ed6566757169c5e99023cf02d"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "ch03-physics-v1",
+  "purpose": "controlled_trainval_development",
+  "epochs": 400,
+  "seeds": [0, 1, 2],
+  "batch_size": 16,
+  "eval_batch_size": 16,
+  "cpu_threads": 2,
+  "checkpoint_every": 25,
+  "train_eval_every": 25,
+  "learning_rate": 0.001,
+  "min_lr": 0.000001,
+  "weight_decay": 0.0,
+  "grad_clip": 1.0,
+  "subset_seed": 20261022,
+  "output_scale": 1.0,
+  "model": {"name": "fno", "kwargs": {"modes": 12, "width": 32, "layers": 4, "hard_boundary": true}},
+  "cases": [
+    {"name": "supervised_128", "labels": 128, "physics_weight": 0.0},
+    {"name": "supervised_32", "labels": 32, "physics_weight": 0.0},
+    {"name": "energy_0", "labels": 0, "physics_weight": 1.0},
+    {"name": "hybrid_32", "labels": 32, "physics_weight": 1.0},
+    {"name": "hybrid_128", "labels": 128, "physics_weight": 1.0}
+  ],
+  "selection": "earliest_min_val_mean_relative_p1_l2",
+  "test_evaluations": 0
+}

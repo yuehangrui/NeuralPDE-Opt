@@ -1,0 +1,1851 @@
+[
+  {
+    "stage": "initial",
+    "epoch": 0,
+    "optimizer_updates": 0,
+    "seconds": 1.5965328216552734,
+    "counters": {
+      "adam_updates": 0,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.4070950242208695,
+    "adjoint_rms": 0.0246821866304667,
+    "recovered_objective": 0.0009951601890576924,
+    "recovered_projected_residual": 0.5898707336340158,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 1.2270795653729444e-14,
+    "recovered_adjoint_residual": 1.377750159197742e-15,
+    "relative_y": 1.1811765435326531,
+    "relative_u": 0.6556900355389373,
+    "relative_p": 0.9730040128890106,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 1.0,
+        "upper_fraction": 0.0,
+        "mismatch_fraction": 0.7960457856399584
+      },
+      "0.001": {
+        "lower_fraction": 1.0,
+        "upper_fraction": 0.0,
+        "mismatch_fraction": 0.7960457856399584
+      },
+      "0.01": {
+        "lower_fraction": 1.0,
+        "upper_fraction": 0.0,
+        "mismatch_fraction": 0.7877211238293444
+      }
+    },
+    "selection_score": 1.421852710855739,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 250,
+    "seconds": 26.4842586517334,
+    "counters": {
+      "adam_updates": 250,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.004276032862647695,
+    "adjoint_rms": 0.0002392696381513162,
+    "recovered_objective": 0.0004683732884110484,
+    "recovered_projected_residual": 0.0006939462090771943,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.639176156192379e-15,
+    "recovered_adjoint_residual": 8.552382948317865e-16,
+    "relative_y": 0.007256456141764913,
+    "relative_u": 0.0006307431024539245,
+    "relative_p": 0.0008834020312157566,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.39021852237252863,
+        "mismatch_fraction": 0.002081165452653486
+      },
+      "0.001": {
+        "lower_fraction": 0.20499479708636836,
+        "upper_fraction": 0.39125910509885536,
+        "mismatch_fraction": 0.002081165452653486
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.011416126749199378,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 500,
+    "seconds": 50.39703702926636,
+    "counters": {
+      "adam_updates": 500,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0032880602488918813,
+    "adjoint_rms": 0.00018857596563912591,
+    "recovered_objective": 0.00046837315686188113,
+    "recovered_projected_residual": 0.0003575544288243782,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.6344075584896835e-15,
+    "recovered_adjoint_residual": 7.052122958897763e-16,
+    "relative_y": 0.006053855624199029,
+    "relative_u": 0.0004993812267775609,
+    "relative_p": 0.001054281811160612,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.008909351375680625,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 750,
+    "seconds": 74.19475483894348,
+    "counters": {
+      "adam_updates": 750,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0026864110341916327,
+    "adjoint_rms": 0.00016384566390848838,
+    "recovered_objective": 0.00046837313940919015,
+    "recovered_projected_residual": 0.00029868278390059503,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 4.753513945663697e-15,
+    "recovered_adjoint_residual": 7.449562096029176e-16,
+    "relative_y": 0.004980430744638939,
+    "relative_u": 0.00042576215006939354,
+    "relative_p": 0.0009381203109013859,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.007601581448298992,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 1000,
+    "seconds": 98.68071579933167,
+    "counters": {
+      "adam_updates": 1000,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0020628076435171006,
+    "adjoint_rms": 0.0001416836989987989,
+    "recovered_objective": 0.0004683731250486556,
+    "recovered_projected_residual": 0.00024060627538963607,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 4.0940561896033134e-15,
+    "recovered_adjoint_residual": 8.299293034979441e-16,
+    "relative_y": 0.003881043510874291,
+    "relative_u": 0.0003520438921770517,
+    "relative_p": 0.000818659998472468,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.006373865350607402,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 1250,
+    "seconds": 125.5507881641388,
+    "counters": {
+      "adam_updates": 1250,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0015888522289049718,
+    "adjoint_rms": 0.00012903786356913274,
+    "recovered_objective": 0.00046837311735145083,
+    "recovered_projected_residual": 0.0002028457979910546,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.9209704952007834e-15,
+    "recovered_adjoint_residual": 7.306439934572992e-16,
+    "relative_y": 0.002751959162541335,
+    "relative_u": 0.0003055744148160353,
+    "relative_p": 0.0007565750184832481,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.00560578782121216,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 1500,
+    "seconds": 152.46595644950867,
+    "counters": {
+      "adam_updates": 1500,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0018965403079574286,
+    "adjoint_rms": 0.0001511193612805993,
+    "recovered_objective": 0.0004683735568820018,
+    "recovered_projected_residual": 0.0011484235101877638,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.2298370999203773e-15,
+    "recovered_adjoint_residual": 8.035176143794375e-16,
+    "relative_y": 0.008336527757912679,
+    "relative_u": 0.0013002782558330537,
+    "relative_p": 0.002734247548636497,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.006780773823793213,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 1750,
+    "seconds": 177.31421327590942,
+    "counters": {
+      "adam_updates": 1750,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0010545704725405428,
+    "adjoint_rms": 0.00010751391851627404,
+    "recovered_objective": 0.00046837311168343866,
+    "recovered_projected_residual": 0.0001762049659003399,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.4849515270540085e-15,
+    "recovered_adjoint_residual": 8.087949727263926e-16,
+    "relative_y": 0.0021094411749434084,
+    "relative_u": 0.00022111207928609156,
+    "relative_p": 0.0005912733942701886,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.004514580516691672,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 2000,
+    "seconds": 201.05561542510986,
+    "counters": {
+      "adam_updates": 2000,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0010494419135356839,
+    "adjoint_rms": 0.00010739741814800388,
+    "recovered_objective": 0.0004683731143389401,
+    "recovered_projected_residual": 0.00019722409814581105,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 4.048469610700996e-15,
+    "recovered_adjoint_residual": 7.148674367213021e-16,
+    "relative_y": 0.0020633290642101277,
+    "relative_u": 0.00020516755691466358,
+    "relative_p": 0.0005508344226655283,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.00450939122579532,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 2250,
+    "seconds": 224.98280143737793,
+    "counters": {
+      "adam_updates": 2250,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0009051123115422191,
+    "adjoint_rms": 9.25967566536705e-05,
+    "recovered_objective": 0.0004683731102443824,
+    "recovered_projected_residual": 0.00017082824676755977,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.679743098485374e-15,
+    "recovered_adjoint_residual": 6.4679049083692e-16,
+    "relative_y": 0.0016108337218740687,
+    "relative_u": 0.00018530448786444783,
+    "relative_p": 0.0005040537829044822,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.003888167714934228,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 2500,
+    "seconds": 248.79857301712036,
+    "counters": {
+      "adam_updates": 2500,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0009516470489461887,
+    "adjoint_rms": 9.385802770364813e-05,
+    "recovered_objective": 0.0004683731145646428,
+    "recovered_projected_residual": 0.00020347628974475137,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 4.198707442856003e-15,
+    "recovered_adjoint_residual": 6.357155201123482e-16,
+    "relative_y": 0.0017306088526047795,
+    "relative_u": 0.00017241079151099928,
+    "relative_p": 0.00045590189055598544,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.003962258811016275,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 2750,
+    "seconds": 272.72295928001404,
+    "counters": {
+      "adam_updates": 2750,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.012812220341270955,
+    "adjoint_rms": 0.00038686406669000687,
+    "recovered_objective": 0.0004683936660538001,
+    "recovered_projected_residual": 0.007751048267916456,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.4995822300753326e-15,
+    "recovered_adjoint_residual": 6.334082498852501e-16,
+    "relative_y": 0.029452018715454664,
+    "relative_u": 0.007405715755173975,
+    "relative_p": 0.013357822248500361,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.40894901144641,
+        "mismatch_fraction": 0.01664932362122789
+      }
+    },
+    "selection_score": 0.026874712249550802,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 3000,
+    "seconds": 296.31961250305176,
+    "counters": {
+      "adam_updates": 3000,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0009049849635131707,
+    "adjoint_rms": 7.70514172621198e-05,
+    "recovered_objective": 0.00046837311492466517,
+    "recovered_projected_residual": 0.0002077960728385127,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.539385602575505e-15,
+    "recovered_adjoint_residual": 7.191163542870035e-16,
+    "relative_y": 0.0014654995431873181,
+    "relative_u": 0.00015583906724337212,
+    "relative_p": 0.00035922273703516567,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.003328751792982548,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 3250,
+    "seconds": 319.85855054855347,
+    "counters": {
+      "adam_updates": 3250,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.006052835590122156,
+    "adjoint_rms": 9.179826245460273e-05,
+    "recovered_objective": 0.00046837574103899334,
+    "recovered_projected_residual": 0.002777228263342323,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.6347155589904545e-15,
+    "recovered_adjoint_residual": 7.016845389254016e-16,
+    "relative_y": 0.017420828036315453,
+    "relative_u": 0.0027992741603667364,
+    "relative_p": 0.005972247291167564,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.010539074591349841,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 3500,
+    "seconds": 343.27150559425354,
+    "counters": {
+      "adam_updates": 3500,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0009142239930152405,
+    "adjoint_rms": 6.111072728477032e-05,
+    "recovered_objective": 0.00046837311501957287,
+    "recovered_projected_residual": 0.0002102298681960309,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.2890933510751055e-15,
+    "recovered_adjoint_residual": 7.0422927118527765e-16,
+    "relative_y": 0.0013030504186348224,
+    "relative_u": 0.0001412308616253711,
+    "relative_p": 0.0002704898902323866,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.002779467140878769,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 3750,
+    "seconds": 366.5497422218323,
+    "counters": {
+      "adam_updates": 3750,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.00217510092026361,
+    "adjoint_rms": 0.00011325969315845741,
+    "recovered_objective": 0.00046837344497111747,
+    "recovered_projected_residual": 0.0010011372455445999,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.4494312215721346e-15,
+    "recovered_adjoint_residual": 7.129864899081862e-16,
+    "relative_y": 0.015291581381159927,
+    "relative_u": 0.0007096346364454722,
+    "relative_p": 0.001134357171035644,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3881373569198751,
+        "mismatch_fraction": 0.004162330905306972
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.39021852237252863,
+        "mismatch_fraction": 0.002081165452653486
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.005696711703745056,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 4000,
+    "seconds": 389.72962522506714,
+    "counters": {
+      "adam_updates": 4000,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0009424432090516938,
+    "adjoint_rms": 4.61707474008573e-05,
+    "recovered_objective": 0.00046837311432884447,
+    "recovered_projected_residual": 0.0002088783501587581,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 4.310251680665326e-15,
+    "recovered_adjoint_residual": 6.905548083421563e-16,
+    "relative_y": 0.001218506072868482,
+    "relative_u": 0.00011570187217270874,
+    "relative_p": 0.00019282370768904355,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0023176160097633206,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 4250,
+    "seconds": 412.98265266418457,
+    "counters": {
+      "adam_updates": 4250,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.001057927527330323,
+    "adjoint_rms": 4.4287965041132236e-05,
+    "recovered_objective": 0.0004683731096262612,
+    "recovered_projected_residual": 0.00017418275913686531,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.95467076077957e-15,
+    "recovered_adjoint_residual": 6.223366977687751e-16,
+    "relative_y": 0.0022140316345453247,
+    "relative_u": 0.00012470422054416242,
+    "relative_p": 0.00020707174103970982,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0023666175885616926,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 4500,
+    "seconds": 436.23158860206604,
+    "counters": {
+      "adam_updates": 4500,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.000963811408814518,
+    "adjoint_rms": 3.55399115000707e-05,
+    "recovered_objective": 0.00046837311430214263,
+    "recovered_projected_residual": 0.0002113675794608536,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.4183605329235825e-15,
+    "recovered_adjoint_residual": 6.752812268556959e-16,
+    "relative_y": 0.0011707375638118748,
+    "relative_u": 9.075234442744173e-05,
+    "relative_p": 0.00012936652792457443,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0020312551499151316,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 4750,
+    "seconds": 460.6832914352417,
+    "counters": {
+      "adam_updates": 4750,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0010620816214425483,
+    "adjoint_rms": 3.4231862243597205e-05,
+    "recovered_objective": 0.00046837311968201377,
+    "recovered_projected_residual": 0.0002461177224325678,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.4787062595682568e-15,
+    "recovered_adjoint_residual": 7.485651140008078e-16,
+    "relative_y": 0.0012311599560515052,
+    "relative_u": 7.837863167714522e-05,
+    "relative_p": 9.140527949748823e-05,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.002113101917243393,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 5000,
+    "seconds": 485.66813707351685,
+    "counters": {
+      "adam_updates": 5000,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0009682182674390831,
+    "adjoint_rms": 3.0419353550578528e-05,
+    "recovered_objective": 0.00046837311574593596,
+    "recovered_projected_residual": 0.00022243547529324112,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.2279689506684863e-15,
+    "recovered_adjoint_residual": 7.059253894408461e-16,
+    "relative_y": 0.0011310175425919312,
+    "relative_u": 7.127512414075536e-05,
+    "relative_p": 8.92487863579006e-05,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0019063819795000635,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 5250,
+    "seconds": 508.6699688434601,
+    "counters": {
+      "adam_updates": 5250,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0010702535239157619,
+    "adjoint_rms": 2.985222481401897e-05,
+    "recovered_objective": 0.000468373121555104,
+    "recovered_projected_residual": 0.0002576992141332658,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.355762370760639e-15,
+    "recovered_adjoint_residual": 8.258993985169318e-16,
+    "relative_y": 0.0012205185157120875,
+    "relative_u": 6.682128090512578e-05,
+    "relative_p": 9.212242095024592e-05,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0020207981996900317,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 5500,
+    "seconds": 532.6089205741882,
+    "counters": {
+      "adam_updates": 5500,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0009993421073850723,
+    "adjoint_rms": 3.274652400923365e-05,
+    "recovered_objective": 0.00046837310438727027,
+    "recovered_projected_residual": 0.00012849873715624227,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.611185155583875e-15,
+    "recovered_adjoint_residual": 6.452873277167572e-16,
+    "relative_y": 0.0031911608083969455,
+    "relative_u": 0.00012727777027873722,
+    "relative_p": 0.0001772449012541069,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0019827367697459576,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 5750,
+    "seconds": 556.4251279830933,
+    "counters": {
+      "adam_updates": 5750,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0010527739081035192,
+    "adjoint_rms": 2.6659080589531396e-05,
+    "recovered_objective": 0.00046837312504875196,
+    "recovered_projected_residual": 0.00027709387376348985,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.749374753828645e-15,
+    "recovered_adjoint_residual": 6.835533872974822e-16,
+    "relative_y": 0.001201771993458661,
+    "relative_u": 6.498259860190491e-05,
+    "relative_p": 0.00011443668538423376,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.39125910509885536,
+        "mismatch_fraction": 0.001040582726326743
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0019347421007836461,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 6000,
+    "seconds": 579.6904847621918,
+    "counters": {
+      "adam_updates": 6000,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0016240085417382779,
+    "adjoint_rms": 7.212697111125137e-05,
+    "recovered_objective": 0.0004683732434642314,
+    "recovered_projected_residual": 0.0006073794619953499,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.4195786845836835e-15,
+    "recovered_adjoint_residual": 7.137163932951967e-16,
+    "relative_y": 0.01096437666358125,
+    "relative_u": 0.0005438843195423962,
+    "relative_p": 0.000600681169854736,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.39021852237252863,
+        "mismatch_fraction": 0.002081165452653486
+      },
+      "0.001": {
+        "lower_fraction": 0.20499479708636836,
+        "upper_fraction": 0.39125910509885536,
+        "mismatch_fraction": 0.002081165452653486
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0038340304111222946,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 6250,
+    "seconds": 602.9159963130951,
+    "counters": {
+      "adam_updates": 6250,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0011717420220698127,
+    "adjoint_rms": 2.503854389041296e-05,
+    "recovered_objective": 0.00046837311522706314,
+    "recovered_projected_residual": 0.00021886008082310862,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.515313009155991e-15,
+    "recovered_adjoint_residual": 7.557620021916788e-16,
+    "relative_y": 0.00180626096554307,
+    "relative_u": 7.365234109144292e-05,
+    "relative_p": 9.141422806929059e-05,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0020371387373373947,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 6500,
+    "seconds": 626.1229090690613,
+    "counters": {
+      "adam_updates": 6500,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0012783153175299424,
+    "adjoint_rms": 4.2385029389989074e-05,
+    "recovered_objective": 0.000468373163503603,
+    "recovered_projected_residual": 0.00043378710681575664,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.680754159751296e-15,
+    "recovered_adjoint_residual": 8.197675636862092e-16,
+    "relative_y": 0.006299428052960882,
+    "relative_u": 0.0001838926151091982,
+    "relative_p": 0.0002388747902493609,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3881373569198751,
+        "mismatch_fraction": 0.004162330905306972
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0026126480570212783,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 6750,
+    "seconds": 649.5080282688141,
+    "counters": {
+      "adam_updates": 6750,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0015671326663529135,
+    "adjoint_rms": 7.211720454364899e-05,
+    "recovered_objective": 0.00046837315419682036,
+    "recovered_projected_residual": 0.0004025805405624199,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.802640083703461e-15,
+    "recovered_adjoint_residual": 6.403077673006691e-16,
+    "relative_y": 0.009937632030370878,
+    "relative_u": 0.0005968823664130942,
+    "relative_p": 0.0009640131212266201,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0037239198741413214,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 7000,
+    "seconds": 672.6972892284393,
+    "counters": {
+      "adam_updates": 7000,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0012630384416740372,
+    "adjoint_rms": 3.4435178373680706e-05,
+    "recovered_objective": 0.0004683731469712392,
+    "recovered_projected_residual": 0.00037454664559430085,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 4.5133987926069555e-15,
+    "recovered_adjoint_residual": 7.108662027359126e-16,
+    "relative_y": 0.004947660995817648,
+    "relative_u": 0.00013350952052042776,
+    "relative_p": 0.00014287962241858743,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3891779396462019,
+        "mismatch_fraction": 0.003121748178980229
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0023873703892238318,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 7250,
+    "seconds": 696.0037665367126,
+    "counters": {
+      "adam_updates": 7250,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0012892887046449283,
+    "adjoint_rms": 5.747027245017711e-05,
+    "recovered_objective": 0.0004683733041391657,
+    "recovered_projected_residual": 0.0007706877422972101,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.866262782326823e-15,
+    "recovered_adjoint_residual": 8.613444976943869e-16,
+    "relative_y": 0.007606518445411895,
+    "relative_u": 0.0004947616183894138,
+    "relative_p": 0.0008254640270519727,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3881373569198751,
+        "mismatch_fraction": 0.004162330905306972
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.003168504509479038,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 7500,
+    "seconds": 719.2945456504822,
+    "counters": {
+      "adam_updates": 7500,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.001066833580959105,
+    "adjoint_rms": 1.655806279817394e-05,
+    "recovered_objective": 0.00046837313924485144,
+    "recovered_projected_residual": 0.00034351469877021,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.408856987141367e-15,
+    "recovered_adjoint_residual": 6.305250445729186e-16,
+    "relative_y": 0.0015417330745662212,
+    "relative_u": 0.00010063674928000351,
+    "relative_p": 0.00023368981521762152,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3891779396462019,
+        "mismatch_fraction": 0.003121748178980229
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0017948279086305748,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 7750,
+    "seconds": 742.6778545379639,
+    "counters": {
+      "adam_updates": 7750,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.033246977014780736,
+    "adjoint_rms": 0.002035607643457121,
+    "recovered_objective": 0.00046844378683705897,
+    "recovered_projected_residual": 0.013260673155254211,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.2974246055329018e-15,
+    "recovered_adjoint_residual": 6.691744165974111e-16,
+    "relative_y": 0.30911268377700185,
+    "relative_u": 0.014188849200966962,
+    "relative_p": 0.01757291833253301,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20915712799167535,
+        "upper_fraction": 0.38605619146722164,
+        "mismatch_fraction": 0.011446409989594173
+      },
+      "0.001": {
+        "lower_fraction": 0.20915712799167535,
+        "upper_fraction": 0.38605619146722164,
+        "mismatch_fraction": 0.011446409989594173
+      },
+      "0.01": {
+        "lower_fraction": 0.21644120707596254,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.01040582726326743
+      }
+    },
+    "selection_score": 0.0960764428421414,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 8000,
+    "seconds": 766.5758068561554,
+    "counters": {
+      "adam_updates": 8000,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0010782238572582855,
+    "adjoint_rms": 1.6686119874451544e-05,
+    "recovered_objective": 0.00046837314313750067,
+    "recovered_projected_residual": 0.0003591763308988939,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.313018475677671e-15,
+    "recovered_adjoint_residual": 6.064591675878859e-16,
+    "relative_y": 0.0013705872758250502,
+    "relative_u": 0.00011704231415246252,
+    "relative_p": 0.00024743644584235915,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3891779396462019,
+        "mismatch_fraction": 0.003121748178980229
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0018180599716545879,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 8250,
+    "seconds": 790.5436162948608,
+    "counters": {
+      "adam_updates": 8250,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0008962570805716987,
+    "adjoint_rms": 1.491437554000209e-05,
+    "recovered_objective": 0.0004683731359639992,
+    "recovered_projected_residual": 0.00032934594389822774,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.67250710896556e-15,
+    "recovered_adjoint_residual": 7.717974967569299e-16,
+    "relative_y": 0.0010967365480509896,
+    "relative_u": 8.7482241056575e-05,
+    "relative_p": 0.000189905310928233,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3891779396462019,
+        "mismatch_fraction": 0.003121748178980229
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0015393560415094395,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 8500,
+    "seconds": 814.5099406242371,
+    "counters": {
+      "adam_updates": 8500,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0010406113145412258,
+    "adjoint_rms": 1.4155222131624781e-05,
+    "recovered_objective": 0.00046837314958383806,
+    "recovered_projected_residual": 0.00038432294151921886,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.595759157934466e-15,
+    "recovered_adjoint_residual": 7.666417566264796e-16,
+    "relative_y": 0.0014343181892834502,
+    "relative_u": 0.0001358711656894712,
+    "relative_p": 0.00029802540841173563,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3881373569198751,
+        "mismatch_fraction": 0.004162330905306972
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0017447235998496854,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 8750,
+    "seconds": 838.0939238071442,
+    "counters": {
+      "adam_updates": 8750,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.005944382543294685,
+    "adjoint_rms": 0.00039907958644953487,
+    "recovered_objective": 0.0004683754950241475,
+    "recovered_projected_residual": 0.002648121135890616,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.581544890350635e-15,
+    "recovered_adjoint_residual": 6.992246283956114e-16,
+    "relative_y": 0.06266880184732318,
+    "relative_u": 0.002672415107544726,
+    "relative_p": 0.0042736463757040224,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.018418324219213158,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 9000,
+    "seconds": 861.3244996070862,
+    "counters": {
+      "adam_updates": 9000,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.007086501854010341,
+    "adjoint_rms": 0.0004899793068749887,
+    "recovered_objective": 0.0004683774099645936,
+    "recovered_projected_residual": 0.0035383941126961864,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.750122305518195e-15,
+    "recovered_adjoint_residual": 6.687885884730446e-16,
+    "relative_y": 0.08009627621452656,
+    "relative_u": 0.0030481378950258935,
+    "relative_p": 0.0044660795211136205,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3881373569198751,
+        "mismatch_fraction": 0.012486992715920915
+      },
+      "0.001": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3881373569198751,
+        "mismatch_fraction": 0.012486992715920915
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.02254996039373746,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 9250,
+    "seconds": 885.0155344009399,
+    "counters": {
+      "adam_updates": 9250,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0013581957764981487,
+    "adjoint_rms": 3.848349988052867e-05,
+    "recovered_objective": 0.0004683731040074411,
+    "recovered_projected_residual": 0.00012542442397294238,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.292899056822977e-15,
+    "recovered_adjoint_residual": 7.292746093600444e-16,
+    "relative_y": 0.007177564929496412,
+    "relative_u": 0.00011600008266847859,
+    "relative_p": 0.00011444047886411958,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.0025418471426475,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 9500,
+    "seconds": 908.2677748203278,
+    "counters": {
+      "adam_updates": 9500,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0010417944775071044,
+    "adjoint_rms": 1.3699092908483843e-05,
+    "recovered_objective": 0.0004683731783365686,
+    "recovered_projected_residual": 0.00048041322968158626,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.299523854919096e-15,
+    "recovered_adjoint_residual": 6.92537470866062e-16,
+    "relative_y": 0.0014501095992127087,
+    "relative_u": 0.0002220207998212137,
+    "relative_p": 0.00046801635926261393,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3881373569198751,
+        "mismatch_fraction": 0.004162330905306972
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.001788739747970402,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 9750,
+    "seconds": 931.4540634155273,
+    "counters": {
+      "adam_updates": 9750,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.001965195984667479,
+    "adjoint_rms": 2.550502736577574e-05,
+    "recovered_objective": 0.0004683731655796004,
+    "recovered_projected_residual": 0.0004378131713921185,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.5988008142800404e-15,
+    "recovered_adjoint_residual": 6.37296825001157e-16,
+    "relative_y": 0.002739958924546519,
+    "relative_u": 0.0002035344012786977,
+    "relative_p": 0.00040993000171764895,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3881373569198751,
+        "mismatch_fraction": 0.004162330905306972
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.003173919849254144,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "adam",
+    "epoch": null,
+    "optimizer_updates": 10000,
+    "seconds": 954.675304889679,
+    "counters": {
+      "adam_updates": 10000,
+      "lbfgs_iterations": 0,
+      "lbfgs_function_evaluations": 0,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0014645074555320351,
+    "adjoint_rms": 2.039819270234016e-05,
+    "recovered_objective": 0.0004683731534024209,
+    "recovered_projected_residual": 0.00039663422618630784,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.9343620219357825e-15,
+    "recovered_adjoint_residual": 7.005970178394343e-16,
+    "relative_y": 0.002079251232362876,
+    "relative_u": 0.00016226949427951138,
+    "relative_p": 0.00033127708151903354,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3891779396462019,
+        "mismatch_fraction": 0.003121748178980229
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.002404755575807189,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "lbfgs",
+    "epoch": null,
+    "optimizer_updates": 10062,
+    "seconds": 971.9401335716248,
+    "counters": {
+      "adam_updates": 10000,
+      "lbfgs_iterations": 62,
+      "lbfgs_function_evaluations": 125,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0014644009446849518,
+    "adjoint_rms": 2.0396425217757705e-05,
+    "recovered_objective": 0.00046837315312961273,
+    "recovered_projected_residual": 0.0003956399935861616,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.506524567709662e-15,
+    "recovered_adjoint_residual": 7.119111287769414e-16,
+    "relative_y": 0.002079134423141051,
+    "relative_u": 0.0001614860622985247,
+    "relative_p": 0.0003296993598485537,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3891779396462019,
+        "mismatch_fraction": 0.003121748178980229
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.002404252386843611,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  },
+  {
+    "stage": "final",
+    "epoch": null,
+    "optimizer_updates": 10062,
+    "seconds": 972.0420234203339,
+    "counters": {
+      "adam_updates": 10000,
+      "lbfgs_iterations": 62,
+      "lbfgs_function_evaluations": 125,
+      "epochs": 0,
+      "outer_steps": 0
+    },
+    "state_rms": 0.0014644009446849518,
+    "adjoint_rms": 2.0396425217757705e-05,
+    "recovered_objective": 0.00046837315312961273,
+    "recovered_projected_residual": 0.0003956399935861616,
+    "recovered_bound_violation": 0.0,
+    "recovered_state_residual": 3.506524567709662e-15,
+    "recovered_adjoint_residual": 7.119111287769414e-16,
+    "relative_y": 0.002079134423141051,
+    "relative_u": 0.0001614860622985247,
+    "relative_p": 0.0003296993598485537,
+    "active_sets": {
+      "0.0001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3891779396462019,
+        "mismatch_fraction": 0.003121748178980229
+      },
+      "0.001": {
+        "lower_fraction": 0.20395421436004163,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      },
+      "0.01": {
+        "lower_fraction": 0.21227887617065558,
+        "upper_fraction": 0.3922996878251821,
+        "mismatch_fraction": 0.0
+      }
+    },
+    "selection_score": 0.002404252386843611,
+    "boundary_y_max": 0.0,
+    "grid_intervals": 32
+  }
+]

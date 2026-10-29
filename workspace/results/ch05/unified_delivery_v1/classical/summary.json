@@ -1,0 +1,808 @@
+[
+  {
+    "grid": 16,
+    "box": {
+      "iterations": 56,
+      "seconds": 0.006063938140869141,
+      "control_continuous_relative": 0.0008656042037996204,
+      "state_continuous_relative": 0.005705028697729036,
+      "projected_residual": 7.839046078726417e-10
+    },
+    "state_constraint": {
+      "n": 16,
+      "iterations": 6,
+      "seconds": 0.005329608917236328,
+      "objective": 0.0737314721805411,
+      "feasibility": 0.0,
+      "dual_violation": 0.0,
+      "stationarity_inf": 1.428301921180264e-13,
+      "complementarity_inf": 0.0,
+      "history": [
+        {
+          "iteration": 1,
+          "active": 149,
+          "violation": 0.0,
+          "dual_violation": 15.874470264038704,
+          "stationarity_inf": 1.2367884494324244e-13
+        },
+        {
+          "iteration": 2,
+          "active": 117,
+          "violation": 0.0,
+          "dual_violation": 9.19534805283173,
+          "stationarity_inf": 7.183142969324763e-14
+        },
+        {
+          "iteration": 3,
+          "active": 81,
+          "violation": 0.0,
+          "dual_violation": 8.228754435026554,
+          "stationarity_inf": 1.0813572259849025e-13
+        },
+        {
+          "iteration": 4,
+          "active": 57,
+          "violation": 0.0,
+          "dual_violation": 4.633423816307995,
+          "stationarity_inf": 1.006972283335017e-13
+        },
+        {
+          "iteration": 5,
+          "active": 49,
+          "violation": 0.0,
+          "dual_violation": 2.470990717602261,
+          "stationarity_inf": 1.911248936892207e-13
+        },
+        {
+          "iteration": 6,
+          "active": 45,
+          "violation": 0.0,
+          "dual_violation": 0.0,
+          "stationarity_inf": 1.428301921180264e-13
+        }
+      ],
+      "definition": "FD state-space convex QP, H=I+alpha*A^T*A, y<=cap; not a continuous optimality certificate"
+    }
+  },
+  {
+    "grid": 32,
+    "box": {
+      "iterations": 56,
+      "seconds": 0.008835792541503906,
+      "control_continuous_relative": 0.0002243388598159154,
+      "state_continuous_relative": 0.0015063405819307938,
+      "projected_residual": 7.434031409027959e-10
+    },
+    "state_constraint": {
+      "n": 32,
+      "iterations": 14,
+      "seconds": 0.04839611053466797,
+      "objective": 0.07390478380413007,
+      "feasibility": 0.0,
+      "dual_violation": 0.0,
+      "stationarity_inf": 4.070077608275824e-12,
+      "complementarity_inf": 0.0,
+      "history": [
+        {
+          "iteration": 1,
+          "active": 597,
+          "violation": 0.0,
+          "dual_violation": 135.78612959038918,
+          "stationarity_inf": 3.126832126554291e-12
+        },
+        {
+          "iteration": 2,
+          "active": 533,
+          "violation": 0.0,
+          "dual_violation": 83.56092876975617,
+          "stationarity_inf": 3.4958147487884617e-12
+        },
+        {
+          "iteration": 3,
+          "active": 465,
+          "violation": 0.0,
+          "dual_violation": 56.02125270788497,
+          "stationarity_inf": 2.376265850756454e-12
+        },
+        {
+          "iteration": 4,
+          "active": 401,
+          "violation": 0.0,
+          "dual_violation": 39.920244613214805,
+          "stationarity_inf": 4.84839945968929e-12
+        },
+        {
+          "iteration": 5,
+          "active": 349,
+          "violation": 0.0,
+          "dual_violation": 38.11967842075958,
+          "stationarity_inf": 2.8537172624965024e-12
+        },
+        {
+          "iteration": 6,
+          "active": 285,
+          "violation": 0.0,
+          "dual_violation": 30.572127820227426,
+          "stationarity_inf": 4.0467629247586956e-12
+        },
+        {
+          "iteration": 7,
+          "active": 233,
+          "violation": 0.0,
+          "dual_violation": 32.65794295862571,
+          "stationarity_inf": 4.083622329176251e-12
+        },
+        {
+          "iteration": 8,
+          "active": 193,
+          "violation": 0.0,
+          "dual_violation": 19.987714071228783,
+          "stationarity_inf": 2.8658186934649166e-12
+        },
+        {
+          "iteration": 9,
+          "active": 177,
+          "violation": 0.0,
+          "dual_violation": 18.24524599963744,
+          "stationarity_inf": 3.078648447285559e-12
+        },
+        {
+          "iteration": 10,
+          "active": 165,
+          "violation": 0.0,
+          "dual_violation": 9.270332459236922,
+          "stationarity_inf": 5.959455151582915e-12
+        },
+        {
+          "iteration": 11,
+          "active": 157,
+          "violation": 0.0,
+          "dual_violation": 5.706768773746724,
+          "stationarity_inf": 3.1347147100291295e-12
+        },
+        {
+          "iteration": 12,
+          "active": 145,
+          "violation": 0.0,
+          "dual_violation": 2.954252610145237,
+          "stationarity_inf": 3.8581360328748815e-12
+        },
+        {
+          "iteration": 13,
+          "active": 137,
+          "violation": 0.0,
+          "dual_violation": 0.9846296759760508,
+          "stationarity_inf": 4.399702824287033e-12
+        },
+        {
+          "iteration": 14,
+          "active": 129,
+          "violation": 0.0,
+          "dual_violation": 0.0,
+          "stationarity_inf": 4.070077608275824e-12
+        }
+      ],
+      "definition": "FD state-space convex QP, H=I+alpha*A^T*A, y<=cap; not a continuous optimality certificate"
+    }
+  },
+  {
+    "grid": 64,
+    "box": {
+      "iterations": 55,
+      "seconds": 0.016819238662719727,
+      "control_continuous_relative": 5.573671993080591e-05,
+      "state_continuous_relative": 0.0003739717158187954,
+      "projected_residual": 9.556362114066987e-10
+    },
+    "state_constraint": {
+      "n": 64,
+      "iterations": 28,
+      "seconds": 0.5690972805023193,
+      "objective": 0.0739470870909786,
+      "feasibility": 0.0,
+      "dual_violation": 0.0,
+      "stationarity_inf": 1.1307998981635592e-10,
+      "complementarity_inf": 0.0,
+      "history": [
+        {
+          "iteration": 1,
+          "active": 2409,
+          "violation": 0.0,
+          "dual_violation": 674.9225153373886,
+          "stationarity_inf": 1.160705975777887e-10
+        },
+        {
+          "iteration": 2,
+          "active": 2277,
+          "violation": 0.0,
+          "dual_violation": 513.2215151698058,
+          "stationarity_inf": 5.888239895668335e-11
+        },
+        {
+          "iteration": 3,
+          "active": 2141,
+          "violation": 0.0,
+          "dual_violation": 402.708005869328,
+          "stationarity_inf": 1.2175177532824932e-10
+        },
+        {
+          "iteration": 4,
+          "active": 2009,
+          "violation": 0.0,
+          "dual_violation": 360.94280837131555,
+          "stationarity_inf": 8.90332252367898e-11
+        },
+        {
+          "iteration": 5,
+          "active": 1865,
+          "violation": 0.0,
+          "dual_violation": 309.38141685287985,
+          "stationarity_inf": 9.886741425546575e-11
+        },
+        {
+          "iteration": 6,
+          "active": 1725,
+          "violation": 0.0,
+          "dual_violation": 268.50767599462614,
+          "stationarity_inf": 9.595391148309318e-11
+        },
+        {
+          "iteration": 7,
+          "active": 1589,
+          "violation": 0.0,
+          "dual_violation": 235.75049157040058,
+          "stationarity_inf": 6.942230124096227e-11
+        },
+        {
+          "iteration": 8,
+          "active": 1457,
+          "violation": 0.0,
+          "dual_violation": 209.71525398931388,
+          "stationarity_inf": 6.449840661559847e-11
+        },
+        {
+          "iteration": 9,
+          "active": 1337,
+          "violation": 0.0,
+          "dual_violation": 219.28092724777105,
+          "stationarity_inf": 9.312906001923693e-11
+        },
+        {
+          "iteration": 10,
+          "active": 1213,
+          "violation": 0.0,
+          "dual_violation": 193.80350169552221,
+          "stationarity_inf": 5.7820526144780615e-11
+        },
+        {
+          "iteration": 11,
+          "active": 1085,
+          "violation": 0.0,
+          "dual_violation": 184.38411661103495,
+          "stationarity_inf": 1.0008993633903174e-10
+        },
+        {
+          "iteration": 12,
+          "active": 969,
+          "violation": 0.0,
+          "dual_violation": 199.02722788966963,
+          "stationarity_inf": 8.645439919519049e-11
+        },
+        {
+          "iteration": 13,
+          "active": 865,
+          "violation": 0.0,
+          "dual_violation": 157.95876452575558,
+          "stationarity_inf": 8.179301680399931e-11
+        },
+        {
+          "iteration": 14,
+          "active": 765,
+          "violation": 0.0,
+          "dual_violation": 168.4615480967125,
+          "stationarity_inf": 7.949829683440157e-11
+        },
+        {
+          "iteration": 15,
+          "active": 677,
+          "violation": 0.0,
+          "dual_violation": 126.15703684724342,
+          "stationarity_inf": 9.215850305110962e-11
+        },
+        {
+          "iteration": 16,
+          "active": 609,
+          "violation": 0.0,
+          "dual_violation": 168.85711461855703,
+          "stationarity_inf": 8.569878140463061e-11
+        },
+        {
+          "iteration": 17,
+          "active": 581,
+          "violation": 0.0,
+          "dual_violation": 106.1414803061703,
+          "stationarity_inf": 1.1268985744550264e-10
+        },
+        {
+          "iteration": 18,
+          "active": 565,
+          "violation": 0.0,
+          "dual_violation": 126.21637035236579,
+          "stationarity_inf": 1.460206400238917e-10
+        },
+        {
+          "iteration": 19,
+          "active": 537,
+          "violation": 5.015980862332903e-07,
+          "dual_violation": 72.37618466918963,
+          "stationarity_inf": 9.428202663031016e-11
+        },
+        {
+          "iteration": 20,
+          "active": 537,
+          "violation": 0.0,
+          "dual_violation": 61.82666808801604,
+          "stationarity_inf": 8.607603518839824e-11
+        },
+        {
+          "iteration": 21,
+          "active": 525,
+          "violation": 0.0,
+          "dual_violation": 44.54278180236614,
+          "stationarity_inf": 8.585021582518948e-11
+        },
+        {
+          "iteration": 22,
+          "active": 517,
+          "violation": 0.0,
+          "dual_violation": 32.482365475906846,
+          "stationarity_inf": 8.477063495604398e-11
+        },
+        {
+          "iteration": 23,
+          "active": 505,
+          "violation": 0.0,
+          "dual_violation": 23.428304180433013,
+          "stationarity_inf": 7.626710374353252e-11
+        },
+        {
+          "iteration": 24,
+          "active": 489,
+          "violation": 0.0,
+          "dual_violation": 15.7382162731138,
+          "stationarity_inf": 1.2445955377415885e-10
+        },
+        {
+          "iteration": 25,
+          "active": 481,
+          "violation": 0.0,
+          "dual_violation": 8.402972841971895,
+          "stationarity_inf": 1.01744834779538e-10
+        },
+        {
+          "iteration": 26,
+          "active": 465,
+          "violation": 0.0,
+          "dual_violation": 4.107545748238271,
+          "stationarity_inf": 8.939171625144127e-11
+        },
+        {
+          "iteration": 27,
+          "active": 453,
+          "violation": 0.0,
+          "dual_violation": 0.9461198358245813,
+          "stationarity_inf": 1.4410839188627733e-10
+        },
+        {
+          "iteration": 28,
+          "active": 445,
+          "violation": 0.0,
+          "dual_violation": 0.0,
+          "stationarity_inf": 1.1307998981635592e-10
+        }
+      ],
+      "definition": "FD state-space convex QP, H=I+alpha*A^T*A, y<=cap; not a continuous optimality certificate"
+    }
+  },
+  {
+    "grid": 128,
+    "box": {
+      "iterations": 55,
+      "seconds": 0.04978203773498535,
+      "control_continuous_relative": 1.3938354193734818e-05,
+      "state_continuous_relative": 9.368503828663563e-05,
+      "projected_residual": 9.733406713340533e-10
+    },
+    "state_constraint": {
+      "n": 128,
+      "iterations": 54,
+      "seconds": 8.58179759979248,
+      "objective": 0.07395772266225026,
+      "feasibility": 0.0,
+      "dual_violation": 0.0,
+      "stationarity_inf": 1.959775897120153e-09,
+      "complementarity_inf": 0.0,
+      "history": [
+        {
+          "iteration": 1,
+          "active": 9597,
+          "violation": 0.0,
+          "dual_violation": 3103.736775845368,
+          "stationarity_inf": 1.4436809525619765e-09
+        },
+        {
+          "iteration": 2,
+          "active": 9325,
+          "violation": 0.0,
+          "dual_violation": 2677.57366676662,
+          "stationarity_inf": 1.7855949496770052e-09
+        },
+        {
+          "iteration": 3,
+          "active": 9057,
+          "violation": 0.0,
+          "dual_violation": 2333.53124049993,
+          "stationarity_inf": 1.3759932637746886e-09
+        },
+        {
+          "iteration": 4,
+          "active": 8785,
+          "violation": 0.0,
+          "dual_violation": 2051.049185455591,
+          "stationarity_inf": 1.8980053917427853e-09
+        },
+        {
+          "iteration": 5,
+          "active": 8501,
+          "violation": 0.0,
+          "dual_violation": 1816.6051510043096,
+          "stationarity_inf": 1.7602011515016613e-09
+        },
+        {
+          "iteration": 6,
+          "active": 8221,
+          "violation": 0.0,
+          "dual_violation": 1708.593064323131,
+          "stationarity_inf": 2.2010444022946274e-09
+        },
+        {
+          "iteration": 7,
+          "active": 7937,
+          "violation": 0.0,
+          "dual_violation": 1483.6699553560197,
+          "stationarity_inf": 1.4427890548951439e-09
+        },
+        {
+          "iteration": 8,
+          "active": 7665,
+          "violation": 0.0,
+          "dual_violation": 1672.7468732897494,
+          "stationarity_inf": 1.752288869560914e-09
+        },
+        {
+          "iteration": 9,
+          "active": 7381,
+          "violation": 0.0,
+          "dual_violation": 1523.7033730004991,
+          "stationarity_inf": 1.6687216053412612e-09
+        },
+        {
+          "iteration": 10,
+          "active": 7101,
+          "violation": 0.0,
+          "dual_violation": 1376.49214974647,
+          "stationarity_inf": 2.2774893082555536e-09
+        },
+        {
+          "iteration": 11,
+          "active": 6825,
+          "violation": 0.0,
+          "dual_violation": 1214.4269517778341,
+          "stationarity_inf": 2.547611066550104e-09
+        },
+        {
+          "iteration": 12,
+          "active": 6561,
+          "violation": 0.0,
+          "dual_violation": 1385.2803259053542,
+          "stationarity_inf": 1.6376861533551335e-09
+        },
+        {
+          "iteration": 13,
+          "active": 6285,
+          "violation": 0.0,
+          "dual_violation": 1293.0215985665864,
+          "stationarity_inf": 1.626860257619711e-09
+        },
+        {
+          "iteration": 14,
+          "active": 6013,
+          "violation": 0.0,
+          "dual_violation": 1209.2327402871738,
+          "stationarity_inf": 2.237538598848232e-09
+        },
+        {
+          "iteration": 15,
+          "active": 5745,
+          "violation": 0.0,
+          "dual_violation": 1132.2596222437662,
+          "stationarity_inf": 1.7694902210152463e-09
+        },
+        {
+          "iteration": 16,
+          "active": 5481,
+          "violation": 0.0,
+          "dual_violation": 1059.9662847023797,
+          "stationarity_inf": 1.8415983182862306e-09
+        },
+        {
+          "iteration": 17,
+          "active": 5221,
+          "violation": 0.0,
+          "dual_violation": 988.5293166970577,
+          "stationarity_inf": 3.1423748603209845e-09
+        },
+        {
+          "iteration": 18,
+          "active": 4973,
+          "violation": 0.0,
+          "dual_violation": 1075.752726245124,
+          "stationarity_inf": 1.8731314277431466e-09
+        },
+        {
+          "iteration": 19,
+          "active": 4721,
+          "violation": 0.0,
+          "dual_violation": 1003.6066687314191,
+          "stationarity_inf": 1.9305823051318782e-09
+        },
+        {
+          "iteration": 20,
+          "active": 4465,
+          "violation": 0.0,
+          "dual_violation": 971.081023141754,
+          "stationarity_inf": 2.07325268064551e-09
+        },
+        {
+          "iteration": 21,
+          "active": 4213,
+          "violation": 0.0,
+          "dual_violation": 956.1345265323897,
+          "stationarity_inf": 2.2765451745954124e-09
+        },
+        {
+          "iteration": 22,
+          "active": 3965,
+          "violation": 0.0,
+          "dual_violation": 979.9175630600637,
+          "stationarity_inf": 1.891709677792619e-09
+        },
+        {
+          "iteration": 23,
+          "active": 3729,
+          "violation": 0.0,
+          "dual_violation": 1037.4030970830913,
+          "stationarity_inf": 2.71861300138454e-09
+        },
+        {
+          "iteration": 24,
+          "active": 3505,
+          "violation": 0.0,
+          "dual_violation": 923.615212610741,
+          "stationarity_inf": 2.060762005484662e-09
+        },
+        {
+          "iteration": 25,
+          "active": 3285,
+          "violation": 0.0,
+          "dual_violation": 985.4958445390838,
+          "stationarity_inf": 2.8162489007499403e-09
+        },
+        {
+          "iteration": 26,
+          "active": 3077,
+          "violation": 0.0,
+          "dual_violation": 828.0819231106375,
+          "stationarity_inf": 2.0566860436943557e-09
+        },
+        {
+          "iteration": 27,
+          "active": 2873,
+          "violation": 0.0,
+          "dual_violation": 1216.3920037043847,
+          "stationarity_inf": 2.451614689036319e-09
+        },
+        {
+          "iteration": 28,
+          "active": 2681,
+          "violation": 0.0,
+          "dual_violation": 843.6564439680428,
+          "stationarity_inf": 2.683328781394323e-09
+        },
+        {
+          "iteration": 29,
+          "active": 2509,
+          "violation": 0.0,
+          "dual_violation": 1108.3547389724688,
+          "stationarity_inf": 2.481036487367305e-09
+        },
+        {
+          "iteration": 30,
+          "active": 2349,
+          "violation": 0.0,
+          "dual_violation": 754.2793410383609,
+          "stationarity_inf": 2.2495183493731474e-09
+        },
+        {
+          "iteration": 31,
+          "active": 2217,
+          "violation": 0.0,
+          "dual_violation": 989.1247755762058,
+          "stationarity_inf": 2.7239797084632755e-09
+        },
+        {
+          "iteration": 32,
+          "active": 2181,
+          "violation": 0.0,
+          "dual_violation": 662.6408371632551,
+          "stationarity_inf": 2.754639183422114e-09
+        },
+        {
+          "iteration": 33,
+          "active": 2149,
+          "violation": 0.0,
+          "dual_violation": 868.6988856554688,
+          "stationarity_inf": 3.2442928343812127e-09
+        },
+        {
+          "iteration": 34,
+          "active": 2113,
+          "violation": 0.0,
+          "dual_violation": 570.97454680533,
+          "stationarity_inf": 2.0817156887176225e-09
+        },
+        {
+          "iteration": 35,
+          "active": 2089,
+          "violation": 0.0,
+          "dual_violation": 747.7516085449412,
+          "stationarity_inf": 2.0150714430400285e-09
+        },
+        {
+          "iteration": 36,
+          "active": 2069,
+          "violation": 0.0,
+          "dual_violation": 479.03044981908437,
+          "stationarity_inf": 2.593368741976576e-09
+        },
+        {
+          "iteration": 37,
+          "active": 2053,
+          "violation": 0.0,
+          "dual_violation": 624.3167381296419,
+          "stationarity_inf": 2.527848597111415e-09
+        },
+        {
+          "iteration": 38,
+          "active": 1909,
+          "violation": 0.0,
+          "dual_violation": 388.5392639773793,
+          "stationarity_inf": 3.0823319452366604e-09
+        },
+        {
+          "iteration": 39,
+          "active": 1893,
+          "violation": 0.0,
+          "dual_violation": 503.15979235765013,
+          "stationarity_inf": 2.504203622244461e-09
+        },
+        {
+          "iteration": 40,
+          "active": 1857,
+          "violation": 1.5680772956216948e-06,
+          "dual_violation": 299.59058108156347,
+          "stationarity_inf": 2.4286149757912767e-09
+        },
+        {
+          "iteration": 41,
+          "active": 1853,
+          "violation": 1.0762084440285591e-07,
+          "dual_violation": 260.4145885609235,
+          "stationarity_inf": 3.016518812515301e-09
+        },
+        {
+          "iteration": 42,
+          "active": 1845,
+          "violation": 0.0,
+          "dual_violation": 225.84367898292078,
+          "stationarity_inf": 2.3056618836392317e-09
+        },
+        {
+          "iteration": 43,
+          "active": 1805,
+          "violation": 4.678422775739044e-06,
+          "dual_violation": 173.25761560971355,
+          "stationarity_inf": 2.036483870426764e-09
+        },
+        {
+          "iteration": 44,
+          "active": 1785,
+          "violation": 3.1001451906431665e-06,
+          "dual_violation": 145.07571154095564,
+          "stationarity_inf": 2.7516889877787776e-09
+        },
+        {
+          "iteration": 45,
+          "active": 1777,
+          "violation": 2.3847027735279802e-06,
+          "dual_violation": 120.74896646821223,
+          "stationarity_inf": 2.0724172378194794e-09
+        },
+        {
+          "iteration": 46,
+          "active": 1749,
+          "violation": 2.076044091886553e-06,
+          "dual_violation": 98.82675475738527,
+          "stationarity_inf": 2.2916772923764483e-09
+        },
+        {
+          "iteration": 47,
+          "active": 1741,
+          "violation": 1.928892307601071e-06,
+          "dual_violation": 78.5738990780746,
+          "stationarity_inf": 2.7107172062557083e-09
+        },
+        {
+          "iteration": 48,
+          "active": 1729,
+          "violation": 0.0,
+          "dual_violation": 63.12150890457563,
+          "stationarity_inf": 2.246187236210062e-09
+        },
+        {
+          "iteration": 49,
+          "active": 1705,
+          "violation": 1.502803851832768e-06,
+          "dual_violation": 41.924051195440235,
+          "stationarity_inf": 2.3917063884937306e-09
+        },
+        {
+          "iteration": 50,
+          "active": 1705,
+          "violation": 0.0,
+          "dual_violation": 28.92470744080466,
+          "stationarity_inf": 2.5495154876153947e-09
+        },
+        {
+          "iteration": 51,
+          "active": 1681,
+          "violation": 0.0,
+          "dual_violation": 18.376625160907043,
+          "stationarity_inf": 2.2336538174627663e-09
+        },
+        {
+          "iteration": 52,
+          "active": 1673,
+          "violation": 0.0,
+          "dual_violation": 9.585814942641136,
+          "stationarity_inf": 2.619817807136826e-09
+        },
+        {
+          "iteration": 53,
+          "active": 1665,
+          "violation": 0.0,
+          "dual_violation": 2.9105162587625624,
+          "stationarity_inf": 1.9450970834000714e-09
+        },
+        {
+          "iteration": 54,
+          "active": 1657,
+          "violation": 0.0,
+          "dual_violation": 0.0,
+          "stationarity_inf": 1.959775897120153e-09
+        }
+      ],
+      "definition": "FD state-space convex QP, H=I+alpha*A^T*A, y<=cap; not a continuous optimality certificate"
+    }
+  }
+]

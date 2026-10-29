@@ -1,0 +1,24 @@
+{
+  "version": "ch04-grid-operators-v1",
+  "source": "user-provided ocpde_dl snapshot",
+  "sha256": {
+    "fno.py": "66b46198acef08daf77228bb0b50c0df0436a9376dce97afefd64a41afb430da",
+    "deeponet.py": "30617f99d37dc00b02b809d075463ec71238c974f729c639b48b4f3ae51309b5",
+    "train_fno.py": "375150b459c6e039e77362ab5561119343f7bf47627d134758fd1d89cc315bd0",
+    "train_fno_pde.py": "79803f7971b026a5d03af0718e5e2184d352c538a53faaa8157a920a21711dca",
+    "train_deeponet.py": "60e8e7f24d0e0647e0227336224b93ef0afbf7082870add81e8ae85ad4bd8fb5",
+    "train_fedonet.py": "480bae0f204420e038297ac83737489b6917b48097663d4d2e3935c04d69f897",
+    "train_fedonet_pde.py": "1021ff804f88f1959a2619ff94d45f8bc46bc76cf341d00ab50ab725b8f6309d"
+  },
+  "adaptations": [
+    "explicit state and KKT roles",
+    "FFT real-pair dtype, non-overlapping mode bands, explicit odd output size",
+    "physical y/u outputs; p=-alpha*u",
+    "hard state/adjoint boundaries, zero response",
+    "train-only normalization and train/validation-only workflow",
+    "independent state-control samples; labels from a validated linear sine-Galerkin reference",
+    "retain FNO 12/32/4 and DeepONet/FEDONet latent56 width300 depth3; 1600-epoch configs",
+    "neural online control through frozen state operators"
+  ],
+  "scope": "linear alpha=.001 17-mode family; not unmodified legacy semilinear replication; DeepONet-state is an added role using the same original architecture"
+}

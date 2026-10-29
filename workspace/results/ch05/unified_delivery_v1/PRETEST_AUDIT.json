@@ -1,0 +1,420 @@
+{
+  "status": "passed",
+  "training_configurations": 21,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "checks": [
+    {
+      "key": "admm_s0",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 42114,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 1.748329153437394e-07,
+      "validation_selection_score": 0.0007073118438363195,
+      "validation_cross_device_max_abs": {}
+    },
+    {
+      "key": "admm_s1",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 42114,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 1.659030485152905e-07,
+      "validation_selection_score": 0.0006852193832547514,
+      "validation_cross_device_max_abs": {}
+    },
+    {
+      "key": "admm_s2",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 42114,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 2.7375162236318314e-07,
+      "validation_selection_score": 0.0008435436418592538,
+      "validation_cross_device_max_abs": {}
+    },
+    {
+      "key": "osnn_s0",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 42114,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 1.0429922922402058e-06,
+      "validation_selection_score": 0.0015393560415094417,
+      "validation_cross_device_max_abs": {}
+    },
+    {
+      "key": "osnn_s1",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 42114,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 5.216187225557416e-07,
+      "validation_selection_score": 0.0009883441009202636,
+      "validation_cross_device_max_abs": {}
+    },
+    {
+      "key": "osnn_s2",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 42114,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 4.887878436336801e-07,
+      "validation_selection_score": 0.001007706211324578,
+      "validation_cross_device_max_abs": {}
+    },
+    {
+      "key": "cnp_s0",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 21057,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.07396227877558388,
+      "validation_selection_score": 0.07396227472971943,
+      "validation_cross_device_max_abs": {}
+    },
+    {
+      "key": "cnp_s1",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 21057,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.0739626170151091,
+      "validation_selection_score": 0.07396261408897847,
+      "validation_cross_device_max_abs": {}
+    },
+    {
+      "key": "cnp_s2",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 21057,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.07396253258363862,
+      "validation_selection_score": 0.07396252656643663,
+      "validation_cross_device_max_abs": {}
+    },
+    {
+      "key": "mimo_s0",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 59690,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.03626132337376475,
+      "validation_selection_score": 0.032589941285550594,
+      "validation_cross_device_max_abs": {
+        "u": 8.344650268554688e-07,
+        "y": 2.421438694000244e-08,
+        "p": 2.0954757928848267e-09
+      }
+    },
+    {
+      "key": "mimo_s1",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 59690,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.047207819763571024,
+      "validation_selection_score": 0.04297776147723198,
+      "validation_cross_device_max_abs": {
+        "u": 1.7881393432617188e-06,
+        "y": 2.7939677238464355e-08,
+        "p": 2.3283064365386963e-09
+      }
+    },
+    {
+      "key": "mimo_s2",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 59690,
+        "structurally_inactive_real_parameters": 0,
+        "known_inactive_names": [],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.03538614814169705,
+      "validation_selection_score": 0.032683019526302814,
+      "validation_cross_device_max_abs": {
+        "u": 1.2516975402832031e-06,
+        "y": 2.2351741790771484e-08,
+        "p": 2.7939677238464355e-09
+      }
+    },
+    {
+      "key": "pdol_s0",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 119234,
+        "structurally_inactive_real_parameters": 2,
+        "known_inactive_names": [
+          "state.projection.bias",
+          "adjoint.projection.bias"
+        ],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.0004874043988820631,
+      "validation_selection_score": 0.0005495983059518039,
+      "validation_cross_device_max_abs": {
+        "u": 2.9206275939941406e-06,
+        "y": 6.332993507385254e-08,
+        "p": 4.190951585769653e-09
+      }
+    },
+    {
+      "key": "pdol_s1",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 119234,
+        "structurally_inactive_real_parameters": 2,
+        "known_inactive_names": [
+          "state.projection.bias",
+          "adjoint.projection.bias"
+        ],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.0004371160703158239,
+      "validation_selection_score": 0.0004898378101643175,
+      "validation_cross_device_max_abs": {
+        "u": 1.3709068298339844e-06,
+        "y": 6.565824151039124e-08,
+        "p": 2.3283064365386963e-09
+      }
+    },
+    {
+      "key": "pdol_s2",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 119234,
+        "structurally_inactive_real_parameters": 2,
+        "known_inactive_names": [
+          "state.projection.bias",
+          "adjoint.projection.bias"
+        ],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.000404693517339183,
+      "validation_selection_score": 0.000457741305581294,
+      "validation_cross_device_max_abs": {
+        "u": 2.7418136596679688e-06,
+        "y": 3.166496753692627e-08,
+        "p": 3.259629011154175e-09
+      }
+    },
+    {
+      "key": "iuzawa_f_s0",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 479046,
+        "structurally_inactive_real_parameters": 20230,
+        "known_inactive_names": [
+          "unrolled.uzawa_layers.0.S_oper.projection.bias",
+          "unrolled.uzawa_layers.1.S_oper.projection.bias",
+          "unrolled.uzawa_layers.2.S_oper.projection.bias",
+          "unrolled.uzawa_layers.3.S_oper.projection.bias",
+          "unrolled.uzawa_layers.4.S_oper.projection.bias",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.pre_lifting_mat",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.lifting",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.fourier_layer_sap.phi",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.fourier_layer_sap.local_mat",
+          "unrolled.uzawa_layers.5.S_oper.projection.bias"
+        ],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.00036526793519442435,
+      "validation_selection_score": 0.00047326256753876805,
+      "validation_cross_device_max_abs": {
+        "u": 2.4437904357910156e-06
+      }
+    },
+    {
+      "key": "iuzawa_f_s1",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 479046,
+        "structurally_inactive_real_parameters": 20230,
+        "known_inactive_names": [
+          "unrolled.uzawa_layers.0.S_oper.projection.bias",
+          "unrolled.uzawa_layers.1.S_oper.projection.bias",
+          "unrolled.uzawa_layers.2.S_oper.projection.bias",
+          "unrolled.uzawa_layers.3.S_oper.projection.bias",
+          "unrolled.uzawa_layers.4.S_oper.projection.bias",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.pre_lifting_mat",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.lifting",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.fourier_layer_sap.phi",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.fourier_layer_sap.local_mat",
+          "unrolled.uzawa_layers.5.S_oper.projection.bias"
+        ],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.00029373894722084515,
+      "validation_selection_score": 0.00042944372398778796,
+      "validation_cross_device_max_abs": {
+        "u": 3.039836883544922e-06
+      }
+    },
+    {
+      "key": "iuzawa_f_s2",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 479046,
+        "structurally_inactive_real_parameters": 20230,
+        "known_inactive_names": [
+          "unrolled.uzawa_layers.0.S_oper.projection.bias",
+          "unrolled.uzawa_layers.1.S_oper.projection.bias",
+          "unrolled.uzawa_layers.2.S_oper.projection.bias",
+          "unrolled.uzawa_layers.3.S_oper.projection.bias",
+          "unrolled.uzawa_layers.4.S_oper.projection.bias",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.pre_lifting_mat",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.lifting",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.fourier_layer_sap.phi",
+          "unrolled.uzawa_layers.5.qb_sap_fourier_layers.fourier_layer_sap.local_mat",
+          "unrolled.uzawa_layers.5.S_oper.projection.bias"
+        ],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.00031720533024781616,
+      "validation_selection_score": 0.0006503119948320091,
+      "validation_cross_device_max_abs": {
+        "u": 2.9802322387695312e-06
+      }
+    },
+    {
+      "key": "iuzawa_s_s0",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 79841,
+        "structurally_inactive_real_parameters": 1,
+        "known_inactive_names": [
+          "unrolled.uzawa_layer.S_oper.projection.bias"
+        ],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.0018103203328792006,
+      "validation_selection_score": 0.0020920641254633665,
+      "validation_cross_device_max_abs": {
+        "u": 6.079673767089844e-06
+      }
+    },
+    {
+      "key": "iuzawa_s_s1",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 79841,
+        "structurally_inactive_real_parameters": 1,
+        "known_inactive_names": [
+          "unrolled.uzawa_layer.S_oper.projection.bias"
+        ],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.0023534351348644122,
+      "validation_selection_score": 0.002666763844899833,
+      "validation_cross_device_max_abs": {
+        "u": 1.0102987289428711e-05
+      }
+    },
+    {
+      "key": "iuzawa_s_s2",
+      "selection_reloaded": true,
+      "train_only_normalization": true,
+      "parameters": {
+        "nominal_real_parameters": 79841,
+        "structurally_inactive_real_parameters": 1,
+        "known_inactive_names": [
+          "unrolled.uzawa_layer.S_oper.projection.bias"
+        ],
+        "reason": "Zero-preserving FNO subtraction cancels its output bias; the last free-layer dual update does not affect returned u. These are nominal, not effective-capacity counts."
+      },
+      "selected_training_loss": 0.0013985562545713037,
+      "validation_selection_score": 0.0015208866680040956,
+      "validation_cross_device_max_abs": {
+        "u": 1.1920928955078125e-05
+      }
+    }
+  ],
+  "old_source_protection": [
+    {
+      "module": "ch04",
+      "files": 14
+    },
+    {
+      "module": "ch04_adaptation",
+      "files": 19
+    },
+    {
+      "module": "ch04_operator_learning",
+      "files": 21
+    },
+    {
+      "module": "ch04_operator_adaptation",
+      "files": 16
+    },
+    {
+      "module": "ch04_completion",
+      "files": 13
+    },
+    {
+      "module": "ch04_delivery",
+      "files": 15
+    },
+    {
+      "module": "ch05",
+      "files": 22
+    }
+  ],
+  "heldout_created": false
+}

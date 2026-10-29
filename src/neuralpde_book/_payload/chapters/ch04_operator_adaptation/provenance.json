@@ -1,0 +1,34 @@
+{
+  "version": "ch04-operator-adaptation-v2",
+  "source": "Frozen ch04-grid-operators-v1 backbones adapted from the user-provided ocpde_dl snapshot",
+  "legacy_sha256": {
+    "fno.py": "66b46198acef08daf77228bb0b50c0df0436a9376dce97afefd64a41afb430da",
+    "deeponet.py": "30617f99d37dc00b02b809d075463ec71238c974f729c639b48b4f3ae51309b5",
+    "train_fno.py": "375150b459c6e039e77362ab5561119343f7bf47627d134758fd1d89cc315bd0",
+    "train_fno_pde.py": "79803f7971b026a5d03af0718e5e2184d352c538a53faaa8157a920a21711dca",
+    "train_deeponet.py": "60e8e7f24d0e0647e0227336224b93ef0afbf7082870add81e8ae85ad4bd8fb5",
+    "train_fedonet.py": "480bae0f204420e038297ac83737489b6917b48097663d4d2e3935c04d69f897",
+    "train_fedonet_pde.py": "1021ff804f88f1959a2619ff94d45f8bc46bc76cf341d00ab50ab725b8f6309d"
+  },
+  "dependencies": [
+    "chapters/ch04_operator_learning",
+    "chapters/ch04_adaptation/operator_data.py"
+  ],
+  "adaptations": [
+    "train-only per-mode centering and scaling",
+    "state inputs reduced to f+u without changing the PDE",
+    "explicit 17-mode output range and DeepONet/FEDONet sine-trunk enrichment",
+    "float64 optimization, nonzero learning-rate floor",
+    "consistent spectral physics loss and true JVP supervision from linear training-solution differences",
+    "train-only regularized SVD output head with separate pure-neural and linear baselines",
+    "domain rejection, source-bound checkpoints, frozen-backbone and derivative audit",
+    "48 online controls using matching 17-mode neural control space"
+  ],
+  "limitations": [
+    "fixed alpha=0.001 linear smooth family only",
+    "no semilinear legacy benchmark replication",
+    "no arbitrary-field or cross-grid inference",
+    "head-polished precision may be dominated by the learned linear component",
+    "train/validation only; no independent test claim"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "key": "source_080__safeguarded__s1",
+  "source_index": 80,
+  "sample_id": "final-v1:cf:test:c020:f000",
+  "mode": "safeguarded",
+  "seed": 1,
+  "iterations": 400,
+  "neural_calls": 40,
+  "accepted_neural": 9,
+  "rejected_neural": 31,
+  "classical_steps": 391,
+  "matrix_vector_products": 432,
+  "converged": true,
+  "failure": null,
+  "final_residual": 7.956546932637005e-10,
+  "rhs_norm": 0.08123013714115165,
+  "tolerance": 8.133013714115166e-10,
+  "relative_residual": 9.795067708443118e-09,
+  "classical_contraction_bound": 0.9985852758515609,
+  "scaled_eigenvalue_bounds": [
+    0.0021220862226586368,
+    1.9978779137773413
+  ],
+  "max_classical_observed_ratio": 0.9743867549044265,
+  "max_accepted_neural_ratio": 0.8968913997203467,
+  "residual_history": [],
+  "neural_events": [],
+  "elapsed_seconds": 0.027867847122251987,
+  "relative_discrete_l2": 5.346656503215961e-09,
+  "public_l2": 0.0007187359465564486,
+  "public_h1": 0.0016938101240642986,
+  "online_seconds": 0.029621497727930546,
+  "assembly_seconds": 0.004556283354759216,
+  "total_seconds": 0.03417778108268976,
+  "timed_repetitions": [
+    0.029524726793169975,
+    0.029684928245842457,
+    0.029621497727930546
+  ]
+}

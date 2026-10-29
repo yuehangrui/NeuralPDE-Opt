@@ -1,0 +1,29 @@
+{
+  "schema": "ch05-reconstructible-v1",
+  "grid": 32,
+  "problem": {
+    "alpha": 0.001,
+    "lower": 0.3,
+    "upper": 1.0,
+    "state_cap": 0.2
+  },
+  "distribution": "base manufactured f/yd + independent cosine(0:3)^2 perturbations; train-grid RMS scales .3/.05; v/w scales 1/.1; amplitude Uniform(.25,1.5)",
+  "splits": {
+    "train": {
+      "count": 1024,
+      "sha256": "d93e37aad2906c8c2808a576e5d2560c099f587e9a00789e29ae9c9dcb55a3e2",
+      "reference": {
+        "iterations": 60,
+        "max_projected_residual": 4.4846986319751127e-10
+      }
+    },
+    "val": {
+      "count": 128,
+      "sha256": "c47a9205799140cf1f53eb6281754fbfe55f47448c7492a19d654857d9711fb2",
+      "reference": {
+        "iterations": 59,
+        "max_projected_residual": 4.923016726920446e-10
+      }
+    }
+  }
+}

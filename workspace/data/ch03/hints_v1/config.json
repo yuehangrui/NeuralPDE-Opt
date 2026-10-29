@@ -1,0 +1,31 @@
+{
+  "schema_version": "ch03-hints-v1",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 400,
+  "batch_size": 32,
+  "checkpoint_every": 25,
+  "learning_rate": 0.0001,
+  "min_lr": 1e-06,
+  "weight_decay": 1e-05,
+  "grad_clip": 1.0,
+  "jacobi_steps": [
+    0,
+    4,
+    16,
+    64,
+    256
+  ],
+  "train_forcings_per_group": 4,
+  "val_forcings_per_group": 2,
+  "omega": 0.6666666666666666,
+  "period": 10,
+  "eta": 0.9,
+  "rtol": 1e-08,
+  "atol": 1e-12,
+  "maxiter": 10000,
+  "test_evaluations": 0
+}

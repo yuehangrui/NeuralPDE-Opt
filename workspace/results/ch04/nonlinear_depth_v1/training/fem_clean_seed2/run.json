@@ -1,0 +1,35 @@
+{
+  "config": {
+    "method": "fem_clean",
+    "seed": 2,
+    "width": 32,
+    "depth": 2,
+    "device": "cpu",
+    "mesh": 64,
+    "validation_mesh": 96,
+    "lr": 0.003,
+    "train_observations": 256,
+    "val_observations": 128,
+    "noise": 0.0,
+    "regularization": 0.0,
+    "adam_steps": 2000,
+    "lbfgs_steps": 400,
+    "record_every": 20
+  },
+  "seconds": 47.1130597256124,
+  "counts": {
+    "train": {
+      "forward": 3245,
+      "transpose": 3124
+    },
+    "val": {
+      "forward": 121,
+      "transpose": 0
+    },
+    "optimizer_closures": 3003
+  },
+  "selected_index": 120,
+  "validation_score": 0.0011702720869274756,
+  "parameter_count": 1697,
+  "test_evaluations": 0
+}

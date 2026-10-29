@@ -1,0 +1,22 @@
+{
+  "version": "ch04-smooth-adaptation-v1",
+  "upstream": "user-provided references/legacy_source/ocpde_dl snapshot; no Git revision asserted",
+  "source_sha256": {
+    "pinn/elliptic_uc.py": "5911c84db6a807dc4af64a5db0fe10e90514d89bd7e394f5ea790f735f5ee7da",
+    "pinn/elliptic_uc_direct_pinn.py": "4af5d5d927b02a624fcdd5abd588e44b58cf58f100155da9b2b0c0731bb7f1d2",
+    "pinn/alm_pinn.py": "97bd9b9d20e2ac511b600d6dbe669a5389db8e3e49342b7412bbe745c66002bc",
+    "neural_operator/mimoonet.py": "4ce9599ebf06946f1f57601570765539c10bfef636f4e1b59ccb2cff68cf6129",
+    "neural_operator/deeponet.py": "30617f99d37dc00b02b809d075463ec71238c974f729c639b48b4f3ae51309b5",
+    "rb_dino/model.py": "14314abd9e94b70029e4a60a2c070f054aceafa2860c6aa5494a45f73df2266c",
+    "rb_dino/state_jvp.py": "39affc62bb9222f33b462cdcfbc22533c86e0a1a852291117882b7f7989668f6",
+    "rb_dino/solve_ocp.py": "0aeeab8042fd09c9426e02b152376bd6a3b3dc274f71ad49a9839d79f352d865"
+  },
+  "dependency": "frozen chapters/ch04",
+  "ports": {
+    "MIMO": "four multiplicative branches and shared trunk, enriched full tensor sine features, physical p=-alpha*u, boundary handling for both state and adjoint, corrected coordinate graph and nonlinear gradient",
+    "RB-DINO": "fixed PCA encoder/decoder and GELU latent MLP, train-only normalization with derivative chain rule, state rather than KKT mapping",
+    "semilinear_derivatives": "samplewise consistent-mass Jacobian, sparse LU, transpose adjoint, explicit load/nodal distinction, fail-closed Newton"
+  },
+  "scope": "current linear elliptic alpha=1e-3; finite 17-mode operator family; no semilinear training claim",
+  "test_evaluations": 0
+}

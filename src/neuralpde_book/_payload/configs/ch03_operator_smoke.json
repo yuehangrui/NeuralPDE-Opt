@@ -1,0 +1,20 @@
+{
+  "purpose": "chapter3_smoke_only_no_method_ranking",
+  "seed": 0,
+  "steps": 150,
+  "batch_size": 4,
+  "eval_every": 25,
+  "learning_rate": 0.001,
+  "cpu_threads": 2,
+  "models": [
+    {
+      "name": "fno",
+      "kwargs": {"modes": 6, "width": 8, "layers": 2, "hard_boundary": true}
+    },
+    {
+      "name": "deeponet",
+      "kwargs": {"grid_size": 65, "sensor_stride": 1, "latent_dim": 32, "branch_width": 32,
+                 "trunk_width": 32, "depth": 2, "hard_boundary": true}
+    }
+  ]
+}

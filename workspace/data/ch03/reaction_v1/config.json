@@ -1,0 +1,41 @@
+{
+  "schema_version": "ch03-reaction-v1",
+  "epsilon": 0.01,
+  "source": 1.0,
+  "boundary": "zero_dirichlet",
+  "seed": 20261021,
+  "splits": {
+    "train": 128,
+    "val": 32
+  },
+  "reaction": {
+    "modes": 8,
+    "length_scale": 0.25,
+    "exponent": 3.0,
+    "include_constant": false,
+    "lower": 0.5,
+    "upper": 1.5,
+    "latent_scale": 1.0
+  },
+  "observation_n": 64,
+  "reference_n": 128,
+  "audit_n": 256,
+  "quadrature_order": 4,
+  "audit_quadrature_order": 5,
+  "audit_samples": {
+    "train": 4,
+    "val": 4
+  },
+  "quality_gates": {
+    "relative_algebraic_residual": 1e-10,
+    "relative_energy_identity_defect": 1e-10,
+    "boundary_max": 1e-14,
+    "independent_weak_residual": 1e-10,
+    "reference_vs_audit_l2": 0.002,
+    "reference_vs_audit_h1": 0.04,
+    "l2_refinement_ratio": 0.4,
+    "h1_refinement_ratio": 0.65,
+    "quadrature_l2": 1e-07,
+    "observation_reconstruction_l2": 0.01
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "key": "deeponet_kkt_head_polished_s1",
+  "method": "deeponet_kkt",
+  "seed": 1,
+  "variant": "head_polished",
+  "kind": "grid_operator",
+  "directory": "results/ch04/unified_delivery_v1/training/deeponet_kkt_s1",
+  "checkpoint": "results/ch04/unified_delivery_v1/training/deeponet_kkt_s1/best.pt",
+  "sha256": "1bf63a10a6beb3885f11c9f5d06c9d75ce136bc371bd6c8d793d25111da55417",
+  "track": "problem_family",
+  "test_role": "fresh held-out problems",
+  "heldout": {
+    "inference_seconds": 0.004931502975523472,
+    "direct_control": {
+      "control_relative_l2": {
+        "mean": 5.101948446443102e-15,
+        "std": 2.207080668845488e-15,
+        "max": 1.0844219017141815e-14
+      },
+      "recovered_state_relative_l2": {
+        "mean": 8.660152687666773e-16,
+        "std": 5.566894288260797e-16,
+        "max": 2.4523944600645765e-15
+      },
+      "true_objective": {
+        "mean": 0.17312331332891506,
+        "std": 0.04394814399895575,
+        "max": 0.29013366529503387
+      },
+      "reference_objective": {
+        "mean": 0.17312331332891506,
+        "std": 0.04394814399895576,
+        "max": 0.29013366529503387
+      },
+      "objective_gap": {
+        "mean": -6.505213034913027e-19,
+        "std": 1.5980124929819346e-17,
+        "max": 2.7755575615628914e-17
+      },
+      "objective_gap_relative": {
+        "mean": 1.4199402083669055e-18,
+        "std": 9.237653173310107e-17,
+        "max": 2.191880497346068e-16
+      },
+      "true_gradient_l2": {
+        "mean": 3.1842139925796126e-17,
+        "std": 2.076882556863309e-17,
+        "max": 1.0809830389684585e-16
+      },
+      "true_gradient_relative": {
+        "mean": 8.587548787945146e-15,
+        "std": 5.936512318091366e-15,
+        "max": 2.5327865432783466e-14
+      },
+      "raw_state_relative_l2": {
+        "mean": 6.724909838420095e-15,
+        "std": 5.010569071251934e-15,
+        "max": 2.540329638061569e-14
+      },
+      "state_residual_relative": {
+        "mean": 6.8862774691463476e-15,
+        "std": 4.608896844499733e-15,
+        "max": 2.860283749336525e-14
+      },
+      "raw_objective": {
+        "mean": 0.17312331332891503,
+        "std": 0.04394814399895575,
+        "max": 0.29013366529503415
+      },
+      "adjoint_residual_relative": {
+        "mean": 6.365343055124997e-15,
+        "std": 4.3319087738464574e-15,
+        "max": 2.2439945542198108e-14
+      },
+      "optimality_residual_l2": {
+        "mean": 0.0,
+        "std": 0.0,
+        "max": 0.0
+      }
+    },
+    "matched_control_8": {
+      "control_relative_l2": {
+        "mean": 5.693605392145864e-15,
+        "std": 2.5632760834021205e-15,
+        "max": 1.006689488857288e-14
+      },
+      "recovered_state_relative_l2": {
+        "mean": 1.0897855717169225e-15,
+        "std": 6.121981803820144e-16,
+        "max": 2.4523944600645765e-15
+      },
+      "true_objective": {
+        "mean": 0.19053443751740923,
+        "std": 0.053877877131036825,
+        "max": 0.29013366529503387
+      },
+      "reference_objective": {
+        "mean": 0.19053443751740923,
+        "std": 0.053877877131036825,
+        "max": 0.29013366529503387
+      },
+      "objective_gap": {
+        "mean": 5.204170427930421e-18,
+        "std": 9.658531548908287e-18,
+        "max": 2.7755575615628914e-17
+      },
+      "objective_gap_relative": {
+        "mean": 2.89474802626428e-17,
+        "std": 5.016374767066929e-17,
+        "max": 1.1897220934567918e-16
+      },
+      "true_gradient_l2": {
+        "mean": 4.1324772942803455e-17,
+        "std": 2.8061350685884134e-17,
+        "max": 1.0809830389684585e-16
+      },
+      "true_gradient_relative": {
+        "mean": 8.730537672633135e-15,
+        "std": 6.066568949543281e-15,
+        "max": 1.8304062913120375e-14
+      },
+      "raw_state_relative_l2": {
+        "mean": 7.934016340710101e-15,
+        "std": 8.402864470113853e-15,
+        "max": 2.540329638061569e-14
+      },
+      "state_residual_relative": {
+        "mean": 8.673286915740229e-15,
+        "std": 8.689852980875497e-15,
+        "max": 2.860283749336525e-14
+      },
+      "raw_objective": {
+        "mean": 0.19053443751740917,
+        "std": 0.05387787713103684,
+        "max": 0.29013366529503415
+      },
+      "adjoint_residual_relative": {
+        "mean": 7.063623827935055e-15,
+        "std": 6.813678583825129e-15,
+        "max": 2.2439945542198108e-14
+      },
+      "optimality_residual_l2": {
+        "mean": 0.0,
+        "std": 0.0,
+        "max": 0.0
+      }
+    }
+  },
+  "fixed_instance": {
+    "quadrature_order": 96,
+    "control_relative_l2": 3.254627092840713e-14,
+    "raw_state_relative_l2": 2.7124991805584026e-15,
+    "raw_objective": 0.1250783232288715,
+    "state_residual_relative": 1.952021085825514e-15,
+    "adjoint_residual_relative": 2.9426541090836886e-15,
+    "boundary_y_max": 1.2246467991473572e-16,
+    "boundary_p_max": 7.755166452088217e-19,
+    "fem": [
+      {
+        "mesh": 128,
+        "control_relative_l2": 3.254742564995634e-14,
+        "recovered_objective": 0.12507866031381806,
+        "reference_objective_h": 0.12507864746518635,
+        "objective_gap_h": 1.2848631714135195e-08,
+        "reduced_gradient_l2": 6.000159759414709e-06,
+        "reduced_gradient_relative": 0.015296200801051608,
+        "recovered_state_relative_l2": 0.00016904419625998174
+      },
+      {
+        "mesh": 256,
+        "control_relative_l2": 3.2547436738856576e-14,
+        "recovered_objective": 0.12507840676967377,
+        "reference_objective_h": 0.1250784059599958,
+        "objective_gap_h": 8.096779635646811e-10,
+        "reduced_gradient_l2": 1.504572509863509e-06,
+        "reduced_gradient_relative": 0.0038082514315918416,
+        "recovered_state_relative_l2": 4.2264053317166004e-05
+      }
+    ],
+    "metadata": {},
+    "fem_gap_note": "Sine/continuous-network controls and P1 reference controls are different discrete spaces; signed gaps retained."
+  },
+  "assessment_seconds": 1.5285157514736056
+}

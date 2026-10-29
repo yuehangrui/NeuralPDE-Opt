@@ -1,0 +1,47 @@
+{
+  "key": "deep_uzawa_declared_trial_s0",
+  "method": "deep_uzawa",
+  "seed": 0,
+  "variant": "declared_trial",
+  "kind": "hybrid",
+  "directory": "results/ch04/unified_delivery_v1/training/deep_uzawa_s0",
+  "checkpoint": "results/ch04/unified_delivery_v1/training/deep_uzawa_s0/best.pt",
+  "sha256": "bef09fe53b90d9b5ff5aa339f8d3d267b6896ef4077d5b41f485ba9485dc7374",
+  "track": "fixed_instance",
+  "test_role": "independent spatial/mesh assessment of fixed instance",
+  "fixed_instance": {
+    "quadrature_order": 96,
+    "control_relative_l2": 3.8502176061302263e-10,
+    "raw_state_relative_l2": 2.4094866360911656e-13,
+    "raw_objective": 0.12507832322875098,
+    "state_residual_relative": 3.083584456483514e-11,
+    "adjoint_residual_relative": 2.720811714815051e-10,
+    "boundary_y_max": 1.2246467991473535e-16,
+    "boundary_p_max": 7.75516644910225e-19,
+    "fem": [
+      {
+        "mesh": 128,
+        "control_relative_l2": 3.8502176090507907e-10,
+        "recovered_objective": 0.12507866031381748,
+        "reference_objective_h": 0.12507864746518635,
+        "objective_gap_h": 1.2848631131268107e-08,
+        "reduced_gradient_l2": 6.000159663056372e-06,
+        "reduced_gradient_relative": 0.015296200555405405,
+        "recovered_state_relative_l2": 0.00016904419626217652
+      },
+      {
+        "mesh": 256,
+        "control_relative_l2": 3.8502176255040004e-10,
+        "recovered_objective": 0.12507840676967352,
+        "reference_objective_h": 0.1250784059599958,
+        "objective_gap_h": 8.096777137645006e-10,
+        "reduced_gradient_l2": 1.5045724133730875e-06,
+        "reduced_gradient_relative": 0.003808251187363143,
+        "recovered_state_relative_l2": 4.226405331936856e-05
+      }
+    ],
+    "metadata": {},
+    "fem_gap_note": "Sine/continuous-network controls and P1 reference controls are different discrete spaces; signed gaps retained."
+  },
+  "assessment_seconds": 1.616323634982109
+}

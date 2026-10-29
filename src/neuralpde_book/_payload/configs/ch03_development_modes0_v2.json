@@ -1,0 +1,45 @@
+{
+  "purpose": "chapter3_supervised_experiment_v1",
+  "seed": 0,
+  "dtype": "float32",
+  "steps": 1500,
+  "batch_size": 8,
+  "eval_every": 250,
+  "checkpoint_every": 250,
+  "learning_rate": 0.001,
+  "cpu_threads": 2,
+  "objective": "relative_l2_squared",
+  "scheduler": {
+    "name": "warmup_cosine",
+    "warmup_steps": 50,
+    "min_lr": 1e-05
+  },
+  "defer_test": true,
+  "models": [
+    {
+      "name": "deeponet",
+      "kwargs": {
+        "grid_size": 65,
+        "sensor_stride": 4,
+        "latent_dim": 128,
+        "branch_width": 128,
+        "trunk_width": 128,
+        "depth": 3,
+        "hard_boundary": true,
+        "coordinate_modes": 0
+      }
+    },
+    {
+      "name": "transformer",
+      "kwargs": {
+        "grid_size": 65,
+        "sensor_stride": 4,
+        "width": 64,
+        "heads": 4,
+        "layers": 2,
+        "hard_boundary": true,
+        "coordinate_modes": 0
+      }
+    }
+  ]
+}

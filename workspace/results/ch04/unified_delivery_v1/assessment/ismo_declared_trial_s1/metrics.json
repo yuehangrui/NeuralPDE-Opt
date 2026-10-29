@@ -1,0 +1,48 @@
+{
+  "key": "ismo_declared_trial_s1",
+  "method": "ismo",
+  "seed": 1,
+  "variant": "declared_trial",
+  "kind": "hybrid",
+  "directory": "results/ch04/unified_delivery_v1/training/ismo_s1",
+  "checkpoint": "results/ch04/unified_delivery_v1/training/ismo_s1/best.pt",
+  "sha256": "82bee2ec5a592ef8bbc427ac5c4cf36a58994bc5c1fac44048bab185ba96e079",
+  "track": "fixed_instance",
+  "test_role": "independent spatial/mesh assessment of fixed instance",
+  "fixed_instance": {
+    "quadrature_order": 96,
+    "control_relative_l2": 0.005248010700104454,
+    "raw_state_relative_l2": 3.0239628268364033e-05,
+    "raw_objective": 0.12507833153946912,
+    "state_residual_relative": 8.192091725888938e-05,
+    "boundary_y_max": 1.2247166132026507e-16,
+    "boundary_p_max": null,
+    "fem": [
+      {
+        "mesh": 128,
+        "control_relative_l2": 0.00524801070010445,
+        "recovered_objective": 0.1250786692123908,
+        "reference_objective_h": 0.12507864746518635,
+        "objective_gap_h": 2.1747204453914648e-08,
+        "reduced_gradient_l2": 7.460043554156961e-06,
+        "reduced_gradient_relative": 0.019017880983906766,
+        "recovered_state_relative_l2": 0.0001762454510346579
+      },
+      {
+        "mesh": 256,
+        "control_relative_l2": 0.005248010700104454,
+        "recovered_objective": 0.12507841071044773,
+        "reference_objective_h": 0.1250784059599958,
+        "objective_gap_h": 4.750451920720877e-09,
+        "reduced_gradient_l2": 3.2982926780256932e-06,
+        "reduced_gradient_relative": 0.008348369872874862,
+        "recovered_state_relative_l2": 5.601452648364105e-05
+      }
+    ],
+    "metadata": {
+      "surrogate_round_associated_with_control": 11
+    },
+    "fem_gap_note": "Sine/continuous-network controls and P1 reference controls are different discrete spaces; signed gaps retained."
+  },
+  "assessment_seconds": 1.434656547382474
+}

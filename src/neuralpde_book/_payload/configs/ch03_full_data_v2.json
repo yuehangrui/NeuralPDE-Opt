@@ -1,0 +1,49 @@
+{
+  "schema_version": "ch03-fields-v1",
+  "purpose": "chapter3_supervised_full_training_v2",
+  "seed": 20261022,
+  "splits": {
+    "train": 1024,
+    "val": 128,
+    "test": 128
+  },
+  "fields": {
+    "a": {
+      "modes": 8,
+      "length_scale": 0.25,
+      "exponent": 3.0,
+      "include_constant": false,
+      "lower": 0.5,
+      "upper": 1.5,
+      "latent_scale": 1.0
+    },
+    "f": {
+      "modes": 9,
+      "length_scale": 0.2,
+      "exponent": 3.0,
+      "include_constant": true,
+      "rms_in_expectation": 1.0
+    }
+  },
+  "observation_n": 64,
+  "reference_n": 128,
+  "audit_n": 256,
+  "quadrature_order": 4,
+  "audit_quadrature_order": 5,
+  "quality_gates": {
+    "relative_algebraic_residual": 1e-10,
+    "relative_energy_identity_defect": 1e-10,
+    "boundary_max": 1e-14,
+    "reference_vs_audit_l2": 0.002,
+    "reference_vs_audit_h1": 0.04,
+    "l2_refinement_ratio": 0.4,
+    "h1_refinement_ratio": 0.65,
+    "quadrature_l2": 1e-07,
+    "observation_reconstruction_l2": 0.01
+  },
+  "audit_samples": {
+    "train": 16,
+    "val": 8,
+    "test": 8
+  }
+}

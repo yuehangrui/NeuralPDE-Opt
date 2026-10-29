@@ -1,0 +1,27 @@
+test_config_rejects_empty_physics_and_test (test_physics.PhysicsTests.test_config_rejects_empty_physics_and_test) ... ok
+test_direct_solution_stationarity_and_energy_identity (test_physics.PhysicsTests.test_direct_solution_stationarity_and_energy_identity) ... ok
+test_energy_gradient_and_residual_cpu (test_physics.PhysicsTests.test_energy_gradient_and_residual_cpu) ... ok
+test_energy_gradient_and_residual_cuda (test_physics.PhysicsTests.test_energy_gradient_and_residual_cuda) ... ok
+test_exact_cubic_mass_against_quadrature (test_physics.PhysicsTests.test_exact_cubic_mass_against_quadrature) ... ok
+test_exact_resume_selection_and_certificate_cpu (test_physics.PhysicsTests.test_exact_resume_selection_and_certificate_cpu) ... PHYSICS_PROGRESS test_mixed 2 1 0.9634142654854804 0.029477765783667564
+PHYSICS_PROGRESS test_mixed 2 4 0.9439656978086923 0.10277945175766945
+PHYSICS_PROGRESS test_mixed 2 1 0.9634142654854804 0.021522050723433495
+PHYSICS_PROGRESS test_mixed 2 2 0.9522750489984299 0.045939745381474495
+PHYSICS_PROGRESS test_mixed 2 4 0.9439656978086923 0.08970089256763458
+PHYSICS_RUN_COMPLETE test_mixed 2 0.9439656978086924
+ok
+test_exact_resume_selection_and_certificate_cuda (test_physics.PhysicsTests.test_exact_resume_selection_and_certificate_cuda) ... PHYSICS_PROGRESS test_mixed 2 1 0.9634142634326208 0.5738570615649223
+PHYSICS_PROGRESS test_mixed 2 4 0.9439656966144903 0.8889577379450202
+PHYSICS_PROGRESS test_mixed 2 1 0.9634142634326208 0.08737003523856401
+PHYSICS_PROGRESS test_mixed 2 2 0.9522750493680325 0.18825580831617117
+PHYSICS_PROGRESS test_mixed 2 4 0.9439656966144903 0.38856553472578526
+PHYSICS_RUN_COMPLETE test_mixed 2 0.9439656966144903
+ok
+test_independent_continuous_linear_coefficient_assembly (test_physics.PhysicsTests.test_independent_continuous_linear_coefficient_assembly) ... ok
+test_subset_mask_and_minibatch_unbiased_loss (test_physics.PhysicsTests.test_subset_mask_and_minibatch_unbiased_loss) ... ok
+test_zero_labels_do_not_depend_on_training_targets (test_physics.PhysicsTests.test_zero_labels_do_not_depend_on_training_targets) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 4.026s
+
+OK

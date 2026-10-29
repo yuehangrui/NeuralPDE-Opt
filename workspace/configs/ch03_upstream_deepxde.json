@@ -1,0 +1,17 @@
+{
+  "schema": "ch03-upstream-trainval-v1",
+  "seed": 0,
+  "epochs": 100,
+  "train_count": 128,
+  "batch_size": 16,
+  "microbatch": 4,
+  "selection_split": "val",
+  "objective": "relative_l2_squared",
+  "lr": 0.0005,
+  "schedule": "cosine",
+  "model": {
+    "name": "deepxde",
+    "kwargs": {}
+  },
+  "variant": "deepxde"
+}

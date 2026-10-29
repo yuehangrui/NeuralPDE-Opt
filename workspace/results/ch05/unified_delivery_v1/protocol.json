@@ -1,0 +1,14 @@
+{
+  "version": "ch05-unified-delivery-v1",
+  "stage": "train_val_only",
+  "pilot": false,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "training_samples": 1024,
+  "validation_samples": 128,
+  "heldout_policy": "No test before all configs/models frozen; generate a separate 128-case split only afterward.",
+  "scope": "7 migrated Chapter-5 methods, fixed box-constrained elliptic problem + separate CNP state-cap problem"
+}
