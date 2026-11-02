@@ -43,7 +43,7 @@ def initialize(path):
     shutil.copytree(payload(), destination)
     manifest = verify(destination)
     (destination / 'WORKSPACE.json').write_text(json.dumps(dict(
-        version='1.0.0', payload_sha256=sha(destination/'PAYLOAD_MANIFEST.json'),
+        version='1.0.1', payload_sha256=sha(destination/'PAYLOAD_MANIFEST.json'),
         source_files=len(manifest['files']), external_project_paths=[],
         training_started=False), indent=2)+'\n',encoding='utf-8')
     return destination

@@ -1,54 +1,54 @@
-# 第三章阅读路线：从输入函数到解
+# Chapter 3 reading guide: from input functions to solutions
 
-书稿3.3–3.5；完整训练与评测后生成[本轮结果解释](../results/ch03/final_test_v1/summary.md)。正式问题为单位正方形上的
+Manuscript Sections 3.3-3.5; the [results interpretation](../results/ch03/final_test_v1/summary.md) is generated after full training and evaluation. The formal problem on the unit square is
 
 \[
 -\varepsilon\Delta y+c(x)y=f(x),\qquad y|_{\partial\Omega}=0,\qquad\varepsilon=0.01.
 \]
 
-`c` 是反应系数，`epsilon` 是固定扩散系数。四算子主对照学习固定源项下的 `c → y`；VarMiON及HINTS涉及变化源项/残差，输入信息和任务边界须分别说明。
+`c` is the reaction coefficient and `epsilon` the fixed diffusion coefficient. The four-operator comparison learns `c -> y` with fixed forcing. VarMiON and HINTS involve variable forcing/residuals; input information and task scope must be described separately.
 
-## 先读哪些文件
+## Where to start
 
-| 步骤 | 代码 | 阅读重点 |
+| Step | Code | Reading focus |
 |---|---|---|
-| 问题与离散 | [reaction.py](../src/neuralpde_opt/chapter3/reaction.py) | 反应项进入质量型矩阵，扩散项进入刚度矩阵 |
-| 四种表示 | [reaction_operators.py](../src/neuralpde_opt/chapter3/reaction_operators.py)、[upstream_operators.py](../src/neuralpde_opt/chapter3/upstream_operators.py) | 模型构造、归一化和硬边界；作者移植模块由构造器追踪 |
-| 训练与选模 | [reaction_training.py](../src/neuralpde_opt/chapter3/reaction_training.py) | train-only统计量，验证集选模，best/last与断点身份 |
-| POD | [pod.py](../experiments/ch03_pod_v1/pod.py) | 质量矩阵加权降阶、输入编码与系数重建 |
-| 物理FNO | [physics.py](../experiments/ch03_physics_v1/physics.py) | 能量、弱残差和监督项的区别 |
-| VarMiON | [model.py](../experiments/ch03_varmion_v1/model.py)、[model_v2.py](../experiments/ch03_varmion_v2/model_v2.py) | 载荷线性性、矩阵分支、SPD参数化 |
-| HINTS | [hybrid.py](../chapters/ch03/hybrid.py) | Jacobi步、神经残差校正、保护机制及停止条件 |
-| 完整流程 | [registry.py](../chapters/ch03/registry.py)、[training.py](../chapters/ch03/training.py)、[predictors.py](../chapters/ch03/predictors.py) | 57条正式配置、统一训练与无标签预测接口 |
+| Problem and discretization | [reaction.py](../src/neuralpde_opt/chapter3/reaction.py) | Reaction enters the mass-type matrix; diffusion enters the stiffness matrix |
+| Four representations | [reaction_operators.py](../src/neuralpde_opt/chapter3/reaction_operators.py), [upstream_operators.py](../src/neuralpde_opt/chapter3/upstream_operators.py) | Model construction, normalization, hard boundaries; constructors identify ported upstream components |
+| Training and selection | [reaction_training.py](../src/neuralpde_opt/chapter3/reaction_training.py) | Training-only statistics, validation selection, best/last checkpoints, and resumption identities |
+| POD | [pod.py](../experiments/ch03_pod_v1/pod.py) | Mass-weighted reduction, input encoding, and coefficient reconstruction |
+| Physical FNO | [physics.py](../experiments/ch03_physics_v1/physics.py) | Distinctions between energy, weak residual, and supervision |
+| VarMiON | [model.py](../experiments/ch03_varmion_v1/model.py), [model_v2.py](../experiments/ch03_varmion_v2/model_v2.py) | Load linearity, matrix branch, SPD parameterization |
+| HINTS | [hybrid.py](../chapters/ch03/hybrid.py) | Jacobi steps, neural residual corrections, safeguards, and stopping rules |
+| Complete workflow | [registry.py](../chapters/ch03/registry.py), [training.py](../chapters/ch03/training.py), [predictors.py](../chapters/ch03/predictors.py) | 57 formal configurations, unified training, and label-free prediction interfaces |
 
-## 符号和数组
+## Notation and arrays
 
-| 数学对象 | 代码名 | 解释 |
+| Mathematical object | Code name | Meaning |
 |---|---|---|
-| 解预测 | `y_prediction` / `y` | 不再用易与伴随混淆的局部 `p` |
-| POD空间 | `Phi` / `basis` | 列为基向量；保留离散质量内积 |
-| 约化输入载荷 \(z_f=\Phi^T M f\) | `load_coordinates` | 书稿(3.33)–(3.35)，输入线性分支 |
-| 约化解系数 \(\beta\) | `beta_coefficients` | 旧数组/文件键中可能仍叫 `alpha`；不是控制正则化系数 |
-| 约化映射 \(K_\theta(c)\) | 矩阵分支输出 | 作用于载荷的逆算子型映射，不是刚度矩阵 |
-| 线性方程残差 | `r = rhs - A @ y` | HINTS校正方向，书稿(3.43)及算法2 |
+| Predicted solution | `y_prediction` / `y` | Avoids the local `p` that could be confused with an adjoint |
+| POD space | `Phi` / `basis` | Columns are basis vectors; the discrete mass inner product is retained |
+| Reduced input load \(z_f=\Phi^T M f\) | `load_coordinates` | Manuscript (3.33)-(3.35), linear input branch |
+| Reduced solution coefficients \(\beta\) | `beta_coefficients` | Historical array/file keys may still use `alpha`; this is not the control regularization coefficient |
+| Reduced map \(K_\theta(c)\) | Matrix-branch output | Inverse-operator-type action on the load, not a stiffness matrix |
+| Linear-system residual | `r = rhs - A @ y` | HINTS correction direction, manuscript (3.43) and Algorithm 2 |
 
-四算子公共物理接口使用 `(batch,65,65)` 的反应系数和状态。GNO内部使用17×17节点及P1重建；不能把内部节点数误当输出分辨率。POD和VarMiON v2使用289个传感器；约化系数形状为 `(batch,rank)`，基矩阵为 `(4225,rank)`。原生FNO/Transformer内部轴顺序在各适配器中转换，不以一次全局转置替代。
+The four operators share a physical interface with reaction coefficients and states of shape `(batch,65,65)`. GNO internally uses 17x17 nodes with P1 reconstruction; this is not the output resolution. POD and VarMiON v2 use 289 sensors; reduced coefficients have shape `(batch,rank)` and the basis matrix `(4225,rank)`. Adapters handle native FNO/Transformer axis conventions individually; a single global transpose is not a substitute.
 
-HINTS接收的是已装配的载荷残差，约化编码为 `Phi_I.T @ r`，不能再乘一次质量矩阵。物理训练中的方程残差可能写成 `A@y-rhs`；平方范数相同，但校正方向不同，应连同更新式一起读。
+HINTS receives an assembled load residual and encodes it as `Phi_I.T @ r`; do not multiply by the mass matrix again. Physical training may write the equation residual as `A@y-rhs`. Squared norms agree, but correction directions differ; read the residual together with its update rule.
 
-Fourier增强DeepONet的坐标编码与FNO的频域卷积是不同机制；Galerkin Transformer的积分式注意力也不等同于标准softmax Transformer。方法ID与旧权重键保留，模型含义由构造器及原正式报告限定。
+Fourier-enriched DeepONet coordinates and FNO spectral convolution are different mechanisms. Galerkin integral attention also differs from standard softmax attention. Method IDs and historical weight keys are retained; constructors and formal reports define their meaning.
 
-## 训练资产与结果
+## Training assets and results
 
-`neuralpde-book prepare` 在新工作区生成以下训练资产并核验清单；路径均相对于该工作区：
+`neuralpde-book prepare` generates and verifies the following assets in a new workspace. Paths are relative to that workspace:
 
-| 路径 | 用途 |
+| Path | Purpose |
 |---|---|
-| `data/ch03/reaction_v1`、`data/ch03/varmion_v1`、`data/ch03/hints_v1` | 固定源项、变化源项、残差训练的train/val及几何和清单 |
-| `results/ch03/pod_v1/basis.npz`、`normalization.json` | POD基与训练统计量 |
-| `results/ch03/varmion_v1` 中 `prepared_manifest.json` 及其声明文件 | 基、归一化、train/val载荷坐标；HINTS还需对应seed的VarMiON初始权重 |
-| `results/ch03/varmion_v2` 的预处理产物 | SPD/联合训练的预处理数据与算子池 |
+| `data/ch03/reaction_v1`, `data/ch03/varmion_v1`, `data/ch03/hints_v1` | Train/val data, geometry, and manifests for fixed forcing, variable forcing, and residual learning |
+| `results/ch03/pod_v1/basis.npz`, `normalization.json` | POD basis and training statistics |
+| `prepared_manifest.json` and its declared files in `results/ch03/varmion_v1` | Bases, normalization, train/val load coordinates; HINTS also needs the same-seed VarMiON initialization weights |
+| Preprocessing artifacts in `results/ch03/varmion_v2` | Preprocessed data and operator pools for SPD/joint training |
 
-通过统一入口启动正式训练。POD基和归一化只拟合train；HINTS按方法定义使用同一新工作区中新训练的VarMiON模型。每个训练配置写入声明目录下的 `run/`，包含训练历史、选定权重和完整性清单。
+Start formal training through the unified entry point. POD bases and normalization use training data only. HINTS uses VarMiON newly trained in the same workspace, as specified by the method. Each configuration writes a `run/` directory containing histories, selected weights, and integrity manifests.
 
-选模冻结后生成新的固定测试；历史test不用于本轮选模。不同方法的物理信息、输出空间与计算成本需分别解释，不构成架构家族排名。
+New fixed tests are generated after selection is frozen; historical tests do not guide this round of model selection. Physical information, output spaces, and computational costs differ across methods and must be interpreted separately; no architecture-family ranking follows.

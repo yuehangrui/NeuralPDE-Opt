@@ -1,11 +1,11 @@
-# 第二章阅读路线：神经函数近似
+# Chapter 2 reading guide: neural function approximation
 
-书稿2.2–2.6，共同问题为1D/2D Poisson。状态统一写作 `y`；网络为 `y_theta=G+D*N_theta`，FEM状态为 `y_h`。`u`留作后续章节的控制量。
+Manuscript Sections 2.2-2.6 share 1D/2D Poisson problems. The state is consistently `y`; the network is `y_theta=G+D*N_theta`, and the FEM state is `y_h`. The symbol `u` is reserved for control in later chapters.
 
-先读 [problems.py](../src/neuralpde_ch02/problems.py) 和 [models.py](../src/neuralpde_ch02/models.py)，再读 [objectives.py](../src/neuralpde_ch02/objectives.py) 中的强残差PINN、直接能量最小化Deep Ritz及Gram范数感知VPINN。弱式实现不是WAN。
+Read [problems.py](../src/neuralpde_ch02/problems.py) and [models.py](../src/neuralpde_ch02/models.py), then the strong-residual PINN, direct-energy Deep Ritz, and Gram-norm-aware VPINN objectives in [objectives.py](../src/neuralpde_ch02/objectives.py). The weak-form implementation is not WAN.
 
-[training.py](../src/neuralpde_ch02/training.py) 管理Adam/L-BFGS及检查点恢复；[metrics.py](../src/neuralpde_ch02/metrics.py) 进行独立积分、L2/H1梯度半范、边界和能量诊断；[fem.py](../src/neuralpde_ch02/fem.py) 给出经典基准。
+[training.py](../src/neuralpde_ch02/training.py) manages Adam/L-BFGS and checkpoint recovery; [metrics.py](../src/neuralpde_ch02/metrics.py) computes independent quadrature, L2/H1 gradient seminorms, boundary errors, and energy diagnostics; [fem.py](../src/neuralpde_ch02/fem.py) supplies the classical reference.
 
-正式 [full.json](../chapters/ch02/configs/full.json) 包含2维度×3方法×3种子，共18组训练及8组FEM。保存最终迭代模型，验证数据仅诊断，不用于选择最优迭代。L-BFGS预算为名义预算，实际迭代与目标调用分别记录。
+The formal [full.json](../chapters/ch02/configs/full.json) contains 2 dimensions x 3 methods x 3 seeds: 18 training runs and 8 FEM runs. The final iterate is saved; validation is diagnostic and does not select the best iterate. L-BFGS budgets are nominal, with actual iterations and objective calls recorded separately.
 
-使用[统一入口](../README.md)在新工作区重训，结果写入 `results/ch02/full`。旧第二章冻结包保持独立，不会作为新训练输出。
+Use the [unified entry point](../README.md) to retrain in a new workspace; results go to `results/ch02/full`. The original frozen Chapter 2 package remains independent and is not used as the new output directory.

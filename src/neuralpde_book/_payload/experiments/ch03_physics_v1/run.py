@@ -481,11 +481,11 @@ def summarize(out, rows, config):
         writer.writeheader()
         writer.writerows(rows)
     lines = [
-        "# FNO物理训练首轮受控实验",
+        "# FNO physical training: first controlled experiment",
         "",
-        f'完成{len(rows)}/{len(config["cases"])*len(config["seeds"])}组；每组{config["epochs"]}epoch。train128/val32；test未评估。',
+        f'Completed {len(rows)}/{len(config["cases"])*len(config["seeds"])} runs, {config["epochs"]} epochs each. Train128/val32; test not evaluated.',
         "",
-        "| 设置 | train L2 | val L2，均值±总体std | val H1半范 | val弱残差相对值 |",
+        "| Setting | Train L2 | Val L2, mean +/- population std | Val H1 seminorm | Val relative weak residual |",
         "|---|---:|---:|---:|---:|",
     ]
     for name, a in aggregate.items():
@@ -494,11 +494,11 @@ def summarize(out, rows, config):
         )
     lines += [
         "",
-        "弱残差采用内部负载向量的lumped质量对偶范数。物理系统使用公共输入的P1插值系数；与129节点参考限制标签的差异见preparation.json。",
+        "Weak residuals use the lumped-mass dual norm of the interior load vector. The physical system uses P1-interpolated shared-input coefficients; preparation.json records differences from labels restricted from the 129-node reference grid.",
         "",
-        "纯能量组0个训练标签进入优化目标/归一化；所有组仍用32个验证标签选模。32标签子集预先固定，监督minibatch使用128/n_labels权重。",
+        "The energy-only setting uses no training labels in the objective or normalization; every setting still uses 32 validation labels for model selection. The 32-label subset is fixed in advance. Supervised minibatches use weight 128/n_labels.",
         "",
-        "这15组共享架构、初始化种子、批次输入顺序、400epoch预算与cosine学习率。旧1600epoch基线预算及scheduler不同，不作为本受控比较的同预算结果。验证不是独立测试；不作架构家族排名。",
+        "These 15 runs share the architecture, initialization seeds, input-batch order, 400-epoch budget, and cosine learning-rate schedule. The old 1600-epoch baseline has a different budget and scheduler and is not an equal-budget comparison. Validation is not independent testing; no architecture-family ranking is claimed.",
         "",
     ]
     (out / "summary.md").write_text("\n".join(lines))

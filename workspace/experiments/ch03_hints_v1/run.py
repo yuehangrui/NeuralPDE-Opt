@@ -393,11 +393,11 @@ def main():
             w.writeheader()
             w.writerows(flat)
         lines = [
-            "# HINTS固定混合与保护混合",
+            "# HINTS: fixed and safeguarded hybrid iterations",
             "",
-            "残差校正器使用640个train/160个val迭代残差训练；原方程求解用32个开发验证源项。每方法/种子/样本计时重复3次。",
+            "The residual corrector is trained on 640 training and 160 validation iterative residuals. Original-equation solves use 32 development-validation forcing terms. Timing is repeated 3 times per method/seed/sample.",
             "",
-            "| 方法 | 收敛/总数 | 平均迭代 | 神经接受 | 神经拒绝 | 总ms | 总时间加速比 |",
+            "| Method | Converged/total | Mean iterations | Neural accepted | Neural rejected | Total ms | Total-time speedup |",
             "|---|---:|---:|---:|---:|---:|---:|",
         ]
         for mode, s in summary.items():
@@ -406,11 +406,11 @@ def main():
             )
         lines += [
             "",
-            "残差采用D^-1加权范数，所有方法相同atol+rtol*||b||停止阈值。每步重算残差，保护版只接受残差降至0.9倍以内的校正。以对角占优界验证Jacobi分支收缩。固定混合的失败不隐藏。",
+            "Residuals use the D^-1-weighted norm and the same atol+rtol*||b|| stopping threshold for every method. Residuals are recomputed at each step. The safeguarded variant accepts a correction only if the residual drops to at most 0.9 of its previous value. Diagonal-dominance bounds verify contraction of the Jacobi branch. Failures of the fixed hybrid are reported.",
             "",
-            "编码Phi_I^T r等价于先求M_II^(-1)r再进行源项负载编码；不能把r直接作为节点源项。总成本包含条件矩阵构造、残差转换/输出重构、经典步、接受/回退核验及共同系统装配；模型加载为离线一次性开销。",
+            "Encoding Phi_I^T r is equivalent to solving M_II^(-1)r before forcing-load encoding; r cannot be treated directly as a nodal forcing field. Total cost includes conditional-matrix construction, residual conversion/output reconstruction, classical steps, acceptance/fallback checks, and shared system assembly. Model loading is a one-time offline cost.",
             "",
-            "这是当前公共网格的线性残差校正器实验。val已用于选模，结果不是独立test，也不证明任意PDE/残差分布下有效。",
+            "This experiment uses a linear residual corrector on the current shared grid. Validation data were used for model selection; these are not independent test results and do not establish effectiveness for arbitrary PDEs or residual distributions.",
             "",
         ]
         (out / "summary.md").write_text("\n".join(lines))

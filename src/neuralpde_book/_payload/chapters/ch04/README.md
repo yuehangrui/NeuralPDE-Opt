@@ -1,7 +1,7 @@
-# ch04：独立版模块
+# ch04: standalone module
 
-符号、公式与阅读路线见[第4章导读](../../docs/CH04_READING_ZH.md)。本目录保留经过验证的数值内核，统一入口见[独立版说明](../../README.md)。
+See the [Chapter 4 guide](../../docs/CH04_READING_ZH.md) for notation, formulas, and reading order. This directory retains the verified numerical core; use the [standalone instructions](../../README.md) for the unified entry point.
 
-从已安装的 `neuralpde-book` 创建新工作区，按 `check → prepare → smoke → pipeline` 执行。所有训练资产均在新工作区内生成；正式模型从头训练，HINTS只使用本轮VarMiON初值。
+Create a new workspace with the installed `neuralpde-book`, then run `check -> prepare -> smoke -> pipeline`. All training assets are generated there. Formal models train from scratch; HINTS uses only the VarMiON initialization from the same run.
 
-本目录的底层CLI供统一驱动调用；独立版使用工作区根的 `book_driver.py` 组织全流程。正式结果写入本工作区 `results/`，不会读取原项目目录。原始数值方法、预算及表示边界见导读和本目录配置；本版源码身份见根目录 `PAYLOAD_MANIFEST.json`。
+Low-level CLIs in this directory are called by the unified driver. The standalone edition uses workspace-root `book_driver.py` to orchestrate the full workflow. Formal results go to the current workspace's `results/` without reading the original project. See the guide and configurations for numerical methods, budgets, and representation limits; root `PAYLOAD_MANIFEST.json` records the current source identity.

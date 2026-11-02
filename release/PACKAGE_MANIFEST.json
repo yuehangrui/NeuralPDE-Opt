@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
-  "date": "2026-10-29",
-  "kind": "upload-selected-models-and-final-results",
+  "version": "1.0.1",
+  "date": "2026-11-02",
+  "kind": "english-edition-selected-models-and-final-results",
   "formal_training_configurations": 156,
   "checkpoint_files": 180,
   "raw_training_data_included": false,
@@ -14,6 +14,9 @@
     "bytes": 3163219448
   },
   "additional_excluded_files": 412,
+  "language": "English",
+  "original_results_version": "1.0.0",
+  "original_archive_sha256": "92d533ff88c975b7be4d0fba51e595bf08739913d3d08d3946b6ef0a19dbf7ed",
   "files": {
     "workspace/CURRENT_TASK.json": {
       "bytes": 129,
@@ -21,11 +24,11 @@
     },
     "workspace/PAYLOAD_MANIFEST.json": {
       "bytes": 35764,
-      "sha256": "e07d6acdeb2a9365952196f996ef8c8c039917f39a219097a8aa847dd77afef6"
+      "sha256": "b3446959d772e940ab077612933e0c8eae2a497e3e851fc503f050d8a56e7a86"
     },
     "workspace/README.md": {
-      "bytes": 2469,
-      "sha256": "b77e9e563c89c8ea47df7e2bc0103b68dcab96ded601c3cdf232c5ee7e5cc6af"
+      "bytes": 2936,
+      "sha256": "c0143eb17a12dd425bcb287bb3448d9f943abc5806f4098c68446fdf45946a64"
     },
     "workspace/SOURCE_CHANGES.json": {
       "bytes": 7880,
@@ -36,8 +39,8 @@
       "sha256": "bf38fdaad8dbc18f894b2c84f6f53f50deff34562e8a6ea38d9156e8d82e1d74"
     },
     "workspace/WORKSPACE.json": {
-      "bytes": 197,
-      "sha256": "959d152fd50542b7818fbbcf1567e7e94b0bc1b42aa252b4adb8754ee9c6eb0f"
+      "bytes": 204,
+      "sha256": "d010c18e65a838d6ce00f665ad3ba5179191445b99c7e7ae38af8c29ba3d4e6a"
     },
     "workspace/book_ch02_audit.py": {
       "bytes": 3170,
@@ -56,12 +59,12 @@
       "sha256": "e33305e668e518641c26418cf9f3d29aac0628025bdb62195fdb51d0d1282853"
     },
     "workspace/book_report.py": {
-      "bytes": 6324,
-      "sha256": "afa19bc2a94464a59b3e6219b9c36135d30e0bc0c78fe774463b86d4f48f5b95"
+      "bytes": 7021,
+      "sha256": "bca1b321a63407c41a9d454fa86bb8d45ab4f9e30c8f3eb2c7579fdaae7811cb"
     },
     "workspace/book_scope.json": {
-      "bytes": 24259,
-      "sha256": "53bf1bdc331cda3cf4534d35439f277e37f5fe202ddc4ac29333b85889d41a5e"
+      "bytes": 27117,
+      "sha256": "891e18b930bdd42b98e55ffeb349e54cafcfd6792501384b806aa5454896a592"
     },
     "workspace/chapters/ch02/configs/full.json": {
       "bytes": 529,
@@ -80,8 +83,8 @@
       "sha256": "61f26ad7fb5d8fa5e2422e6e474ecd8832b9f1bca898907dc4c93f2ecdd4b4e4"
     },
     "workspace/chapters/ch03/README.md": {
-      "bytes": 752,
-      "sha256": "bf194b72f9f197fc13777f418abc33af15075ed3c164ea67fea2d973b40e3f19"
+      "bytes": 921,
+      "sha256": "5b4f6be313224f0891b253dab2197c3264ef63fafa5d2ea69ff3c4a7b1261275"
     },
     "workspace/chapters/ch03/audit.py": {
       "bytes": 7592,
@@ -100,8 +103,8 @@
       "sha256": "c45db740eb44f3194f87c3821373fb4f7476e06f07f74bed2eefb7dc1b83c4de"
     },
     "workspace/chapters/ch03/evaluation.py": {
-      "bytes": 14322,
-      "sha256": "26ef2f9cbe50d4e761f90ec3831632ee3397bbb70f82871e378aa63230826a75"
+      "bytes": 14671,
+      "sha256": "a744c92becfe16f4a6c269f4a99da2e0b7aa90c4269f06fa1b140aeae52a9987"
     },
     "workspace/chapters/ch03/heldout.py": {
       "bytes": 9944,
@@ -144,12 +147,12 @@
       "sha256": "254f5056f3de7a33c7c1d601acc64285caeb8f80cdb7325e8850886b0076e338"
     },
     "workspace/chapters/ch04/README.md": {
-      "bytes": 752,
-      "sha256": "fd095f96b06b64d97bfaf3ba51a265cc8f353a60b9a3bfe256a147b9b1eac7f6"
+      "bytes": 921,
+      "sha256": "5837ea079ff057a177768cc1437e923cca7fda0d1cda5e92924e148aadf88476"
     },
     "workspace/chapters/ch04/RUNTIME_MANIFEST.json": {
       "bytes": 1253,
-      "sha256": "666fcb39f73bec7faf6ff7d9a47939611c19150655f0ed3debc26ab0c5cc2058"
+      "sha256": "4830963099876c460e562205f90db4aa44ef8c7d2c46152eb50894c700029719"
     },
     "workspace/chapters/ch04/__init__.py": {
       "bytes": 69,
@@ -204,12 +207,12 @@
       "sha256": "06cc8f842c89947898285ca14dfcda099f45297e32d198f726982377c8a042a1"
     },
     "workspace/chapters/ch04_adaptation/README.md": {
-      "bytes": 763,
-      "sha256": "70604772fbf608b7f1beac17d9bf718e6add0796cc05e2f32b03b22b40074f2b"
+      "bytes": 932,
+      "sha256": "69a2dd1f5548f9a8044334e5f8e285b7b091a063b8b3f14dc6c6264d05681a2d"
     },
     "workspace/chapters/ch04_adaptation/RUNTIME_MANIFEST.json": {
       "bytes": 1734,
-      "sha256": "8dec8fee5986ff1d762d5fcf4b216884a279609b198835747439dfb4668a0ab2"
+      "sha256": "7b6e8010f6b89762dd180a7bb14f78b9d98a3a98f1fa084370c5245887533ee8"
     },
     "workspace/chapters/ch04_adaptation/__init__.py": {
       "bytes": 75,
@@ -284,12 +287,12 @@
       "sha256": "41b98f9b799318e9a6f9104328ca7b86c97da24d5b64f72a56aef580c2a846f5"
     },
     "workspace/chapters/ch04_completion/README.md": {
-      "bytes": 763,
-      "sha256": "6e75ca3d9a2f9d88f011535150c75a3f66e747dc2b58f6b6ddbd1f766d2b077c"
+      "bytes": 932,
+      "sha256": "8a54eb572c7488e85119950e55dcffa292ba82baa9911cb83546eb3a89c20680"
     },
     "workspace/chapters/ch04_completion/RUNTIME_MANIFEST.json": {
       "bytes": 1126,
-      "sha256": "95ca7517d93ed038739a1700f8242c3493ec4466227d98192c46d34e004f5435"
+      "sha256": "07a3a1ebb55ab85342763802c139d9110af344f301e80d182d4255e89049cc16"
     },
     "workspace/chapters/ch04_completion/__init__.py": {
       "bytes": 113,
@@ -340,12 +343,12 @@
       "sha256": "f7c613045a57e08db7e8794d1d453888e1503099741f3686b47aafda3bc264c3"
     },
     "workspace/chapters/ch04_delivery/README.md": {
-      "bytes": 761,
-      "sha256": "6d282c44a8c958d335fbf8fa44f1ab690b1acbdecf3be84124ece064dcef3d71"
+      "bytes": 930,
+      "sha256": "04708b6fac1b6eee091e49de509c6e059c5eda9471dad50cc627221c47813657"
     },
     "workspace/chapters/ch04_delivery/RUNTIME_MANIFEST.json": {
       "bytes": 1310,
-      "sha256": "3250bea314f13ba6675ec7e901a41e349c68b427a6e86c5eb6637ce9993c7b46"
+      "sha256": "59c13f0d29f290e5ffde5eb6e9adbb6e491bd52668f4b6b47e02abdc845fd8f3"
     },
     "workspace/chapters/ch04_delivery/__init__.py": {
       "bytes": 122,
@@ -392,24 +395,24 @@
       "sha256": "cec54cac3c55d864aa93a0d0d9efaaf7887cecd0804e08d849513a78f668738a"
     },
     "workspace/chapters/ch04_delivery/report.py": {
-      "bytes": 6709,
-      "sha256": "9fae3b7f70842e3da915f5038918d7b0e5933bea3efd1986a902c892d8a85bec"
+      "bytes": 7287,
+      "sha256": "e05f8772449991f8daf0a6330234e2cfdef9adaefdd0352750fb8f31283d32ec"
     },
     "workspace/chapters/ch04_delivery/test_delivery.py": {
       "bytes": 5297,
       "sha256": "0e36993b6933847689f5889dad9fcec68d5fb20b497d5ee7a79651fc5ab1a7e9"
     },
     "workspace/chapters/ch04_depth/README.md": {
-      "bytes": 758,
-      "sha256": "0d43243b91524b894b7e709b4ed2649781077cba064e85913049846fae8043a3"
+      "bytes": 927,
+      "sha256": "7151a2b576040521b4b21b8f7f02941cd7eff99ae30556a06397fe409a1333e4"
     },
     "workspace/chapters/ch04_depth/__init__.py": {
       "bytes": 80,
       "sha256": "e3e4407f5d346b29524f3bc0d71efd78f8c43fe6b5cb4eaf381a421ff86f5447"
     },
     "workspace/chapters/ch04_depth/assessment.py": {
-      "bytes": 19691,
-      "sha256": "2774d684df0d542c4ff580b44d793f42863d3a8dc638a2b39b547d13bf68dce2"
+      "bytes": 20135,
+      "sha256": "11e19784a55bdf18c2ab8b03464d7d349be6ee12c271f6e266dad244f5452add"
     },
     "workspace/chapters/ch04_depth/cli.py": {
       "bytes": 2943,
@@ -432,12 +435,12 @@
       "sha256": "1cd0c3adaa10299ba58f89cebb459a99ad5c9939fb7b5e53057a8e5e98e2505f"
     },
     "workspace/chapters/ch04_operator_adaptation/README.md": {
-      "bytes": 772,
-      "sha256": "fc250edacd9f6b72479f6d1958d58893177a54d3b71afb658e553babe5dd9cf1"
+      "bytes": 941,
+      "sha256": "47eb497cd1c5f959a1ec80bbb93b3f96f4599e43a7a4ab54c546861418a51345"
     },
     "workspace/chapters/ch04_operator_adaptation/RUNTIME_MANIFEST.json": {
       "bytes": 1469,
-      "sha256": "00cd451b293d6aaa43a767bb8c5ee80945351ddde56a62bdf0bd746ccb9120d1"
+      "sha256": "54bcb8f1eb6d44278b1bdb37aee5650b3b58724f5d576bf27e44d3f49a64c11b"
     },
     "workspace/chapters/ch04_operator_adaptation/__init__.py": {
       "bytes": 76,
@@ -500,12 +503,12 @@
       "sha256": "5d362b93c52ea9d59b165937b77c58f56a95438f261f0acbd9e6ef73979e942c"
     },
     "workspace/chapters/ch04_operator_learning/README.md": {
-      "bytes": 770,
-      "sha256": "aec91f9621ba84452c43a4c7f124bca5845c5fdc86170dc3573ee645d0a46e5c"
+      "bytes": 939,
+      "sha256": "988c8c7d1303148da07ea9da8a2e54b03e1ec2c830f4857ea3fbeb17d037f0fc"
     },
     "workspace/chapters/ch04_operator_learning/RUNTIME_MANIFEST.json": {
       "bytes": 1900,
-      "sha256": "2785bf5bffdc1b9dfa92b5a43483bd02a8349439645ff246f43c715098befa0d"
+      "sha256": "07361479c77e405e557f25f6cf36339c27a15adb9042dbb8b9f89d894472a6a3"
     },
     "workspace/chapters/ch04_operator_learning/__init__.py": {
       "bytes": 73,
@@ -588,12 +591,12 @@
       "sha256": "0fb403aafc7184db78e510adc1fbfd5f679bdd201c4609988229f11e1e56cda5"
     },
     "workspace/chapters/ch05/README.md": {
-      "bytes": 752,
-      "sha256": "a4d6af7acf417c4a82ce5abe96f6842901e28bdaf6e75c67e21e828f6802f61c"
+      "bytes": 921,
+      "sha256": "85c4a6994721d11524a13b156af837a8eb33bb53221428125dcd0f158db08776"
     },
     "workspace/chapters/ch05/RUNTIME_MANIFEST.json": {
       "bytes": 1953,
-      "sha256": "7ade7d6bfaff4354165a60d68b9dcf8e0bdbacb47fec11a2b64d7915cde003a0"
+      "sha256": "ded7771eb825286d947891681ce857766e0cd60abf1b0af1db22067465f7db05"
     },
     "workspace/chapters/ch05/__init__.py": {
       "bytes": 117,
@@ -680,12 +683,12 @@
       "sha256": "6618303816de2107a9993488ce58811786012c044b68e0d3a245d8994c412207"
     },
     "workspace/chapters/ch05_delivery/README.md": {
-      "bytes": 761,
-      "sha256": "1f71e9652f426f263e74c1fe0bfb5affcc54895bc41dd021995e6f23943446ff"
+      "bytes": 930,
+      "sha256": "252532f2a3a7c702b0937473384667bef6edc754eb9a2ee8a37c46a8d8980eef"
     },
     "workspace/chapters/ch05_delivery/RUNTIME_MANIFEST.json": {
       "bytes": 1378,
-      "sha256": "7e17dead73967b4b7967d65a79b9fd0845ba7d334398c22f39e519464e5dbf09"
+      "sha256": "16010e4b4de7f4332ebd718160e2e0fc5d471ad4ca5aeb5cde1fb2727dfefa8d"
     },
     "workspace/chapters/ch05_delivery/__init__.py": {
       "bytes": 108,
@@ -732,8 +735,8 @@
       "sha256": "d738b991b4681ad4b9d16a52ecee03bbd578c081d880d9acf13a4eb1256eca37"
     },
     "workspace/chapters/ch05_delivery/report.py": {
-      "bytes": 16196,
-      "sha256": "afcb242fdcd1660f1b8d967ffded5ebe276f0f705cc0702e843d4990ad93ce89"
+      "bytes": 17177,
+      "sha256": "27ba5ea494af5dce9e58bfb5eb0c7f9c107bcbcb70500287982d1e5e6ef8dfbb"
     },
     "workspace/chapters/ch05_delivery/test_delivery.py": {
       "bytes": 6489,
@@ -964,24 +967,24 @@
       "sha256": "5fb1c312ab15194af833f7dedba7436147c5e329698853999980119dd968d838"
     },
     "workspace/docs/CH02_READING_ZH.md": {
-      "bytes": 1188,
-      "sha256": "922da879cc973aec904463f02892cc6fdf3c89cb762011dca52330ab2d92491f"
+      "bytes": 1417,
+      "sha256": "f2606643db396be4782e765c30ca0663c7b67ffa20757c3d41f8d0fb170dbaec"
     },
     "workspace/docs/CH03_READING_ZH.md": {
-      "bytes": 4549,
-      "sha256": "32bf5d6c13c5adf26799f657efe3477f073b1a387cef4e7cef930a8444a28f1a"
+      "bytes": 5307,
+      "sha256": "df2bb42d05d1a7ea0135e50bd539f92e33afb7a93e81bfc0264364b61f50552a"
     },
     "workspace/docs/CH04_READING_ZH.md": {
-      "bytes": 4508,
-      "sha256": "55a4f1a28f2c74ce1bde801003a04e3f69bb4765136269a97fb04bbc53fe2010"
+      "bytes": 5110,
+      "sha256": "55bfb7b96bc7c77889d61db2b59d46bd7f00b5d1974afa173db5f7caca038a70"
     },
     "workspace/docs/CH05_READING_ZH.md": {
-      "bytes": 3955,
-      "sha256": "4aaabcbc4d40010cec17298b510aec36e89d750d755ec845e9d3489d0abb4c37"
+      "bytes": 4512,
+      "sha256": "b18670b94f4a405846842200d2fdb01293bda43f88270be09bf626306fd73f35"
     },
     "workspace/experiments/ch03_hints_v1/README.md": {
-      "bytes": 511,
-      "sha256": "0a293efd6ca8f029b68cabdd5d73be65c55e83052b9d89ed1ac55a272f1dc194"
+      "bytes": 605,
+      "sha256": "4c554f8fdbce71dab5b24db2269a4a0e79435f36bcb2ac025c2e0e05c36989dd"
     },
     "workspace/experiments/ch03_hints_v1/config.json": {
       "bytes": 478,
@@ -992,8 +995,8 @@
       "sha256": "4c1797eac3c6d6bf30b70e242799dbf066f5bb1afbc3b27ca01840747e8e83d1"
     },
     "workspace/experiments/ch03_hints_v1/run.py": {
-      "bytes": 19595,
-      "sha256": "15eabe08ad9cdbcb2d8b2c5899c5a4471e8a4b7e7703afc5c97e2e57418274b4"
+      "bytes": 19992,
+      "sha256": "856e87e4fc228056ef94d187f76cb687ea40c5d9ae0578111221c9e03671ea17"
     },
     "workspace/experiments/ch03_hints_v1/solver.py": {
       "bytes": 5204,
@@ -1004,8 +1007,8 @@
       "sha256": "8258e757719d7b761fd8f7c4c58bda49e5cc36a8ed9e28ef890d12ad48ea87f9"
     },
     "workspace/experiments/ch03_physics_v1/README.md": {
-      "bytes": 513,
-      "sha256": "e5efa9eb98953236bd9c3534c6c9b30f50db0b08c0493b78e2f12a47fb977bc2"
+      "bytes": 607,
+      "sha256": "177199b6b12199f20f2e467f461bd520e03a1e630ab9f57d2d00fec7dacaf33a"
     },
     "workspace/experiments/ch03_physics_v1/config.json": {
       "bytes": 916,
@@ -1016,16 +1019,16 @@
       "sha256": "7c2dfa3f05f517467ae5c2ad93eb45ac412d90043b409d45689f803705557123"
     },
     "workspace/experiments/ch03_physics_v1/run.py": {
-      "bytes": 28650,
-      "sha256": "b83f1a2abf9ede2eda7f240c13dd84017165b788e7e277f8683dc7d4b20b1af6"
+      "bytes": 28892,
+      "sha256": "134d684d9f0c16816aea792e0516738898426f352840cb80e385dc664e447a96"
     },
     "workspace/experiments/ch03_physics_v1/test_physics.py": {
       "bytes": 7756,
       "sha256": "886a1dad201aca041721ad5e1abc1eb18c57bd5e644220ad8e2215f574938df1"
     },
     "workspace/experiments/ch03_pod_v1/README.md": {
-      "bytes": 509,
-      "sha256": "150a7b3082711dcdd2d371481a2b33e14ca62ce3793e798841f440fa69929ee1"
+      "bytes": 603,
+      "sha256": "57ba10b68942ef652110c274d382798b80ae316fd4c0c74f7e5eaf0f4a8dde20"
     },
     "workspace/experiments/ch03_pod_v1/config.json": {
       "bytes": 523,
@@ -1036,8 +1039,8 @@
       "sha256": "ccdcf5e04393e950b73de307dbb0297910239a9d67a7cdd96161b3f742a0b224"
     },
     "workspace/experiments/ch03_pod_v1/run.py": {
-      "bytes": 18957,
-      "sha256": "8743936a087a221be506b3953a15d3827e478c77f0bd285bfd4ad9fc9d8c989a"
+      "bytes": 19257,
+      "sha256": "d91f06b49d876a7f07c6a4171959b101bc8955d42f36637d514896a1da43455a"
     },
     "workspace/experiments/ch03_pod_v1/test_pod.py": {
       "bytes": 6965,
@@ -1048,8 +1051,8 @@
       "sha256": "074efc0ab9b4340634520790b6b298bc99eb2edc538884e5965eef8c8c90d9a8"
     },
     "workspace/experiments/ch03_varmion_v1/README.md": {
-      "bytes": 513,
-      "sha256": "6e98586a9342cb5138ca83e5588fba71d363e610a1272754a0d74a76b0189a1e"
+      "bytes": 607,
+      "sha256": "9165a9a3c95de0871f019cc7f05f5676ecdaf3976be3e4978e09a24b79e51a3d"
     },
     "workspace/experiments/ch03_varmion_v1/common.py": {
       "bytes": 1416,
@@ -1068,8 +1071,8 @@
       "sha256": "32831f28fd87a22a6f13200c8c5307f9926b3ec2621bca42b595d9e4aea653a0"
     },
     "workspace/experiments/ch03_varmion_v1/run.py": {
-      "bytes": 16359,
-      "sha256": "44a3e239415223e925ceb1bc88aaf3bd4461f2d627f4dccdce942d8f6a510eaa"
+      "bytes": 16535,
+      "sha256": "5076f02175f23d3424c9d16d12f1559a12b30228eaa92340644e14eedb4c34d0"
     },
     "workspace/experiments/ch03_varmion_v1/test_varmion.py": {
       "bytes": 4240,
@@ -1080,8 +1083,8 @@
       "sha256": "d3c7d7b52928e2e613f3e7a276d776d1f46b3fa1156a7435da32ea82daefc1c3"
     },
     "workspace/experiments/ch03_varmion_v2/README.md": {
-      "bytes": 513,
-      "sha256": "d4625f8d3f1d133b5f122a7b1d938fd9d169f009ea6db11247363a18b4f3785d"
+      "bytes": 607,
+      "sha256": "f89aa9f5f11391261f910f080325239e9e429482bab44848fcd62daea034dd66"
     },
     "workspace/experiments/ch03_varmion_v2/audit_v2.py": {
       "bytes": 9584,
@@ -1420,12 +1423,12 @@
       "sha256": "e507b85efba39727725f8cab840a244236f2a8e98eed63bc4fba03302626fac1"
     },
     "workspace/reports/AUDIT_REPORT_ZH.md": {
-      "bytes": 2428,
-      "sha256": "42c94b11762c4141d265efbd021ac740f69d7bf156e3f6c0b89ae3eadbda21de"
+      "bytes": 2903,
+      "sha256": "3e7c51c3de01edb0b7e3d81c36b78d624ef4a8e05918f965933613197dff073c"
     },
     "workspace/reports/BOOK_CHECKLIST_ZH.md": {
-      "bytes": 15774,
-      "sha256": "356328a753989287feaa764669571ca62465369a030fd106829ed75db4fef77d"
+      "bytes": 19297,
+      "sha256": "d76038f011554fc823d2ead86c693460450f188cb668cf78692052b006a90583"
     },
     "workspace/reports/FINAL_AUDIT.json": {
       "bytes": 484673,
@@ -1440,20 +1443,20 @@
       "sha256": "13e1a18121df71a09596f4e9088b10e62c6a4437b393e4bad1f5c6f2355aa344"
     },
     "workspace/reports/REVIEW_NOTES_ZH.md": {
-      "bytes": 1724,
-      "sha256": "2946daa3f44a1830ccd76929dd9c00bb67673ac21d033f6ce16febbe9f55d69c"
+      "bytes": 2379,
+      "sha256": "07a296a412416c7d6719e63fa605283f6175cdf20ac564c32eacb1afe9563ccf"
     },
     "workspace/reports/publication/PDF_QA.json": {
-      "bytes": 865,
-      "sha256": "fed152cebf6f44979ae10d214d9f525a1e6f0e569f4df7e2fda5f6937dbe9de2"
+      "bytes": 931,
+      "sha256": "11600b7e9acdaeed5a40b5b42400c30515720bab7fee20d4df05451488ef1106"
     },
     "workspace/reports/publication/main.pdf": {
-      "bytes": 348449,
-      "sha256": "c6f6876860274406e89539028a0bf47da5b1fe1b2c12df9e2c1cce4818bc43ea"
+      "bytes": 69091,
+      "sha256": "93661525e645e2c1750bf9d358092af2742d0d51e6aeb47166fdc362f55c889d"
     },
     "workspace/reports/publication/main.tex": {
-      "bytes": 46128,
-      "sha256": "deee8691832fed10768e177f298f1799e2137bfb6b03798c9e59b55253a7f499"
+      "bytes": 51710,
+      "sha256": "e167798302034b049d3f957eea5c6f52f5be15e9e6b65dc2982be1acb8d11cd5"
     },
     "workspace/results/ch02/full/DELIVERY_AUDIT.json": {
       "bytes": 15289,
@@ -9936,8 +9939,8 @@
       "sha256": "a20f34c7bc241e050a5d49b03b1f3d3b8996911cc609ff2ac44dce85fad82bc8"
     },
     "workspace/results/ch03/final_test_v1/summary.md": {
-      "bytes": 2467,
-      "sha256": "26040c1ac9486dacf25f06fb8eb54714f619e6034686856353556a4e238ee9f4"
+      "bytes": 2816,
+      "sha256": "0465529609b9b5177fe47e1adb957df27aafaf402b883ff906a2d3d9650aa6df"
     },
     "workspace/results/ch03/final_test_v1/verification.json": {
       "bytes": 156,
@@ -13624,8 +13627,8 @@
       "sha256": "a162b894535a81cb9ee78540f9c709c71b73790651eb2eb19baf51996b19d743"
     },
     "workspace/results/ch04/nonlinear_depth_v1/summary.md": {
-      "bytes": 1758,
-      "sha256": "02c79b4d9617dc0bff5ef2aa75f445c111e4cc9b50fbab3ffa123a19f00f4b0d"
+      "bytes": 2202,
+      "sha256": "755e1400b7a7a2f872aff1f2a63b0984423d335a0bb90110b1ca534d22e1b0c0"
     },
     "workspace/results/ch04/nonlinear_depth_v1/training/fem_clean_seed0/TRAINING_COMPLETE": {
       "bytes": 50,
@@ -14908,12 +14911,12 @@
       "sha256": "648fa9563d457045427700dea1c241d0251d09b7a8beb0149d7eac44a720bab2"
     },
     "workspace/results/ch04/unified_delivery_v1/summary.md": {
-      "bytes": 4472,
-      "sha256": "adb39ebc7c18da367ea895f9d6d1676725b13af1df1407716fc5b972135d7ea1"
+      "bytes": 5050,
+      "sha256": "5e65c7686eb7fac9dfd3ec87f563bd932394301c92041b66717749606e28cf92"
     },
     "workspace/results/ch04/unified_delivery_v1/summary.reviewed.md": {
-      "bytes": 4650,
-      "sha256": "1e2b0597ac31f290f7727e96fae34de456e9ddbfa4638dcf5486b654443a456a"
+      "bytes": 5264,
+      "sha256": "79970ec722df8a7b3c8f5a8f64a2df0d3118987c109abd48f10a6ee4edef13e7"
     },
     "workspace/results/ch04/unified_delivery_v1/tests.log": {
       "bytes": 10022,
@@ -17140,8 +17143,8 @@
       "sha256": "5786d1b5a6a9373d4fc5fb1558e59c5319d707d5ae073a8adb15e43dbc1ba8d6"
     },
     "workspace/results/ch05/unified_delivery_v1/summary.md": {
-      "bytes": 4337,
-      "sha256": "8ce416c5105ab735009266db3e7df85cdcd16bb125c73cdf11ebe86081301459"
+      "bytes": 5349,
+      "sha256": "fb31e139dde8bce45e85e29df1eedd166a19884b3308902c5d771fbbb4bf2359"
     },
     "workspace/results/ch05/unified_delivery_v1/tests.log": {
       "bytes": 4855,
@@ -17672,8 +17675,8 @@
       "sha256": "9b7f9eb99821b830a45a64f8e358b40307bf0e3721a6dc95a8b49fdd223b7cf8"
     },
     "workspace/scripts/report_ch03_experiment.py": {
-      "bytes": 17419,
-      "sha256": "efe24dba9836ac2ebebf2d499ad41221b17d871559466734c3710361ad307e7b"
+      "bytes": 18025,
+      "sha256": "434ed33d1715b66509981eee50a4663eae0e2227b988d66bb8cbbbd132077a47"
     },
     "workspace/scripts/run_ch03_experiment.py": {
       "bytes": 7476,
@@ -17740,16 +17743,16 @@
       "sha256": "0eb29d810b0db404fef91b97288c6244b15ac26108b3b54491c01c0d54dc6300"
     },
     "workspace/src/neuralpde_opt/chapter3/data.py": {
-      "bytes": 18097,
-      "sha256": "c12210b4a7e86a6dfa6786a14651fb7b720457f8af8b1d550ff62f576e5ff699"
+      "bytes": 18355,
+      "sha256": "e48df714fafb330d8baf76c6d92c884b9c95bc0bd5acfb6eeb2db2d53cd10868"
     },
     "workspace/src/neuralpde_opt/chapter3/deeponet.py": {
       "bytes": 13778,
       "sha256": "a8d821b76893791cb5c0c956f59018b00b14ba2a428260d55e7c42f4aa1f36bd"
     },
     "workspace/src/neuralpde_opt/chapter3/experimental_data.py": {
-      "bytes": 40183,
-      "sha256": "d6b73cddfed66e2cfc6fb37be22206b256209bf9477dcf3ec883e148a42fb70b"
+      "bytes": 40320,
+      "sha256": "ad0303ee037530e53e529637dba9019abfea8487af422cbb8c11aaea2fc25f5f"
     },
     "workspace/src/neuralpde_opt/chapter3/fields.py": {
       "bytes": 2435,
@@ -18169,27 +18172,27 @@
     },
     "package_source/pyproject.toml": {
       "bytes": 588,
-      "sha256": "68c5cbc38b4c9ab58fdb064d3712d75308eefd671869dc1cd27726ab1c183c36"
+      "sha256": "d488d687f26fabf6809e49b9a137e272a9ab5fb1eced2a622aa3e4db58bf8beb"
     },
     "package_source/requirements-tested.txt": {
       "bytes": 144,
       "sha256": "a0d090afe1cc86284f12a0c664a9470e057ad6576482504e0c4f577ff6de1054"
     },
     "package_source/README.md": {
-      "bytes": 3043,
-      "sha256": "e27955041904ddac582cb31867ac650865c7f8b3a3788cd511ea876d1e27eb0d"
+      "bytes": 5245,
+      "sha256": "943432ceffde129590394489768ebdc85e81baa7feef3ea7a4d901d84f026332"
     },
     "package_source/src/neuralpde_book/__init__.py": {
       "bytes": 101,
-      "sha256": "7e92646321ca44c6795ea16915fede70333266f77b78db21c792e45cf87c97bf"
+      "sha256": "653cde514ee72a16ee12ba3e1be9437c94a5d55b0db9e3eb9c34d45c3855292d"
     },
     "package_source/src/neuralpde_book/_payload/PAYLOAD_MANIFEST.json": {
       "bytes": 35764,
-      "sha256": "e07d6acdeb2a9365952196f996ef8c8c039917f39a219097a8aa847dd77afef6"
+      "sha256": "b3446959d772e940ab077612933e0c8eae2a497e3e851fc503f050d8a56e7a86"
     },
     "package_source/src/neuralpde_book/_payload/README.md": {
-      "bytes": 2469,
-      "sha256": "b77e9e563c89c8ea47df7e2bc0103b68dcab96ded601c3cdf232c5ee7e5cc6af"
+      "bytes": 2936,
+      "sha256": "c0143eb17a12dd425bcb287bb3448d9f943abc5806f4098c68446fdf45946a64"
     },
     "package_source/src/neuralpde_book/_payload/SOURCE_CHANGES.json": {
       "bytes": 7880,
@@ -18216,12 +18219,12 @@
       "sha256": "e33305e668e518641c26418cf9f3d29aac0628025bdb62195fdb51d0d1282853"
     },
     "package_source/src/neuralpde_book/_payload/book_report.py": {
-      "bytes": 6324,
-      "sha256": "afa19bc2a94464a59b3e6219b9c36135d30e0bc0c78fe774463b86d4f48f5b95"
+      "bytes": 7021,
+      "sha256": "bca1b321a63407c41a9d454fa86bb8d45ab4f9e30c8f3eb2c7579fdaae7811cb"
     },
     "package_source/src/neuralpde_book/_payload/book_scope.json": {
-      "bytes": 24259,
-      "sha256": "53bf1bdc331cda3cf4534d35439f277e37f5fe202ddc4ac29333b85889d41a5e"
+      "bytes": 27117,
+      "sha256": "891e18b930bdd42b98e55ffeb349e54cafcfd6792501384b806aa5454896a592"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch02/configs/full.json": {
       "bytes": 529,
@@ -18240,8 +18243,8 @@
       "sha256": "61f26ad7fb5d8fa5e2422e6e474ecd8832b9f1bca898907dc4c93f2ecdd4b4e4"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch03/README.md": {
-      "bytes": 752,
-      "sha256": "bf194b72f9f197fc13777f418abc33af15075ed3c164ea67fea2d973b40e3f19"
+      "bytes": 921,
+      "sha256": "5b4f6be313224f0891b253dab2197c3264ef63fafa5d2ea69ff3c4a7b1261275"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch03/audit.py": {
       "bytes": 7592,
@@ -18260,8 +18263,8 @@
       "sha256": "c45db740eb44f3194f87c3821373fb4f7476e06f07f74bed2eefb7dc1b83c4de"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch03/evaluation.py": {
-      "bytes": 14322,
-      "sha256": "26ef2f9cbe50d4e761f90ec3831632ee3397bbb70f82871e378aa63230826a75"
+      "bytes": 14671,
+      "sha256": "a744c92becfe16f4a6c269f4a99da2e0b7aa90c4269f06fa1b140aeae52a9987"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch03/heldout.py": {
       "bytes": 9944,
@@ -18304,12 +18307,12 @@
       "sha256": "254f5056f3de7a33c7c1d601acc64285caeb8f80cdb7325e8850886b0076e338"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04/README.md": {
-      "bytes": 752,
-      "sha256": "fd095f96b06b64d97bfaf3ba51a265cc8f353a60b9a3bfe256a147b9b1eac7f6"
+      "bytes": 921,
+      "sha256": "5837ea079ff057a177768cc1437e923cca7fda0d1cda5e92924e148aadf88476"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04/RUNTIME_MANIFEST.json": {
       "bytes": 1253,
-      "sha256": "666fcb39f73bec7faf6ff7d9a47939611c19150655f0ed3debc26ab0c5cc2058"
+      "sha256": "4830963099876c460e562205f90db4aa44ef8c7d2c46152eb50894c700029719"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04/__init__.py": {
       "bytes": 69,
@@ -18364,12 +18367,12 @@
       "sha256": "06cc8f842c89947898285ca14dfcda099f45297e32d198f726982377c8a042a1"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_adaptation/README.md": {
-      "bytes": 763,
-      "sha256": "70604772fbf608b7f1beac17d9bf718e6add0796cc05e2f32b03b22b40074f2b"
+      "bytes": 932,
+      "sha256": "69a2dd1f5548f9a8044334e5f8e285b7b091a063b8b3f14dc6c6264d05681a2d"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_adaptation/RUNTIME_MANIFEST.json": {
       "bytes": 1734,
-      "sha256": "8dec8fee5986ff1d762d5fcf4b216884a279609b198835747439dfb4668a0ab2"
+      "sha256": "7b6e8010f6b89762dd180a7bb14f78b9d98a3a98f1fa084370c5245887533ee8"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_adaptation/__init__.py": {
       "bytes": 75,
@@ -18444,12 +18447,12 @@
       "sha256": "41b98f9b799318e9a6f9104328ca7b86c97da24d5b64f72a56aef580c2a846f5"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_completion/README.md": {
-      "bytes": 763,
-      "sha256": "6e75ca3d9a2f9d88f011535150c75a3f66e747dc2b58f6b6ddbd1f766d2b077c"
+      "bytes": 932,
+      "sha256": "8a54eb572c7488e85119950e55dcffa292ba82baa9911cb83546eb3a89c20680"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_completion/RUNTIME_MANIFEST.json": {
       "bytes": 1126,
-      "sha256": "95ca7517d93ed038739a1700f8242c3493ec4466227d98192c46d34e004f5435"
+      "sha256": "07a3a1ebb55ab85342763802c139d9110af344f301e80d182d4255e89049cc16"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_completion/__init__.py": {
       "bytes": 113,
@@ -18500,12 +18503,12 @@
       "sha256": "f7c613045a57e08db7e8794d1d453888e1503099741f3686b47aafda3bc264c3"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_delivery/README.md": {
-      "bytes": 761,
-      "sha256": "6d282c44a8c958d335fbf8fa44f1ab690b1acbdecf3be84124ece064dcef3d71"
+      "bytes": 930,
+      "sha256": "04708b6fac1b6eee091e49de509c6e059c5eda9471dad50cc627221c47813657"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_delivery/RUNTIME_MANIFEST.json": {
       "bytes": 1310,
-      "sha256": "3250bea314f13ba6675ec7e901a41e349c68b427a6e86c5eb6637ce9993c7b46"
+      "sha256": "59c13f0d29f290e5ffde5eb6e9adbb6e491bd52668f4b6b47e02abdc845fd8f3"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_delivery/__init__.py": {
       "bytes": 122,
@@ -18552,24 +18555,24 @@
       "sha256": "cec54cac3c55d864aa93a0d0d9efaaf7887cecd0804e08d849513a78f668738a"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_delivery/report.py": {
-      "bytes": 6709,
-      "sha256": "9fae3b7f70842e3da915f5038918d7b0e5933bea3efd1986a902c892d8a85bec"
+      "bytes": 7287,
+      "sha256": "e05f8772449991f8daf0a6330234e2cfdef9adaefdd0352750fb8f31283d32ec"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_delivery/test_delivery.py": {
       "bytes": 5297,
       "sha256": "0e36993b6933847689f5889dad9fcec68d5fb20b497d5ee7a79651fc5ab1a7e9"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_depth/README.md": {
-      "bytes": 758,
-      "sha256": "0d43243b91524b894b7e709b4ed2649781077cba064e85913049846fae8043a3"
+      "bytes": 927,
+      "sha256": "7151a2b576040521b4b21b8f7f02941cd7eff99ae30556a06397fe409a1333e4"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_depth/__init__.py": {
       "bytes": 80,
       "sha256": "e3e4407f5d346b29524f3bc0d71efd78f8c43fe6b5cb4eaf381a421ff86f5447"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_depth/assessment.py": {
-      "bytes": 19691,
-      "sha256": "2774d684df0d542c4ff580b44d793f42863d3a8dc638a2b39b547d13bf68dce2"
+      "bytes": 20135,
+      "sha256": "11e19784a55bdf18c2ab8b03464d7d349be6ee12c271f6e266dad244f5452add"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_depth/cli.py": {
       "bytes": 2943,
@@ -18592,12 +18595,12 @@
       "sha256": "1cd0c3adaa10299ba58f89cebb459a99ad5c9939fb7b5e53057a8e5e98e2505f"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_operator_adaptation/README.md": {
-      "bytes": 772,
-      "sha256": "fc250edacd9f6b72479f6d1958d58893177a54d3b71afb658e553babe5dd9cf1"
+      "bytes": 941,
+      "sha256": "47eb497cd1c5f959a1ec80bbb93b3f96f4599e43a7a4ab54c546861418a51345"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_operator_adaptation/RUNTIME_MANIFEST.json": {
       "bytes": 1469,
-      "sha256": "00cd451b293d6aaa43a767bb8c5ee80945351ddde56a62bdf0bd746ccb9120d1"
+      "sha256": "54bcb8f1eb6d44278b1bdb37aee5650b3b58724f5d576bf27e44d3f49a64c11b"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_operator_adaptation/__init__.py": {
       "bytes": 76,
@@ -18660,12 +18663,12 @@
       "sha256": "5d362b93c52ea9d59b165937b77c58f56a95438f261f0acbd9e6ef73979e942c"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_operator_learning/README.md": {
-      "bytes": 770,
-      "sha256": "aec91f9621ba84452c43a4c7f124bca5845c5fdc86170dc3573ee645d0a46e5c"
+      "bytes": 939,
+      "sha256": "988c8c7d1303148da07ea9da8a2e54b03e1ec2c830f4857ea3fbeb17d037f0fc"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_operator_learning/RUNTIME_MANIFEST.json": {
       "bytes": 1900,
-      "sha256": "2785bf5bffdc1b9dfa92b5a43483bd02a8349439645ff246f43c715098befa0d"
+      "sha256": "07361479c77e405e557f25f6cf36339c27a15adb9042dbb8b9f89d894472a6a3"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch04_operator_learning/__init__.py": {
       "bytes": 73,
@@ -18748,12 +18751,12 @@
       "sha256": "0fb403aafc7184db78e510adc1fbfd5f679bdd201c4609988229f11e1e56cda5"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch05/README.md": {
-      "bytes": 752,
-      "sha256": "a4d6af7acf417c4a82ce5abe96f6842901e28bdaf6e75c67e21e828f6802f61c"
+      "bytes": 921,
+      "sha256": "85c4a6994721d11524a13b156af837a8eb33bb53221428125dcd0f158db08776"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch05/RUNTIME_MANIFEST.json": {
       "bytes": 1953,
-      "sha256": "7ade7d6bfaff4354165a60d68b9dcf8e0bdbacb47fec11a2b64d7915cde003a0"
+      "sha256": "ded7771eb825286d947891681ce857766e0cd60abf1b0af1db22067465f7db05"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch05/__init__.py": {
       "bytes": 117,
@@ -18840,12 +18843,12 @@
       "sha256": "6618303816de2107a9993488ce58811786012c044b68e0d3a245d8994c412207"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch05_delivery/README.md": {
-      "bytes": 761,
-      "sha256": "1f71e9652f426f263e74c1fe0bfb5affcc54895bc41dd021995e6f23943446ff"
+      "bytes": 930,
+      "sha256": "252532f2a3a7c702b0937473384667bef6edc754eb9a2ee8a37c46a8d8980eef"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch05_delivery/RUNTIME_MANIFEST.json": {
       "bytes": 1378,
-      "sha256": "7e17dead73967b4b7967d65a79b9fd0845ba7d334398c22f39e519464e5dbf09"
+      "sha256": "16010e4b4de7f4332ebd718160e2e0fc5d471ad4ca5aeb5cde1fb2727dfefa8d"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch05_delivery/__init__.py": {
       "bytes": 108,
@@ -18892,8 +18895,8 @@
       "sha256": "d738b991b4681ad4b9d16a52ecee03bbd578c081d880d9acf13a4eb1256eca37"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch05_delivery/report.py": {
-      "bytes": 16196,
-      "sha256": "afcb242fdcd1660f1b8d967ffded5ebe276f0f705cc0702e843d4990ad93ce89"
+      "bytes": 17177,
+      "sha256": "27ba5ea494af5dce9e58bfb5eb0c7f9c107bcbcb70500287982d1e5e6ef8dfbb"
     },
     "package_source/src/neuralpde_book/_payload/chapters/ch05_delivery/test_delivery.py": {
       "bytes": 6489,
@@ -18992,24 +18995,24 @@
       "sha256": "3dea8dc07d200a47a9700db36e5f505c32f8ba989132019d772e37d7d8c3f666"
     },
     "package_source/src/neuralpde_book/_payload/docs/CH02_READING_ZH.md": {
-      "bytes": 1188,
-      "sha256": "922da879cc973aec904463f02892cc6fdf3c89cb762011dca52330ab2d92491f"
+      "bytes": 1417,
+      "sha256": "f2606643db396be4782e765c30ca0663c7b67ffa20757c3d41f8d0fb170dbaec"
     },
     "package_source/src/neuralpde_book/_payload/docs/CH03_READING_ZH.md": {
-      "bytes": 4549,
-      "sha256": "32bf5d6c13c5adf26799f657efe3477f073b1a387cef4e7cef930a8444a28f1a"
+      "bytes": 5307,
+      "sha256": "df2bb42d05d1a7ea0135e50bd539f92e33afb7a93e81bfc0264364b61f50552a"
     },
     "package_source/src/neuralpde_book/_payload/docs/CH04_READING_ZH.md": {
-      "bytes": 4508,
-      "sha256": "55a4f1a28f2c74ce1bde801003a04e3f69bb4765136269a97fb04bbc53fe2010"
+      "bytes": 5110,
+      "sha256": "55bfb7b96bc7c77889d61db2b59d46bd7f00b5d1974afa173db5f7caca038a70"
     },
     "package_source/src/neuralpde_book/_payload/docs/CH05_READING_ZH.md": {
-      "bytes": 3955,
-      "sha256": "4aaabcbc4d40010cec17298b510aec36e89d750d755ec845e9d3489d0abb4c37"
+      "bytes": 4512,
+      "sha256": "b18670b94f4a405846842200d2fdb01293bda43f88270be09bf626306fd73f35"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_hints_v1/README.md": {
-      "bytes": 511,
-      "sha256": "0a293efd6ca8f029b68cabdd5d73be65c55e83052b9d89ed1ac55a272f1dc194"
+      "bytes": 605,
+      "sha256": "4c554f8fdbce71dab5b24db2269a4a0e79435f36bcb2ac025c2e0e05c36989dd"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_hints_v1/config.json": {
       "bytes": 478,
@@ -19020,8 +19023,8 @@
       "sha256": "4c1797eac3c6d6bf30b70e242799dbf066f5bb1afbc3b27ca01840747e8e83d1"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_hints_v1/run.py": {
-      "bytes": 19595,
-      "sha256": "15eabe08ad9cdbcb2d8b2c5899c5a4471e8a4b7e7703afc5c97e2e57418274b4"
+      "bytes": 19992,
+      "sha256": "856e87e4fc228056ef94d187f76cb687ea40c5d9ae0578111221c9e03671ea17"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_hints_v1/solver.py": {
       "bytes": 5204,
@@ -19032,8 +19035,8 @@
       "sha256": "8258e757719d7b761fd8f7c4c58bda49e5cc36a8ed9e28ef890d12ad48ea87f9"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_physics_v1/README.md": {
-      "bytes": 513,
-      "sha256": "e5efa9eb98953236bd9c3534c6c9b30f50db0b08c0493b78e2f12a47fb977bc2"
+      "bytes": 607,
+      "sha256": "177199b6b12199f20f2e467f461bd520e03a1e630ab9f57d2d00fec7dacaf33a"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_physics_v1/config.json": {
       "bytes": 916,
@@ -19044,16 +19047,16 @@
       "sha256": "7c2dfa3f05f517467ae5c2ad93eb45ac412d90043b409d45689f803705557123"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_physics_v1/run.py": {
-      "bytes": 28650,
-      "sha256": "b83f1a2abf9ede2eda7f240c13dd84017165b788e7e277f8683dc7d4b20b1af6"
+      "bytes": 28892,
+      "sha256": "134d684d9f0c16816aea792e0516738898426f352840cb80e385dc664e447a96"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_physics_v1/test_physics.py": {
       "bytes": 7756,
       "sha256": "886a1dad201aca041721ad5e1abc1eb18c57bd5e644220ad8e2215f574938df1"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_pod_v1/README.md": {
-      "bytes": 509,
-      "sha256": "150a7b3082711dcdd2d371481a2b33e14ca62ce3793e798841f440fa69929ee1"
+      "bytes": 603,
+      "sha256": "57ba10b68942ef652110c274d382798b80ae316fd4c0c74f7e5eaf0f4a8dde20"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_pod_v1/config.json": {
       "bytes": 523,
@@ -19064,8 +19067,8 @@
       "sha256": "ccdcf5e04393e950b73de307dbb0297910239a9d67a7cdd96161b3f742a0b224"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_pod_v1/run.py": {
-      "bytes": 18957,
-      "sha256": "8743936a087a221be506b3953a15d3827e478c77f0bd285bfd4ad9fc9d8c989a"
+      "bytes": 19257,
+      "sha256": "d91f06b49d876a7f07c6a4171959b101bc8955d42f36637d514896a1da43455a"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_pod_v1/test_pod.py": {
       "bytes": 6965,
@@ -19076,8 +19079,8 @@
       "sha256": "074efc0ab9b4340634520790b6b298bc99eb2edc538884e5965eef8c8c90d9a8"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_varmion_v1/README.md": {
-      "bytes": 513,
-      "sha256": "6e98586a9342cb5138ca83e5588fba71d363e610a1272754a0d74a76b0189a1e"
+      "bytes": 607,
+      "sha256": "9165a9a3c95de0871f019cc7f05f5676ecdaf3976be3e4978e09a24b79e51a3d"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_varmion_v1/common.py": {
       "bytes": 1416,
@@ -19096,8 +19099,8 @@
       "sha256": "32831f28fd87a22a6f13200c8c5307f9926b3ec2621bca42b595d9e4aea653a0"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_varmion_v1/run.py": {
-      "bytes": 16359,
-      "sha256": "44a3e239415223e925ceb1bc88aaf3bd4461f2d627f4dccdce942d8f6a510eaa"
+      "bytes": 16535,
+      "sha256": "5076f02175f23d3424c9d16d12f1559a12b30228eaa92340644e14eedb4c34d0"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_varmion_v1/test_varmion.py": {
       "bytes": 4240,
@@ -19108,8 +19111,8 @@
       "sha256": "d3c7d7b52928e2e613f3e7a276d776d1f46b3fa1156a7435da32ea82daefc1c3"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_varmion_v2/README.md": {
-      "bytes": 513,
-      "sha256": "d4625f8d3f1d133b5f122a7b1d938fd9d169f009ea6db11247363a18b4f3785d"
+      "bytes": 607,
+      "sha256": "f89aa9f5f11391261f910f080325239e9e429482bab44848fcd62daea034dd66"
     },
     "package_source/src/neuralpde_book/_payload/experiments/ch03_varmion_v2/audit_v2.py": {
       "bytes": 9584,
@@ -19156,8 +19159,8 @@
       "sha256": "9b7f9eb99821b830a45a64f8e358b40307bf0e3721a6dc95a8b49fdd223b7cf8"
     },
     "package_source/src/neuralpde_book/_payload/scripts/report_ch03_experiment.py": {
-      "bytes": 17419,
-      "sha256": "efe24dba9836ac2ebebf2d499ad41221b17d871559466734c3710361ad307e7b"
+      "bytes": 18025,
+      "sha256": "434ed33d1715b66509981eee50a4663eae0e2227b988d66bb8cbbbd132077a47"
     },
     "package_source/src/neuralpde_book/_payload/scripts/run_ch03_experiment.py": {
       "bytes": 7476,
@@ -19224,16 +19227,16 @@
       "sha256": "0eb29d810b0db404fef91b97288c6244b15ac26108b3b54491c01c0d54dc6300"
     },
     "package_source/src/neuralpde_book/_payload/src/neuralpde_opt/chapter3/data.py": {
-      "bytes": 18097,
-      "sha256": "c12210b4a7e86a6dfa6786a14651fb7b720457f8af8b1d550ff62f576e5ff699"
+      "bytes": 18355,
+      "sha256": "e48df714fafb330d8baf76c6d92c884b9c95bc0bd5acfb6eeb2db2d53cd10868"
     },
     "package_source/src/neuralpde_book/_payload/src/neuralpde_opt/chapter3/deeponet.py": {
       "bytes": 13778,
       "sha256": "a8d821b76893791cb5c0c956f59018b00b14ba2a428260d55e7c42f4aa1f36bd"
     },
     "package_source/src/neuralpde_book/_payload/src/neuralpde_opt/chapter3/experimental_data.py": {
-      "bytes": 40183,
-      "sha256": "d6b73cddfed66e2cfc6fb37be22206b256209bf9477dcf3ec883e148a42fb70b"
+      "bytes": 40320,
+      "sha256": "ad0303ee037530e53e529637dba9019abfea8487af422cbb8c11aaea2fc25f5f"
     },
     "package_source/src/neuralpde_book/_payload/src/neuralpde_opt/chapter3/fields.py": {
       "bytes": 2435,
@@ -19461,23 +19464,23 @@
     },
     "package_source/src/neuralpde_book/workspace.py": {
       "bytes": 2813,
-      "sha256": "93668c95dc4ba72a45a6b6398d9b76b15c14418bfe35eab509adfbf6c895ff2d"
+      "sha256": "3486f69993039ee0a3661000fc95edf5052c1ea92021cca86f14a98de31396f8"
     },
     "package_source/tests/test_workspace.py": {
       "bytes": 2191,
       "sha256": "e2b467cc5e98afd86465327acf4f96f159a24d4e253a4597723d61a46a64488b"
     },
-    "wheel/neuralpde_book-1.0.0-py3-none-any.whl": {
-      "bytes": 693983,
-      "sha256": "f7c59bec496898be46b223f4d401b66091c9d65b9b611be0b7b834bdcf9534a9"
+    "wheel/neuralpde_book-1.0.1-py3-none-any.whl": {
+      "bytes": 690228,
+      "sha256": "29e3d27c2f5b486dbfab1091795394741c241fe9eb994e78c064e737bbe4f414"
     },
     "verify_package.py": {
       "bytes": 775,
       "sha256": "d6948cd0b9e7024ce75f61cd5e5908684aec9cfca0be3a6dd5ae69a7f3ed2964"
     },
     "README_ZH.md": {
-      "bytes": 2761,
-      "sha256": "fb79aa85f64833d4c3fc0717827489f6d8f3976efb964fd79556a80b140b0b55"
+      "bytes": 3364,
+      "sha256": "0229290b89ab6d82e429580856974b86399510de672a4c44c745719591bfb16f"
     },
     "EXCLUDED_FILES.json": {
       "bytes": 305824,
@@ -19490,6 +19493,86 @@
     "MODEL_INDEX.json": {
       "bytes": 39229,
       "sha256": "ab8311d158939109918be3c957f3139d89573d7bb0d9770da023354c0e15305b"
+    },
+    "ENGLISH_EDITION.md": {
+      "bytes": 2750,
+      "sha256": "f1c420d45c0886b4a8ea226addfe4b1d6d1fb0dd82eca93817fe1ab301adb773"
+    },
+    "ENGLISH_VERIFICATION.json": {
+      "bytes": 4797,
+      "sha256": "a8891818f35dc6de7403e442341f3222918fb9324e0902291bb389adf29e4a1c"
+    },
+    "LOCALIZATION_MANIFEST.json": {
+      "bytes": 28102,
+      "sha256": "bf524794ab733a1982a9c66ea19f0c5c6eacd6433f2e926aed8d6510058b3fa0"
+    },
+    "ORIGINAL_SOURCE_IDENTITIES.json": {
+      "bytes": 101272,
+      "sha256": "caaced52bc29a400aa080881f9aeaef2fa98d538243615ab1188dc615812e47e"
+    },
+    "english-verification/ch02.log": {
+      "bytes": 805,
+      "sha256": "6ec8e63be8e1f896c435c9f96e23cf719317c6f66d168790392c1d91f44ef15f"
+    },
+    "english-verification/ch03_core.log": {
+      "bytes": 34887,
+      "sha256": "fa662ccbbe7ce2ca87406a769849acd702369e30d69ed416438adf5946185d5a"
+    },
+    "english-verification/ch03_entry.log": {
+      "bytes": 1472,
+      "sha256": "8f5406e1f671a532b046b1a33f371406ab44a9a38d5de5cc3551a837fba97bb6"
+    },
+    "english-verification/ch03_hints_v1.log": {
+      "bytes": 860,
+      "sha256": "a0f6d2955633a85d6042de1f5594f9409996d151dbf8cccc01179fec65233d36"
+    },
+    "english-verification/ch03_physics_v1.log": {
+      "bytes": 2191,
+      "sha256": "1e5d5c02cc3ac61f575a809b8e3adb50a32a0e374fe77c7a382b4afdd7d6cf1d"
+    },
+    "english-verification/ch03_pod_v1.log": {
+      "bytes": 1402,
+      "sha256": "e1291c74c4fbd017b0d3f6d6720e9f59cd0e9c935e31fcb7b69bc341f34c435f"
+    },
+    "english-verification/ch03_varmion_v1.log": {
+      "bytes": 1144,
+      "sha256": "af0f267727b865b6b492d68d9ac3aae6e0dc9b03ad22dd23935bc4b095e57607"
+    },
+    "english-verification/ch03_varmion_v2.log": {
+      "bytes": 1466,
+      "sha256": "1bfcd9747743f0fa62db946b7dc0209a66d73d52646011e1ebec5e910e03f236"
+    },
+    "english-verification/ch04.log": {
+      "bytes": 12459,
+      "sha256": "de1b56ac51445141dcec71eb1e352e814f35d5c46d0352d2abdaea7b0b2e84ef"
+    },
+    "english-verification/ch05.log": {
+      "bytes": 4855,
+      "sha256": "46c4cd50cf2331faceecf87e7f7c7c3011e99d4af1e5a4c2d42d51240da9ccd3"
+    },
+    "english-verification/CHECKS.json": {
+      "bytes": 998,
+      "sha256": "dd89eeceda8b33afbd4be73faf8d3a8108e504556bbe37c7a79ce5f375676f79"
+    },
+    "english-verification/optimized_ch03.log": {
+      "bytes": 112,
+      "sha256": "cfb3954a5cd76fdf1976bc45a636e7b872b25b55888370e312f0dbc5c3066975"
+    },
+    "english-verification/package-tests.log": {
+      "bytes": 713,
+      "sha256": "947ec587eaf6e2c80d937ca38fccbb5c23d747bc897f8e0c1d12f94dbfd6f2f2"
+    },
+    "english-verification/VALIDATION.json": {
+      "bytes": 300,
+      "sha256": "8b1fa521ec3ff2a7570af7d25c0c494c30ef0acfca21b2733188848edd0dc6ad"
+    },
+    "english-verification/wheel-build.log": {
+      "bytes": 839,
+      "sha256": "3066c6006ba6f736b8883962f628f1b31ae0c48ab0990f46013f336d49ee5013"
+    },
+    "english-verification/wheel-tests.log": {
+      "bytes": 723,
+      "sha256": "41c47354392e74d4bac324a43bd9886065af898334dc2038528db387d2839ed2"
     }
   }
 }

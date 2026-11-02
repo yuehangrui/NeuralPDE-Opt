@@ -158,17 +158,17 @@ def summarize(out, config, rows, projection):
         out / "aggregate.json",
         {"completed_runs": len(rows), "ranks": aggregate, "rows": rows, "test_evaluations": 0},
     )
-    text = "# POD/PCA + 系数网络：反应算例\n\n"
-    text += f'已完成{len(rows)}/{len(config["ranks"])*len(config["seeds"])}组。train128/val32；训练基与均值仅由train拟合。无test评估。\n\n'
-    text += "| r | train投影L2 | val投影L2 | 网络train L2 | 网络val L2（均值±总体std） | 网络val H1 |\n|---|---:|---:|---:|---:|---:|\n"
+    text = "# POD/PCA + coefficient network: reaction-coefficient example\n\n"
+    text += f'Completed {len(rows)}/{len(config["ranks"])*len(config["seeds"])} runs. Train128/val32; bases and means are fitted on training data only. No test evaluation.\n\n'
+    text += "| r | Train projection L2 | Val projection L2 | Network train L2 | Network val L2 (mean +/- population std) | Network val H1 |\n|---|---:|---:|---:|---:|---:|\n"
     for rank in config["ranks"]:
         p = projection["ranks"][str(rank)]
         a = aggregate.get(str(rank))
         if a:
             text += f'| {rank} | {100*p["train"]["mean"]["relative_l2"]:.4f}% | {100*p["val"]["mean"]["relative_l2"]:.4f}% | {100*a["train_l2"]["mean"]:.4f}% | {100*a["val_l2"]["mean"]:.4f}% ± {100*a["val_l2"]["std_population"]:.4f}% | {100*a["val_h1"]["mean"]:.4f}% |\n'
-    text += "\n投影误差仅是当前固定仿射输出空间在公共网格L2下的误差下限；不等于连续真误差下界。标准POD最小化绝对L2训练投影误差；网络使用逐样本相对L2平方，优化时省略与参数无关的投影常数。\n"
-    text += "\n逐样本L2误差平方分解经过独立核验，不能把表中的平均百分比直接相加；H1没有同样的正交分解。验证集参与选模，维数比较属于开发实验，不能称独立测试或架构家族排名。\n"
-    text += f'\n预算：每组{config["epochs"]}epoch、batch{config["batch_size"]}，3×{config["width"]} GELU MLP、17×17输入传感器、AdamW+cosine。与冻结四架构匹配样本访问预算，未匹配参数量/计算量。所有配置在训练前固定。\n'
+    text += "\nProjection error is a lower bound only within the current fixed affine output space under the shared-grid L2 norm, not a bound on continuous-solution error. Standard POD minimizes absolute L2 training projection error. The network uses squared per-sample relative L2 error, omitting the parameter-independent projection constant during optimization.\n"
+    text += "\nThe per-sample squared-L2 error decomposition is independently verified; average percentages in the table cannot simply be added. H1 does not have the same orthogonal decomposition. Validation data participate in model selection, so rank comparisons are development experiments, not independent tests or architecture-family rankings.\n"
+    text += f'\nBudget: {config["epochs"]} epochs per run, batch {config["batch_size"]}, 3x{config["width"]} GELU MLP, 17x17 input sensors, AdamW+cosine. Sample-exposure budgets match the four frozen architectures; parameter counts and computational costs do not. All configurations were fixed before training.\n'
     (out / "summary.md").write_text(text)
     return aggregate
 

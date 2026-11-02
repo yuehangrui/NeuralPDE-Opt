@@ -1,10 +1,11 @@
 {
   "passed": true,
-  "date": "2026-10-29",
-  "pages": 10,
+  "date": "2026-11-02",
+  "language": "English",
+  "pages": 12,
   "terminal_compiler": "XeLaTeX TeX Live 2024",
-  "desktop_compile_result": "success",
-  "rendered_with": "pdftoppm -r 110 -png",
+  "compile_passes": 2,
+  "rendered_with": "pdftoppm -scale-to 1200 -png",
   "visually_reviewed_pages": [
     1,
     2,
@@ -15,14 +16,16 @@
     7,
     8,
     9,
-    10
+    10,
+    11,
+    12
   ],
-  "text_verification": "Poppler pdftotext (uses the CJK font CMap); pypdf used for page count.",
-  "layout": "No clipping, overlap, broken glyphs, cut tables or split command block in final rendering.",
+  "text_verification": "Poppler pdftotext; no Chinese characters in extracted text.",
+  "layout": "No clipped text, overlapping table columns, missing glyphs, or split command block in the final rendering.",
   "warnings": [],
-  "tex_sha256": "deee8691832fed10768e177f298f1799e2137bfb6b03798c9e59b55253a7f499",
-  "pdf_sha256": "c6f6876860274406e89539028a0bf47da5b1fe1b2c12df9e2c1cce4818bc43ea",
+  "tex_sha256": "e167798302034b049d3f957eea5c6f52f5be15e9e6b65dc2982be1acb8d11cd5",
+  "pdf_sha256": "93661525e645e2c1750bf9d358092af2742d0d51e6aeb47166fdc362f55c889d",
   "book_mapping_entries": 68,
   "source_index_entries": 60,
-  "scope": "Publication review; numerical audit remains in the original FINAL_AUDIT.json."
+  "scope": "English publication review; original numerical audit remains in FINAL_AUDIT.json and refers to v1.0.0."
 }

@@ -1,16 +1,16 @@
-# NeuralPDE-Opt：书稿配套独立版
+# NeuralPDE-Opt: standalone book companion
 
-覆盖书稿第二至第五章已核定的配套方法。v1.0.0完成156组正式神经训练、8组FEM、新测试与独立复核；不含原训练/验证数据，不自动启动训练。
+Companion implementations for the agreed scope of Chapters 2-5. Version 1.0.0 completed 156 formal neural training runs, 8 FEM runs, new tests, and independent audits. Version 1.0.1 provides the English edition of that delivery. Original training/validation datasets are excluded; installation does not start training.
 
-## 阅读与下载
+## Reading and downloads
 
-- [10页全书清单与核查报告](workspace/reports/publication/main.pdf)、[LaTeX源码](workspace/reports/publication/main.tex)
-- [书稿—代码映射](workspace/reports/BOOK_CHECKLIST_ZH.md)、[核查报告](workspace/reports/AUDIT_REPORT_ZH.md)、[人工复核附记](workspace/reports/REVIEW_NOTES_ZH.md)
-- [v1.0.0发布附件](https://github.com/yuehangrui/NeuralPDE-Opt/releases/tag/v1.0.0)：约998 MiB的完整上传实验包、安装wheel、报告及SHA256清单。实验包含180个正式选定/阶段模型、最终测试与预测、模型基、训练标量历史和审计证据。
+- [Book-wide checklist and audit report](workspace/reports/publication/main.pdf), [LaTeX source](workspace/reports/publication/main.tex)
+- [Manuscript-to-code mapping](workspace/reports/BOOK_CHECKLIST_ZH.md), [audit report](workspace/reports/AUDIT_REPORT_ZH.md), [review notes](workspace/reports/REVIEW_NOTES_ZH.md)
+- [English release v1.0.1](https://github.com/yuehangrui/NeuralPDE-Opt/releases/tag/v1.0.1): approximately 998 MiB experiment archive, installation wheel, report, and SHA256 checksums. The archive contains 180 selected/stage models, final tests and predictions, model bases, scalar training histories, and audit evidence.
 
-Git仓库提供源码、文档及文本/图表证据；模型与测试数组在Release附件内。未公开发布的Release链接在上传完成后生效。
+The Git repository contains source code, documentation, and textual/figure evidence. Models and test arrays are provided as Release attachments. Historical `_ZH` filename suffixes are retained for stable links; their current contents are English. See [English-edition provenance](release/ENGLISH_EDITION.md) for the distinction between translated files and original training identities.
 
-## 安装与运行
+## Installation and execution
 
 ```bash
 git clone git@github.com:yuehangrui/NeuralPDE-Opt.git
@@ -20,9 +20,9 @@ neuralpde-book init /absolute/path/new-experiments
 neuralpde-book status --workspace /absolute/path/new-experiments
 ```
 
-`init`只展开新工作区，已有目录不会被覆盖。`src/neuralpde_book/_payload/`是可安装的完整数值源码模板；`workspace/`是对应正式实验的源码与证据快照，317项数值源码与模板保持相同身份。不要直接在冻结快照目录继续训练。
+`init` expands a new workspace and refuses to overwrite an existing directory. `src/neuralpde_book/_payload/` is the installable numerical source template; `workspace/` contains the corresponding source and experiment-evidence snapshot. The 317 manifest-listed source files match between the two copies. Start new training in a fresh workspace.
 
-需要从头复现时，在全新目录显式执行：
+To reproduce the experiments from scratch, explicitly run the following commands in a new directory:
 
 ```bash
 neuralpde-book check --workspace /absolute/path/new-experiments
@@ -31,24 +31,24 @@ neuralpde-book smoke --workspace /absolute/path/new-experiments
 neuralpde-book pipeline --workspace /absolute/path/new-experiments
 ```
 
-这些命令分别执行回归检查、生成数据、小预算验证和完整训练评测。完整套件需要CUDA，实测环境见[依赖记录](requirements-tested.txt)；未声称验证全新操作系统或离线全依赖安装。安装本包不需要原项目目录或原作者仓库，但仍依赖Python、PyTorch、NumPy、SciPy和Matplotlib。
+These commands perform regression checks, generate data, run small-budget verification, and execute full training/evaluation, respectively. The complete suite requires CUDA; see the [tested dependencies](requirements-tested.txt). A clean-operating-system installation or fully offline dependency installation has not been verified. The package does not require the original project directory or upstream repositories, but still depends on Python, PyTorch, NumPy, SciPy, and Matplotlib.
 
-## 已完成实验
+## Completed experiments
 
-| 部分 | 正式训练 | 模型/结果 |
+| Part | Formal training | Models/results |
 |---|---:|---|
-| 第二章 | 18组神经训练，另8组FEM | PINN、Deep Ritz、弱式；18个最终模型 |
-| 第三章 | 57组 | 算子学习、物理/变分扩展、VarMiON与HINTS；57个模型 |
-| 第四章基础 | 48组 | 最优控制基线和算子学习等；72个阶段模型 |
-| 第四章深化 | 12组 | 非线性Deep Uzawa、稀疏观测FEM-NN；12个模型 |
-| 第五章 | 21组 | 已核定的约束控制配套；21个模型 |
+| Chapter 2 | 18 neural runs, plus 8 FEM runs | PINN, Deep Ritz, weak form; 18 final models |
+| Chapter 3 | 57 runs | Operator learning, physical/variational extensions, VarMiON, HINTS; 57 models |
+| Chapter 4 baseline | 48 runs | Optimal-control baselines and operator learning; 72 model stages |
+| Chapter 4 extensions | 12 runs | Nonlinear Deep Uzawa, sparse-observation FEM-NN; 12 models |
+| Chapter 5 | 21 runs | Agreed constrained-control workflows; 21 models |
 
-334项数值回归和独立复核通过。训练数与模型数不同，是因为第四章保留多个交付阶段。全部预算完成不表示同精度、严格最优性或架构家族排名；本轮test已查看，后续开发应使用train/val。第五章5.2–5.3及其他后置分支不计为已完成；详细边界见全书清单。
+The original delivery passed 334 numerical regression tests and independent audits. Model and training counts differ because Chapter 4 retains multiple delivery stages. Completing all budgets does not imply uniform accuracy, strict optimality, or an architecture-family ranking. The test sets have been viewed; subsequent development must use train/val. State-splitting ADMM in Section 5.2.2, Sections 5.3-5.4, and other deferred branches are not counted as complete; see the full checklist for precise coverage.
 
-## 核验与来源
+## Verification and provenance
 
-Release实验包解压后可运行`python verify_package.py`核对全部文件。仓库与精简包都排除了训练数据和部分恢复文件，因此原始FINAL_AUDIT引用的全部训练产物只能在完整工作区核验；不要在此仓库直接运行历史全量审计或声称精确续训。
+After extracting the Release archive, run `python verify_package.py` to verify its files. Training data and some recovery files are deliberately excluded from both the repository and the compact archive. The complete artifacts referenced by the historical FINAL_AUDIT can be verified only in the original full workspace. English translations have new hashes recorded separately; do not treat the translated snapshot as a rerun of the historical audit or as an exact-resumption backup.
 
-第四章原摘要包含历史模板文字“复用9组seed0”，请以[更正摘要](workspace/results/ch04/unified_delivery_v1/summary.reviewed.md)和人工复核附记为准。原证据保持原字节。
+The original Chapter 4 summary contains inherited template text claiming that 9 seed0 runs were reused. Use the [corrected summary](workspace/results/ch04/unified_delivery_v1/summary.reviewed.md) and review notes: all 48 runs in this standalone delivery were trained from scratch. Historical audit identities remain unchanged; original bytes remain available in v1.0.0.
 
-移植代码的原许可证与出处保留：[第三方声明](src/neuralpde_book/_payload/third_party/ch03_upstream/NOTICE.md)、[源码来源](workspace/SOURCE_ORIGINS.json)。DeepXDE组件保留LGPL-2.1，Galerkin Transformer组件保留MIT，ocpde_dl来源记录保留。没有将全库统一改为MIT，也不宣称全部原创。
+Ported code retains its original licenses and provenance: [third-party notices](src/neuralpde_book/_payload/third_party/ch03_upstream/NOTICE.md), [source origins](workspace/SOURCE_ORIGINS.json). DeepXDE components retain LGPL-2.1, Galerkin Transformer components retain MIT, and ocpde_dl provenance is preserved. The repository is not relicensed uniformly as MIT and is not claimed to be entirely original.

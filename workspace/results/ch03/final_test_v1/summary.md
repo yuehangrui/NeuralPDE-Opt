@@ -1,8 +1,8 @@
-# 第三章最终固定测试
+# Chapter 3: final frozen test
 
-所有检查点、数据生成规则和HINTS参数均在生成新测试集前锁定。固定源项128样本；变源项32个新反应系数组×4源项。测试后不选模、不调参。
+All checkpoints, data-generation rules, and HINTS parameters were locked before generating the new test sets. Fixed forcing: 128 samples; variable forcing: 32 new reaction-coefficient groups x 4 forcing terms. No selection or tuning after testing.
 
-| 组别 | 种子数 | test相对L2 | test相对H1半范 |
+| Group | Seeds | Test relative L2 | Test relative H1 seminorm |
 |---|---:|---:|---:|
 | baseline/fno | 3 | 0.4620% ± 0.0273% | 3.2897% |
 | baseline/deepxde_fourier4 | 3 | 7.7055% ± 0.5446% | 11.8322% |
@@ -25,14 +25,14 @@
 | varmion_v2/spd_data | 1 | 6.4915% ± 0.0000% | 11.3480% |
 | varmion_v2/spd_joint | 1 | 5.8365% ± 0.0000% | 7.7016% |
 
-上述±是种子间总体标准差，不是统计置信区间；同一系数组内源项相关，不能把128个变源项样本当作128个独立系数。不同数据、预算、物理信息和输出空间不构成架构家族排名。
+The +/- values are population standard deviations across seeds, not confidence intervals. Forcing terms within a coefficient group are correlated; the 128 variable-forcing samples are not 128 independent coefficients. Different data, budgets, physical information, and output spaces do not establish architecture-family rankings.
 
-| HINTS模式 | 收敛/总数 | 平均迭代 | 总耗时ms | 相对Jacobi加速 | 最大离散L2误差 |
+| HINTS mode | Converged/total | Mean iterations | Total time (ms) | Speedup over Jacobi | Maximum discrete L2 error |
 |---|---:|---:|---:|---:|---:|
 | jacobi | 64/64 | 4040.4 | 201.45 | 1.0 | 2.745e-08 |
 | fixed | 192/192 | 422.4 | 34.95 | 5.76360118871051 | 3.356e-09 |
 | safeguarded | 192/192 | 406.0 | 35.00 | 5.75537996719642 | 7.102e-09 |
 
-HINTS离散误差相对同一65×65 P1系统的直接解；连续PDE参考误差另存于hints_summary.json。时间包含装配、条件矩阵、残差转换和接受/回退；模型加载不计入。每例重复3次取中位数，只与Jacobi作同机比较。
+HINTS discrete error is relative to the direct solve of the same 65x65 P1 system. Continuous-PDE reference errors are stored separately in hints_summary.json. Timings include assembly, conditional matrices, residual conversion, and acceptance/fallback, but exclude model loading. Each case uses the median of 3 repetitions and is compared only with Jacobi on the same machine.
 
-POD投影与精确约化Galerkin仅是数值诊断，使用参考标签的投影不是可部署预测模型。所有参考解经过残差、序列化及预定网格加密检查。
+POD projection and exact reduced Galerkin are numerical diagnostics only. Projection using reference labels is not a deployable prediction model. All reference solutions passed residual, serialization, and predefined grid-refinement checks.

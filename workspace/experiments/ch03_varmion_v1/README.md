@@ -1,5 +1,5 @@
-# ch03_varmion_v1：第三章扩展方法
+# ch03_varmion_v1: Chapter 3 extension
 
-本目录提供模型、预处理、目标和训练函数。符号与阅读路线见[第三章导读](../../docs/CH03_READING_ZH.md)，运行说明见[独立版入口](../../README.md)。
+This directory provides model, preprocessing, objective, and training functions. See the [Chapter 3 guide](../../docs/CH03_READING_ZH.md) for notation and reading order, and the [standalone entry](../../README.md) for execution.
 
-`book_ch03.py` 直接调用这些数值函数，并生成本工作区的全部训练资产；`book_driver.py` 管理声明的57组正式训练。历史 `run.py` 主函数保留原实验编排和旧门槛，不作为独立版公开入口。模型权重不从旧项目导入。
+`book_ch03.py` calls these numerical functions and generates all training assets in the current workspace; `book_driver.py` manages the 57 declared formal runs. The historical `run.py` main function retains its original orchestration and gates and is not the public standalone entry point. Weights are not imported from the old project.

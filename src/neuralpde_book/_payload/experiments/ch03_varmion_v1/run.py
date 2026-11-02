@@ -183,13 +183,13 @@ def summarize(out, rows, reps):
         w.writeheader()
         w.writerows(rows)
     lines = [
-        "# VarMiON结构化对照",
+        "# VarMiON: structured comparison",
         "",
-        f"完成{len(rows)}/6组。train256/val64按反应系数组划分；每组1600epoch。",
+        f"Completed {len(rows)}/6 runs. Train256/val64 are split by reaction-coefficient group; each run uses 1600 epochs.",
         "",
-        f'验证POD投影L2：{100*reps["val"]["projection"]["mean"]["relative_l2"]:.4f}%；精确约化Galerkin L2：{100*reps["val"]["reduced_galerkin"]["mean"]["relative_l2"]:.4f}%。',
+        f'Validation POD projection L2: {100*reps["val"]["projection"]["mean"]["relative_l2"]:.4f}%; exact reduced-Galerkin L2: {100*reps["val"]["reduced_galerkin"]["mean"]["relative_l2"]:.4f}%.',
         "",
-        "| 实现 | train L2 | val L2，均值±总体std | val H1半范 |",
+        "| Implementation | Train L2 | Val L2, mean +/- population std | Val H1 seminorm |",
         "|---|---:|---:|---:|",
     ]
     for name, g in groups.items():
@@ -198,7 +198,7 @@ def summarize(out, rows, reps):
         )
     lines += [
         "",
-        "VarMiON为书稿公式的固定基底结构化实现：Phi K(c) Phi^T M f。两种学习实现共享物理初值K0；参数量近似但未严格匹配。仅train构造非中心化POD与输入归一化。val参与选模，test未生成。",
+        "VarMiON implements the manuscript formula with a fixed structured basis: Phi K(c) Phi^T M f. Both learned implementations share the physical initialization K0; parameter counts are similar but not exactly matched. Uncentered POD and input normalization use training data only. Validation data participate in selection; test data have not been generated.",
         "",
     ]
     (out / "summary.md").write_text("\n".join(lines))

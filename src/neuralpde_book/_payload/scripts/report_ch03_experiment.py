@@ -200,38 +200,38 @@ def build_report(data, output, device='cuda'):
     save_figure(fig,figures,'sample_predictions')
     full = config['training'].get('legacy_full_epochs') is not None
     adapted = config['training'].get('epoch_training') is not None
-    training_description = (f'每组完整遍历训练集{config["training"]["steps"]}个epoch；逻辑batch由模型配置确定，计算batch={config["training"]["batch_size"]}。' if full else f'每组{config["training"]["steps"]}次Adam更新，batch={config["training"]["batch_size"]}。')
+    training_description = (f'Each run makes {config["training"]["steps"]} full epochs over the training set; the model configuration defines the logical batch size, and the computational batch size is {config["training"]["batch_size"]}.' if full else f'Each run performs {config["training"]["steps"]} Adam updates with batch size {config["training"]["batch_size"]}.')
     if adapted:
-        training_description = (f'每组{config["training"]["steps"]}个epoch；每epoch按逻辑batch分批更新，显存microbatch={config["training"]["batch_size"]}；'
-                                '实际更新次数见各模型metrics.json。验证平均逐样本相对P1 L2选模。')
-    lines=['# 第三章3.1–3.3 固定预算对照结果','',
-           f'已完成四模型、{len(seeds)}个种子、共{len(names)*len(seeds)}组训练。{training_description}',
-           f'数据train/val/test={train_count}/{records[names[0]][0]["metrics"]["val"]["count"]}/{len(arrays["sample_id"])}，公共网格{geometry.grid_shape}。测试前全部检查点已冻结，见frozen_selection.json。','',
-           '数值为各训练种子的均值 ± 样本标准差；标准差只描述训练随机性，不是数据集置信区间。','',
-           '| 模型 | 参数数 | 测试相对L2 | 测试相对H1半范数 | 训练墙钟秒 | GPU/CPU推理ms/PDE |',
+        training_description = (f'Each run uses {config["training"]["steps"]} epochs, with updates grouped by logical batch; the memory microbatch size is {config["training"]["batch_size"]}; '
+                                'see each model metrics.json for actual update counts. Model selection minimizes validation mean per-sample relative P1 L2 error.')
+    lines=['# Chapter 3, Sections 3.1-3.3: fixed-budget comparison','',
+           f'Completed four models, {len(seeds)} seeds, and {len(names)*len(seeds)} training runs. {training_description}',
+           f'Data train/val/test={train_count}/{records[names[0]][0]["metrics"]["val"]["count"]}/{len(arrays["sample_id"])}; shared grid {geometry.grid_shape}. All checkpoints were frozen before testing; see frozen_selection.json.','',
+           'Values are means +/- sample standard deviations across training seeds. Standard deviations describe training randomness, not dataset confidence intervals.','',
+           '| Model | Parameters | Test relative L2 | Test relative H1 seminorm | Training wall time (s) | GPU/CPU inference (ms/PDE) |',
            '|---|---:|---:|---:|---:|---:|']
     for name in names:
         row=aggregate[name]; l2=row['test']['relative_l2'];h1=row['test']['relative_h1_seminorm'];wall=row['loop_wall_seconds']
         lines.append(f'| {DISPLAY[name]} | {row["parameters"]} | {l2["mean"]:.4e} ± {l2["std_across_seeds"]:.2e} | '
                      f'{h1["mean"]:.4e} ± {h1["std_across_seeds"]:.2e} | {wall["mean"]:.2f} | '
                      f'{1000*row["inference_seed0"]["median_seconds_per_pde"]:.3f} |')
-    lines+=['','各模型使用同一原始数据；损失、实际更新次数、参数数及输入采样见配置和metrics.json，结果只比较这些配置。',
-            '训练时间含验证/度量/检查点I/O，推理时间在预载入张量上batch8测量（3次warmup、10次计时），不含传输、加载和参考求解。','',
-            '| 模型 | 129×129直接相对L2 | 同一粗预测P1插值相对L2 |', '|---|---:|---:|']
+    lines+=['','All models use the same raw data. See configurations and metrics.json for losses, actual update counts, parameter counts, and input sampling. Comparisons apply only to these configurations.',
+            'Training time includes validation, metrics, and checkpoint I/O. Inference is measured on preloaded tensors with batch size 8 (3 warmups and 10 timed repetitions), excluding transfers, loading, and reference solves.','',
+            '| Model | Direct relative L2 at 129x129 | Relative L2 of P1 interpolation of the same coarse prediction |', '|---|---:|---:|']
     for name in names:
         r=aggregate[name]['resolution']
         lines.append(f'| {DISPLAY[name]} | {r["direct_fine"]["relative_l2"]["mean"]:.5e} | {r["interpolated_coarse"]["relative_l2"]["mean"]:.5e} |')
-    lines+=['','加密评估保持检查点不变；坐标查询或共享参数不保证分辨率精度。较细标签仍有有限元误差。',
-            f'零预测相对L2={baseline["zero"]["mean"]["relative_l2"]:.3f}；只用训练集均值的固定状态相对L2={baseline["mean_training_state"]["mean"]["relative_l2"]:.3f}。',
-            '边界最大误差、逐样本指标、训练/验证指标和完整计时定义见aggregate.json及各seed目录。','',
-            '图表：figures/convergence、test_errors、resolution、sample_inputs、sample_predictions，均含PNG与矢量PDF。',
-            '展示固定seed0及第一个测试ID，未挑选最好样本。','',
-            '本轮是平滑余弦分布上的固定配置对照。有限数据、有限种子与固定更新预算不足以支持架构家族的通用优劣结论，',
-            '也不覆盖更高对比系数、非平滑输入、分布外测试、物理损失或第三章3.4以后的方法。','']
+    lines+=['','Refined-grid evaluation keeps checkpoints unchanged. Coordinate queries or shared parameters do not guarantee resolution accuracy. Finer labels still have finite-element error.',
+            f'Zero-prediction relative L2={baseline["zero"]["mean"]["relative_l2"]:.3f}; relative L2 of the fixed training-mean state={baseline["mean_training_state"]["mean"]["relative_l2"]:.3f}.',
+            'See aggregate.json and the seed directories for maximum boundary errors, per-sample metrics, training/validation metrics, and complete timing definitions.','',
+            'Figures: figures/convergence, test_errors, resolution, sample_inputs, and sample_predictions; PNG and vector PDF are provided.',
+            'Plots use fixed seed0 and the first test ID; the best-looking sample was not selected.','',
+            'This is a fixed-configuration comparison on a smooth cosine distribution. Limited data, seeds, and update budgets do not support general architecture-family rankings.',
+            'It does not cover higher-contrast coefficients, nonsmooth inputs, out-of-distribution tests, physical losses, or methods from Section 3.4 onward.','']
     if full:
-        lines += ['', '本轮参照ocpde_dl的1600 epoch完整训练。原测试集在首轮已查看，本轮为复测，不是新的盲测。',
-                  'GNO/Transformer在旧包中无对应训练脚本，采用DeepONet的优化方案；方程和架构适配见本轮方案。', '',
-                  '| 模型 | 优化器 | 初始LR | 名义batch | 调度 |', '|---|---|---:|---:|---|']
+        lines += ['', 'This run follows the full 1600-epoch ocpde_dl training schedule. The original test set was viewed in the first round; this is a retest, not a new blind test.',
+                  'The legacy package has no corresponding GNO/Transformer training scripts; these use the DeepONet optimization schedule. See the run protocol for equation and architecture adaptations.', '',
+                  '| Model | Optimizer | Initial LR | Nominal batch | Schedule |', '|---|---|---:|---:|---|']
         for spec in config['training']['models']:
             p=spec['legacy_training']
             lines.append(f'| {spec["name"]} | {p["optimizer"]} | {p["learning_rate"]} | {p["batch_size"]} | {p["scheduler"]} |')

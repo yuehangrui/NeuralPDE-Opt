@@ -62,19 +62,19 @@ def run(root):
         writer.writeheader()
         writer.writerows(table)
     lines = [
-        "# 第四章统一交付 v1",
+        "# Chapter 4: unified delivery v1",
         "",
-        "已完成16类随机训练流程 × 3个种子，共48组训练交付；复用的9组seed0结果保留来源与字节哈希。",
-        "纯神经/输出头修正等阶段分开，共72个冻结检查点版本。经典算法另做32/64/128/256网格研究。",
-        "所有选模冻结后才生成新的64例test，45个问题族模型版本完成一次正式评测；状态代理在相同前8例上做在线控制。",
-        "全部72个版本另在同一原始算例、96阶Gauss积分和128/256网格FEM上复核。",
+        "Completed 16 stochastic training workflows x 3 seeds, totaling 48 runs; the 9 reused seed0 runs retain provenance and byte hashes.",
+        "Pure-neural and output-head-corrected stages are reported separately, with 72 frozen checkpoint versions. Classical algorithms also undergo a 32/64/128/256-grid study.",
+        "A new 64-instance test set was generated only after all model selections were frozen. All 45 problem-family model versions underwent one formal evaluation; state surrogates perform online control on the same first 8 instances.",
+        "All 72 versions were additionally checked on the same original instance using order-96 Gauss quadrature and FEM grids 128/256.",
         "",
-        "固定正弦特征、训练集线性头、完整非线性网络均明确区分。这是相同交付标准，不是等参数量/等训练代价的架构排名。",
-        "双层、Deep Uzawa、FEM–NN仍采用已声明的固定正弦特征与可训练头；其三种子检验实际不同初始化，不代表一般深层非凸训练。",
+        "Fixed sine features, training-only linear heads, and fully nonlinear networks are distinguished explicitly. A common delivery standard does not imply equal parameter counts or training costs, or an architecture ranking.",
+        "Bilevel, Deep Uzawa, and FEM-NN baselines retain the declared fixed sine features and trainable heads. Their three seeds test distinct initializations, not general deep nonconvex training.",
         "",
-        "## 同一原始算例：3种子平均 ± 样本标准差",
+        "## Same original instance: three-seed mean +/- sample standard deviation",
         "",
-        "| 方法 | 模型阶段 | 控制L2误差（%） | 最差种子（%） | FEM256约化梯度相对范数 |",
+        "| Method | Model stage | Control L2 error (%) | Worst seed (%) | FEM256 relative reduced-gradient norm |",
         "|---|---|---:|---:|---:|",
     ]
     for r in table:
@@ -83,11 +83,11 @@ def run(root):
         )
     lines += [
         "",
-        "FEM梯度含离散误差，接近精确谱解的模型仍可能有非零FEM诊断值。不同控制试探空间对P1参考的目标差保留符号，不据此宣称优于连续最优解。",
+        "FEM gradients include discretization error; models close to the exact spectral solution can still have nonzero FEM diagnostics. Objective differences against the P1 reference retain their signs across different control trial spaces and do not establish superiority to the continuous optimum.",
         "",
-        "## 新留出问题：相同8例控制比较",
+        "## New held-out problems: control comparison on the same 8 instances",
         "",
-        "| 方法 | 模型阶段 | 控制L2误差（%，3种子平均 ± 标准差） |",
+        "| Method | Model stage | Control L2 error (%, three-seed mean +/- std) |",
         "|---|---|---:|",
     ]
     for r in table:
@@ -97,19 +97,19 @@ def run(root):
             )
     lines += [
         "",
-        "完整64例状态/直接控制指标、各样本目标值和梯度、在线迭代轨迹见assessment；上表严格使用同一8例。",
+        "See assessment for state/direct-control metrics over all 64 cases, per-sample objectives and gradients, and online iteration trajectories. The table above uses exactly the same 8 cases.",
         "",
-        "## 交付与边界",
+        "## Delivery and limitations",
         "",
-        "- 配置/预算/历史曲线/检查点：training/；选模锁定与源码身份：SELECTION_FROZEN.json。",
-        "- 新测试集及无重叠证据：heldout/；独立预测和物理指标：assessment/；复核：DELIVERY_AUDIT.json。",
-        "- 统一入口：chapters/ch04_delivery/cli.py；从零训练和显式复用seed0均受支持。",
-        "- DELIVERY_COMPLETE表示规定训练、评测、审计齐全，不表示每个方法都达到同一精度或严格最优性。",
-        "- 旧模型、数据、结果及冻结源码继续保留；半线性/抛物型扩展后置。",
+        "- Configurations/budgets/histories/checkpoints: training/; frozen selection and source identity: SELECTION_FROZEN.json.",
+        "- New test set and nonoverlap evidence: heldout/; independent predictions and physical metrics: assessment/; audit: DELIVERY_AUDIT.json.",
+        "- Unified entry point: chapters/ch04_delivery/cli.py; both from-scratch training and explicit seed0 reuse are supported.",
+        "- DELIVERY_COMPLETE means the required training, evaluation, and audit are complete, not that every method reaches the same accuracy or strict optimality.",
+        "- Previous models, data, results, and frozen sources are retained; semilinear/parabolic extensions remain deferred.",
         "",
-        "![统一原始算例控制误差](fixed_control_comparison.png)",
+        "![Control errors on the shared original instance](fixed_control_comparison.png)",
         "",
-        "![同一8例留出控制误差](heldout_control_comparison.png)",
+        "![Control errors on the same 8 held-out cases](heldout_control_comparison.png)",
         "",
     ]
     (root / "summary.md").write_text("\n".join(lines), encoding="utf-8")

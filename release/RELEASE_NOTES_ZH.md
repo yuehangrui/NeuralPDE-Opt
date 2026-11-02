@@ -1,5 +1,5 @@
-NeuralPDE-Opt独立版v1.0.0：156组正式神经训练、8组FEM、334项数值回归、新测试和独立复核已完成。
+NeuralPDE-Opt standalone English edition v1.0.1. The underlying v1.0.0 delivery completed 156 formal neural runs, 8 FEM runs, 334 numerical regression tests, new tests, and independent audits.
 
-实验包保留代码、180个正式选定/阶段模型、最终测试/预测、经典参考、训练历史与报告；不含原训练/验证数据、训练/验证预测数组以及初始/末次/恢复检查点。保留的模型和源码没有改写。精简包不是可精确续训的完整数据备份。
+The experiment archive contains code, 180 selected/stage models, final tests/predictions, classical references, training histories, and reports. It excludes original training/validation datasets, training/validation predictions, and initial/last/recovery checkpoints. Models and numerical results retain their original bytes; English source/report changes have separately recorded identities. This compact archive is not an exact-resumption backup.
 
-请先阅读PDF核查报告和包内README_ZH.md；文件身份见SHA256SUMS。第1、6章为说明配套，既定后置算法不计为完成。原第三方许可证与来源声明保留。
+Read the PDF audit report and README_ZH.md first; see SHA256SUMS for asset identities. Chapters 1 and 6 provide explanatory material, and deferred algorithms are not counted as complete. Third-party licenses and provenance are retained.

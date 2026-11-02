@@ -251,13 +251,13 @@ def report(root, results):
             )
         )
     lines = [
-        "# 第四章非线性表示与稀疏观测深化 v1",
+        "# Chapter 4: nonlinear representations and sparse observations v1",
         "",
-        "四条流程、每条三个种子。Deep Uzawa使用可训练坐标状态网络和解析控制块；FEM-NN使用可训练坐标源项网络。所有隐藏层参与训练，输出不限制在原17模态空间。",
+        "Four workflows, three seeds each. Deep Uzawa uses a trainable coordinate state network and an analytic control block; FEM-NN uses a trainable coordinate source network. All hidden layers are trained, and outputs are not restricted to the original 17-mode space.",
         "",
-        "模型选择只用train/val。全部选择与源码冻结后才生成512个新观测位置，并进行独立空间/PDE复核；这是同一物理问题的独立诊断，不是新问题族泛化测试。",
+        "Model selection uses train/val only. After all selections and sources were frozen, 512 new observation locations were generated for independent spatial/PDE checks. These are independent diagnostics for the same physical problem, not generalization tests on a new problem family.",
         "",
-        "| 流程 | 种子数 | 控制L2误差（%，均值 ± 样本标准差） | 真实PDE梯度相对量 | 源项L2误差（%） |",
+        "| Workflow | Seeds | Control L2 error (%, mean +/- sample std) | Relative true-PDE gradient measure | Source L2 error (%) |",
         "|---|---:|---:|---:|---:|",
     ]
     for row in rows:
@@ -272,15 +272,15 @@ def report(root, results):
         )
     lines += [
         "",
-        "Deep Uzawa采用256网格诊断，另保留128网格结果；FEM-NN采用128网格诊断，另保留64网格结果。两类流程的离散化与信息条件不同，不作架构排名。",
+        "Deep Uzawa uses grid-256 diagnostics and also retains grid-128 results; FEM-NN uses grid-128 diagnostics and also retains grid-64 results. Their discretizations and available information differ; no architecture ranking is claimed.",
         "",
-        "FEM-NN三组分别为稀疏无噪声、稀疏1%噪声、同一噪声数据加H1/L2正则化；不能只凭观测误差认定源项被正确辨识。真实PDE重求后的控制目标和梯度与学习模型目标分别保存。",
+        "The three FEM-NN settings are sparse noiseless observations, sparse observations with 1% noise, and the same noisy data with H1/L2 regularization. Observation error alone does not establish correct source identification. Control objectives and gradients after a true-PDE solve are saved separately from learned-model objectives.",
         "",
-        "完成预算不等于满足严格最优性。非线性Uzawa内层采用有限迭代，不能援引精确凸内层的收敛保证。控制从训练网格插值/外推，不宣称分辨率迁移。原固定特征、纯神经和输出头修正结果继续保留。",
+        "Completing the budget does not imply strict optimality. Nonlinear Uzawa uses finitely many inner iterations and cannot invoke convergence guarantees for exact convex inner solves. Controls are interpolated/extrapolated from the training grid; resolution transfer is not claimed. The original fixed-feature, pure-neural, and output-head-corrected results are retained.",
         "",
-        "本版本检查点支持推理重载；last保存部分优化器状态用于诊断，但CLI没有精确断点续训承诺。详细选模轨迹、预算、计时和逐种子指标见training与assessment。",
+        "Checkpoints support inference reload. The last checkpoint retains partial optimizer state for diagnostics, but the CLI does not promise exact training resumption. See training and assessment for selection histories, budgets, timings, and per-seed metrics.",
         "",
-        "![控制误差](control_errors.png)",
+        "![Control errors](control_errors.png)",
         "",
     ]
     (root / "summary.md").write_text("\n".join(lines), encoding="utf-8")

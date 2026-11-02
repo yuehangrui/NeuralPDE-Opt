@@ -607,14 +607,14 @@ def _finalize(output, c, records):
     _json(output / "quality.json", quality)
     audited = [r for r in rows if r["full_audit"]]
     text = (
-        "# 第三章公共数据：可恢复生成与分层质量核查\n\n"
-        f"划分：{c['splits']}；独立种子：{c['seed']}。\n\n"
-        f"全样本 {len(rows)} 条均保存原始 a/f/y 和参考网格场，并检查参考解代数残差、边界和范围。\n"
-        f"仅选定 {len(audited)} 条（{c['audit_samples']}）完成三网格及积分加密核查，不代表全部样本网格审计。\n\n"
-        f"抽查最大参考/加密相对 L2：{max(r['reference_vs_audit']['relative_l2'] for r in audited):.6e}；"
-        f"H1 半范数：{max(r['reference_vs_audit']['relative_h1_seminorm'] for r in audited):.6e}。\n\n"
-        "网格差为经验精度估计，不是连续问题严格误差界。公共 y 是参考 P1 解在公共节点的采样；"
-        "原始场、参考解和跨网格重建参数不依赖模型降阶维数。逐样本 NPZ/JSON 保留以支持恢复。\n"
+        "# Chapter 3 shared data: resumable generation and stratified quality checks\n\n"
+        f"Splits: {c['splits']}; independent seed: {c['seed']}.\n\n"
+        f"All {len(rows)} samples retain raw a/f/y and reference-grid fields, with checks on algebraic residuals, boundaries, and ranges.\n"
+        f"Only {len(audited)} selected samples ({c['audit_samples']}) undergo three-grid and quadrature-refinement checks; this is not a grid audit of every sample.\n\n"
+        f"Maximum sampled reference/refined relative L2: {max(r['reference_vs_audit']['relative_l2'] for r in audited):.6e}; "
+        f"H1 seminorm: {max(r['reference_vs_audit']['relative_h1_seminorm'] for r in audited):.6e}.\n\n"
+        "Grid differences are empirical accuracy estimates, not rigorous continuous-problem error bounds. Shared y samples the reference P1 solution at shared nodes; "
+        "raw fields, reference solutions, and cross-grid reconstruction parameters are independent of model reduction rank. Per-sample NPZ/JSON files are retained for resumption.\n"
     )
     _atomic(output / "summary.md", lambda stream: stream.write(text.encode()))
     _checkpoint(output, c, records, "all_samples_serialized")

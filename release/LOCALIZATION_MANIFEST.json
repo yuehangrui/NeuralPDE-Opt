@@ -1,0 +1,518 @@
+{
+  "from_version": "1.0.0",
+  "to_version": "1.0.1",
+  "baseline_commit": "e275a39b25feb1e646e726cb6bf3ca6d2af708ea",
+  "scope": "Language revision, report layout, and new source/version identities. Packaging asset indexes are recorded separately.",
+  "files": {
+    "README.md": {
+      "v1.0.0_sha256": "9552ade6892b8e9a2f003cf7236541907913f11e2a5119d51f52062e3f95a51f",
+      "v1.0.1_sha256": "943432ceffde129590394489768ebdc85e81baa7feef3ea7a4d901d84f026332",
+      "bytes": 5245
+    },
+    "pyproject.toml": {
+      "v1.0.0_sha256": "68c5cbc38b4c9ab58fdb064d3712d75308eefd671869dc1cd27726ab1c183c36",
+      "v1.0.1_sha256": "d488d687f26fabf6809e49b9a137e272a9ab5fb1eced2a622aa3e4db58bf8beb",
+      "bytes": 588
+    },
+    "release/README_ZH.md": {
+      "v1.0.0_sha256": "fb79aa85f64833d4c3fc0717827489f6d8f3976efb964fd79556a80b140b0b55",
+      "v1.0.1_sha256": "0229290b89ab6d82e429580856974b86399510de672a4c44c745719591bfb16f",
+      "bytes": 3364
+    },
+    "release/RELEASE_NOTES_ZH.md": {
+      "v1.0.0_sha256": "37573958f8ed3e7cff1ed53e5410edc5b1099b9af376ab1a6e3d186edae31ba1",
+      "v1.0.1_sha256": "611df680f2ef7bf514cc37fe1b31e94909a2b686bb14a78fc5eefcea679b8685",
+      "bytes": 881
+    },
+    "src/neuralpde_book/__init__.py": {
+      "v1.0.0_sha256": "7e92646321ca44c6795ea16915fede70333266f77b78db21c792e45cf87c97bf",
+      "v1.0.1_sha256": "653cde514ee72a16ee12ba3e1be9437c94a5d55b0db9e3eb9c34d45c3855292d",
+      "bytes": 101
+    },
+    "src/neuralpde_book/_payload/PAYLOAD_MANIFEST.json": {
+      "v1.0.0_sha256": "e07d6acdeb2a9365952196f996ef8c8c039917f39a219097a8aa847dd77afef6",
+      "v1.0.1_sha256": "b3446959d772e940ab077612933e0c8eae2a497e3e851fc503f050d8a56e7a86",
+      "bytes": 35764
+    },
+    "src/neuralpde_book/_payload/README.md": {
+      "v1.0.0_sha256": "b77e9e563c89c8ea47df7e2bc0103b68dcab96ded601c3cdf232c5ee7e5cc6af",
+      "v1.0.1_sha256": "c0143eb17a12dd425bcb287bb3448d9f943abc5806f4098c68446fdf45946a64",
+      "bytes": 2936
+    },
+    "src/neuralpde_book/_payload/book_report.py": {
+      "v1.0.0_sha256": "afa19bc2a94464a59b3e6219b9c36135d30e0bc0c78fe774463b86d4f48f5b95",
+      "v1.0.1_sha256": "bca1b321a63407c41a9d454fa86bb8d45ab4f9e30c8f3eb2c7579fdaae7811cb",
+      "bytes": 7021
+    },
+    "src/neuralpde_book/_payload/book_scope.json": {
+      "v1.0.0_sha256": "53bf1bdc331cda3cf4534d35439f277e37f5fe202ddc4ac29333b85889d41a5e",
+      "v1.0.1_sha256": "891e18b930bdd42b98e55ffeb349e54cafcfd6792501384b806aa5454896a592",
+      "bytes": 27117
+    },
+    "src/neuralpde_book/_payload/chapters/ch03/README.md": {
+      "v1.0.0_sha256": "bf194b72f9f197fc13777f418abc33af15075ed3c164ea67fea2d973b40e3f19",
+      "v1.0.1_sha256": "5b4f6be313224f0891b253dab2197c3264ef63fafa5d2ea69ff3c4a7b1261275",
+      "bytes": 921
+    },
+    "src/neuralpde_book/_payload/chapters/ch03/evaluation.py": {
+      "v1.0.0_sha256": "26ef2f9cbe50d4e761f90ec3831632ee3397bbb70f82871e378aa63230826a75",
+      "v1.0.1_sha256": "a744c92becfe16f4a6c269f4a99da2e0b7aa90c4269f06fa1b140aeae52a9987",
+      "bytes": 14671
+    },
+    "src/neuralpde_book/_payload/chapters/ch04/README.md": {
+      "v1.0.0_sha256": "fd095f96b06b64d97bfaf3ba51a265cc8f353a60b9a3bfe256a147b9b1eac7f6",
+      "v1.0.1_sha256": "5837ea079ff057a177768cc1437e923cca7fda0d1cda5e92924e148aadf88476",
+      "bytes": 921
+    },
+    "src/neuralpde_book/_payload/chapters/ch04/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "666fcb39f73bec7faf6ff7d9a47939611c19150655f0ed3debc26ab0c5cc2058",
+      "v1.0.1_sha256": "4830963099876c460e562205f90db4aa44ef8c7d2c46152eb50894c700029719",
+      "bytes": 1253
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_adaptation/README.md": {
+      "v1.0.0_sha256": "70604772fbf608b7f1beac17d9bf718e6add0796cc05e2f32b03b22b40074f2b",
+      "v1.0.1_sha256": "69a2dd1f5548f9a8044334e5f8e285b7b091a063b8b3f14dc6c6264d05681a2d",
+      "bytes": 932
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_adaptation/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "8dec8fee5986ff1d762d5fcf4b216884a279609b198835747439dfb4668a0ab2",
+      "v1.0.1_sha256": "7b6e8010f6b89762dd180a7bb14f78b9d98a3a98f1fa084370c5245887533ee8",
+      "bytes": 1734
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_completion/README.md": {
+      "v1.0.0_sha256": "6e75ca3d9a2f9d88f011535150c75a3f66e747dc2b58f6b6ddbd1f766d2b077c",
+      "v1.0.1_sha256": "8a54eb572c7488e85119950e55dcffa292ba82baa9911cb83546eb3a89c20680",
+      "bytes": 932
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_completion/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "95ca7517d93ed038739a1700f8242c3493ec4466227d98192c46d34e004f5435",
+      "v1.0.1_sha256": "07a3a1ebb55ab85342763802c139d9110af344f301e80d182d4255e89049cc16",
+      "bytes": 1126
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_delivery/README.md": {
+      "v1.0.0_sha256": "6d282c44a8c958d335fbf8fa44f1ab690b1acbdecf3be84124ece064dcef3d71",
+      "v1.0.1_sha256": "04708b6fac1b6eee091e49de509c6e059c5eda9471dad50cc627221c47813657",
+      "bytes": 930
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_delivery/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "3250bea314f13ba6675ec7e901a41e349c68b427a6e86c5eb6637ce9993c7b46",
+      "v1.0.1_sha256": "59c13f0d29f290e5ffde5eb6e9adbb6e491bd52668f4b6b47e02abdc845fd8f3",
+      "bytes": 1310
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_delivery/report.py": {
+      "v1.0.0_sha256": "9fae3b7f70842e3da915f5038918d7b0e5933bea3efd1986a902c892d8a85bec",
+      "v1.0.1_sha256": "e05f8772449991f8daf0a6330234e2cfdef9adaefdd0352750fb8f31283d32ec",
+      "bytes": 7287
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_depth/README.md": {
+      "v1.0.0_sha256": "0d43243b91524b894b7e709b4ed2649781077cba064e85913049846fae8043a3",
+      "v1.0.1_sha256": "7151a2b576040521b4b21b8f7f02941cd7eff99ae30556a06397fe409a1333e4",
+      "bytes": 927
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_depth/assessment.py": {
+      "v1.0.0_sha256": "2774d684df0d542c4ff580b44d793f42863d3a8dc638a2b39b547d13bf68dce2",
+      "v1.0.1_sha256": "11e19784a55bdf18c2ab8b03464d7d349be6ee12c271f6e266dad244f5452add",
+      "bytes": 20135
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_operator_adaptation/README.md": {
+      "v1.0.0_sha256": "fc250edacd9f6b72479f6d1958d58893177a54d3b71afb658e553babe5dd9cf1",
+      "v1.0.1_sha256": "47eb497cd1c5f959a1ec80bbb93b3f96f4599e43a7a4ab54c546861418a51345",
+      "bytes": 941
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_operator_adaptation/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "00cd451b293d6aaa43a767bb8c5ee80945351ddde56a62bdf0bd746ccb9120d1",
+      "v1.0.1_sha256": "54bcb8f1eb6d44278b1bdb37aee5650b3b58724f5d576bf27e44d3f49a64c11b",
+      "bytes": 1469
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_operator_learning/README.md": {
+      "v1.0.0_sha256": "aec91f9621ba84452c43a4c7f124bca5845c5fdc86170dc3573ee645d0a46e5c",
+      "v1.0.1_sha256": "988c8c7d1303148da07ea9da8a2e54b03e1ec2c830f4857ea3fbeb17d037f0fc",
+      "bytes": 939
+    },
+    "src/neuralpde_book/_payload/chapters/ch04_operator_learning/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "2785bf5bffdc1b9dfa92b5a43483bd02a8349439645ff246f43c715098befa0d",
+      "v1.0.1_sha256": "07361479c77e405e557f25f6cf36339c27a15adb9042dbb8b9f89d894472a6a3",
+      "bytes": 1900
+    },
+    "src/neuralpde_book/_payload/chapters/ch05/README.md": {
+      "v1.0.0_sha256": "a4d6af7acf417c4a82ce5abe96f6842901e28bdaf6e75c67e21e828f6802f61c",
+      "v1.0.1_sha256": "85c4a6994721d11524a13b156af837a8eb33bb53221428125dcd0f158db08776",
+      "bytes": 921
+    },
+    "src/neuralpde_book/_payload/chapters/ch05/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "7ade7d6bfaff4354165a60d68b9dcf8e0bdbacb47fec11a2b64d7915cde003a0",
+      "v1.0.1_sha256": "ded7771eb825286d947891681ce857766e0cd60abf1b0af1db22067465f7db05",
+      "bytes": 1953
+    },
+    "src/neuralpde_book/_payload/chapters/ch05_delivery/README.md": {
+      "v1.0.0_sha256": "1f71e9652f426f263e74c1fe0bfb5affcc54895bc41dd021995e6f23943446ff",
+      "v1.0.1_sha256": "252532f2a3a7c702b0937473384667bef6edc754eb9a2ee8a37c46a8d8980eef",
+      "bytes": 930
+    },
+    "src/neuralpde_book/_payload/chapters/ch05_delivery/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "7e17dead73967b4b7967d65a79b9fd0845ba7d334398c22f39e519464e5dbf09",
+      "v1.0.1_sha256": "16010e4b4de7f4332ebd718160e2e0fc5d471ad4ca5aeb5cde1fb2727dfefa8d",
+      "bytes": 1378
+    },
+    "src/neuralpde_book/_payload/chapters/ch05_delivery/report.py": {
+      "v1.0.0_sha256": "afcb242fdcd1660f1b8d967ffded5ebe276f0f705cc0702e843d4990ad93ce89",
+      "v1.0.1_sha256": "27ba5ea494af5dce9e58bfb5eb0c7f9c107bcbcb70500287982d1e5e6ef8dfbb",
+      "bytes": 17177
+    },
+    "src/neuralpde_book/_payload/docs/CH02_READING_ZH.md": {
+      "v1.0.0_sha256": "922da879cc973aec904463f02892cc6fdf3c89cb762011dca52330ab2d92491f",
+      "v1.0.1_sha256": "f2606643db396be4782e765c30ca0663c7b67ffa20757c3d41f8d0fb170dbaec",
+      "bytes": 1417
+    },
+    "src/neuralpde_book/_payload/docs/CH03_READING_ZH.md": {
+      "v1.0.0_sha256": "32bf5d6c13c5adf26799f657efe3477f073b1a387cef4e7cef930a8444a28f1a",
+      "v1.0.1_sha256": "df2bb42d05d1a7ea0135e50bd539f92e33afb7a93e81bfc0264364b61f50552a",
+      "bytes": 5307
+    },
+    "src/neuralpde_book/_payload/docs/CH04_READING_ZH.md": {
+      "v1.0.0_sha256": "55a4f1a28f2c74ce1bde801003a04e3f69bb4765136269a97fb04bbc53fe2010",
+      "v1.0.1_sha256": "55bfb7b96bc7c77889d61db2b59d46bd7f00b5d1974afa173db5f7caca038a70",
+      "bytes": 5110
+    },
+    "src/neuralpde_book/_payload/docs/CH05_READING_ZH.md": {
+      "v1.0.0_sha256": "4aaabcbc4d40010cec17298b510aec36e89d750d755ec845e9d3489d0abb4c37",
+      "v1.0.1_sha256": "b18670b94f4a405846842200d2fdb01293bda43f88270be09bf626306fd73f35",
+      "bytes": 4512
+    },
+    "src/neuralpde_book/_payload/experiments/ch03_hints_v1/README.md": {
+      "v1.0.0_sha256": "0a293efd6ca8f029b68cabdd5d73be65c55e83052b9d89ed1ac55a272f1dc194",
+      "v1.0.1_sha256": "4c554f8fdbce71dab5b24db2269a4a0e79435f36bcb2ac025c2e0e05c36989dd",
+      "bytes": 605
+    },
+    "src/neuralpde_book/_payload/experiments/ch03_hints_v1/run.py": {
+      "v1.0.0_sha256": "15eabe08ad9cdbcb2d8b2c5899c5a4471e8a4b7e7703afc5c97e2e57418274b4",
+      "v1.0.1_sha256": "856e87e4fc228056ef94d187f76cb687ea40c5d9ae0578111221c9e03671ea17",
+      "bytes": 19992
+    },
+    "src/neuralpde_book/_payload/experiments/ch03_physics_v1/README.md": {
+      "v1.0.0_sha256": "e5efa9eb98953236bd9c3534c6c9b30f50db0b08c0493b78e2f12a47fb977bc2",
+      "v1.0.1_sha256": "177199b6b12199f20f2e467f461bd520e03a1e630ab9f57d2d00fec7dacaf33a",
+      "bytes": 607
+    },
+    "src/neuralpde_book/_payload/experiments/ch03_physics_v1/run.py": {
+      "v1.0.0_sha256": "b83f1a2abf9ede2eda7f240c13dd84017165b788e7e277f8683dc7d4b20b1af6",
+      "v1.0.1_sha256": "134d684d9f0c16816aea792e0516738898426f352840cb80e385dc664e447a96",
+      "bytes": 28892
+    },
+    "src/neuralpde_book/_payload/experiments/ch03_pod_v1/README.md": {
+      "v1.0.0_sha256": "150a7b3082711dcdd2d371481a2b33e14ca62ce3793e798841f440fa69929ee1",
+      "v1.0.1_sha256": "57ba10b68942ef652110c274d382798b80ae316fd4c0c74f7e5eaf0f4a8dde20",
+      "bytes": 603
+    },
+    "src/neuralpde_book/_payload/experiments/ch03_pod_v1/run.py": {
+      "v1.0.0_sha256": "8743936a087a221be506b3953a15d3827e478c77f0bd285bfd4ad9fc9d8c989a",
+      "v1.0.1_sha256": "d91f06b49d876a7f07c6a4171959b101bc8955d42f36637d514896a1da43455a",
+      "bytes": 19257
+    },
+    "src/neuralpde_book/_payload/experiments/ch03_varmion_v1/README.md": {
+      "v1.0.0_sha256": "6e98586a9342cb5138ca83e5588fba71d363e610a1272754a0d74a76b0189a1e",
+      "v1.0.1_sha256": "9165a9a3c95de0871f019cc7f05f5676ecdaf3976be3e4978e09a24b79e51a3d",
+      "bytes": 607
+    },
+    "src/neuralpde_book/_payload/experiments/ch03_varmion_v1/run.py": {
+      "v1.0.0_sha256": "44a3e239415223e925ceb1bc88aaf3bd4461f2d627f4dccdce942d8f6a510eaa",
+      "v1.0.1_sha256": "5076f02175f23d3424c9d16d12f1559a12b30228eaa92340644e14eedb4c34d0",
+      "bytes": 16535
+    },
+    "src/neuralpde_book/_payload/experiments/ch03_varmion_v2/README.md": {
+      "v1.0.0_sha256": "d4625f8d3f1d133b5f122a7b1d938fd9d169f009ea6db11247363a18b4f3785d",
+      "v1.0.1_sha256": "f89aa9f5f11391261f910f080325239e9e429482bab44848fcd62daea034dd66",
+      "bytes": 607
+    },
+    "src/neuralpde_book/_payload/scripts/report_ch03_experiment.py": {
+      "v1.0.0_sha256": "efe24dba9836ac2ebebf2d499ad41221b17d871559466734c3710361ad307e7b",
+      "v1.0.1_sha256": "434ed33d1715b66509981eee50a4663eae0e2227b988d66bb8cbbbd132077a47",
+      "bytes": 18025
+    },
+    "src/neuralpde_book/_payload/src/neuralpde_opt/chapter3/data.py": {
+      "v1.0.0_sha256": "c12210b4a7e86a6dfa6786a14651fb7b720457f8af8b1d550ff62f576e5ff699",
+      "v1.0.1_sha256": "e48df714fafb330d8baf76c6d92c884b9c95bc0bd5acfb6eeb2db2d53cd10868",
+      "bytes": 18355
+    },
+    "src/neuralpde_book/_payload/src/neuralpde_opt/chapter3/experimental_data.py": {
+      "v1.0.0_sha256": "d6b73cddfed66e2cfc6fb37be22206b256209bf9477dcf3ec883e148a42fb70b",
+      "v1.0.1_sha256": "ad0303ee037530e53e529637dba9019abfea8487af422cbb8c11aaea2fc25f5f",
+      "bytes": 40320
+    },
+    "src/neuralpde_book/workspace.py": {
+      "v1.0.0_sha256": "93668c95dc4ba72a45a6b6398d9b76b15c14418bfe35eab509adfbf6c895ff2d",
+      "v1.0.1_sha256": "3486f69993039ee0a3661000fc95edf5052c1ea92021cca86f14a98de31396f8",
+      "bytes": 2813
+    },
+    "workspace/PAYLOAD_MANIFEST.json": {
+      "v1.0.0_sha256": "e07d6acdeb2a9365952196f996ef8c8c039917f39a219097a8aa847dd77afef6",
+      "v1.0.1_sha256": "b3446959d772e940ab077612933e0c8eae2a497e3e851fc503f050d8a56e7a86",
+      "bytes": 35764
+    },
+    "workspace/README.md": {
+      "v1.0.0_sha256": "b77e9e563c89c8ea47df7e2bc0103b68dcab96ded601c3cdf232c5ee7e5cc6af",
+      "v1.0.1_sha256": "c0143eb17a12dd425bcb287bb3448d9f943abc5806f4098c68446fdf45946a64",
+      "bytes": 2936
+    },
+    "workspace/WORKSPACE.json": {
+      "v1.0.0_sha256": "959d152fd50542b7818fbbcf1567e7e94b0bc1b42aa252b4adb8754ee9c6eb0f",
+      "v1.0.1_sha256": "d010c18e65a838d6ce00f665ad3ba5179191445b99c7e7ae38af8c29ba3d4e6a",
+      "bytes": 204
+    },
+    "workspace/book_report.py": {
+      "v1.0.0_sha256": "afa19bc2a94464a59b3e6219b9c36135d30e0bc0c78fe774463b86d4f48f5b95",
+      "v1.0.1_sha256": "bca1b321a63407c41a9d454fa86bb8d45ab4f9e30c8f3eb2c7579fdaae7811cb",
+      "bytes": 7021
+    },
+    "workspace/book_scope.json": {
+      "v1.0.0_sha256": "53bf1bdc331cda3cf4534d35439f277e37f5fe202ddc4ac29333b85889d41a5e",
+      "v1.0.1_sha256": "891e18b930bdd42b98e55ffeb349e54cafcfd6792501384b806aa5454896a592",
+      "bytes": 27117
+    },
+    "workspace/chapters/ch03/README.md": {
+      "v1.0.0_sha256": "bf194b72f9f197fc13777f418abc33af15075ed3c164ea67fea2d973b40e3f19",
+      "v1.0.1_sha256": "5b4f6be313224f0891b253dab2197c3264ef63fafa5d2ea69ff3c4a7b1261275",
+      "bytes": 921
+    },
+    "workspace/chapters/ch03/evaluation.py": {
+      "v1.0.0_sha256": "26ef2f9cbe50d4e761f90ec3831632ee3397bbb70f82871e378aa63230826a75",
+      "v1.0.1_sha256": "a744c92becfe16f4a6c269f4a99da2e0b7aa90c4269f06fa1b140aeae52a9987",
+      "bytes": 14671
+    },
+    "workspace/chapters/ch04/README.md": {
+      "v1.0.0_sha256": "fd095f96b06b64d97bfaf3ba51a265cc8f353a60b9a3bfe256a147b9b1eac7f6",
+      "v1.0.1_sha256": "5837ea079ff057a177768cc1437e923cca7fda0d1cda5e92924e148aadf88476",
+      "bytes": 921
+    },
+    "workspace/chapters/ch04/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "666fcb39f73bec7faf6ff7d9a47939611c19150655f0ed3debc26ab0c5cc2058",
+      "v1.0.1_sha256": "4830963099876c460e562205f90db4aa44ef8c7d2c46152eb50894c700029719",
+      "bytes": 1253
+    },
+    "workspace/chapters/ch04_adaptation/README.md": {
+      "v1.0.0_sha256": "70604772fbf608b7f1beac17d9bf718e6add0796cc05e2f32b03b22b40074f2b",
+      "v1.0.1_sha256": "69a2dd1f5548f9a8044334e5f8e285b7b091a063b8b3f14dc6c6264d05681a2d",
+      "bytes": 932
+    },
+    "workspace/chapters/ch04_adaptation/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "8dec8fee5986ff1d762d5fcf4b216884a279609b198835747439dfb4668a0ab2",
+      "v1.0.1_sha256": "7b6e8010f6b89762dd180a7bb14f78b9d98a3a98f1fa084370c5245887533ee8",
+      "bytes": 1734
+    },
+    "workspace/chapters/ch04_completion/README.md": {
+      "v1.0.0_sha256": "6e75ca3d9a2f9d88f011535150c75a3f66e747dc2b58f6b6ddbd1f766d2b077c",
+      "v1.0.1_sha256": "8a54eb572c7488e85119950e55dcffa292ba82baa9911cb83546eb3a89c20680",
+      "bytes": 932
+    },
+    "workspace/chapters/ch04_completion/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "95ca7517d93ed038739a1700f8242c3493ec4466227d98192c46d34e004f5435",
+      "v1.0.1_sha256": "07a3a1ebb55ab85342763802c139d9110af344f301e80d182d4255e89049cc16",
+      "bytes": 1126
+    },
+    "workspace/chapters/ch04_delivery/README.md": {
+      "v1.0.0_sha256": "6d282c44a8c958d335fbf8fa44f1ab690b1acbdecf3be84124ece064dcef3d71",
+      "v1.0.1_sha256": "04708b6fac1b6eee091e49de509c6e059c5eda9471dad50cc627221c47813657",
+      "bytes": 930
+    },
+    "workspace/chapters/ch04_delivery/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "3250bea314f13ba6675ec7e901a41e349c68b427a6e86c5eb6637ce9993c7b46",
+      "v1.0.1_sha256": "59c13f0d29f290e5ffde5eb6e9adbb6e491bd52668f4b6b47e02abdc845fd8f3",
+      "bytes": 1310
+    },
+    "workspace/chapters/ch04_delivery/report.py": {
+      "v1.0.0_sha256": "9fae3b7f70842e3da915f5038918d7b0e5933bea3efd1986a902c892d8a85bec",
+      "v1.0.1_sha256": "e05f8772449991f8daf0a6330234e2cfdef9adaefdd0352750fb8f31283d32ec",
+      "bytes": 7287
+    },
+    "workspace/chapters/ch04_depth/README.md": {
+      "v1.0.0_sha256": "0d43243b91524b894b7e709b4ed2649781077cba064e85913049846fae8043a3",
+      "v1.0.1_sha256": "7151a2b576040521b4b21b8f7f02941cd7eff99ae30556a06397fe409a1333e4",
+      "bytes": 927
+    },
+    "workspace/chapters/ch04_depth/assessment.py": {
+      "v1.0.0_sha256": "2774d684df0d542c4ff580b44d793f42863d3a8dc638a2b39b547d13bf68dce2",
+      "v1.0.1_sha256": "11e19784a55bdf18c2ab8b03464d7d349be6ee12c271f6e266dad244f5452add",
+      "bytes": 20135
+    },
+    "workspace/chapters/ch04_operator_adaptation/README.md": {
+      "v1.0.0_sha256": "fc250edacd9f6b72479f6d1958d58893177a54d3b71afb658e553babe5dd9cf1",
+      "v1.0.1_sha256": "47eb497cd1c5f959a1ec80bbb93b3f96f4599e43a7a4ab54c546861418a51345",
+      "bytes": 941
+    },
+    "workspace/chapters/ch04_operator_adaptation/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "00cd451b293d6aaa43a767bb8c5ee80945351ddde56a62bdf0bd746ccb9120d1",
+      "v1.0.1_sha256": "54bcb8f1eb6d44278b1bdb37aee5650b3b58724f5d576bf27e44d3f49a64c11b",
+      "bytes": 1469
+    },
+    "workspace/chapters/ch04_operator_learning/README.md": {
+      "v1.0.0_sha256": "aec91f9621ba84452c43a4c7f124bca5845c5fdc86170dc3573ee645d0a46e5c",
+      "v1.0.1_sha256": "988c8c7d1303148da07ea9da8a2e54b03e1ec2c830f4857ea3fbeb17d037f0fc",
+      "bytes": 939
+    },
+    "workspace/chapters/ch04_operator_learning/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "2785bf5bffdc1b9dfa92b5a43483bd02a8349439645ff246f43c715098befa0d",
+      "v1.0.1_sha256": "07361479c77e405e557f25f6cf36339c27a15adb9042dbb8b9f89d894472a6a3",
+      "bytes": 1900
+    },
+    "workspace/chapters/ch05/README.md": {
+      "v1.0.0_sha256": "a4d6af7acf417c4a82ce5abe96f6842901e28bdaf6e75c67e21e828f6802f61c",
+      "v1.0.1_sha256": "85c4a6994721d11524a13b156af837a8eb33bb53221428125dcd0f158db08776",
+      "bytes": 921
+    },
+    "workspace/chapters/ch05/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "7ade7d6bfaff4354165a60d68b9dcf8e0bdbacb47fec11a2b64d7915cde003a0",
+      "v1.0.1_sha256": "ded7771eb825286d947891681ce857766e0cd60abf1b0af1db22067465f7db05",
+      "bytes": 1953
+    },
+    "workspace/chapters/ch05_delivery/README.md": {
+      "v1.0.0_sha256": "1f71e9652f426f263e74c1fe0bfb5affcc54895bc41dd021995e6f23943446ff",
+      "v1.0.1_sha256": "252532f2a3a7c702b0937473384667bef6edc754eb9a2ee8a37c46a8d8980eef",
+      "bytes": 930
+    },
+    "workspace/chapters/ch05_delivery/RUNTIME_MANIFEST.json": {
+      "v1.0.0_sha256": "7e17dead73967b4b7967d65a79b9fd0845ba7d334398c22f39e519464e5dbf09",
+      "v1.0.1_sha256": "16010e4b4de7f4332ebd718160e2e0fc5d471ad4ca5aeb5cde1fb2727dfefa8d",
+      "bytes": 1378
+    },
+    "workspace/chapters/ch05_delivery/report.py": {
+      "v1.0.0_sha256": "afcb242fdcd1660f1b8d967ffded5ebe276f0f705cc0702e843d4990ad93ce89",
+      "v1.0.1_sha256": "27ba5ea494af5dce9e58bfb5eb0c7f9c107bcbcb70500287982d1e5e6ef8dfbb",
+      "bytes": 17177
+    },
+    "workspace/docs/CH02_READING_ZH.md": {
+      "v1.0.0_sha256": "922da879cc973aec904463f02892cc6fdf3c89cb762011dca52330ab2d92491f",
+      "v1.0.1_sha256": "f2606643db396be4782e765c30ca0663c7b67ffa20757c3d41f8d0fb170dbaec",
+      "bytes": 1417
+    },
+    "workspace/docs/CH03_READING_ZH.md": {
+      "v1.0.0_sha256": "32bf5d6c13c5adf26799f657efe3477f073b1a387cef4e7cef930a8444a28f1a",
+      "v1.0.1_sha256": "df2bb42d05d1a7ea0135e50bd539f92e33afb7a93e81bfc0264364b61f50552a",
+      "bytes": 5307
+    },
+    "workspace/docs/CH04_READING_ZH.md": {
+      "v1.0.0_sha256": "55a4f1a28f2c74ce1bde801003a04e3f69bb4765136269a97fb04bbc53fe2010",
+      "v1.0.1_sha256": "55bfb7b96bc7c77889d61db2b59d46bd7f00b5d1974afa173db5f7caca038a70",
+      "bytes": 5110
+    },
+    "workspace/docs/CH05_READING_ZH.md": {
+      "v1.0.0_sha256": "4aaabcbc4d40010cec17298b510aec36e89d750d755ec845e9d3489d0abb4c37",
+      "v1.0.1_sha256": "b18670b94f4a405846842200d2fdb01293bda43f88270be09bf626306fd73f35",
+      "bytes": 4512
+    },
+    "workspace/experiments/ch03_hints_v1/README.md": {
+      "v1.0.0_sha256": "0a293efd6ca8f029b68cabdd5d73be65c55e83052b9d89ed1ac55a272f1dc194",
+      "v1.0.1_sha256": "4c554f8fdbce71dab5b24db2269a4a0e79435f36bcb2ac025c2e0e05c36989dd",
+      "bytes": 605
+    },
+    "workspace/experiments/ch03_hints_v1/run.py": {
+      "v1.0.0_sha256": "15eabe08ad9cdbcb2d8b2c5899c5a4471e8a4b7e7703afc5c97e2e57418274b4",
+      "v1.0.1_sha256": "856e87e4fc228056ef94d187f76cb687ea40c5d9ae0578111221c9e03671ea17",
+      "bytes": 19992
+    },
+    "workspace/experiments/ch03_physics_v1/README.md": {
+      "v1.0.0_sha256": "e5efa9eb98953236bd9c3534c6c9b30f50db0b08c0493b78e2f12a47fb977bc2",
+      "v1.0.1_sha256": "177199b6b12199f20f2e467f461bd520e03a1e630ab9f57d2d00fec7dacaf33a",
+      "bytes": 607
+    },
+    "workspace/experiments/ch03_physics_v1/run.py": {
+      "v1.0.0_sha256": "b83f1a2abf9ede2eda7f240c13dd84017165b788e7e277f8683dc7d4b20b1af6",
+      "v1.0.1_sha256": "134d684d9f0c16816aea792e0516738898426f352840cb80e385dc664e447a96",
+      "bytes": 28892
+    },
+    "workspace/experiments/ch03_pod_v1/README.md": {
+      "v1.0.0_sha256": "150a7b3082711dcdd2d371481a2b33e14ca62ce3793e798841f440fa69929ee1",
+      "v1.0.1_sha256": "57ba10b68942ef652110c274d382798b80ae316fd4c0c74f7e5eaf0f4a8dde20",
+      "bytes": 603
+    },
+    "workspace/experiments/ch03_pod_v1/run.py": {
+      "v1.0.0_sha256": "8743936a087a221be506b3953a15d3827e478c77f0bd285bfd4ad9fc9d8c989a",
+      "v1.0.1_sha256": "d91f06b49d876a7f07c6a4171959b101bc8955d42f36637d514896a1da43455a",
+      "bytes": 19257
+    },
+    "workspace/experiments/ch03_varmion_v1/README.md": {
+      "v1.0.0_sha256": "6e98586a9342cb5138ca83e5588fba71d363e610a1272754a0d74a76b0189a1e",
+      "v1.0.1_sha256": "9165a9a3c95de0871f019cc7f05f5676ecdaf3976be3e4978e09a24b79e51a3d",
+      "bytes": 607
+    },
+    "workspace/experiments/ch03_varmion_v1/run.py": {
+      "v1.0.0_sha256": "44a3e239415223e925ceb1bc88aaf3bd4461f2d627f4dccdce942d8f6a510eaa",
+      "v1.0.1_sha256": "5076f02175f23d3424c9d16d12f1559a12b30228eaa92340644e14eedb4c34d0",
+      "bytes": 16535
+    },
+    "workspace/experiments/ch03_varmion_v2/README.md": {
+      "v1.0.0_sha256": "d4625f8d3f1d133b5f122a7b1d938fd9d169f009ea6db11247363a18b4f3785d",
+      "v1.0.1_sha256": "f89aa9f5f11391261f910f080325239e9e429482bab44848fcd62daea034dd66",
+      "bytes": 607
+    },
+    "workspace/reports/AUDIT_REPORT_ZH.md": {
+      "v1.0.0_sha256": "42c94b11762c4141d265efbd021ac740f69d7bf156e3f6c0b89ae3eadbda21de",
+      "v1.0.1_sha256": "3e7c51c3de01edb0b7e3d81c36b78d624ef4a8e05918f965933613197dff073c",
+      "bytes": 2903
+    },
+    "workspace/reports/BOOK_CHECKLIST_ZH.md": {
+      "v1.0.0_sha256": "356328a753989287feaa764669571ca62465369a030fd106829ed75db4fef77d",
+      "v1.0.1_sha256": "d76038f011554fc823d2ead86c693460450f188cb668cf78692052b006a90583",
+      "bytes": 19297
+    },
+    "workspace/reports/REVIEW_NOTES_ZH.md": {
+      "v1.0.0_sha256": "2946daa3f44a1830ccd76929dd9c00bb67673ac21d033f6ce16febbe9f55d69c",
+      "v1.0.1_sha256": "07a296a412416c7d6719e63fa605283f6175cdf20ac564c32eacb1afe9563ccf",
+      "bytes": 2379
+    },
+    "workspace/reports/publication/PDF_QA.json": {
+      "v1.0.0_sha256": "fed152cebf6f44979ae10d214d9f525a1e6f0e569f4df7e2fda5f6937dbe9de2",
+      "v1.0.1_sha256": "11600b7e9acdaeed5a40b5b42400c30515720bab7fee20d4df05451488ef1106",
+      "bytes": 931
+    },
+    "workspace/reports/publication/main.pdf": {
+      "v1.0.0_sha256": "c6f6876860274406e89539028a0bf47da5b1fe1b2c12df9e2c1cce4818bc43ea",
+      "v1.0.1_sha256": "93661525e645e2c1750bf9d358092af2742d0d51e6aeb47166fdc362f55c889d",
+      "bytes": 69091
+    },
+    "workspace/reports/publication/main.tex": {
+      "v1.0.0_sha256": "deee8691832fed10768e177f298f1799e2137bfb6b03798c9e59b55253a7f499",
+      "v1.0.1_sha256": "e167798302034b049d3f957eea5c6f52f5be15e9e6b65dc2982be1acb8d11cd5",
+      "bytes": 51710
+    },
+    "workspace/results/ch03/final_test_v1/summary.md": {
+      "v1.0.0_sha256": "26040c1ac9486dacf25f06fb8eb54714f619e6034686856353556a4e238ee9f4",
+      "v1.0.1_sha256": "0465529609b9b5177fe47e1adb957df27aafaf402b883ff906a2d3d9650aa6df",
+      "bytes": 2816
+    },
+    "workspace/results/ch04/nonlinear_depth_v1/summary.md": {
+      "v1.0.0_sha256": "02c79b4d9617dc0bff5ef2aa75f445c111e4cc9b50fbab3ffa123a19f00f4b0d",
+      "v1.0.1_sha256": "755e1400b7a7a2f872aff1f2a63b0984423d335a0bb90110b1ca534d22e1b0c0",
+      "bytes": 2202
+    },
+    "workspace/results/ch04/unified_delivery_v1/summary.md": {
+      "v1.0.0_sha256": "adb39ebc7c18da367ea895f9d6d1676725b13af1df1407716fc5b972135d7ea1",
+      "v1.0.1_sha256": "5e65c7686eb7fac9dfd3ec87f563bd932394301c92041b66717749606e28cf92",
+      "bytes": 5050
+    },
+    "workspace/results/ch04/unified_delivery_v1/summary.reviewed.md": {
+      "v1.0.0_sha256": "1e2b0597ac31f290f7727e96fae34de456e9ddbfa4638dcf5486b654443a456a",
+      "v1.0.1_sha256": "79970ec722df8a7b3c8f5a8f64a2df0d3118987c109abd48f10a6ee4edef13e7",
+      "bytes": 5264
+    },
+    "workspace/results/ch05/unified_delivery_v1/summary.md": {
+      "v1.0.0_sha256": "8ce416c5105ab735009266db3e7df85cdcd16bb125c73cdf11ebe86081301459",
+      "v1.0.1_sha256": "fb31e139dde8bce45e85e29df1eedd166a19884b3308902c5d771fbbb4bf2359",
+      "bytes": 5349
+    },
+    "workspace/scripts/report_ch03_experiment.py": {
+      "v1.0.0_sha256": "efe24dba9836ac2ebebf2d499ad41221b17d871559466734c3710361ad307e7b",
+      "v1.0.1_sha256": "434ed33d1715b66509981eee50a4663eae0e2227b988d66bb8cbbbd132077a47",
+      "bytes": 18025
+    },
+    "workspace/src/neuralpde_opt/chapter3/data.py": {
+      "v1.0.0_sha256": "c12210b4a7e86a6dfa6786a14651fb7b720457f8af8b1d550ff62f576e5ff699",
+      "v1.0.1_sha256": "e48df714fafb330d8baf76c6d92c884b9c95bc0bd5acfb6eeb2db2d53cd10868",
+      "bytes": 18355
+    },
+    "workspace/src/neuralpde_opt/chapter3/experimental_data.py": {
+      "v1.0.0_sha256": "d6b73cddfed66e2cfc6fb37be22206b256209bf9477dcf3ec883e148a42fb70b",
+      "v1.0.1_sha256": "ad0303ee037530e53e529637dba9019abfea8487af422cbb8c11aaea2fc25f5f",
+      "bytes": 40320
+    }
+  }
+}

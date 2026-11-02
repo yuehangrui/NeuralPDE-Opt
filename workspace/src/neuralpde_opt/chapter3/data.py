@@ -336,37 +336,37 @@ def write_summary(output, c, qa):
     rows = qa["samples"]
     maximum = lambda key, sub: max(r[key][sub] for r in rows)
     lines = [
-        "# 第三章公共数据小批量质量报告",
+        "# Chapter 3 shared data: pilot-batch quality report",
         "",
-        f'质量门槛：{"通过" if qa["passed"] else "未通过"}。仅为试验批次，无模型训练。',
+        f'Quality gate: {"passed" if qa["passed"] else "failed"}. Pilot batch only; no model training.',
         "",
-        f'划分：{c["splits"]}；公共/参考/加密核查网格：'
-        f'{c["observation_n"]+1} / {c["reference_n"]+1} / {c["audit_n"]+1} 个节点/轴。',
+        f'Splits: {c["splits"]}; shared/reference/refined-audit grids: '
+        f'{c["observation_n"]+1} / {c["reference_n"]+1} / {c["audit_n"]+1} nodes per axis.',
         "",
-        "| 检查 | 全样本最大值 |",
+        "| Check | Maximum over all samples |",
         "|---|---:|",
-        f'| 参考解 vs 加密解：相对 L2 | {maximum("reference_vs_audit", "relative_l2"):.6e} |',
-        f'| 参考解 vs 加密解：相对 H1 半范数 | {maximum("reference_vs_audit", "relative_h1_seminorm"):.6e} |',
-        f'| 公共网格 P1 重构 vs 加密解：相对 L2 | {maximum("observation_vs_audit", "relative_l2"):.6e} |',
-        f'| 积分加密导致的解变化：相对 L2 | {maximum("quadrature_comparison", "relative_l2"):.6e} |',
-        f'| 输入跨网格一致性 | {max(r["cross_grid_input_max"] for r in rows):.6e} |',
-        f'| 相对代数残差 | {max(s["relative_algebraic_residual"] for r in rows for s in r["solves"]):.6e} |',
-        f'| 边界最大值 | {max(s["boundary_max"] for r in rows for s in r["solves"]):.6e} |',
+        f'| Reference vs refined solution: relative L2 | {maximum("reference_vs_audit", "relative_l2"):.6e} |',
+        f'| Reference vs refined solution: relative H1 seminorm | {maximum("reference_vs_audit", "relative_h1_seminorm"):.6e} |',
+        f'| Shared-grid P1 reconstruction vs refined solution: relative L2 | {maximum("observation_vs_audit", "relative_l2"):.6e} |',
+        f'| Solution change under quadrature refinement: relative L2 | {maximum("quadrature_comparison", "relative_l2"):.6e} |',
+        f'| Cross-grid input consistency | {max(r["cross_grid_input_max"] for r in rows):.6e} |',
+        f'| Relative algebraic residual | {max(s["relative_algebraic_residual"] for r in rows for s in r["solves"]):.6e} |',
+        f'| Maximum boundary magnitude | {max(s["boundary_max"] for r in rows for s in r["solves"]):.6e} |',
         "",
-        "解析制造解独立核查（常系数和线性变系数，8/16/32/64 单元/轴）：",
+        "Independent manufactured-solution checks (constant and linearly varying coefficients, 8/16/32/64 elements per axis):",
         "",
     ]
     for name, item in qa["manufactured"].items():
         orders = item["last_refinement_orders"]
         lines.append(
-            f'- {name}：L2 阶 {orders["relative_l2"]:.4f}，H1 半范数阶 {orders["relative_h1_seminorm"]:.4f}；通过={item["passed"]}。'
+            f'- {name}: L2 order {orders["relative_l2"]:.4f}, H1 seminorm order {orders["relative_h1_seminorm"]:.4f}; passed={item["passed"]}.'
         )
     lines += [
         "",
-        "上述 L2/H1 由单元内部积分计算，不使用纯节点误差。网格差是经验精度估计，不能充当连续问题严格误差界。",
-        "公共 y 是参考 P1 解在公共节点的取值；公共网格 P1 重构另有表示误差，不能混同为参考解误差。",
-        "全部参数为试验值，尚未批准正式分布、数据规模、模型架构、导数标签或迭代残差扩展。",
-        "具体概率分布和字段语义见 docs/CH03_DATA_ZH.md；逐样本记录见 quality.json。",
+        "L2/H1 errors above use integration inside elements, not nodal errors alone. Grid differences are empirical accuracy estimates, not rigorous error bounds for the continuous problem.",
+        "Shared y values sample the reference P1 solution at shared nodes. Shared-grid P1 reconstruction has an additional representation error, distinct from reference-solution error.",
+        "All parameters are provisional; the formal distribution, dataset size, model architectures, derivative labels, and iterative-residual extensions have not yet been approved.",
+        "See docs/CH03_DATA_ZH.md for probability distributions and field definitions; see quality.json for per-sample records.",
         "",
     ]
     (output / "summary.md").write_text("\n".join(lines))

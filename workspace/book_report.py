@@ -31,33 +31,33 @@ def main():
     checks=read(ROOT/'verification/CHECKS.json')
     smoke=read(ROOT/'verification/SMOKE.json')
     stamp=datetime.datetime.now(datetime.timezone.utc).isoformat()
-    head=['# 全书独立版：书稿—代码清单','',f'生成时间：{stamp}。书稿SHA256：`{scope["book_sha256"]}`。',
-          '', '本清单在本轮156组训练、独立评测及复核完成后生成。覆盖范围沿用已经核对的书稿映射；第1、6章是说明性配套，第2至5章是算法主体。交付完成不等于达到统一精度或严格最优性。','',
-          '| 部分 | 本轮训练 | 结果与核查 |','|---|---:|---|']
+    head=['# Standalone edition: manuscript-to-code checklist','',f'Generated: {stamp}. Manuscript SHA256: `{scope["book_sha256"]}`.',
+          '', 'This checklist was generated after all 156 training runs, independent evaluations, and audits were completed. It follows the previously reviewed manuscript mapping. Chapters 1 and 6 provide explanatory material; Chapters 2-5 contain the algorithms. Delivery completion does not imply uniform accuracy or strict optimality.','',
+          '| Part | Training runs | Results and verification |','|---|---:|---|']
     for ch,count in zip(CHAPTERS,[18,57,48,12,21]):
-        head.append(f'| {ch} | {count} | [正式结果](../{RESULTS[ch]}/summary.md)；独立复核通过 |')
-    head+=['','第二章另有8组FEM；第四章48组训练保留72个阶段模型。HINTS使用本轮VarMiON初值，正式统计不包含开发烟雾试验。',
-           '', '| 书稿位置 | 覆盖层级 | 本版实现 | 边界 |','|---|---|---|---|']
+        head.append(f'| {ch} | {count} | [Formal results](../{RESULTS[ch]}/summary.md); independent audit passed |')
+    head+=['','Chapter 2 also includes 8 FEM runs; the 48 Chapter 4 training runs retain 72 model stages. HINTS uses the newly trained VarMiON initialization. Development smoke tests are excluded from formal counts.',
+           '', '| Manuscript location | Coverage | Implementation | Limitations |','|---|---|---|---|']
     for row in scope['rows']:
-        files='、'.join(f'[{Path(p).name}](../{p})' for p in row['source_paths'])
+        files=', '.join(f'[{Path(p).name}](../{p})' for p in row['source_paths'])
         head.append(f'| {row["section"]} | {row["coverage"]} | {files or row["implementation"]} | {row["boundary"]} |')
-    head+=['','后置内容继续保留：状态分裂ADMM、界面、障碍控制/S2-FOBA及半线性/抛物型扩展。神经初值＋CG退出主线，Darcy复刻保持暂停。','']
+    head+=['','Deferred work remains deferred: state-splitting ADMM, interface control, obstacle control/S2-FOBA, and semilinear/parabolic extensions. Neural initialization + CG has left the main scope; the Darcy replication remains paused.','']
     (destination/'BOOK_CHECKLIST_ZH.md').write_text('\n'.join(head),encoding='utf-8')
-    lines=['# 全书独立版：核查报告','',f'生成时间：{stamp}。','',
-           '本轮独立目录重新生成训练资产并完成156组正式训练。旧检查点未用于正式初始化；HINTS按既定方法使用同一工作区中新训练的VarMiON。第二章保存最终迭代，第三至五章按验证集选模。','',
-           f'数值回归：{checks["total_tests"]}项通过；优化模式检查：{checks["optimized_mode_passed"]}。第三章各训练变体共{len(smoke["chapter3_cases"])}项小预算验证通过。',
-           '', '第三至五章最终测试使用独立版预先声明的新随机流，全部训练结束且选模冻结后才生成。第二章以独立积分、物理一致性和FEM收敛核查。',
-           '', '| 部分 | 核查证据 |','|---|---|']
+    lines=['# Standalone edition: audit report','',f'Generated: {stamp}.','',
+           'Training assets were regenerated in the independent workspace and all 156 formal runs were completed. Previous checkpoints were not used for formal initialization. HINTS uses the newly trained VarMiON in the same workspace, as specified by the method. Chapter 2 saves the final iterate; Chapters 3-5 select models using validation data.','',
+           f'Numerical regression: {checks["total_tests"]} tests passed; optimized-mode checks: {checks["optimized_mode_passed"]}. All {len(smoke["chapter3_cases"])} small-budget checks across Chapter 3 training variants passed.',
+           '', 'Final tests for Chapters 3-5 use new random streams declared in advance for the standalone edition, and are generated only after training is complete and model selection is frozen. Chapter 2 uses independent quadrature, physical consistency checks, and FEM convergence checks.',
+           '', '| Part | Audit evidence |','|---|---|']
     for ch in CHAPTERS:
         name='verification.json' if ch=='ch03' else 'DELIVERY_AUDIT.json'
-        lines.append(f'| {ch} | [{name}](../{RESULTS[ch]}/{name})、[结果报告](../{RESULTS[ch]}/summary.md) |')
-    lines+=['','精度按各章结果报告逐项解释。本报告不把流程完成等同于算法收敛；固定实例空间验证不是新实例泛化，固定网格延拓也不是分辨率迁移。不同预算、数据与物理信息不构成架构家族排名。',
-            '', '本版可从wheel展开到任意新工作区，运行不需要原项目或作者仓库。科学计算仍依赖PyTorch、NumPy、SciPy和Matplotlib。DeepXDE及Galerkin移植组件和来源许可证随包保留；ocpde_dl来源记录继续保留，不统一改写许可证，也不声称全部原创。','']
+        lines.append(f'| {ch} | [{name}](../{RESULTS[ch]}/{name}), [results report](../{RESULTS[ch]}/summary.md) |')
+    lines+=['','Accuracy is interpreted in each chapter report. Completing a workflow does not establish convergence. Spatial validation on one fixed instance is not generalization to new instances; extending a fixed-grid prediction is not resolution transfer. Different budgets, data, and physical information do not establish an architecture-family ranking.',
+            '', 'The wheel can initialize any new workspace without the original project or upstream repositories. Scientific computing still depends on PyTorch, NumPy, SciPy, and Matplotlib. Ported DeepXDE and Galerkin components retain their licenses and provenance; ocpde_dl provenance is also retained. Licenses are not replaced with one uniform license, and the code is not claimed to be entirely original.','']
     installation=ROOT/'verification/INSTALLATION.json'
     if installation.exists():
         details=read(installation)
-        lines+=['本机安装使用独立虚拟环境，共享服务器已有科学计算依赖；未声称完成全新操作系统或离线全依赖安装。安装记录见[INSTALLATION.json](../verification/INSTALLATION.json)。','']
-    lines+=['版本身份：[PAYLOAD_MANIFEST.json](../PAYLOAD_MANIFEST.json)；来源：[SOURCE_ORIGINS.json](../SOURCE_ORIGINS.json)；封装改动：[SOURCE_CHANGES.json](../SOURCE_CHANGES.json)。训练、选模和最终产物身份由各章清单分别核查。','']
+        lines+=['Installation used an independent virtual environment sharing the scientific dependencies already available on the server. No clean-operating-system or fully offline dependency installation is claimed. See [INSTALLATION.json](../verification/INSTALLATION.json).','']
+    lines+=['Source identity: [PAYLOAD_MANIFEST.json](../PAYLOAD_MANIFEST.json); provenance: [SOURCE_ORIGINS.json](../SOURCE_ORIGINS.json); packaging changes: [SOURCE_CHANGES.json](../SOURCE_CHANGES.json). Chapter manifests separately verify training, model selection, and final artifact identities.','']
     (destination/'AUDIT_REPORT_ZH.md').write_text('\n'.join(lines),encoding='utf-8')
     identities={}
     for ch in CHAPTERS:

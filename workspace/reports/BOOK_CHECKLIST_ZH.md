@@ -1,88 +1,88 @@
-# 全书独立版：书稿—代码清单
+# Standalone edition: manuscript-to-code checklist
 
-生成时间：2026-10-29T01:47:54.176068+00:00。书稿SHA256：`85191f64ad9f904afa4aed86ce2dcd4bdfc272b2aec21d2c649261c7ef5670e2`。
+Generated: 2026-10-29T01:47:54.176068+00:00. Manuscript SHA256: `85191f64ad9f904afa4aed86ce2dcd4bdfc272b2aec21d2c649261c7ef5670e2`.
 
-本清单在本轮156组训练、独立评测及复核完成后生成。覆盖范围沿用已经核对的书稿映射；第1、6章是说明性配套，第2至5章是算法主体。交付完成不等于达到统一精度或严格最优性。
+This checklist was generated after all 156 training runs, independent evaluations, and audits were completed. It follows the previously reviewed manuscript mapping. Chapters 1 and 6 provide explanatory material; Chapters 2-5 contain the algorithms. Delivery completion does not imply uniform accuracy or strict optimality.
 
-| 部分 | 本轮训练 | 结果与核查 |
+| Part | Training runs | Results and verification |
 |---|---:|---|
-| ch02 | 18 | [正式结果](../results/ch02/full/summary.md)；独立复核通过 |
-| ch03 | 57 | [正式结果](../results/ch03/final_test_v1/summary.md)；独立复核通过 |
-| ch04 | 48 | [正式结果](../results/ch04/unified_delivery_v1/summary.md)；独立复核通过 |
-| ch04-depth | 12 | [正式结果](../results/ch04/nonlinear_depth_v1/summary.md)；独立复核通过 |
-| ch05 | 21 | [正式结果](../results/ch05/unified_delivery_v1/summary.md)；独立复核通过 |
+| ch02 | 18 | [Formal results](../results/ch02/full/summary.md); independent audit passed |
+| ch03 | 57 | [Formal results](../results/ch03/final_test_v1/summary.md); independent audit passed |
+| ch04 | 48 | [Formal results](../results/ch04/unified_delivery_v1/summary.md); independent audit passed |
+| ch04-depth | 12 | [Formal results](../results/ch04/nonlinear_depth_v1/summary.md); independent audit passed |
+| ch05 | 21 | [Formal results](../results/ch05/unified_delivery_v1/summary.md); independent audit passed |
 
-第二章另有8组FEM；第四章48组训练保留72个阶段模型。HINTS使用本轮VarMiON初值，正式统计不包含开发烟雾试验。
+Chapter 2 also includes 8 FEM runs; the 48 Chapter 4 training runs retain 72 model stages. HINTS uses the newly trained VarMiON initialization. Development smoke tests are excluded from formal counts.
 
-| 书稿位置 | 覆盖层级 | 本版实现 | 边界 |
+| Manuscript location | Coverage | Implementation | Limitations |
 |---|---|---|---|
-| 1.1：PDE近似与约束优化，1页 | 说明覆盖 | 全书索引连接第2至5章 | 已有四类计算任务的代表配套 |
-| 1.2：经典基准与神经动机，2页 | 说明覆盖 | 第2章FEM、第4章谱/FEM、第5章QP参考 | 有经典对照；不能据单个算例宣称普遍加速 |
-| 1.3：神经方法设置，4页 | 说明覆盖 | [README.md](../README.md) | 函数表示、算子代理、优化与混合角色分别说明 |
-| 1.4：范围与结构，5页 | 说明覆盖 | 本清单与项目当前入口 | 明确四个算法主体和后置分支 |
-| 2.1：引言，7页 | 说明覆盖 | 章节说明 | 给出共同算例和阅读路线 |
-| 2.2.1：共同数值模板，9页 | 代表实现 | [mesh.py](../src/neuralpde_ch02/mesh.py)、[fem.py](../src/neuralpde_ch02/fem.py) | P1 FEM、积分、独立误差与8组网格结果；非所有离散方法 |
-| 2.2.2：可训练表示，12页 | 代表实现 | [models.py](../src/neuralpde_ch02/models.py) | Tanh网络、坐标缩放、边界嵌入；未遍历全部网络表示 |
-| 2.3.1：PINN，14页 | 核心覆盖 | [objectives.py](../src/neuralpde_ch02/objectives.py) | 6组正式训练；积分强残差平方；硬边界使边界罚项为零 |
-| 2.3.2：修改与训练问题，15页 | 部分覆盖 | [models.py](../src/neuralpde_ch02/models.py)、[training.py](../src/neuralpde_ch02/training.py) | 已有硬边界及Adam/L-BFGS；无损失自适应、残差自适应采样等完整对照 |
-| 2.3.3：误差分析，18页 | 说明覆盖 | [metrics.py](../src/neuralpde_ch02/metrics.py) | 独立积分、L2/H1半范和物理残差；不是理论误差分解各项的数值证书 |
-| 2.4.1：Deep Ritz，24页 | 核心覆盖 | [objectives.py](../src/neuralpde_ch02/objectives.py) | 6组；直接最小化能量，不对能量再次平方；1D非齐次边界在仿射可行空间处理 |
-| 2.4.2：弱式/Petrov–Galerkin，26页 | 代表实现 | [mesh.py](../src/neuralpde_ch02/mesh.py) | 6组范数感知VPINN，使用Gram矩阵定义弱残差对偶范数；不是WAN |
-| 2.4.3：与PINN比较，29页 | 核心覆盖 | 正式报告 | 同维度共享表示、积分与名义预算；实际调用和成本另记，不宣称等硬件加速 |
-| 2.5.1：域分解、多尺度与混合形式，30页 | 未覆盖 | 当前仅采用全域坐标表示；扩展边界见覆盖核对 | 无XPINN、专门多尺度结构或混合一阶系统完整实验；可选补充 |
-| 2.5.2：架构、正则化与训练动力学，33页 | 部分覆盖 | [training.py](../src/neuralpde_ch02/training.py) | 既定架构、优化历史、种子及恢复检查已有；无系统架构/正则化研究 |
-| 2.5.3：数据增强，34页 | 未覆盖 | 当前源项及边界驱动训练 | 解析解仅作验证；无稀疏/噪声观测同化正式实验 |
-| 2.6：实现与验证，35页 | 核心覆盖 | [report.py](../src/neuralpde_ch02/report.py) | 独立积分、边界、能量一致性、FEM及模型重载已有 |
-| 2.7：优势与局限，37页 | 说明覆盖 | 正式报告解释部分 | 有限测试空间小损失不等于连续误差证书；H1表示梯度半范 |
-| 3.1、3.2.1：解算子与多次查询 | 代表实现 | [reaction.py](../src/neuralpde_opt/chapter3/reaction.py)、[reaction_data.py](../src/neuralpde_opt/chapter3/reaction_data.py)、[reaction_operators.py](../src/neuralpde_opt/chapter3/reaction_operators.py) | 说明/实验已有：固定扩散的反应系数到解，以及变化源项任务；不覆盖所有目标算子 |
-| 3.2.2：表示、近似与泛化 | 代表实现 | [reaction_training.py](../src/neuralpde_opt/chapter3/reaction_training.py)、[evaluation.py](../chapters/ch03/evaluation.py) | train/val/test隔离、归一化、POD表示误差等已有；理论定理不标成“训练完成”，无统一泛化保证 |
-| 3.3.1：DeepONet，式(3.10)的branch–trunk收缩 | 核心覆盖 | [upstream_operators.py](../src/neuralpde_opt/chapter3/upstream_operators.py)、[deepxde_core.py](../src/neuralpde_opt/chapter3/upstream_vendor/deepxde_core.py) | 已交付，3组；正式ID `deepxde_fourier4`，trunk输入加入4阶坐标Fourier特征，保留此标注 |
-| 3.3.2：Fourier neural operator | 核心覆盖 | [fno.py](../src/neuralpde_opt/chapter3/fno.py) | 已交付，3组；lifting、截断频域卷积、局部分支及projection；不据同网格误差宣称连续算子一致性 |
-| 3.3.2：Graph neural operator，式(3.16) | 核心覆盖 | [gno.py](../src/neuralpde_opt/chapter3/gno.py) | 已交付，3组；17×17图节点、带权消息积分、P1输出重建，梯度误差受输出空间限制 |
-| 3.3.3：Transformer算子；式(3.21)–(3.24)的Galerkin线性注意力 | 核心覆盖 | [upstream_operators.py](../src/neuralpde_opt/chapter3/upstream_operators.py)、[galerkin_layers.py](../src/neuralpde_opt/chapter3/upstream_vendor/galerkin_layers.py) | 已交付，3组；Galerkin注意力＋Fourier解码器。书稿还介绍通用softmax与查询交互，未对每个变体单列当前正式实验 |
-| 3.4.1：物理信息与数据/物理混合目标 | 代表实现 | [physics.py](../experiments/ch03_physics_v1/physics.py)、[run.py](../experiments/ch03_physics_v1/run.py) | 已交付，15组；采用P1能量型物理FNO，含纯数据、无训练标签能量、混合训练。能量方案仍使用val标签选模 |
-| 3.4.2：降阶基/PCA，式(3.28)及固定解码器 | 核心覆盖 | [pod.py](../experiments/ch03_pod_v1/pod.py) | 已交付，12组；质量内积下的train-only POD，4/8/16/32四个秩。未单列残差贪心选基路线 |
-| 3.4.3：变分结构，式(3.30)–(3.35) | 代表实现 | [model.py](../experiments/ch03_varmion_v1/model.py) | 已交付，6组；固定64维POD基、线性载荷编码、非线性反应系数分支，含非结构化对照 |
-| 3.4.3：变分结构的本项目增强 | 代表实现 | [model_v2.py](../experiments/ch03_varmion_v2/model_v2.py)、[trainer_v2.py](../experiments/ch03_varmion_v2/trainer_v2.py) | 已交付，9组；dense/SPD与算子一致性监督。SPD使用额外物理信息；不是书稿要求的一个独立架构家族，也不是所有变体均3种子 |
-| 3.5.1：学习残差到误差校正，式(3.37)–(3.41) | 核心覆盖 | [residual_data.py](../experiments/ch03_hints_v1/residual_data.py)、[run.py](../experiments/ch03_hints_v1/run.py) | 已交付，3组残差模型；训练目标来自求解器残差。该节其他组件的缺口见本清单第7节 |
-| 3.5.2：固定HINTS与残差保护，式(3.43)、算法2 | 核心覆盖 | [hybrid.py](../chapters/ch03/hybrid.py)、[evaluation.py](../chapters/ch03/evaluation.py) | 已交付，Jacobi/固定融合/保护融合，共448种方程—求解器组合。复用上述3个残差模型，不重复计训练组数 |
-| 3.6：面向目标的实现与验证 | 代表实现 | [heldout.py](../chapters/ch03/heldout.py)、[evaluation.py](../chapters/ch03/evaluation.py)、[audit.py](../chapters/ch03/audit.py)、[validation.py](../chapters/ch03/validation.py) | 当前问题的独立测试、L2/H1半范、物理诊断、模型重载与身份审计已交付；不等于覆盖所有几何/时变/分布外任务 |
-| 3.7：优势与局限 | 说明覆盖 | [CH03_READING_ZH.md](../docs/CH03_READING_ZH.md) | 说明已有：表示误差、物理信息预算、成本与推广边界，不另设训练任务 |
-| 4.1：引言，73页 | 说明覆盖 | [README.md](../chapters/ch04_delivery/README.md) | 单实例、问题族与混合方法的角色已区分 |
-| 4.2：代表光滑问题，74页 | 代表实现 | [problem.py](../chapters/ch04/problem.py) | 线性二次Poisson控制、低频状态及八阶控制；半线性/抛物型后置 |
-| 4.3：经典数值方法，77页 | 核心覆盖 | [fem.py](../chapters/ch04/fem.py)、[protocol.py](../chapters/ch04_delivery/protocol.py) | 经典谱优化、P1 FEM和离散伴随；32/64/128/256网格研究，确定性基准不伪造种子 |
-| 4.4.1：direct-PINN，80页 | 代表实现 | [instance.py](../chapters/ch04_adaptation/instance.py) | 3组；纯神经与头修正阶段分开；硬边界、频率增强及Gauss积分 |
-| 4.4.1：KKT-PINN，80页 | 核心覆盖 | [training.py](../chapters/ch04/training.py) | 3组；状态、伴随及控制最优性条件训练，独立真实PDE检查 |
-| 4.4.1：增广拉格朗日，80页 | 代表实现 | [instance.py](../chapters/ch04_adaptation/instance.py) | 3组；外层乘子与神经内层，头修正单列；乘子对应负物理伴随 |
-| 4.4.1：双层神经优化，80页 | 代表实现 | [bilevel.py](../chapters/ch04_completion/bilevel.py) | 3组；实际训练下层及隐式超梯度，但仍是17个固定正弦特征的线性头基线 |
-| 4.4.2：FNO、DeepONet、FEDONet，83页 | 核心覆盖 | [models.py](../chapters/ch04_operator_adaptation/models.py)、[training.py](../chapters/ch04_operator_adaptation/training.py) | 三架构各state/KKT角色×3种子＝18组；纯神经和train-only头修正分别记录 |
-| 4.4.2：多输入算子MIMOONet，83页 | 代表实现 | [operator_models.py](../chapters/ch04_adaptation/operator_models.py)、[operators.py](../chapters/ch04_delivery/operators.py) | 3组；四个乘法融合branch、共享trunk；模态缩放和17模态输出投影 |
-| 4.4.2：降阶与导数信息RB/DINO，83页 | 代表实现 | [operators.py](../chapters/ch04_delivery/operators.py) | RB-state及RB-DINO各3组；DINO有真实导数监督，仍受固定有限空间约束 |
-| 4.4.3：神经策略比较，88页 | 代表实现 | 基础正式报告 | 同一问题族与明确模型阶段；状态代理控制和直接控制另在相同8例上比较 |
-| 4.5.1：Deep Uzawa基线，89页 | 代表实现 | [deep_uzawa.py](../chapters/ch04_completion/deep_uzawa.py) | 3组；有限特征基线，保留内层驻点及乘子更新记录 |
-| 4.5.1：Deep Uzawa表示深化，89页 | 代表实现 | [training.py](../chapters/ch04_depth/training.py) | 新3组；全部隐藏层可训练坐标网络，控制块仍为解析二次更新；非精确内层理论复现 |
-| 4.5.2：ISMO，93页 | 核心覆盖 | [ismo.py](../chapters/ch04_completion/ismo.py)、[hybrids.py](../chapters/ch04_delivery/hybrids.py) | 3组；非线性代理、真实PDE主动补样后重训；廉价谱PDE不支持一般端到端加速结论 |
-| 4.5.3：FEM-NN基线，96页 | 代表实现 | [fem_nn.py](../chapters/ch04_completion/fem_nn.py) | 3组；固定特征源项识别、无噪声全场观测，状态由FEM求解 |
-| 4.5.3：FEM-NN观测深化，96页 | 代表实现 | [training.py](../chapters/ch04_depth/training.py)、[assessment.py](../chapters/ch04_depth/assessment.py) | 新9组；稀疏无噪声、1%噪声、相同噪声加正则化各3种子；可训练源项网络和稀疏转置反传 |
-| 4.6：实现与验证，100页 | 核心覆盖 | [assessment.py](../chapters/ch04_delivery/assessment.py) | 源码/模型冻结、真实PDE重求、目标/梯度、网格/边界及重载审计 |
-| 4.7：讨论与开放问题，102页 | 说明覆盖 | [CH04_READING_ZH.md](../docs/CH04_READING_ZH.md) | 表示空间、头修正、有限内层与成本边界均保留 |
-| 5.1：引言，105页 | 说明覆盖 | [README.md](../chapters/ch05_delivery/README.md) | 区分控制约束、状态约束、界面和下层变分不等式 |
-| 5.2：非光滑目标，107页 | 部分覆盖 | [problem.py](../chapters/ch05/problem.py) | 控制盒约束及状态上界有实验；一般非光滑和稀疏控制未全面覆盖 |
-| 5.2.1：OSNN，107页 | 核心覆盖 | [models.py](../chapters/ch05/models.py)、[training.py](../chapters/ch05_delivery/training.py) | 3组；状态/缩放伴随网络，精确盒投影恢复控制 |
-| 5.2.1：控制分裂ADMM-PINN，107页 | 核心覆盖 | [training.py](../chapters/ch05_delivery/training.py) | 3组；保留神经内层、分裂变量和乘子历史；PDE使用内层控制u，可行输出z另报 |
-| 5.2.1：投影KKT-FNO，107页 | 代表实现 | [operators.py](../chapters/ch05/operators.py) | 3组；历史ID为mimo，实际不是第四章乘法分支MIMOONet |
-| 5.2.1：PDOL，107页 | 核心覆盖 | [operators.py](../chapters/ch05/operators.py)、[reference.py](../chapters/ch05/reference.py) | 3组；状态/伴随FNO代理嵌入原始—对偶迭代；代理固定点与真实PDE残差分开 |
-| 5.2.1：iUzawa-Net-F/S，107页 | 核心覆盖 | [operator_blocks.py](../chapters/ch05/operator_blocks.py) | 两种权重展开×3种子＝6组；精确投影、半正定结构预条件器；不保证整个网络收敛 |
-| 5.2.1：L1稀疏控制，107页 | 部分覆盖 | 原模块中的prox工具及测试；见覆盖核对 | 只有基础工具；没有完整稀疏控制训练、参考及独立评测 |
-| 5.2.2：CNP状态约束，112页 | 代表实现 | [models.py](../chapters/ch05/models.py)、[assessment.py](../chapters/ch05_delivery/assessment.py) | 3组；光滑可行状态、真实Laplacian恢复控制、独立状态约束QP；不是障碍控制 |
-| 5.2.2：状态分裂ADMM，112页，式(5.19)–(5.21) | 未覆盖 | 尚无完整入口；缺口见覆盖核对 | 后置；控制分裂ADMM和CNP均不能替代此分支 |
-| 5.3.1：界面模型，116页 | 未覆盖 | 尚无正式实现 | 后置；分片PDE、单侧场、值/通量跳跃及独立经典基准未交付 |
-| 5.3.2：界面神经表示，118页 | 未覆盖 | 尚无正式实现 | 后置；DCSNN软约束、lifting/硬嵌入与界面诊断未交付 |
-| 5.4.1：VI与障碍控制，122页 | 未覆盖 | 尚无正式实现 | 后置；下层障碍解、互补条件与独立控制参考未交付 |
-| 5.4.2：神经双层表述，123页 | 未覆盖 | 尚无正式实现 | 后置；不能用第四章光滑有限特征双层或CNP替代 |
-| 5.4.3：Moreau包络与S2-FOBA，124页 | 未覆盖 | 尚无正式实现 | 后置；包络差项、两阶段算法及固定控制状态精修未交付 |
-| 5.5：实现与验证，126页 | 部分覆盖 | [protocol.py](../chapters/ch05_delivery/protocol.py)、[assessment.py](../chapters/ch05_delivery/assessment.py) | 已交付5.2当前七条流程的物理/可行性/活动集/重载诊断；不涵盖后置问题 |
-| 5.6：讨论与开放问题，127页 | 说明覆盖 | [CH05_READING_ZH.md](../docs/CH05_READING_ZH.md) | 当前实验与更一般非光滑问题的边界已明确 |
-| 6：总结与展望，129–132页 | 说明覆盖 | 汇总第二至五章方法、验证与局限 | 不另设神经训练；未实现方向不计入完成度 |
+| 1.1: PDE approximation and constrained optimization, p. 1 | Explanatory coverage | Book-wide index linking Chapters 2-5 | Representative examples for four types of computational task |
+| 1.2: Classical baselines and motivation for neural methods, p. 2 | Explanatory coverage | Chapter 2 FEM, Chapter 4 spectral/FEM, Chapter 5 QP references | Classical comparisons are available; a single example cannot establish a universal speedup |
+| 1.3: Neural-method setup, p. 4 | Explanatory coverage | [README.md](../README.md) | Function representations, operator surrogates, optimization, and hybrid roles are distinguished |
+| 1.4: Scope and structure, p. 5 | Explanatory coverage | This checklist and the current project entry point | Four algorithmic parts and deferred branches are identified |
+| 2.1: Introduction, p. 7 | Explanatory coverage | Chapter documentation | Shared examples and reading route |
+| 2.2.1: Common numerical template, p. 9 | Representative implementation | [mesh.py](../src/neuralpde_ch02/mesh.py), [fem.py](../src/neuralpde_ch02/fem.py) | P1 FEM, quadrature, independent errors, and 8 grid runs; not every discretization method |
+| 2.2.2: Trainable representations, p. 12 | Representative implementation | [models.py](../src/neuralpde_ch02/models.py) | Tanh networks, coordinate scaling, and boundary embedding; not an exhaustive study of representations |
+| 2.3.1: PINN, p. 14 | Core coverage | [objectives.py](../src/neuralpde_ch02/objectives.py) | 6 formal runs; integrated squared strong residual; hard boundary conditions make the boundary penalty zero |
+| 2.3.2: Modifications and training issues, p. 15 | Partial coverage | [models.py](../src/neuralpde_ch02/models.py), [training.py](../src/neuralpde_ch02/training.py) | Hard boundaries and Adam/L-BFGS are included; no full comparisons of adaptive losses or residual-adaptive sampling |
+| 2.3.3: Error analysis, p. 18 | Explanatory coverage | [metrics.py](../src/neuralpde_ch02/metrics.py) | Independent quadrature, L2/H1 seminorms, and physical residuals; not numerical certificates for every theoretical error component |
+| 2.4.1: Deep Ritz, p. 24 | Core coverage | [objectives.py](../src/neuralpde_ch02/objectives.py) | 6 runs; direct energy minimization without squaring the energy again; inhomogeneous 1D boundaries use an affine feasible space |
+| 2.4.2: Weak form/Petrov-Galerkin, p. 26 | Representative implementation | [mesh.py](../src/neuralpde_ch02/mesh.py) | 6 norm-aware VPINN runs using a Gram-matrix weak-residual dual norm; not WAN |
+| 2.4.3: Comparison with PINN, p. 29 | Core coverage | Formal report | Shared representations, quadrature, and nominal budgets within each dimension; actual calls and costs reported separately, without equal-hardware speedup claims |
+| 2.5.1: Domain decomposition, multiscale and mixed forms, p. 30 | Not covered | Only global coordinate representations are currently used; see coverage limitations | No complete XPINN, specialized multiscale, or mixed first-order-system experiments; optional extensions |
+| 2.5.2: Architecture, regularization, and training dynamics, p. 33 | Partial coverage | [training.py](../src/neuralpde_ch02/training.py) | Fixed architectures, optimization histories, seeds, and recovery checks are available; no systematic architecture/regularization study |
+| 2.5.3: Data augmentation, p. 34 | Not covered | Current training is driven by forcing and boundaries | Analytic solutions are used only for validation; no formal sparse/noisy observation-assimilation experiments |
+| 2.6: Implementation and verification, p. 35 | Core coverage | [report.py](../src/neuralpde_ch02/report.py) | Independent quadrature, boundaries, energy consistency, FEM, and model reload checks |
+| 2.7: Strengths and limitations, p. 37 | Explanatory coverage | Interpretation in the formal report | Small loss in a finite test space is not a continuous-error certificate; H1 denotes the gradient seminorm |
+| 3.1, 3.2.1: Solution operators and repeated queries | Representative implementation | [reaction.py](../src/neuralpde_opt/chapter3/reaction.py), [reaction_data.py](../src/neuralpde_opt/chapter3/reaction_data.py), [reaction_operators.py](../src/neuralpde_opt/chapter3/reaction_operators.py) | Documentation and experiments cover reaction-coefficient-to-solution maps with fixed diffusion and variable-forcing tasks; not every target operator |
+| 3.2.2: Representation, approximation, and generalization | Representative implementation | [reaction_training.py](../src/neuralpde_opt/chapter3/reaction_training.py), [evaluation.py](../chapters/ch03/evaluation.py) | Train/val/test separation, normalization, and POD errors are covered; theoretical theorems are not labeled as completed training, and no universal generalization guarantee is claimed |
+| 3.3.1: DeepONet, branch-trunk contraction in Eq. (3.10) | Core coverage | [upstream_operators.py](../src/neuralpde_opt/chapter3/upstream_operators.py), [deepxde_core.py](../src/neuralpde_opt/chapter3/upstream_vendor/deepxde_core.py) | Delivered, 3 runs; formal ID `deepxde_fourier4`; trunk coordinates include order-4 Fourier features, explicitly labeled |
+| 3.3.2: Fourier neural operator | Core coverage | [fno.py](../src/neuralpde_opt/chapter3/fno.py) | Delivered, 3 runs; lifting, truncated spectral convolution, local branch, and projection; same-grid error does not establish continuous-operator consistency |
+| 3.3.2: Graph neural operator, Eq. (3.16) | Core coverage | [gno.py](../src/neuralpde_opt/chapter3/gno.py) | Delivered, 3 runs; 17x17 graph nodes, weighted message integration, and P1 output reconstruction; gradient error is limited by the output space |
+| 3.3.3: Transformer operators; Galerkin linear attention in Eqs. (3.21)-(3.24) | Core coverage | [upstream_operators.py](../src/neuralpde_opt/chapter3/upstream_operators.py), [galerkin_layers.py](../src/neuralpde_opt/chapter3/upstream_vendor/galerkin_layers.py) | Delivered, 3 runs; Galerkin attention plus Fourier decoder. The manuscript also discusses generic softmax and query interactions; not every variant has a separate formal experiment |
+| 3.4.1: Physical information and mixed data/physics objectives | Representative implementation | [physics.py](../experiments/ch03_physics_v1/physics.py), [run.py](../experiments/ch03_physics_v1/run.py) | Delivered, 15 runs; P1 energy-based physical FNO with data-only, energy without training labels, and hybrid training. Energy variants still use validation labels for selection |
+| 3.4.2: Reduced bases/PCA, Eq. (3.28), and fixed decoder | Core coverage | [pod.py](../experiments/ch03_pod_v1/pod.py) | Delivered, 12 runs; training-only POD in the mass inner product at ranks 4/8/16/32. No separate residual-greedy basis-selection workflow |
+| 3.4.3: Variational structure, Eqs. (3.30)-(3.35) | Representative implementation | [model.py](../experiments/ch03_varmion_v1/model.py) | Delivered, 6 runs; fixed 64-dimensional POD basis, linear load encoding, nonlinear reaction-coefficient branch, and unstructured comparison |
+| 3.4.3: Project extensions of the variational structure | Representative implementation | [model_v2.py](../experiments/ch03_varmion_v2/model_v2.py), [trainer_v2.py](../experiments/ch03_varmion_v2/trainer_v2.py) | Delivered, 9 runs; dense/SPD maps and operator-consistency supervision. SPD uses additional physical information; this is not a separate manuscript-required architecture family, and not every variant has 3 seeds |
+| 3.5.1: Learning residual-to-error corrections, Eqs. (3.37)-(3.41) | Core coverage | [residual_data.py](../experiments/ch03_hints_v1/residual_data.py), [run.py](../experiments/ch03_hints_v1/run.py) | Delivered, 3 residual models trained on solver residuals. Other missing components of this section are documented in the coverage limitations |
+| 3.5.2: Fixed HINTS and residual safeguards, Eq. (3.43), Algorithm 2 | Core coverage | [hybrid.py](../chapters/ch03/hybrid.py), [evaluation.py](../chapters/ch03/evaluation.py) | Delivered: Jacobi/fixed hybrid/safeguarded hybrid, totaling 448 equation-solver combinations. The same 3 residual models are reused without double-counting training |
+| 3.6: Goal-oriented implementation and verification | Representative implementation | [heldout.py](../chapters/ch03/heldout.py), [evaluation.py](../chapters/ch03/evaluation.py), [audit.py](../chapters/ch03/audit.py), [validation.py](../chapters/ch03/validation.py) | Independent tests, L2/H1 seminorms, physical diagnostics, model reloads, and identity audits are delivered for the current problem; not all geometries, time-dependent tasks, or out-of-distribution cases |
+| 3.7: Strengths and limitations | Explanatory coverage | [CH03_READING_ZH.md](../docs/CH03_READING_ZH.md) | Representation error, physical-information budgets, cost, and generalization limits are explained; no additional training task |
+| 4.1: Introduction, p. 73 | Explanatory coverage | [README.md](../chapters/ch04_delivery/README.md) | Single-instance, problem-family, and hybrid roles are distinguished |
+| 4.2: Representative smooth problem, p. 74 | Representative implementation | [problem.py](../chapters/ch04/problem.py) | Linear-quadratic Poisson control, low-frequency state, and order-8 control; semilinear/parabolic extensions deferred |
+| 4.3: Classical numerical methods, p. 77 | Core coverage | [fem.py](../chapters/ch04/fem.py), [protocol.py](../chapters/ch04_delivery/protocol.py) | Classical spectral optimization, P1 FEM, and discrete adjoints; grid study at 32/64/128/256; deterministic references are not assigned artificial seeds |
+| 4.4.1: direct-PINN, p. 80 | Representative implementation | [instance.py](../chapters/ch04_adaptation/instance.py) | 3 runs; separate pure-neural and head-correction stages; hard boundaries, frequency enrichment, and Gauss quadrature |
+| 4.4.1: KKT-PINN, p. 80 | Core coverage | [training.py](../chapters/ch04/training.py) | 3 runs; state, adjoint, and control optimality-condition training with independent true-PDE checks |
+| 4.4.1: Augmented Lagrangian, p. 80 | Representative implementation | [instance.py](../chapters/ch04_adaptation/instance.py) | 3 runs; outer multipliers and neural inner solves; head correction reported separately; the multiplier corresponds to the negative physical adjoint |
+| 4.4.1: Bilevel neural optimization, p. 80 | Representative implementation | [bilevel.py](../chapters/ch04_completion/bilevel.py) | 3 runs; actual lower-level training and implicit hypergradients, but still a linear-head baseline with 17 fixed sine features |
+| 4.4.2: FNO, DeepONet, FEDONet, p. 83 | Core coverage | [models.py](../chapters/ch04_operator_adaptation/models.py), [training.py](../chapters/ch04_operator_adaptation/training.py) | Three architectures, each with state/KKT roles x 3 seeds = 18 runs; pure-neural and training-only head-correction stages recorded separately |
+| 4.4.2: Multi-input operator MIMOONet, p. 83 | Representative implementation | [operator_models.py](../chapters/ch04_adaptation/operator_models.py), [operators.py](../chapters/ch04_delivery/operators.py) | 3 runs; four multiplicatively fused branches and a shared trunk; modal scaling and 17-mode output projection |
+| 4.4.2: Reduced bases and derivative information, RB/DINO, p. 83 | Representative implementation | [operators.py](../chapters/ch04_delivery/operators.py) | 3 runs each for RB-state and RB-DINO; DINO uses genuine derivative supervision within a fixed finite-dimensional space |
+| 4.4.3: Comparing neural strategies, p. 88 | Representative implementation | Formal baseline report | Shared problem family and explicit model stages; state-surrogate control and direct control also compared on the same 8 cases |
+| 4.5.1: Deep Uzawa baseline, p. 89 | Representative implementation | [deep_uzawa.py](../chapters/ch04_completion/deep_uzawa.py) | 3 runs; finite-feature baseline with inner stationarity and multiplier-update records |
+| 4.5.1: Deeper Deep Uzawa representations, p. 89 | Representative implementation | [training.py](../chapters/ch04_depth/training.py) | 3 new runs; coordinate networks with all hidden layers trainable, but analytic quadratic control updates; not a replication of exact-inner-solve theory |
+| 4.5.2: ISMO, p. 93 | Core coverage | [ismo.py](../chapters/ch04_completion/ismo.py), [hybrids.py](../chapters/ch04_delivery/hybrids.py) | 3 runs; nonlinear surrogate retrained after active sampling with the true PDE; cheap spectral PDE solves do not support general end-to-end speedup claims |
+| 4.5.3: FEM-NN baseline, p. 96 | Representative implementation | [fem_nn.py](../chapters/ch04_completion/fem_nn.py) | 3 runs; fixed-feature source identification with noiseless full-field observations; FEM solves the state |
+| 4.5.3: Extended FEM-NN observations, p. 96 | Representative implementation | [training.py](../chapters/ch04_depth/training.py), [assessment.py](../chapters/ch04_depth/assessment.py) | 9 new runs: sparse noiseless, 1% noise, and the same noise plus regularization, each with 3 seeds; trainable source network and sparse transpose backpropagation |
+| 4.6: Implementation and verification, p. 100 | Core coverage | [assessment.py](../chapters/ch04_delivery/assessment.py) | Source/model freezing, true-PDE solves, objectives/gradients, grid/boundary checks, and reload audits |
+| 4.7: Discussion and open questions, p. 102 | Explanatory coverage | [CH04_READING_ZH.md](../docs/CH04_READING_ZH.md) | Representation-space, head-correction, finite-inner-iteration, and cost limitations are retained |
+| 5.1: Introduction, p. 105 | Explanatory coverage | [README.md](../chapters/ch05_delivery/README.md) | Control constraints, state constraints, interfaces, and lower-level variational inequalities are distinguished |
+| 5.2: Nonsmooth objectives, p. 107 | Partial coverage | [problem.py](../chapters/ch05/problem.py) | Experiments cover control box constraints and state upper bounds; general nonsmooth and sparse control are not fully covered |
+| 5.2.1: OSNN, p. 107 | Core coverage | [models.py](../chapters/ch05/models.py), [training.py](../chapters/ch05_delivery/training.py) | 3 runs; state/scaled-adjoint networks with exact box projection to recover control |
+| 5.2.1: Control-splitting ADMM-PINN, p. 107 | Core coverage | [training.py](../chapters/ch05_delivery/training.py) | 3 runs; neural inner solves, split variables, and multiplier histories retained; the PDE uses inner control u, while feasible output z is reported separately |
+| 5.2.1: Projected KKT-FNO, p. 107 | Representative implementation | [operators.py](../chapters/ch05/operators.py) | 3 runs; historical ID mimo; not the multiplicative-branch MIMOONet from Chapter 4 |
+| 5.2.1: PDOL, p. 107 | Core coverage | [operators.py](../chapters/ch05/operators.py), [reference.py](../chapters/ch05/reference.py) | 3 runs; state/adjoint FNO surrogates in primal-dual iterations; surrogate fixed-point and true-PDE residuals separated |
+| 5.2.1: iUzawa-Net-F/S, p. 107 | Core coverage | [operator_blocks.py](../chapters/ch05/operator_blocks.py) | Two weight-unrolling variants x 3 seeds = 6 runs; exact projection and structured positive-semidefinite preconditioners; no whole-network convergence guarantee |
+| 5.2.1: L1 sparse control, p. 107 | Partial coverage | Proximal tools and tests in the original modules; see coverage review | Basic tools only; no complete sparse-control training, reference, or independent evaluation |
+| 5.2.2: CNP state constraints, p. 112 | Representative implementation | [models.py](../chapters/ch05/models.py), [assessment.py](../chapters/ch05_delivery/assessment.py) | 3 runs; smooth feasible states, true Laplacian control recovery, and an independent state-constrained QP; not obstacle control |
+| 5.2.2: State-splitting ADMM, p. 112, Eqs. (5.19)-(5.21) | Not covered | No complete entry point yet; see coverage limitations | Deferred; neither control-splitting ADMM nor CNP replaces this branch |
+| 5.3.1: Interface models, p. 116 | Not covered | No formal implementation yet | Deferred; piecewise PDEs, one-sided fields, value/flux jumps, and independent classical references are not delivered |
+| 5.3.2: Neural interface representations, p. 118 | Not covered | No formal implementation yet | Deferred; DCSNN soft constraints, lifting/hard embedding, and interface diagnostics are not delivered |
+| 5.4.1: Variational inequalities and obstacle control, p. 122 | Not covered | No formal implementation yet | Deferred; lower-level obstacle solves, complementarity, and independent control references are not delivered |
+| 5.4.2: Neural bilevel formulations, p. 123 | Not covered | No formal implementation yet | Deferred; Chapter 4 smooth finite-feature bilevel methods and CNP cannot replace this branch |
+| 5.4.3: Moreau envelopes and S2-FOBA, p. 124 | Not covered | No formal implementation yet | Deferred; envelope-difference terms, the two-stage algorithm, and fixed-control state refinement are not delivered |
+| 5.5: Implementation and verification, p. 126 | Partial coverage | [protocol.py](../chapters/ch05_delivery/protocol.py), [assessment.py](../chapters/ch05_delivery/assessment.py) | Physical, feasibility, active-set, and reload diagnostics cover the seven current Section 5.2 workflows, not deferred problems |
+| 5.6: Discussion and open questions, p. 127 | Explanatory coverage | [CH05_READING_ZH.md](../docs/CH05_READING_ZH.md) | Boundaries between current experiments and more general nonsmooth problems are explicit |
+| 6: Conclusions and outlook, pp. 129-132 | Explanatory coverage | Summary of Chapters 2-5 methods, validation, and limitations | No additional neural training; unimplemented directions are not counted as complete |
 
-后置内容继续保留：状态分裂ADMM、界面、障碍控制/S2-FOBA及半线性/抛物型扩展。神经初值＋CG退出主线，Darcy复刻保持暂停。
+Deferred work remains deferred: state-splitting ADMM, interface control, obstacle control/S2-FOBA, and semilinear/parabolic extensions. Neural initialization + CG has left the main scope; the Darcy replication remains paused.

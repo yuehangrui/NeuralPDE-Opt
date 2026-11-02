@@ -1,0 +1,144 @@
+{
+  "language": "English",
+  "baseline_commit": "e275a39b25feb1e646e726cb6bf3ca6d2af708ea",
+  "training_started": false,
+  "python_files_parsed": 653,
+  "changed_python_files": [
+    "src/neuralpde_book/__init__.py",
+    "src/neuralpde_book/_payload/book_report.py",
+    "src/neuralpde_book/_payload/chapters/ch03/evaluation.py",
+    "src/neuralpde_book/_payload/chapters/ch04_delivery/report.py",
+    "src/neuralpde_book/_payload/chapters/ch04_depth/assessment.py",
+    "src/neuralpde_book/_payload/chapters/ch05_delivery/report.py",
+    "src/neuralpde_book/_payload/experiments/ch03_hints_v1/run.py",
+    "src/neuralpde_book/_payload/experiments/ch03_physics_v1/run.py",
+    "src/neuralpde_book/_payload/experiments/ch03_pod_v1/run.py",
+    "src/neuralpde_book/_payload/experiments/ch03_varmion_v1/run.py",
+    "src/neuralpde_book/_payload/scripts/report_ch03_experiment.py",
+    "src/neuralpde_book/_payload/src/neuralpde_opt/chapter3/data.py",
+    "src/neuralpde_book/_payload/src/neuralpde_opt/chapter3/experimental_data.py",
+    "src/neuralpde_book/workspace.py",
+    "workspace/book_report.py",
+    "workspace/chapters/ch03/evaluation.py",
+    "workspace/chapters/ch04_delivery/report.py",
+    "workspace/chapters/ch04_depth/assessment.py",
+    "workspace/chapters/ch05_delivery/report.py",
+    "workspace/experiments/ch03_hints_v1/run.py",
+    "workspace/experiments/ch03_physics_v1/run.py",
+    "workspace/experiments/ch03_pod_v1/run.py",
+    "workspace/experiments/ch03_varmion_v1/run.py",
+    "workspace/scripts/report_ch03_experiment.py",
+    "workspace/src/neuralpde_opt/chapter3/data.py",
+    "workspace/src/neuralpde_opt/chapter3/experimental_data.py"
+  ],
+  "numeric_tables_checked": [
+    "workspace/results/ch03/final_test_v1/summary.md",
+    "workspace/results/ch04/nonlinear_depth_v1/summary.md",
+    "workspace/results/ch04/unified_delivery_v1/summary.md",
+    "workspace/results/ch04/unified_delivery_v1/summary.reviewed.md",
+    "workspace/results/ch05/unified_delivery_v1/summary.md"
+  ],
+  "chinese_text_files": [],
+  "payload_files": 317,
+  "historical_audits_unchanged": true,
+  "passed": true,
+  "date": "2026-11-02",
+  "version": "1.0.1",
+  "package_tests": 5,
+  "wheel_extracted_package_tests": 5,
+  "regression": {
+    "passed": true,
+    "payload_sha256": "b3446959d772e940ab077612933e0c8eae2a497e3e851fc503f050d8a56e7a86",
+    "suites": [
+      {
+        "suite": "ch02",
+        "exit_code": 0,
+        "tests": 7
+      },
+      {
+        "suite": "ch03_core",
+        "exit_code": 0,
+        "tests": 145
+      },
+      {
+        "suite": "ch03_pod_v1",
+        "exit_code": 0,
+        "tests": 8
+      },
+      {
+        "suite": "ch03_physics_v1",
+        "exit_code": 0,
+        "tests": 10
+      },
+      {
+        "suite": "ch03_varmion_v1",
+        "exit_code": 0,
+        "tests": 5
+      },
+      {
+        "suite": "ch03_varmion_v2",
+        "exit_code": 0,
+        "tests": 6
+      },
+      {
+        "suite": "ch03_hints_v1",
+        "exit_code": 0,
+        "tests": 6
+      },
+      {
+        "suite": "ch03_entry",
+        "exit_code": 0,
+        "tests": 13
+      },
+      {
+        "suite": "ch04",
+        "exit_code": 0,
+        "tests": 94
+      },
+      {
+        "suite": "ch05",
+        "exit_code": 0,
+        "tests": 40
+      }
+    ],
+    "total_tests": 334,
+    "optimized_mode_passed": true
+  },
+  "publication": {
+    "passed": true,
+    "date": "2026-11-02",
+    "language": "English",
+    "pages": 12,
+    "terminal_compiler": "XeLaTeX TeX Live 2024",
+    "compile_passes": 2,
+    "rendered_with": "pdftoppm -scale-to 1200 -png",
+    "visually_reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "text_verification": "Poppler pdftotext; no Chinese characters in extracted text.",
+    "layout": "No clipped text, overlapping table columns, missing glyphs, or split command block in the final rendering.",
+    "warnings": [],
+    "tex_sha256": "e167798302034b049d3f957eea5c6f52f5be15e9e6b65dc2982be1acb8d11cd5",
+    "pdf_sha256": "93661525e645e2c1750bf9d358092af2742d0d51e6aeb47166fdc362f55c889d",
+    "book_mapping_entries": 68,
+    "source_index_entries": 60,
+    "scope": "English publication review; original numerical audit remains in FINAL_AUDIT.json and refers to v1.0.0."
+  },
+  "wheel": {
+    "name": "neuralpde_book-1.0.1-py3-none-any.whl",
+    "bytes": 690228,
+    "sha256": "29e3d27c2f5b486dbfab1091795394741c241fe9eb994e78c064e737bbe4f414"
+  },
+  "note": "Regression checks ran in a separate fresh workspace. No formal training, new model selection, or test-driven tuning was performed."
+}
